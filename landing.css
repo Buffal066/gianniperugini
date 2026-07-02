@@ -1,0 +1,192 @@
+/* Landing Page - Projects Section */
+.projects {
+    background: var(--darker-bg);
+    position: relative;
+}
+
+.projects::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border-color), transparent);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+
+.project-card {
+    background: var(--accent-dark);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.4s ease;
+    display: block;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-gold);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 30px var(--shadow-glow);
+}
+
+.project-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-image-inner {
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(135deg, rgba(10, 10, 10, 0.6) 0%, rgba(10, 10, 10, 0.4) 100%),
+        url('assets/images/landing-bg.png') center / cover no-repeat;
+    transition: transform 0.4s ease;
+}
+
+/* Landing page hero background override */
+.landing-hero {
+    background:
+        linear-gradient(135deg, rgba(10, 10, 10, 0.4) 0%, rgba(10, 10, 10, 0.3) 50%, rgba(26, 26, 26, 0.4) 100%),
+        url('assets/images/landing-bg.png') center / cover no-repeat;
+    background-blend-mode: overlay, normal;
+}
+
+.landing-hero .hero-overlay {
+    background:
+        linear-gradient(to bottom, rgba(10, 10, 10, 0.3), rgba(10, 10, 10, 0.5));
+    opacity: 0.7;
+}
+
+.landing-hero .hero-content {
+    margin-left: auto;
+    margin-right: 8%;
+    justify-content: flex-end;
+    padding-bottom: 60px;
+    text-align: right;
+}
+
+.landing-hero .hero-title {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.landing-hero .hero-title .title-line {
+    display: inline;
+}
+
+.landing-hero .hero-title .full-name {
+    color: var(--text-primary);
+    position: relative;
+    padding-bottom: 14px;
+}
+
+.landing-hero .hero-title .full-name::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--accent-gold);
+    opacity: 0.7;
+}
+
+.landing-hero .hero-subtitle {
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+.landing-hero .hero-buttons {
+    display: none;
+}
+
+.project-card:hover .project-image-inner {
+    transform: scale(1.05);
+}
+
+.project-image-placeholder {
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(135deg, rgba(204, 0, 0, 0.05) 0%, rgba(74, 20, 140, 0.05) 100%),
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            rgba(42, 42, 42, 0.15) 10px,
+            rgba(42, 42, 42, 0.15) 20px
+        );
+}
+
+.project-info {
+    padding: 2rem;
+}
+
+.project-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    color: var(--accent-gold);
+}
+
+.project-info p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+.project-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--accent-gold);
+    transition: color 0.3s ease;
+}
+
+.project-link.muted {
+    color: var(--text-secondary);
+    opacity: 0.6;
+}
+
+.project-card.coming-soon {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* About Section */
+.about {
+    background: var(--dark-bg);
+}
+
+.about-content {
+    max-width: 700px;
+    margin: 3rem auto 0;
+    text-align: center;
+}
+
+.about-text p {
+    color: var(--text-secondary);
+    font-size: 1.15rem;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
