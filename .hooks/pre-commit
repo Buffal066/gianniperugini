@@ -1,0 +1,13 @@
+#!/bin/sh
+# Auto-update deployment timestamp in index.html before each commit
+
+TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
+
+if [ -f "index.html" ]; then
+    if grep -q "<!-- deployed:.*-->" index.html; then
+        sed -i "s/<!-- deployed:.*-->/<!-- deployed: $TIMESTAMP -->/" index.html
+    else
+        sed -i "s/<!DOCTYPE html>/<!DOCTYPE html>\n<!-- deployed: $TIMESTAMP -->/" index.html
+    fi
+    git add index.html
+fi
