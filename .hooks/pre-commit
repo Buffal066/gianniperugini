@@ -1,13 +1,34 @@
 #!/bin/sh
-# Auto-update deployment timestamp in index.html before each commit
+# Auto-update deployment timestamp in all HTML files before each commit.
+# Format: <!-- deployed: YYYY-MM-DD HH:MM:SS -->
 
 TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
 
-if [ -f "index.html" ]; then
-    if grep -q "<!-- deployed:.*-->" index.html; then
-        sed -i "s/<!-- deployed:.*-->/<!-- deployed: $TIMESTAMP -->/" index.html
+update_file() {
+    file="$1"
+    [ -f "$file" ] || return 0
+
+    if grep -q "<!-- deployed:.*-->" "$file"; then
+        if sed --version >/dev/null 2>&1; then
+            sed -i "s/<!-- deployed:.*-->/<!-- deployed: $TIMESTAMP -->/" "$file"
+        else
+            sed -i '' "s/<!-- deployed:.*-->/<!-- deployed: $TIMESTAMP -->/" "$file"
+        fi
     else
-        sed -i "s/<!DOCTYPE html>/<!DOCTYPE html>\n<!-- deployed: $TIMESTAMP -->/" index.html
+        # Insert timestamp comment on the line after <!DOCTYPE html>
+        if sed --version >/dev/null 2>&1; then
+            sed -i "/<!DOCTYPE html>/a\\
+<!-- deployed: $TIMESTAMP -->" "$file"
+        else
+            sed -i '' "/<!DOCTYPE html>/a\\
+<!-- deployed: $TIMESTAMP -->
+" "$file"
+        fi
     fi
-    git add index.html
-fi
+
+    git add "$file"
+}
+
+for file in *.html; do
+    update_file "$file"
+done

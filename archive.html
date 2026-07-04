@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- deployed: 2026-07-04 01:35:43 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,7 +20,8 @@
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="index.html#projects" class="nav-link">Projects</a></li>
-                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#composites" class="nav-link">Composites</a></li>
+                <li><a href="#photography" class="nav-link">Photography</a></li>
                 <li><a href="index.html#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -35,38 +37,19 @@
             <p class="archive-eyebrow">Past work</p>
             <h1 class="archive-title">Creative Archive</h1>
             <p class="archive-subtitle">
-                Photoshop composites and promotional art for bands, theater, and clients —
-                created under BlackIce Multimedia.
+                Photoshop composites and promotional art under BlackIce Multimedia,
+                plus photography from the field.
             </p>
         </div>
     </section>
 
-    <section id="gallery" class="archive-gallery">
+    <section class="archive-gallery">
         <div class="container">
-            <div id="archive-grid" class="archive-grid" aria-live="polite"></div>
+            <div id="archive-sections"></div>
             <div id="archive-empty" class="archive-empty" hidden>
                 <h2>Add your photos</h2>
-                <p>Export images from Apple Photos into this project, then list them in the works file.</p>
-                <ol>
-                    <li>Open <strong>Photos</strong> on your Mac and select the pieces you want.</li>
-                    <li>Choose <strong>File → Export → Export Photos…</strong></li>
-                    <li>Use JPEG, and set size to <strong>Large</strong> or about 2000px on the long edge.</li>
-                    <li>Save them into <code>assets/images/archive/</code> in this repo.</li>
-                    <li>Edit <code>assets/images/archive/works.json</code> so it looks like this:</li>
-                </ol>
-                <pre class="archive-example">[
-  {
-    "file": "band-poster.jpg",
-    "title": "Band Poster",
-    "caption": "Promotional art for a local band"
-  },
-  {
-    "file": "play-flyer.jpg",
-    "title": "Theater Flyer",
-    "caption": "Poster design for a stage production"
-  }
-]</pre>
-                <p class="archive-empty-note">No Photoshop license needed — export from Photos is enough. Use the exact file names you saved.</p>
+                <p>Export images from Apple Photos into <code>assets/images/archive/</code>, then list them in <code>works.json</code>.</p>
+                <p>Use a <code>photo_</code> prefix for photography; everything else goes under Composites.</p>
             </div>
         </div>
     </section>
