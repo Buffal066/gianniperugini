@@ -45,7 +45,7 @@
 }
 
 .project-image:has(.dark-visions-card-image) {
-    height: 260px;
+    height: 300px;
     background: #050505;
 }
 
@@ -56,8 +56,9 @@
     z-index: 1;
     pointer-events: none;
     background:
-        radial-gradient(ellipse 62% 68% at 50% 38%, transparent 28%, rgba(5, 5, 5, 0.55) 58%, #050505 94%),
-        linear-gradient(to bottom, #050505 0%, transparent 10%, transparent 90%, #050505 100%);
+        radial-gradient(ellipse 56% 66% at 50% 38%, transparent 24%, rgba(5, 5, 5, 0.28) 54%, #050505 92%),
+        linear-gradient(to bottom, #050505 0%, transparent 8%, transparent 92%, #050505 100%),
+        linear-gradient(to right, #050505 0%, transparent 5%, transparent 95%, #050505 100%);
 }
 
 .project-image-inner {
@@ -132,6 +133,10 @@
     transform: scale(1.05);
 }
 
+.project-card:hover .dark-visions-card-image {
+    transform: none;
+}
+
 .project-image-placeholder {
     width: 100%;
     height: 100%;
@@ -155,19 +160,19 @@
 .dark-visions-card-image {
     background-color: #050505;
     background-image: url('assets/images/JB.jpeg');
-    background-position: 50% 26%;
-    background-size: 185%;
+    background-position: 50% 34%;
+    background-size: 82%;
     background-repeat: no-repeat;
     -webkit-mask-image: radial-gradient(
-        ellipse 64% 72% at 50% 40%,
-        #000 36%,
-        rgba(0, 0, 0, 0.88) 58%,
+        ellipse 58% 68% at 50% 38%,
+        #000 38%,
+        rgba(0, 0, 0, 0.85) 62%,
         transparent 100%
     );
     mask-image: radial-gradient(
-        ellipse 64% 72% at 50% 40%,
-        #000 36%,
-        rgba(0, 0, 0, 0.88) 58%,
+        ellipse 58% 68% at 50% 38%,
+        #000 38%,
+        rgba(0, 0, 0, 0.85) 62%,
         transparent 100%
     );
 }
