@@ -243,9 +243,16 @@
 }
 
 .base360-card-image {
-    background:
-        linear-gradient(180deg, rgba(5, 5, 5, 0.08) 0%, rgba(5, 5, 5, 0.35) 100%),
-        url('assets/images/base360-card.jpg') center center / cover no-repeat;
+    background-color: #050505;
+    background-image: url('assets/images/base360-card.jpg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.project-image:has(.base360-card-image) {
+    height: 260px;
+    background: #050505;
 }
 
 .project-info {
