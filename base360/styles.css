@@ -199,6 +199,16 @@ body {
 .nav-link:hover { color: var(--text-primary); }
 .nav-link.active { color: var(--text-primary); }
 .nav-cta { flex-shrink: 0; }
+.nav-back {
+    flex-shrink: 0;
+    font-size: 0.78rem;
+    padding: 8px 14px;
+}
+.footer-note a {
+    color: var(--accent-orange);
+    text-decoration: none;
+}
+.footer-note a:hover { text-decoration: underline; }
 .hamburger {
     display: none;
     flex-direction: column;
@@ -1227,6 +1237,7 @@ body {
     .nav-menu.active { display: flex; }
     .hamburger { display: flex; }
     .nav-cta { display: none; }
+    .nav-back { display: inline-flex; }
     .nav-indicator { display: none; }
 }
 

@@ -244,8 +244,8 @@
 
 .base360-card-image {
     background:
-        linear-gradient(160deg, rgba(5, 5, 5, 0.15) 0%, rgba(5, 5, 5, 0.45) 100%),
-        url('assets/images/base360-card.jpg') center top / cover no-repeat;
+        linear-gradient(180deg, rgba(5, 5, 5, 0.08) 0%, rgba(5, 5, 5, 0.35) 100%),
+        url('assets/images/base360-card.jpg') center center / cover no-repeat;
 }
 
 .project-info {
