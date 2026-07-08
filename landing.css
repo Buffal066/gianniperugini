@@ -72,16 +72,75 @@
 
 /* Landing page hero background override */
 .landing-hero {
+    background: #050505;
+}
+
+.landing-hero::before {
+    display: none;
+}
+
+.landing-hero-bg-dim,
+.landing-hero-bg-lit {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.landing-hero-bg-dim {
+    z-index: 0;
     background:
         linear-gradient(135deg, rgba(10, 10, 10, 0.4) 0%, rgba(10, 10, 10, 0.3) 50%, rgba(26, 26, 26, 0.4) 100%),
         url('assets/images/landing-bg.png') center / cover no-repeat;
     background-blend-mode: overlay, normal;
+    filter: brightness(0.58) contrast(1.02) saturate(0.92);
+}
+
+.landing-hero-bg-lit {
+    z-index: 2;
+    --spot-x: -999px;
+    --spot-y: -999px;
+    --spot-size: 155px;
+    --beam-strength: 0;
+    background:
+        url('assets/images/landing-bg.png') center / cover no-repeat;
+    filter: brightness(1.1) contrast(1.04) saturate(1.04);
+    opacity: var(--beam-strength);
+    -webkit-mask-image: radial-gradient(
+        circle var(--spot-size) at var(--spot-x) var(--spot-y),
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.72) 28%,
+        rgba(0, 0, 0, 0.28) 52%,
+        transparent 68%
+    );
+    mask-image: radial-gradient(
+        circle var(--spot-size) at var(--spot-x) var(--spot-y),
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.72) 28%,
+        rgba(0, 0, 0, 0.28) 52%,
+        transparent 68%
+    );
+}
+
+.landing-hero.is-spotlight-active .landing-hero-bg-lit {
+    transition: opacity 0.12s ease-out;
 }
 
 .landing-hero .hero-overlay {
+    z-index: 1;
+    pointer-events: none;
     background:
         linear-gradient(to bottom, rgba(10, 10, 10, 0.3), rgba(10, 10, 10, 0.5));
     opacity: 0.7;
+    transition: opacity 0.25s ease;
+}
+
+.landing-hero.is-spotlight-active .hero-overlay {
+    opacity: 0.58;
+}
+
+.landing-hero .scroll-indicator {
+    z-index: 4;
+    pointer-events: none;
 }
 
 .landing-hero .hero-content {
@@ -90,6 +149,12 @@
     justify-content: flex-end;
     padding-bottom: 60px;
     text-align: right;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.landing-hero .hero-content * {
+    pointer-events: none;
 }
 
 .landing-hero .hero-title {

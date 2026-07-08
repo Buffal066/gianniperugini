@@ -1,3 +1,100 @@
+// Landing hero — flashlight sweep on background image
+(function initLandingHeroSpotlight() {
+    const hero = document.querySelector('.landing-hero');
+    const litBg = document.querySelector('.landing-hero-bg-lit');
+
+    if (!hero || !litBg) return;
+
+    let pointerX = 0;
+    let pointerY = 0;
+    let lastPointerX = 0;
+    let lastPointerY = 0;
+    let beamX = 0;
+    let beamY = 0;
+    let beamStrength = 0;
+    let isActive = false;
+    let rafId = null;
+
+    function updateBeam() {
+        const vx = pointerX - lastPointerX;
+        const vy = pointerY - lastPointerY;
+        const speed = Math.hypot(vx, vy);
+        const len = speed || 1;
+
+        const lead = Math.min(speed * 1.4, 36);
+        const targetX = pointerX + (vx / len) * lead;
+        const targetY = pointerY + (vy / len) * lead;
+
+        beamX += (targetX - beamX) * 0.28;
+        beamY += (targetY - beamY) * 0.28;
+
+        const movingTarget = isActive ? Math.min(0.22 + speed * 0.14, 0.62) : 0;
+        beamStrength += (movingTarget - beamStrength) * (speed > 0.4 ? 0.22 : 0.1);
+
+        litBg.style.setProperty('--spot-x', `${beamX}px`);
+        litBg.style.setProperty('--spot-y', `${beamY}px`);
+        litBg.style.setProperty('--beam-strength', beamStrength.toFixed(3));
+
+        lastPointerX = pointerX;
+        lastPointerY = pointerY;
+
+        if (isActive || beamStrength > 0.01) {
+            rafId = requestAnimationFrame(updateBeam);
+        } else {
+            rafId = null;
+        }
+    }
+
+    function startLoop() {
+        if (!rafId) rafId = requestAnimationFrame(updateBeam);
+    }
+
+    function setPointer(clientX, clientY) {
+        const rect = hero.getBoundingClientRect();
+        pointerX = clientX - rect.left;
+        pointerY = clientY - rect.top;
+        startLoop();
+    }
+
+    hero.addEventListener('mouseenter', (event) => {
+        isActive = true;
+        hero.classList.add('is-spotlight-active');
+        setPointer(event.clientX, event.clientY);
+        beamX = pointerX;
+        beamY = pointerY;
+    });
+
+    hero.addEventListener('mouseleave', () => {
+        isActive = false;
+        hero.classList.remove('is-spotlight-active');
+        startLoop();
+    });
+
+    hero.addEventListener('mousemove', (event) => {
+        setPointer(event.clientX, event.clientY);
+    });
+
+    hero.addEventListener('touchstart', (event) => {
+        const touch = event.touches[0];
+        isActive = true;
+        hero.classList.add('is-spotlight-active');
+        setPointer(touch.clientX, touch.clientY);
+        beamX = pointerX;
+        beamY = pointerY;
+    }, { passive: true });
+
+    hero.addEventListener('touchmove', (event) => {
+        const touch = event.touches[0];
+        setPointer(touch.clientX, touch.clientY);
+    }, { passive: true });
+
+    hero.addEventListener('touchend', () => {
+        isActive = false;
+        hero.classList.remove('is-spotlight-active');
+        startLoop();
+    });
+})();
+
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
@@ -123,10 +220,10 @@ function showConfirmation(message) {
     document.body.appendChild(overlay);
 }
 
-// Add parallax effect to hero section
+// Add parallax effect to hero section (skip landing page — spotlight uses fixed layers)
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
+    const hero = document.querySelector('.hero:not(.landing-hero)');
     if (hero && scrolled < window.innerHeight) {
         hero.style.transform = `translateY(${scrolled * 0.5}px)`;
         hero.style.opacity = 1 - (scrolled / window.innerHeight) * 0.5;
