@@ -8,7 +8,12 @@
     if (!sectionsRoot || !empty) return;
 
     function imagePath(file) {
-        return `assets/images/archive/${encodeURIComponent(file)}`;
+        const extensionIndex = file.lastIndexOf('.');
+        const watermarkedFile = extensionIndex === -1
+            ? `${file}-watermarked`
+            : `${file.slice(0, extensionIndex)}-watermarked${file.slice(extensionIndex)}`;
+
+        return `assets/images/watermarked/archive/${encodeURIComponent(watermarkedFile)}`;
     }
 
     function openLightbox(work) {
