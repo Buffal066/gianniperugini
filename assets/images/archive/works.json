@@ -1,62 +1,509 @@
-{
-  "composites": [
-    { "file": "Black Ice Back.jpeg" },
-    { "file": "BlackIce Card 2.jpeg" },
-    { "file": "BlackIce Card 3.jpeg" },
-    { "file": "BlackIce Card-grill 1.jpeg" },
-    { "file": "Episodes_Logo.jpeg" },
-    { "file": "Episodes_Montage.jpeg" },
-    { "file": "Episodes_Grid.jpeg" },
-    { "file": "Episodes_Bowling.jpeg" },
-    { "file": "Episodes_Mystery.jpeg" },
-    { "file": "Episodes_Skull1.jpeg" },
-    { "file": "Episodes_Skull2.jpeg" },
-    { "file": "Episodes_Skull3.jpeg" },
-    { "file": "Episodes_Smoke.jpeg" },
-    { "file": "Episodes_War.jpeg" },
-    { "file": "Wasaga_Dunes_Park_Map.jpeg" },
-    { "file": "Wasaga_Dunes_Park_Map_B_WLast copy copy.jpeg" },
-    { "file": "camping.jpeg" },
-    { "file": "decisions.jpeg" },
-    { "file": "end of the road.jpeg" },
-    { "file": "reflection.jpeg" },
-    { "file": "the end.jpeg" },
-    { "file": "war.jpeg" },
-    { "file": "woods.jpeg" }
-  ],
-  "photography": [
-    { "file": "photo_1.jpeg" },
-    { "file": "photo_2.jpeg" },
-    { "file": "photo_3.jpeg" },
-    { "file": "photo_4.jpeg" },
-    { "file": "photo_5.jpeg" },
-    { "file": "photo_6.jpeg" },
-    { "file": "photo_7.jpeg" },
-    { "file": "photo_4239.jpeg" },
-    { "file": "photo_4439.jpeg" },
-    { "file": "photo_4489.jpeg" },
-    { "file": "photo_4491.jpeg" },
-    { "file": "photo_4492.jpeg" },
-    { "file": "photo_4510.jpeg" },
-    { "file": "photo_4656.jpeg" },
-    { "file": "photo_4659.jpeg" },
-    { "file": "photo_4955.jpeg" },
-    { "file": "photo_5433.jpeg" },
-    { "file": "photo_5440.jpeg" },
-    { "file": "photo_5448.jpeg" },
-    { "file": "photo_5478.jpeg" },
-    { "file": "photo_building.jpeg" },
-    { "file": "photo_church.jpeg" },
-    { "file": "photo_electric.jpeg" },
-    { "file": "photo_florence.jpeg" },
-    { "file": "photo_florence2.jpeg" },
-    { "file": "photo_florence3.jpeg" },
-    { "file": "photo_ny.jpeg" },
-    { "file": "photo_pic1.jpeg" },
-    { "file": "photo_pic2.jpeg" },
-    { "file": "photo_pic4.jpeg" },
-    { "file": "photo_pic6.jpeg" },
-    { "file": "photo_pic8.jpeg" },
-    { "file": "photo_skull.jpeg" }
-  ]
+﻿{
+    "composites":  [
+                       {
+                           "file":  "digital-art-gothic-cathedral-throne.jpg",
+                           "title":  "Gothic Cathedral Throne",
+                           "series":  "Gothic Nocturne"
+                       },
+                       {
+                           "file":  "digital-art-gothic-moonlit-graveyard.jpg",
+                           "title":  "Gothic Moonlit Graveyard",
+                           "series":  "Gothic Nocturne"
+                       },
+                       {
+                           "file":  "digital-art-gothic-portrait-veil.jpg",
+                           "title":  "Gothic Portrait Veil",
+                           "series":  "Gothic Nocturne"
+                       },
+                       {
+                           "file":  "digital-art-gothic-window-sanctuary.jpg",
+                           "title":  "Gothic Window Sanctuary",
+                           "series":  "Gothic Nocturne"
+                       },
+                       {
+                           "file":  "digital-art-urban-noir-bridge-haze.jpg",
+                           "title":  "Urban Noir Bridge Haze",
+                           "series":  "Urban Noir"
+                       },
+                       {
+                           "file":  "digital-art-urban-noir-cobblestone-tracks.jpg",
+                           "title":  "Urban Noir Cobblestone Tracks",
+                           "series":  "Urban Noir"
+                       },
+                       {
+                           "file":  "digital-art-urban-noir-industrial-plaza.jpg",
+                           "title":  "Urban Noir Industrial Plaza",
+                           "series":  "Urban Noir"
+                       },
+                       {
+                           "file":  "digital-art-urban-noir-rain-reflections.jpg",
+                           "title":  "Urban Noir Rain Reflections",
+                           "series":  "Urban Noir"
+                       },
+                       {
+                           "file":  "digital-art-crimson-requiem-abstract-geometry.jpg",
+                           "title":  "Crimson Requiem Abstract Geometry",
+                           "series":  "Crimson Requiem"
+                       },
+                       {
+                           "file":  "digital-art-crimson-requiem-glitch-skull.jpg",
+                           "title":  "Crimson Requiem Glitch Skull",
+                           "series":  "Crimson Requiem"
+                       },
+                       {
+                           "file":  "digital-art-crimson-requiem-grid-distortion.jpg",
+                           "title":  "Crimson Requiem Grid Distortion",
+                           "series":  "Crimson Requiem"
+                       },
+                       {
+                           "file":  "digital-art-crimson-requiem-smoke-cathedral.jpg",
+                           "title":  "Crimson Requiem Smoke Cathedral",
+                           "series":  "Crimson Requiem"
+                       },
+                       {
+                           "file":  "digital-art-stone-sanctuary-cloister-moon.jpg",
+                           "title":  "Stone Sanctuary Cloister Moon",
+                           "series":  "Stone Sanctuary"
+                       },
+                       {
+                           "file":  "digital-art-stone-sanctuary-rose-trace.jpg",
+                           "title":  "Stone Sanctuary Rose Trace",
+                           "series":  "Stone Sanctuary"
+                       },
+                       {
+                           "file":  "digital-art-stone-sanctuary-spire-storm.jpg",
+                           "title":  "Stone Sanctuary Spire Storm",
+                           "series":  "Stone Sanctuary"
+                       },
+                       {
+                           "file":  "digital-art-stone-sanctuary-vaulted-shadows.jpg",
+                           "title":  "Stone Sanctuary Vaulted Shadows",
+                           "series":  "Stone Sanctuary"
+                       },
+                       {
+                           "file":  "digital-art-wet-neon-noir-alley-pulse.jpg",
+                           "title":  "Wet Neon Noir Alley Pulse",
+                           "series":  "Wet Neon Noir"
+                       },
+                       {
+                           "file":  "digital-art-wet-neon-noir-glass-rain.jpg",
+                           "title":  "Wet Neon Noir Glass Rain",
+                           "series":  "Wet Neon Noir"
+                       },
+                       {
+                           "file":  "digital-art-wet-neon-noir-plaza-glow.jpg",
+                           "title":  "Wet Neon Noir Plaza Glow",
+                           "series":  "Wet Neon Noir"
+                       },
+                       {
+                           "file":  "digital-art-wet-neon-noir-track-ember.jpg",
+                           "title":  "Wet Neon Noir Track Ember",
+                           "series":  "Wet Neon Noir"
+                       },
+                       {
+                           "file":  "digital-art-static-bloom-crimson-layers.jpg",
+                           "title":  "Static Bloom Crimson Layers",
+                           "series":  "Static Bloom"
+                       },
+                       {
+                           "file":  "digital-art-static-bloom-grid-fracture.jpg",
+                           "title":  "Static Bloom Grid Fracture",
+                           "series":  "Static Bloom"
+                       },
+                       {
+                           "file":  "digital-art-static-bloom-shard-eclipse.jpg",
+                           "title":  "Static Bloom Shard Eclipse",
+                           "series":  "Static Bloom"
+                       },
+                       {
+                           "file":  "digital-art-static-bloom-smoke-ignition.jpg",
+                           "title":  "Static Bloom Smoke Ignition",
+                           "series":  "Static Bloom"
+                       },
+                       {
+                           "file":  "digital-art-tactile-void-ash-drift.jpg",
+                           "title":  "Tactile Void Ash Drift",
+                           "series":  "Tactile Void"
+                       },
+                       {
+                           "file":  "digital-art-tactile-void-cracked-ember.jpg",
+                           "title":  "Tactile Void Cracked Ember",
+                           "series":  "Tactile Void"
+                       },
+                       {
+                           "file":  "digital-art-tactile-void-rust-peel.jpg",
+                           "title":  "Tactile Void Rust Peel",
+                           "series":  "Tactile Void"
+                       },
+                       {
+                           "file":  "digital-art-tactile-void-stone-lichen.jpg",
+                           "title":  "Tactile Void Stone Lichen",
+                           "series":  "Tactile Void"
+                       },
+                       {
+                           "file":  "digital-art-tactile-void-velvet-fold.jpg",
+                           "title":  "Tactile Void Velvet Fold",
+                           "series":  "Tactile Void"
+                       },
+                       {
+                           "file":  "digital-art-crimson-gaze-ember-iris.jpg",
+                           "title":  "Crimson Gaze Ember Iris",
+                           "series":  "Crimson Gaze"
+                       },
+                       {
+                           "file":  "digital-art-crimson-gaze-frost-lens.jpg",
+                           "title":  "Crimson Gaze Frost Lens",
+                           "series":  "Crimson Gaze"
+                       },
+                       {
+                           "file":  "digital-art-crimson-gaze-jade-fracture.jpg",
+                           "title":  "Crimson Gaze Jade Fracture",
+                           "series":  "Crimson Gaze"
+                       },
+                       {
+                           "file":  "digital-art-crimson-gaze-molten-gem.jpg",
+                           "title":  "Crimson Gaze Molten Gem",
+                           "series":  "Crimson Gaze"
+                       },
+                       {
+                           "file":  "digital-art-crimson-gaze-violet-smoke.jpg",
+                           "title":  "Crimson Gaze Violet Smoke",
+                           "series":  "Crimson Gaze"
+                       },
+                       {
+                           "file":  "digital-art-steel-lanes-arch-glow.jpg",
+                           "title":  "Steel Lanes Arch Glow",
+                           "series":  "Steel Lanes"
+                       },
+                       {
+                           "file":  "digital-art-steel-lanes-brushed-grain.jpg",
+                           "title":  "Steel Lanes Brushed Grain",
+                           "series":  "Steel Lanes"
+                       },
+                       {
+                           "file":  "digital-art-steel-lanes-chrome-vanish.jpg",
+                           "title":  "Steel Lanes Chrome Vanish",
+                           "series":  "Steel Lanes"
+                       },
+                       {
+                           "file":  "digital-art-steel-lanes-midnight-deck.jpg",
+                           "title":  "Steel Lanes Midnight Deck",
+                           "series":  "Steel Lanes"
+                       },
+                       {
+                           "file":  "digital-art-steel-lanes-return-forge.jpg",
+                           "title":  "Steel Lanes Return Forge",
+                           "series":  "Steel Lanes"
+                       },
+                       {
+                           "file":  "digital-art-crow-shroud-cathedral-wrap.jpg",
+                           "title":  "Crow Shroud Cathedral Wrap",
+                           "series":  "Crow Shroud"
+                       },
+                       {
+                           "file":  "digital-art-crow-shroud-exhale-veil.jpg",
+                           "title":  "Crow Shroud Exhale Veil",
+                           "series":  "Crow Shroud"
+                       },
+                       {
+                           "file":  "digital-art-crow-shroud-plastic-gaze.jpg",
+                           "title":  "Crow Shroud Plastic Gaze",
+                           "series":  "Crow Shroud"
+                       },
+                       {
+                           "file":  "digital-art-crow-shroud-profile-mist.jpg",
+                           "title":  "Crow Shroud Profile Mist",
+                           "series":  "Crow Shroud"
+                       },
+                       {
+                           "file":  "digital-art-crow-shroud-torn-breath.jpg",
+                           "title":  "Crow Shroud Torn Breath",
+                           "series":  "Crow Shroud"
+                       },
+                       {
+                           "file":  "digital-art-midnight-thicket-branch-void.jpg",
+                           "title":  "Midnight Thicket Branch Void",
+                           "series":  "Midnight Thicket"
+                       },
+                       {
+                           "file":  "digital-art-midnight-thicket-moon-canopy.jpg",
+                           "title":  "Midnight Thicket Moon Canopy",
+                           "series":  "Midnight Thicket"
+                       },
+                       {
+                           "file":  "digital-art-midnight-thicket-path-fog.jpg",
+                           "title":  "Midnight Thicket Path Fog",
+                           "series":  "Midnight Thicket"
+                       },
+                       {
+                           "file":  "digital-art-midnight-thicket-pine-storm.jpg",
+                           "title":  "Midnight Thicket Pine Storm",
+                           "series":  "Midnight Thicket"
+                       },
+                       {
+                           "file":  "digital-art-midnight-thicket-root-moss.jpg",
+                           "title":  "Midnight Thicket Root Moss",
+                           "series":  "Midnight Thicket"
+                       },
+                       {
+                           "file":  "digital-art-burned-canvas-ash-weave.jpg",
+                           "title":  "Burned Canvas Ash Weave",
+                           "series":  "Burned Canvas"
+                       },
+                       {
+                           "file":  "digital-art-burned-canvas-ember-crack.jpg",
+                           "title":  "Burned Canvas Ember Crack",
+                           "series":  "Burned Canvas"
+                       },
+                       {
+                           "file":  "digital-art-burned-canvas-melted-gilt.jpg",
+                           "title":  "Burned Canvas Melted Gilt",
+                           "series":  "Burned Canvas"
+                       },
+                       {
+                           "file":  "digital-art-burned-canvas-ruined-frame.jpg",
+                           "title":  "Burned Canvas Ruined Frame",
+                           "series":  "Burned Canvas"
+                       },
+                       {
+                           "file":  "digital-art-burned-canvas-soot-peel.jpg",
+                           "title":  "Burned Canvas Soot Peel",
+                           "series":  "Burned Canvas"
+                       },
+                       {
+                           "file":  "digital-art-noir-nuptials-aisle-fog.jpg",
+                           "title":  "Noir Nuptials Aisle Fog",
+                           "series":  "Noir Nuptials"
+                       },
+                       {
+                           "file":  "digital-art-noir-nuptials-black-veil.jpg",
+                           "title":  "Noir Nuptials Black Veil",
+                           "series":  "Noir Nuptials"
+                       },
+                       {
+                           "file":  "digital-art-noir-nuptials-candle-dance.jpg",
+                           "title":  "Noir Nuptials Candle Dance",
+                           "series":  "Noir Nuptials"
+                       },
+                       {
+                           "file":  "digital-art-noir-nuptials-graveyard-bride.jpg",
+                           "title":  "Noir Nuptials Graveyard Bride",
+                           "series":  "Noir Nuptials"
+                       },
+                       {
+                           "file":  "digital-art-noir-nuptials-lace-vow.jpg",
+                           "title":  "Noir Nuptials Lace Vow",
+                           "series":  "Noir Nuptials"
+                       },
+                       {
+                           "file":  "digital-art-faces-in-void-crow-eclipse.jpg",
+                           "title":  "Faces In Void Crow Eclipse",
+                           "series":  "Faces In Void"
+                       },
+                       {
+                           "file":  "digital-art-faces-in-void-half-emerge.jpg",
+                           "title":  "Faces In Void Half Emerge",
+                           "series":  "Faces In Void"
+                       },
+                       {
+                           "file":  "digital-art-faces-in-void-rim-eye.jpg",
+                           "title":  "Faces In Void Rim Eye",
+                           "series":  "Faces In Void"
+                       },
+                       {
+                           "file":  "digital-art-faces-in-void-sink-pale.jpg",
+                           "title":  "Faces In Void Sink Pale",
+                           "series":  "Faces In Void"
+                       },
+                       {
+                           "file":  "digital-art-faces-in-void-whisper-crowd.jpg",
+                           "title":  "Faces In Void Whisper Crowd",
+                           "series":  "Faces In Void"
+                       },
+                       {
+                           "file":  "digital-art-rivalry-ignited-crimson-standoff.jpg",
+                           "title":  "Rivalry Ignited Crimson Standoff",
+                           "series":  "Rivalry Ignited"
+                       },
+                       {
+                           "file":  "digital-art-rivalry-ignited-gold-fracture.jpg",
+                           "title":  "Rivalry Ignited Gold Fracture",
+                           "series":  "Rivalry Ignited"
+                       },
+                       {
+                           "file":  "digital-art-rivalry-ignited-steel-rain.jpg",
+                           "title":  "Rivalry Ignited Steel Rain",
+                           "series":  "Rivalry Ignited"
+                       },
+                       {
+                           "file":  "Black Ice Back.jpeg"
+                       },
+                       {
+                           "file":  "BlackIce Card 2.jpeg"
+                       },
+                       {
+                           "file":  "BlackIce Card 3.jpeg"
+                       },
+                       {
+                           "file":  "BlackIce Card-grill 1.jpeg"
+                       },
+                       {
+                           "file":  "Episodes_Logo.jpeg"
+                       },
+                       {
+                           "file":  "Episodes_Montage.jpeg"
+                       },
+                       {
+                           "file":  "Episodes_Grid.jpeg"
+                       },
+                       {
+                           "file":  "Episodes_Bowling.jpeg"
+                       },
+                       {
+                           "file":  "Episodes_Mystery.jpeg"
+                       },
+                       {
+                           "file":  "Episodes_Skull1.jpeg"
+                       },
+                       {
+                           "file":  "Episodes_Skull2.jpeg"
+                       },
+                       {
+                           "file":  "Episodes_Skull3.jpeg"
+                       },
+                       {
+                           "file":  "Episodes_Smoke.jpeg"
+                       },
+                       {
+                           "file":  "Episodes_War.jpeg"
+                       },
+                       {
+                           "file":  "Wasaga_Dunes_Park_Map.jpeg"
+                       },
+                       {
+                           "file":  "Wasaga_Dunes_Park_Map_B_WLast copy copy.jpeg"
+                       },
+                       {
+                           "file":  "camping.jpeg"
+                       },
+                       {
+                           "file":  "decisions.jpeg"
+                       },
+                       {
+                           "file":  "end of the road.jpeg"
+                       },
+                       {
+                           "file":  "reflection.jpeg"
+                       },
+                       {
+                           "file":  "the end.jpeg"
+                       },
+                       {
+                           "file":  "war.jpeg"
+                       },
+                       {
+                           "file":  "woods.jpeg"
+                       }
+                   ],
+    "photography":  [
+                        {
+                            "file":  "photo_1.jpeg"
+                        },
+                        {
+                            "file":  "photo_2.jpeg"
+                        },
+                        {
+                            "file":  "photo_3.jpeg"
+                        },
+                        {
+                            "file":  "photo_4.jpeg"
+                        },
+                        {
+                            "file":  "photo_5.jpeg"
+                        },
+                        {
+                            "file":  "photo_6.jpeg"
+                        },
+                        {
+                            "file":  "photo_7.jpeg"
+                        },
+                        {
+                            "file":  "photo_4239.jpeg"
+                        },
+                        {
+                            "file":  "photo_4439.jpeg"
+                        },
+                        {
+                            "file":  "photo_4489.jpeg"
+                        },
+                        {
+                            "file":  "photo_4491.jpeg"
+                        },
+                        {
+                            "file":  "photo_4492.jpeg"
+                        },
+                        {
+                            "file":  "photo_4510.jpeg"
+                        },
+                        {
+                            "file":  "photo_4656.jpeg"
+                        },
+                        {
+                            "file":  "photo_4659.jpeg"
+                        },
+                        {
+                            "file":  "photo_4955.jpeg"
+                        },
+                        {
+                            "file":  "photo_5433.jpeg"
+                        },
+                        {
+                            "file":  "photo_5440.jpeg"
+                        },
+                        {
+                            "file":  "photo_5448.jpeg"
+                        },
+                        {
+                            "file":  "photo_5478.jpeg"
+                        },
+                        {
+                            "file":  "photo_building.jpeg"
+                        },
+                        {
+                            "file":  "photo_church.jpeg"
+                        },
+                        {
+                            "file":  "photo_electric.jpeg"
+                        },
+                        {
+                            "file":  "photo_florence.jpeg"
+                        },
+                        {
+                            "file":  "photo_florence2.jpeg"
+                        },
+                        {
+                            "file":  "photo_florence3.jpeg"
+                        },
+                        {
+                            "file":  "photo_ny.jpeg"
+                        },
+                        {
+                            "file":  "photo_pic1.jpeg"
+                        },
+                        {
+                            "file":  "photo_pic2.jpeg"
+                        },
+                        {
+                            "file":  "photo_pic4.jpeg"
+                        },
+                        {
+                            "file":  "photo_pic6.jpeg"
+                        },
+                        {
+                            "file":  "photo_pic8.jpeg"
+                        },
+                        {
+                            "file":  "photo_skull.jpeg"
+                        }
+                    ]
 }

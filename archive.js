@@ -24,10 +24,10 @@
         document.body.style.overflow = '';
     }
 
-    function createItem(work, index) {
+    function createItem(work, index, extraClass = '') {
         const item = document.createElement('button');
         item.type = 'button';
-        item.className = 'archive-item';
+        item.className = `archive-item ${extraClass}`.trim();
         item.style.transitionDelay = `${index * 0.05}s`;
         item.setAttribute('aria-label', work.title || 'View image');
 
@@ -37,6 +37,12 @@
         img.loading = 'lazy';
 
         item.appendChild(img);
+        if (work.title) {
+            const label = document.createElement('span');
+            label.className = 'archive-item-label';
+            label.textContent = work.title;
+            item.appendChild(label);
+        }
         item.addEventListener('click', () => openLightbox(work));
 
         requestAnimationFrame(() => {
@@ -71,6 +77,48 @@
         sectionsRoot.appendChild(section);
     }
 
+    function renderDigitalArtSection(works) {
+        if (!Array.isArray(works) || works.length === 0) return;
+
+        const section = document.createElement('section');
+        section.className = 'archive-section';
+        section.id = 'composites';
+
+        const heading = document.createElement('h2');
+        heading.className = 'archive-section-title';
+        heading.textContent = 'Digital Art';
+        section.appendChild(heading);
+
+        const groups = new Map();
+        works.forEach((work) => {
+            if (!work.file) return;
+            const series = work.series || 'Archive Composites';
+            if (!groups.has(series)) groups.set(series, []);
+            groups.get(series).push(work);
+        });
+
+        groups.forEach((seriesWorks, series) => {
+            const group = document.createElement('div');
+            group.className = 'archive-series';
+
+            const groupHeading = document.createElement('h3');
+            groupHeading.className = 'archive-series-title';
+            groupHeading.textContent = series;
+
+            const grid = document.createElement('div');
+            grid.className = 'archive-grid';
+            seriesWorks.forEach((work, index) => {
+                grid.appendChild(createItem(work, index, 'digital-art-item'));
+            });
+
+            group.appendChild(groupHeading);
+            group.appendChild(grid);
+            section.appendChild(group);
+        });
+
+        sectionsRoot.appendChild(section);
+    }
+
     function renderWorks(data) {
         const composites = data && data.composites;
         const photography = data && data.photography;
@@ -85,8 +133,17 @@
         empty.hidden = true;
         sectionsRoot.innerHTML = '';
 
-        renderSection('composites', 'Composites', composites);
+        renderDigitalArtSection(composites);
         renderSection('photography', 'Photography', photography);
+
+        const hashTarget = window.location.hash
+            ? document.querySelector(window.location.hash)
+            : null;
+        if (hashTarget) {
+            requestAnimationFrame(() => {
+                hashTarget.scrollIntoView({ behavior: 'auto', block: 'start' });
+            });
+        }
     }
 
     fetch('assets/images/archive/works.json')
