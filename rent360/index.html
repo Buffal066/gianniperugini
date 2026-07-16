@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<!-- deployed: 2026-07-07 01:01:53 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent360.ai — Put your Short Term Rental business on AI autopilot</title>
+    <meta name="description" content="From direct bookings to guest messaging, pricing, cleaning, upsells, and analytics — everything in one platform, fully automated.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.25/dist/lenis.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="ambient-glow ambient-glow-1"></div>
+    <div class="ambient-glow ambient-glow-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-pill">
+            <a href="#home" class="logo">
+                <span class="logo-text">Rent360</span>
+                <span class="logo-subtitle">.ai</span>
+            </a>
+            <div class="nav-menu-wrap">
+                <span class="nav-indicator"></span>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#more-features" class="nav-link">More</a></li>
+                    <li><a href="#why" class="nav-link">Why Rent360?</a></li>
+                    <li><a href="#faq" class="nav-link">FAQs</a></li>
+                </ul>
+            </div>
+            <a href="#demo" class="btn btn-primary btn-sm nav-cta">Book a Demo</a>
+            <a href="/" class="btn btn-secondary btn-sm nav-back">← Portfolio</a>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero hero-centered">
+        <canvas id="ember-canvas" class="ember-canvas" aria-hidden="true"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="container hero-inner-centered">
+            <div class="hero-copy reveal">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    <span class="stat-count" data-count="2" data-suffix="x">0x</span> ROI in the first 90 days
+                </div>
+                <h1 class="hero-title">
+                    Put your Short Term Rental<br>
+                    business on <span class="highlight">AI autopilot</span>
+                </h1>
+                <p class="hero-subtitle">From direct bookings to guest messaging, pricing, cleaning, upsells, and analytics — everything in one platform, fully automated.</p>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn btn-primary">Book a Demo</a>
+                    <a href="#features" class="btn btn-secondary">Discover More</a>
+                </div>
+            </div>
+
+            <!-- Flow diagram: one hub, every workflow -->
+            <div class="flow-diagram reveal" id="flowDiagram">
+                <div class="flow-hub" id="flowHub">
+                    <div class="flow-hub-core">
+                        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9v10h13V9"/></svg>
+                    </div>
+                    <div class="flow-hub-ring"></div>
+                </div>
+                <svg class="flow-svg" id="flowSvg" aria-hidden="true"></svg>
+                <div class="flow-pills" id="flowPills">
+                    <div class="flow-row">
+                        <span class="flow-pill"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>Automations</span>
+                        <span class="flow-pill"><svg viewBox="0 0 24 24"><path d="M4 18 10 12l4 4 6-8"/><path d="M20 8v5M20 8h-5"/></svg>Upsells</span>
+                        <span class="flow-pill"><svg viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="12" rx="1"/><path d="M8 8V5h8v3M9 12h2M13 12h2"/></svg>Properties</span>
+                        <span class="flow-pill"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="16" cy="9" r="2.4"/><path d="M4 19c0-3 2.2-5 5-5s5 2 5 5M14.8 14.4c2.4.2 4.2 2 4.2 4.6"/></svg>Guests</span>
+                        <span class="flow-pill"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>Reservations</span>
+                    </div>
+                    <div class="flow-row">
+                        <span class="flow-pill"><svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="4"/><path d="M12 12l8 8M17 17l2-2M14.5 14.5l2-2"/></svg>Access Keys</span>
+                        <span class="flow-pill"><svg viewBox="0 0 24 24"><path d="M5 20V10M11 20V4M17 20v-8M21 20H3"/></svg>Reports</span>
+                        <span class="flow-pill"><svg viewBox="0 0 24 24"><path d="M12 3l1.6 4.6L18 9l-4.4 1.4L12 15l-1.6-4.6L6 9l4.4-1.4L12 3z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15z"/></svg>Cleaning</span>
+                        <span class="flow-pill"><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.8L6.6 19.6l1-6L3.3 9.4l6-.9L12 3z"/></svg>Reviews</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Command Center (portfolio dashboard) -->
+    <section id="command" class="section command-section">
+        <div class="container command-inner">
+            <div class="command-copy reveal">
+                <p class="section-eyebrow">Command Center</p>
+                <h2 class="section-title">Your entire portfolio,<br><span class="highlight">one screen.</span></h2>
+                <p class="section-subtitle">Bookings, cleans, revenue, and guest conversations — live, in a single view. No more juggling five tools to answer one question.</p>
+                <ul class="feature-list">
+                    <li>Real-time occupancy & cleaning status</li>
+                    <li>Direct booking growth at a glance</li>
+                    <li>AI drafts guest replies while you watch</li>
+                </ul>
+            </div>
+            <div class="hero-visual reveal">
+                <div class="screen-frame">
+                    <div class="screen-header">
+                        <span class="screen-dot"></span><span class="screen-dot"></span><span class="screen-dot"></span>
+                        <span class="screen-title">Rent360 · Portfolio Command</span>
+                    </div>
+                    <div class="screen-body">
+                        <div class="screen-sidebar">
+                            <span class="sidebar-icon active"></span>
+                            <span class="sidebar-icon"></span>
+                            <span class="sidebar-icon"></span>
+                            <span class="sidebar-icon"></span>
+                            <span class="sidebar-icon"></span>
+                        </div>
+                        <div class="screen-main">
+                            <div class="screen-metrics stagger">
+                                <div class="metric-card glow-red">
+                                    <span class="metric-label">Direct Bookings</span>
+                                    <span class="metric-value" data-count="34" data-prefix="▲ " data-suffix="%">▲ 0%</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-label">Upsell Revenue</span>
+                                    <span class="metric-value accent" data-count="100" data-prefix="+$" data-suffix="">+$0</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-label">Active Units</span>
+                                    <span class="metric-value" data-count="24" data-prefix="" data-suffix="">0</span>
+                                </div>
+                            </div>
+                            <div class="screen-chart">
+                                <div class="chart-bar" data-h="35%"></div>
+                                <div class="chart-bar" data-h="48%"></div>
+                                <div class="chart-bar" data-h="42%"></div>
+                                <div class="chart-bar" data-h="65%"></div>
+                                <div class="chart-bar" data-h="58%"></div>
+                                <div class="chart-bar glow-bar" data-h="78%"></div>
+                                <div class="chart-bar glow-bar" data-h="92%"></div>
+                            </div>
+                            <div class="screen-rows stagger">
+                                <div class="screen-row"><span class="status-dot green"></span> Ocean Loft 4B <span class="tag">Clean</span></div>
+                                <div class="screen-row"><span class="status-dot orange"></span> Studio 12 <span class="tag tag-warn">Turnover · 2h</span></div>
+                                <div class="screen-row"><span class="status-dot red"></span> Palm Villa 3 <span class="tag tag-occ">Occupied</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ai-floating">
+                        <span class="pulse-dot"></span> AI Assistant · drafting reply…
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section id="features" class="section features-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-eyebrow">Key Features</p>
+                <h2 class="section-title">Short-term rentals<br><span class="highlight">made simple.</span></h2>
+                <p class="section-subtitle">Automate check-ins, upsells, cleaning, and payments so your business works for you — not the other way around.</p>
+            </div>
+
+            <div class="feature-tabs stagger" role="tablist">
+                <button class="feature-tab active" data-tab="pre-arrival" role="tab">Pre-Arrival & Upsells</button>
+                <button class="feature-tab" data-tab="website" role="tab">Website Builder</button>
+                <button class="feature-tab" data-tab="reservation" role="tab">Reservation Tool</button>
+                <button class="feature-tab" data-tab="cleaning" role="tab">Cleaning Dashboard</button>
+                <button class="feature-tab" data-tab="keys" role="tab">Keys Management</button>
+            </div>
+
+            <div class="feature-panels reveal">
+                <!-- Pre-Arrival -->
+                <article class="feature-panel active" id="panel-pre-arrival" data-panel="pre-arrival">
+                    <div class="feature-panel-copy">
+                        <h3>Pre-Arrival & Upsells tool</h3>
+                        <p>Our AI-driven Pre-Arrival system adds $100 per booking on average while keeping your property protected and guests happy.</p>
+                        <ul class="feature-list">
+                            <li>Verify Guest ID & Selfie Instantly</li>
+                            <li>Collect Guest Info & Marketing Data</li>
+                            <li>Secure Damage Deposits or Waivers</li>
+                            <li>Step-by-Step Digital Check-in Instructions</li>
+                            <li>Instant Support via WhatsApp or Call</li>
+                            <li>Auto-Sell Upsells (Early Check-in, Late Check-out, Transfers…)</li>
+                        </ul>
+                    </div>
+                    <div class="feature-screen">
+                        <div class="mock-ui spotlight mock-checkin">
+                            <div class="mock-header">Guest Check-in · Unit 204</div>
+                            <div class="mock-progress"><span class="done"></span><span class="done"></span><span class="active"></span><span></span></div>
+                            <div class="mock-card">
+                                <div class="mock-avatar">ID ✓</div>
+                                <div><strong>Jordan M.</strong><br><small>Verified · Deposit held</small></div>
+                            </div>
+                            <div class="mock-upsell glow-border">
+                                <span>Early Check-in</span>
+                                <strong>+$25</strong>
+                            </div>
+                            <div class="mock-upsell">
+                                <span>Airport Transfer</span>
+                                <strong>+$45</strong>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Website Builder -->
+                <article class="feature-panel" id="panel-website" data-panel="website">
+                    <div class="feature-panel-copy">
+                        <h3>Custom Website Booking</h3>
+                        <p>Go beyond listings — create a fast, mobile-optimized booking website that displays real-time availability, collects payments, and syncs automatically with your property data.</p>
+                        <ul class="feature-list">
+                            <li>Real-time rates & availability</li>
+                            <li>Auto-sync listings with your PMS</li>
+                            <li>Your brand, domain & UX that converts</li>
+                            <li>Multi-language & mobile-first</li>
+                            <li>Built-in email capture + retargeting</li>
+                            <li>Integrated payments (cards, bank, etc.)</li>
+                        </ul>
+                    </div>
+                    <div class="feature-screen">
+                        <div class="mock-ui spotlight mock-website">
+                            <div class="mock-browser-bar"><span></span><span></span><span></span> yourbrand.com/book</div>
+                            <div class="mock-hero-img"></div>
+                            <div class="mock-booking-bar">
+                                <span>Check-in</span><span>Check-out</span><span>Guests</span>
+                                <button class="mock-btn">Book Direct</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Reservation -->
+                <article class="feature-panel" id="panel-reservation" data-panel="reservation">
+                    <div class="feature-panel-copy">
+                        <h3>Reservation Tool</h3>
+                        <p>Stop losing guests to slow replies or OTA commissions. Our Reservation Tool helps your team respond in seconds, extend all stays direct and avoid 18% OTA commissions, and relocate guests — all without errors or manual work.</p>
+                        <ul class="feature-list">
+                            <li>Direct Extension (Avoid OTA commissions)</li>
+                            <li>Smart Property Search</li>
+                            <li>All-in-One Dashboard</li>
+                            <li>Instant Relocation options</li>
+                            <li>Avoid Manual errors</li>
+                            <li>Pre-built email proposals</li>
+                        </ul>
+                    </div>
+                    <div class="feature-screen">
+                        <div class="mock-ui spotlight mock-reservation">
+                            <div class="mock-header">Reservation · Extend Stay</div>
+                            <div class="mock-res-row"><span>Current</span><strong>Studio 12 · 3 nights</strong></div>
+                            <div class="mock-res-row glow-border"><span>Extension</span><strong>+2 nights · Direct</strong></div>
+                            <div class="mock-res-row"><span>Commission saved</span><strong class="accent">18%</strong></div>
+                            <div class="mock-email">Pre-built proposal ready to send →</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Cleaning -->
+                <article class="feature-panel" id="panel-cleaning" data-panel="cleaning">
+                    <div class="feature-panel-copy">
+                        <h3>Cleaning Dashboard</h3>
+                        <p>Most PMS platforms only display a cleaning calendar — they don't actually manage your operations. Our Smart Dashboard automates scheduling, tracks every clean, and adapts instantly to cancellations, extensions, or no-shows.</p>
+                        <ul class="feature-list">
+                            <li>Smart workload dashboard</li>
+                            <li>Future workload forecasting</li>
+                            <li>Damage photos & accountability tracking</li>
+                            <li>Instant alerts for booking changes</li>
+                            <li>Magic Link access for cleaners</li>
+                            <li>Auto-detects cancellations, extensions & no-shows</li>
+                        </ul>
+                    </div>
+                    <div class="feature-screen">
+                        <div class="mock-ui spotlight mock-cleaning">
+                            <div class="mock-header">Cleaning · Today</div>
+                            <div class="mock-clean-item"><span class="status-dot orange"></span> Studio 12 <span class="tag tag-warn">Rush · 2h</span></div>
+                            <div class="mock-clean-item"><span class="status-dot green"></span> Ocean Loft 4B <span class="tag">Done</span></div>
+                            <div class="mock-clean-item"><span class="status-dot red"></span> Palm Villa 3 <span class="tag">Scheduled 4pm</span></div>
+                            <div class="mock-forecast">Workload forecast: <strong>6 cleans</strong> this week</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Keys -->
+                <article class="feature-panel" id="panel-keys" data-panel="keys">
+                    <div class="feature-panel-copy">
+                        <h3>Keys Management System</h3>
+                        <p>Eliminate confusion, loss, and access delays with an automated process that keeps your entire team accountable and every property secure.</p>
+                        <ul class="feature-list">
+                            <li>Automatic Magic Links</li>
+                            <li>Lockbox Directory</li>
+                            <li>Access Logs</li>
+                            <li>Tracking & Reporting</li>
+                            <li>Built-in security protocols</li>
+                            <li>Mobile-friendly access</li>
+                        </ul>
+                    </div>
+                    <div class="feature-screen">
+                        <div class="mock-ui spotlight mock-keys">
+                            <div class="mock-header">Keys · Lockbox Directory</div>
+                            <div class="mock-key-row"><span>Unit 204</span><code>****4821</code><span class="tag">Active</span></div>
+                            <div class="mock-key-row"><span>Studio 12</span><code>****7390</code><span class="tag">Active</span></div>
+                            <div class="mock-key-row"><span>Palm Villa 3</span><code>****1156</code><span class="tag tag-warn">Expiring</span></div>
+                            <div class="mock-log">Last access: Cleaner · 2:14pm</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Features -->
+    <section id="more-features" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-eyebrow">More Features</p>
+                <h2 class="section-title">Less work,<br><span class="highlight">more bookings.</span></h2>
+                <p class="section-subtitle">Turn complex rental management into a smooth, repeatable process.</p>
+            </div>
+            <div class="cards-grid stagger">
+                <div class="card spotlight">
+                    <div class="card-icon">◈</div>
+                    <h3>Properties Dashboard</h3>
+                    <p>Gain complete visibility and control over every property in your portfolio. From unit details to maintenance data — everything your team needs.</p>
+                    <ul class="card-list">
+                        <li>Centralised management hub</li>
+                        <li>Real-time status tracking</li>
+                        <li>Remote troubleshooting</li>
+                        <li>Real-time update integrations</li>
+                        <li>Check-in instructions</li>
+                        <li>Secure contract storage</li>
+                    </ul>
+                </div>
+                <div class="card spotlight">
+                    <div class="card-icon">◈</div>
+                    <h3>Smart Views Creation</h3>
+                    <p>Build custom smart views that help every team member see what truly matters — efficient, proactive, and error-free with the right information at the right time.</p>
+                    <ul class="card-list">
+                        <li>Custom dashboards per workflow</li>
+                        <li>Role-based visibility</li>
+                        <li>Real-time data filters</li>
+                        <li>Tracking & reporting</li>
+                        <li>Built-in security protocols</li>
+                        <li>Mobile-friendly access</li>
+                    </ul>
+                </div>
+                <div class="card spotlight">
+                    <div class="card-icon">◈</div>
+                    <h3>Reputation Management</h3>
+                    <p>Stay in control of your brand image and guest experience across every platform. Daily insights and instant action steps.</p>
+                    <ul class="card-list">
+                        <li>Centralised review dashboard</li>
+                        <li>One-click response & assignment</li>
+                        <li>Daily review summaries</li>
+                        <li>Rating filters & trends</li>
+                        <li>Performance reporting</li>
+                    </ul>
+                </div>
+                <div class="card card-featured spotlight">
+                    <div class="card-icon">◈</div>
+                    <h3>Processes Management & AI Assistant</h3>
+                    <p>Turn your workflows into one smart assistant. Ask Rent360 anything about your portfolio — it already knows your bookings, cleans, and guests.</p>
+                    <ul class="card-list">
+                        <li>Understands live booking & cleaning data</li>
+                        <li>Drafts guest messages in your voice</li>
+                        <li>Flags at-risk bookings before you do</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Rent360 -->
+    <section id="why" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-eyebrow">Why Rent360?</p>
+                <h2 class="section-title">What makes Rent360 <span class="highlight">better?</span></h2>
+                <p class="section-subtitle">The smarter way to run rentals. Everything you need, all in one place.</p>
+            </div>
+            <div class="compare-table stagger">
+                <div class="compare-head">
+                    <span>Features</span>
+                    <span>Without Rent360</span>
+                    <span>With Rent360</span>
+                </div>
+                <div class="compare-row"><span>Guest check-ins and upsells</span><span class="bad">Manual guest check-ins</span><span class="good">AI-driven check-ins & upsells</span></div>
+                <div class="compare-row"><span>Booking site management</span><span class="bad">No direct booking site</span><span class="good">Built-in website builder</span></div>
+                <div class="compare-row"><span>Task and cleaning coordination</span><span class="bad">Messy task coordination</span><span class="good">Cleaning & daily task dashboard</span></div>
+                <div class="compare-row"><span>Payment tracking</span><span class="bad">Complicated</span><span class="good">Multiple payment options</span></div>
+                <div class="compare-row"><span>Keys management</span><span class="bad">Lost or outdated key systems</span><span class="good">Keys & smart access control</span></div>
+                <div class="compare-row"><span>Reputation management</span><span class="bad">Ignored or delayed reviews</span><span class="good">Integrated reviews system</span></div>
+                <div class="compare-row"><span>Managing guest requests</span><span class="bad">Slow responses</span><span class="good">Faster responses</span></div>
+            </div>
+            <div class="section-cta reveal">
+                <a href="#demo" class="btn btn-primary">Book a Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spiral gallery — properties -->
+    <section id="gallery" class="gallery-section">
+        <div class="gallery-sticky">
+            <div class="gallery-head">
+                <p class="section-eyebrow">Made for real properties</p>
+                <h2 class="section-title">Every unit. Every stay.<br><span class="highlight">Fully handled.</span></h2>
+            </div>
+            <div class="helix" id="helix">
+                <div class="helix-ring" id="helixRing">
+                    <figure class="helix-card"><img src="assets/images/room-1.jpg" alt="Modern living room rental" loading="lazy"></figure>
+                    <figure class="helix-card"><img src="assets/images/room-2.jpg" alt="Bright apartment interior" loading="lazy"></figure>
+                    <figure class="helix-card"><img src="assets/images/room-3.jpg" alt="Cozy bedroom suite" loading="lazy"></figure>
+                    <figure class="helix-card"><img src="assets/images/room-4.jpg" alt="Designer loft space" loading="lazy"></figure>
+                    <figure class="helix-card"><img src="assets/images/room-5.jpg" alt="Contemporary kitchen" loading="lazy"></figure>
+                    <figure class="helix-card"><img src="assets/images/room-6.jpg" alt="Stylish studio rental" loading="lazy"></figure>
+                    <figure class="helix-card"><img src="assets/images/room-7.jpg" alt="Luxury villa bedroom" loading="lazy"></figure>
+                    <figure class="helix-card"><img src="assets/images/room-8.jpg" alt="Minimal apartment lounge" loading="lazy"></figure>
+                    <figure class="helix-card"><img src="assets/images/room-9.jpg" alt="Warm rental interior" loading="lazy"></figure>
+                    <figure class="helix-card"><img src="assets/images/room-10.jpg" alt="Open plan living space" loading="lazy"></figure>
+                    <figure class="helix-card"><img src="assets/images/room-11.jpg" alt="Boutique hotel style room" loading="lazy"></figure>
+                    <figure class="helix-card"><img src="assets/images/room-12.jpg" alt="Penthouse rental view" loading="lazy"></figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section-alt testimonials">
+        <div class="container">
+            <div class="testimonial-grid stagger">
+                <blockquote class="testimonial spotlight">
+                    <p>"Managing our rentals is effortless with Rent360.ai. It automates check-ins, upsells, and payments while keeping everything organized."</p>
+                    <footer><strong>Leslie Alexander</strong></footer>
+                </blockquote>
+                <blockquote class="testimonial spotlight">
+                    <p>"Managing our rentals is effortless with Rent360.ai. It automates check-ins, upsells, and payments while keeping everything organized."</p>
+                    <footer><strong>Jordan Mitchell</strong></footer>
+                </blockquote>
+                <blockquote class="testimonial spotlight">
+                    <p>"Managing our rentals is effortless with Rent360.ai. It automates check-ins, upsells, and payments while keeping everything organized."</p>
+                    <footer><strong>Taylor Reid</strong></footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-eyebrow">FAQs</p>
+                <h2 class="section-title">Frequently Asked <span class="highlight">questions.</span></h2>
+                <p class="section-subtitle">Can't find the answer you're looking for? Reach out to our customer support team.</p>
+            </div>
+            <div class="faq-list stagger">
+                <details class="faq-item" open>
+                    <summary>How quickly can I start with Rent360?</summary>
+                    <p>You can be up and running in as little as 48 hours. Just connect your listings, and our system handles the rest.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Does Rent360 handle maintenance requests?</summary>
+                    <p>Yes. Maintenance tasks can be created manually or triggered automatically from issues reported by guests or cleaners, helping you track and resolve them efficiently.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Will Rent360 help increase my revenue?</summary>
+                    <p>Absolutely. Rent360 helps you boost occupancy rates and guest spend through dynamic upsells, automated communication, and real-time performance insights — all while saving hours of manual work.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How does the cleaning dashboard work?</summary>
+                    <p>The Cleaning Dashboard automates every step of your cleaning operations. Cleans are automatically created, updated, or removed when bookings change — whether it's a new reservation, cancellation, or extension. Unlike a simple cleaning calendar, it actually manages the process.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I connect it with Airbnb or Booking.com?</summary>
+                    <p>Yes. Rent360 directly connects with major OTAs like Airbnb, Booking.com, and others, syncing reservations, availability, and guest details in real time.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I customize my website?</summary>
+                    <p>Yes. Rent360 lets you fully customize your booking site — from visuals and branding to property layouts and pages — so your website reflects your brand and converts more direct bookings.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I customize guest upsells?</summary>
+                    <p>Definitely. You can create, edit, and automate custom upsells like airport transfers, early check-ins, or local experiences. Guests see these offers during booking, helping you maximize every stay.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Do you offer support if I get stuck?</summary>
+                    <p>Of course. Our support team is always available to assist you with setup, training, or troubleshooting — so you can stay focused on running your business.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="demo" class="cta-section">
+        <div class="container reveal">
+            <h2>Grow your rentals,<br><span class="highlight">not your workload.</span></h2>
+            <p>Let automation handle the details while you focus on happier guests and higher profits.</p>
+            <a href="#" class="btn btn-primary btn-lg">Book a Demo</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="logo">
+                <span class="logo-text">Rent360</span>
+                <span class="logo-subtitle">.ai</span>
+            </div>
+            <nav class="footer-nav">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#why">Why Rent360?</a>
+                <a href="#faq">FAQs</a>
+                <a href="/">← Back to Portfolio</a>
+            </nav>
+            <p class="footer-copy">&copy; 2026 Rent360.ai. All rights reserved.</p>
+            <p class="footer-note">Unofficial design concept by <a href="/">Gianni Perugini</a></p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lenis@1.3.25/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
