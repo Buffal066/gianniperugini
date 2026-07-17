@@ -1,0 +1,337 @@
+/* Wallpaper Shop */
+
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link-active {
+    color: var(--accent-gold);
+}
+
+.shop-hero {
+    padding: 10rem 20px 4rem;
+    text-align: center;
+    background: var(--darker-bg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.shop-hero-content {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.shop-eyebrow {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--accent-gold);
+    margin-bottom: 1rem;
+}
+
+.shop-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 1.25rem;
+}
+
+.shop-subtitle {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.shop-hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.shop-stat {
+    text-align: center;
+}
+
+.shop-stat-value {
+    display: block;
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    color: var(--accent-gold);
+    letter-spacing: 1px;
+}
+
+.shop-stat-label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-secondary);
+    margin-top: 0.35rem;
+}
+
+.shop-featured,
+.shop-bundles,
+.shop-series {
+    padding: 4rem 0;
+}
+
+.shop-featured {
+    background: var(--dark-bg);
+}
+
+.shop-bundles {
+    background: var(--darker-bg);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.shop-series {
+    background: var(--dark-bg);
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.75rem;
+    margin-top: 2.5rem;
+}
+
+.shop-grid-featured {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.shop-card {
+    background: var(--accent-dark);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.shop-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.shop-card:hover {
+    border-color: var(--accent-gold);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.45), 0 0 24px var(--shadow-glow);
+}
+
+.shop-card-featured {
+    border-color: rgba(204, 0, 0, 0.35);
+}
+
+.shop-card-image {
+    aspect-ratio: 16 / 10;
+    background: var(--darker-bg) center / cover no-repeat;
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+}
+
+.shop-card-badge {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    background: var(--accent-gold);
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 0.35rem 0.65rem;
+}
+
+.shop-card-body {
+    padding: 1.35rem 1.35rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.shop-card-type {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-gold);
+    margin-bottom: 0.5rem;
+}
+
+.shop-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    margin-bottom: 0.35rem;
+    line-height: 1.3;
+}
+
+.shop-card-subtitle {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.shop-card-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    flex: 1;
+}
+
+.shop-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.shop-price {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.shop-price-current {
+    font-family: 'Cinzel', serif;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    letter-spacing: 1px;
+}
+
+.shop-price-was {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-decoration: line-through;
+}
+
+.shop-price-free {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    color: var(--accent-gold);
+    letter-spacing: 1px;
+}
+
+.shop-buy-btn {
+    display: inline-block;
+    background: var(--accent-gold);
+    color: #fff;
+    border: none;
+    padding: 0.65rem 1.25rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease, opacity 0.3s ease;
+    white-space: nowrap;
+}
+
+.shop-buy-btn:hover {
+    background: #e60000;
+}
+
+.shop-buy-btn.is-pending {
+    background: var(--border-color);
+    color: var(--text-secondary);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.shop-buy-btn.is-free {
+    background: transparent;
+    border: 1px solid var(--accent-gold);
+    color: var(--accent-gold);
+}
+
+.shop-buy-btn.is-free:hover {
+    background: rgba(204, 0, 0, 0.12);
+}
+
+.shop-info {
+    padding: 3rem 0 5rem;
+    background: var(--darker-bg);
+    border-top: 1px solid var(--border-color);
+}
+
+.shop-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.shop-info-card {
+    border: 1px solid var(--border-color);
+    padding: 1.75rem;
+    background: var(--accent-dark);
+}
+
+.shop-info-card h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+    margin-bottom: 1rem;
+}
+
+.shop-info-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.shop-info-card li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.65rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.shop-info-card li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent-gold);
+}
+
+.shop-info-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.shop-info-card p + p {
+    margin-top: 0.75rem;
+}
+
+.shop-info-note {
+    font-size: 0.85rem !important;
+    opacity: 0.85;
+}
+
+.shop-info-card code {
+    font-size: 0.8rem;
+    color: var(--text-primary);
+    background: var(--darker-bg);
+    padding: 0.15rem 0.4rem;
+}
+
+@media (max-width: 768px) {
+    .shop-card-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .shop-buy-btn {
+        text-align: center;
+    }
+}
