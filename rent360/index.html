@@ -63,29 +63,48 @@
                 </div>
             </div>
 
-            <!-- Flow diagram: one hub, every workflow -->
-            <div class="flow-diagram reveal" id="flowDiagram">
-                <div class="flow-hub" id="flowHub">
-                    <div class="flow-hub-core">
-                        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9v10h13V9"/></svg>
-                    </div>
-                    <div class="flow-hub-ring"></div>
+            <!-- Signal constellation: dual-orbit AI system map -->
+            <div class="orbit-stage reveal" id="orbitStage" aria-label="AI autopilot constellation">
+                <div class="orbit-stars" aria-hidden="true"></div>
+                <div class="orbit-rings" aria-hidden="true">
+                    <span class="orbit-ring orbit-ring-1"></span>
+                    <span class="orbit-ring orbit-ring-2"></span>
+                    <span class="orbit-ring orbit-ring-3"></span>
+                    <span class="orbit-ring orbit-ring-4"></span>
+                    <span class="orbit-scan"></span>
+                    <span class="orbit-scan orbit-scan-reverse"></span>
                 </div>
-                <svg class="flow-svg" id="flowSvg" aria-hidden="true"></svg>
-                <div class="flow-pills" id="flowPills">
-                    <div class="flow-row">
-                        <span class="flow-pill"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>Automations</span>
-                        <span class="flow-pill"><svg viewBox="0 0 24 24"><path d="M4 18 10 12l4 4 6-8"/><path d="M20 8v5M20 8h-5"/></svg>Upsells</span>
-                        <span class="flow-pill"><svg viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="12" rx="1"/><path d="M8 8V5h8v3M9 12h2M13 12h2"/></svg>Properties</span>
-                        <span class="flow-pill"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="16" cy="9" r="2.4"/><path d="M4 19c0-3 2.2-5 5-5s5 2 5 5M14.8 14.4c2.4.2 4.2 2 4.2 4.6"/></svg>Guests</span>
-                        <span class="flow-pill"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>Reservations</span>
+                <svg class="orbit-beams" viewBox="0 0 100 100" aria-hidden="true">
+                    <line x1="50" y1="50" x2="50" y2="18" class="orbit-beam" style="--d:0"/>
+                    <line x1="50" y1="50" x2="78" y2="28" class="orbit-beam" style="--d:1"/>
+                    <line x1="50" y1="50" x2="86" y2="58" class="orbit-beam" style="--d:2"/>
+                    <line x1="50" y1="50" x2="68" y2="84" class="orbit-beam" style="--d:3"/>
+                    <line x1="50" y1="50" x2="32" y2="84" class="orbit-beam" style="--d:4"/>
+                    <line x1="50" y1="50" x2="14" y2="58" class="orbit-beam" style="--d:5"/>
+                    <line x1="50" y1="50" x2="22" y2="28" class="orbit-beam" style="--d:6"/>
+                </svg>
+                <div class="orbit-core">
+                    <div class="orbit-core-glow"></div>
+                    <div class="orbit-core-hex" aria-hidden="true"></div>
+                    <div class="orbit-core-inner">
+                        <span class="orbit-core-mark">AI</span>
+                        <span class="orbit-core-sub">autopilot</span>
                     </div>
-                    <div class="flow-row">
-                        <span class="flow-pill"><svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="4"/><path d="M12 12l8 8M17 17l2-2M14.5 14.5l2-2"/></svg>Access Keys</span>
-                        <span class="flow-pill"><svg viewBox="0 0 24 24"><path d="M5 20V10M11 20V4M17 20v-8M21 20H3"/></svg>Reports</span>
-                        <span class="flow-pill"><svg viewBox="0 0 24 24"><path d="M12 3l1.6 4.6L18 9l-4.4 1.4L12 15l-1.6-4.6L6 9l4.4-1.4L12 3z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15z"/></svg>Cleaning</span>
-                        <span class="flow-pill"><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.8L6.6 19.6l1-6L3.3 9.4l6-.9L12 3z"/></svg>Reviews</span>
-                    </div>
+                </div>
+                <div class="orbit-field orbit-field-inner" id="orbitFieldInner">
+                    <div class="orbit-node orbit-node-inner" style="--i:0"><span class="orbit-chip">Pricing</span></div>
+                    <div class="orbit-node orbit-node-inner" style="--i:1"><span class="orbit-chip">Messaging</span></div>
+                    <div class="orbit-node orbit-node-inner" style="--i:2"><span class="orbit-chip">Bookings</span></div>
+                </div>
+                <div class="orbit-field orbit-field-outer" id="orbitField">
+                    <div class="orbit-node" style="--i:0"><span class="orbit-chip">Automations</span></div>
+                    <div class="orbit-node" style="--i:1"><span class="orbit-chip">Upsells</span></div>
+                    <div class="orbit-node" style="--i:2"><span class="orbit-chip">Properties</span></div>
+                    <div class="orbit-node" style="--i:3"><span class="orbit-chip">Guests</span></div>
+                    <div class="orbit-node" style="--i:4"><span class="orbit-chip">Access Keys</span></div>
+                    <div class="orbit-node" style="--i:5"><span class="orbit-chip">Reports</span></div>
+                    <div class="orbit-node" style="--i:6"><span class="orbit-chip">Cleaning</span></div>
+                    <div class="orbit-node" style="--i:7"><span class="orbit-chip">Reviews</span></div>
                 </div>
             </div>
         </div>

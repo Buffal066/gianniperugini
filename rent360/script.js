@@ -245,98 +245,19 @@ if (emberCanvas && !prefersReducedMotion) {
     requestAnimationFrame(drawEmbers);
 }
 
-// Flow diagram — draw curved connectors from the hub to each pill, with traveling pulses
-const flowDiagram = document.getElementById('flowDiagram');
-const flowSvg = document.getElementById('flowSvg');
-const flowHub = document.getElementById('flowHub');
+// Orbit constellation — pause rotation while hovering so labels stay readable
+const orbitStage = document.getElementById('orbitStage');
+if (orbitStage) {
+    const pause = () => orbitStage.classList.add('is-paused');
+    const resume = () => orbitStage.classList.remove('is-paused');
+    orbitStage.addEventListener('mouseenter', pause);
+    orbitStage.addEventListener('mouseleave', resume);
+    orbitStage.addEventListener('focusin', pause);
+    orbitStage.addEventListener('focusout', resume);
 
-let flowRevealed = false;
-
-function buildFlowLines() {
-    if (!flowDiagram || !flowSvg || !flowHub) return;
-    const diagRect = flowDiagram.getBoundingClientRect();
-    const hubRect = flowHub.getBoundingClientRect();
-    const startX = hubRect.left + hubRect.width / 2 - diagRect.left;
-    const startY = hubRect.bottom - diagRect.top - 6;
-
-    const SVG_NS = 'http://www.w3.org/2000/svg';
-    flowSvg.innerHTML = `
-        <defs>
-            <linearGradient id="flowGradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="rgba(255,59,48,0.55)"/>
-                <stop offset="70%" stop-color="rgba(255,122,26,0.28)"/>
-                <stop offset="100%" stop-color="rgba(255,255,255,0.10)"/>
-            </linearGradient>
-        </defs>`;
-    flowSvg.setAttribute('viewBox', `0 0 ${diagRect.width} ${diagRect.height}`);
-
-    const pills = flowDiagram.querySelectorAll('.flow-pill');
-    pills.forEach((pill, i) => {
-        const pillRect = pill.getBoundingClientRect();
-        const endX = pillRect.left + pillRect.width / 2 - diagRect.left;
-        const endY = pillRect.top - diagRect.top + 2;
-        const midY = startY + (endY - startY) * 0.55;
-        const d = `M ${startX} ${startY} C ${startX} ${midY}, ${endX} ${midY}, ${endX} ${endY}`;
-
-        const path = document.createElementNS(SVG_NS, 'path');
-        path.setAttribute('d', d);
-        path.setAttribute('class', 'flow-line');
-        flowSvg.appendChild(path);
-        if (!prefersReducedMotion && !flowRevealed) {
-            const len = path.getTotalLength();
-            path.style.strokeDasharray = len;
-            path.style.strokeDashoffset = len;
-            path.style.transition = `stroke-dashoffset 1.2s cubic-bezier(.22,1,.36,1) ${i * 90}ms`;
-        }
-
-        // Traveling pulse along each line
-        if (!prefersReducedMotion) {
-            const pulse = document.createElementNS(SVG_NS, 'circle');
-            pulse.setAttribute('r', '2.2');
-            pulse.setAttribute('fill', i % 2 ? '#ff7a1a' : '#ff3b30');
-            pulse.setAttribute('opacity', '0');
-            const motion = document.createElementNS(SVG_NS, 'animateMotion');
-            motion.setAttribute('dur', `${2.6 + (i % 4) * 0.5}s`);
-            motion.setAttribute('repeatCount', 'indefinite');
-            motion.setAttribute('begin', `${i * 0.35}s`);
-            motion.setAttribute('path', d);
-            const fade = document.createElementNS(SVG_NS, 'animate');
-            fade.setAttribute('attributeName', 'opacity');
-            fade.setAttribute('values', '0;0.9;0.9;0');
-            fade.setAttribute('keyTimes', '0;0.1;0.85;1');
-            fade.setAttribute('dur', motion.getAttribute('dur'));
-            fade.setAttribute('repeatCount', 'indefinite');
-            fade.setAttribute('begin', motion.getAttribute('begin'));
-            pulse.appendChild(motion);
-            pulse.appendChild(fade);
-            flowSvg.appendChild(pulse);
-        }
-    });
-}
-
-if (flowDiagram) {
-    buildFlowLines();
-    window.addEventListener('resize', buildFlowLines);
-    // Rebuild once fonts have loaded, since pill widths shift the line endpoints
-    window.addEventListener('load', buildFlowLines);
-    // Draw lines in + light pills up when the diagram scrolls into view
-    const flowObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (!entry.isIntersecting) return;
-            flowRevealed = true;
-            flowSvg.querySelectorAll('.flow-line').forEach((p) => {
-                p.style.strokeDashoffset = '0';
-            });
-            flowDiagram.querySelectorAll('.flow-pill').forEach((pill, i) => {
-                setTimeout(() => {
-                    pill.classList.add('lit');
-                    setTimeout(() => pill.classList.remove('lit'), 700);
-                }, prefersReducedMotion ? 0 : 500 + i * 110);
-            });
-            flowObserver.unobserve(entry.target);
-        });
-    }, { threshold: 0.35 });
-    flowObserver.observe(flowDiagram);
+    if (prefersReducedMotion) {
+        orbitStage.classList.add('is-paused');
+    }
 }
 
 // Spiral gallery — 3D ring of property photos rotating with scroll
