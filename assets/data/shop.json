@@ -28,12 +28,12 @@
         "slug": "complete-dark-archive",
         "type": "archive",
         "name": "Complete Dark Archive",
-        "subtitle": "15 collections · 134 files",
+        "subtitle": "14 collections · 142 files",
         "price": 39.99,
         "launchPrice": 29.99,
-        "fileCount": 134,
+        "fileCount": 142,
         "preview": "assets/images/archive/digital-art-crimson-requiem-glitch-skull.jpg",
-        "description": "Every series in one download. 67 desktop 4K wallpapers and 67 mobile wallpapers — save over 70% vs buying individually.",
+        "description": "Every series in one download. 71 desktop 4K wallpapers and 71 mobile wallpapers — save over 70% vs buying individually.",
         "badge": "Best value",
         "payhipUrl": ""
       },
@@ -42,10 +42,10 @@
         "slug": "commercial-archive",
         "type": "commercial",
         "name": "Commercial License — Complete Archive",
-        "subtitle": "All 15 collections · commercial use",
+        "subtitle": "All 14 collections · commercial use",
         "price": 59.99,
         "launchPrice": 49.99,
-        "fileCount": 134,
+        "fileCount": 142,
         "preview": "assets/images/archive/digital-art-wet-neon-noir-alley-pulse.jpg",
         "description": "Full archive with commercial use rights for streams, social, websites, and small business projects.",
         "payhipUrl": ""
@@ -262,12 +262,12 @@
         "type": "series",
         "seriesNumber": 12,
         "name": "Burned Canvas",
-        "subtitle": "5 desktop + 5 mobile",
+        "subtitle": "12 desktop + 12 mobile",
         "price": 9.99,
         "launchPrice": 7.99,
-        "fileCount": 10,
+        "fileCount": 24,
         "preview": "assets/images/archive/digital-art-burned-canvas-ember-crack.jpg",
-        "description": "Textured burned dark paintings — ember cracks, soot peel, melted gilt, ash weave.",
+        "description": "Textured burned dark paintings — ember cracks, soot peel, melted gilt, ash weave, blistered portrait, and more.",
         "payhipUrl": ""
       },
       {
@@ -296,20 +296,6 @@
         "fileCount": 10,
         "preview": "assets/images/archive/digital-art-faces-in-void-half-emerge.jpg",
         "description": "Faces emerging from darkness — whisper crowd, rim eye, pale sink, crow eclipse.",
-        "payhipUrl": ""
-      },
-      {
-        "id": "rivalry-ignited",
-        "slug": "rivalry-ignited",
-        "type": "series",
-        "seriesNumber": 15,
-        "name": "Rivalry Ignited",
-        "subtitle": "3 desktop + 3 mobile · includes text",
-        "price": 7.99,
-        "launchPrice": 6.99,
-        "fileCount": 6,
-        "preview": "assets/images/archive/digital-art-rivalry-ignited-crimson-standoff.jpg",
-        "description": "Dark football rivalry posters with bold typography. Note: includes “LET'S GO” text.",
         "payhipUrl": ""
       }
     ]

@@ -4,8 +4,24 @@
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightbox-image');
     const lightboxClose = document.querySelector('.lightbox-close');
+    const heroSubtitle = document.querySelector('.archive-subtitle');
 
     if (!sectionsRoot || !empty) return;
+
+    const VIEWS = {
+        composites: {
+            hash: 'composites',
+            title: 'Digital Art',
+            subtitle: 'Digital art collections, Photoshop composites, and promotional artwork.',
+        },
+        photography: {
+            hash: 'photography',
+            title: 'Photography',
+            subtitle: 'Photography from the field and studio.',
+        },
+    };
+
+    let worksData = null;
 
     function imagePath(file) {
         const extensionIndex = file.lastIndexOf('.');
@@ -58,7 +74,7 @@
     }
 
     function renderSection(id, title, works) {
-        if (!Array.isArray(works) || works.length === 0) return;
+        if (!Array.isArray(works) || works.length === 0) return false;
 
         const section = document.createElement('section');
         section.className = 'archive-section';
@@ -80,10 +96,11 @@
         section.appendChild(heading);
         section.appendChild(grid);
         sectionsRoot.appendChild(section);
+        return true;
     }
 
     function renderDigitalArtSection(works) {
-        if (!Array.isArray(works) || works.length === 0) return;
+        if (!Array.isArray(works) || works.length === 0) return false;
 
         const section = document.createElement('section');
         section.className = 'archive-section';
@@ -122,32 +139,85 @@
         });
 
         sectionsRoot.appendChild(section);
+        return true;
     }
 
-    function renderWorks(data) {
-        const composites = data && data.composites;
-        const photography = data && data.photography;
-        const hasComposites = Array.isArray(composites) && composites.length > 0;
-        const hasPhotography = Array.isArray(photography) && photography.length > 0;
+    function activeViewKey() {
+        const hash = (window.location.hash || '').replace(/^#/, '').toLowerCase();
+        if (hash === 'photography') return 'photography';
+        return 'composites';
+    }
 
-        if (!hasComposites && !hasPhotography) {
-            empty.hidden = false;
-            return;
-        }
+    function syncNav(viewKey) {
+        document.querySelectorAll('.nav-menu .nav-link').forEach((link) => {
+            const href = link.getAttribute('href') || '';
+            const isArchiveCategory = href === '#composites'
+                || href === '#photography'
+                || href.endsWith('archive.html#composites')
+                || href.endsWith('archive.html#photography');
 
-        empty.hidden = true;
+            if (!isArchiveCategory) {
+                link.removeAttribute('aria-current');
+                link.classList.remove('is-current');
+                return;
+            }
+
+            const matches = (viewKey === 'photography' && href.includes('photography'))
+                || (viewKey === 'composites' && href.includes('composites'));
+
+            if (matches) {
+                link.setAttribute('aria-current', 'page');
+                link.classList.add('is-current');
+            } else {
+                link.removeAttribute('aria-current');
+                link.classList.remove('is-current');
+            }
+        });
+    }
+
+    function applyView() {
+        if (!worksData) return;
+
+        const viewKey = activeViewKey();
+        const view = VIEWS[viewKey];
+        const composites = worksData.composites;
+        const photography = worksData.photography;
+
         sectionsRoot.innerHTML = '';
 
-        renderDigitalArtSection(composites);
-        renderSection('photography', 'Photography', photography);
+        let shown = false;
+        if (viewKey === 'photography') {
+            shown = renderSection('photography', 'Photography', photography);
+        } else {
+            shown = renderDigitalArtSection(composites);
+        }
 
-        const hashTarget = window.location.hash
-            ? document.querySelector(window.location.hash)
-            : null;
-        if (hashTarget) {
-            requestAnimationFrame(() => {
-                hashTarget.scrollIntoView({ behavior: 'auto', block: 'start' });
-            });
+        empty.hidden = shown;
+        if (heroSubtitle) {
+            heroSubtitle.textContent = view.subtitle;
+        }
+        syncNav(viewKey);
+
+        // Keep URL hash aligned with the active category
+        const desiredHash = `#${view.hash}`;
+        if (window.location.hash !== desiredHash) {
+            history.replaceState(null, '', desiredHash);
+        }
+
+        window.scrollTo({ top: 0, behavior: 'auto' });
+    }
+
+    function ensureHashOnCategoryClick(event) {
+        const link = event.target.closest('a.nav-link');
+        if (!link) return;
+        const href = link.getAttribute('href') || '';
+        if (href !== '#composites' && href !== '#photography') return;
+        // Same-page category switch: force view refresh even if hash is unchanged
+        event.preventDefault();
+        if (window.location.hash === href) {
+            applyView();
+        } else {
+            window.location.hash = href;
         }
     }
 
@@ -156,10 +226,16 @@
             if (!response.ok) throw new Error('Could not load works list');
             return response.json();
         })
-        .then(renderWorks)
+        .then((data) => {
+            worksData = data;
+            applyView();
+        })
         .catch(() => {
             empty.hidden = false;
         });
+
+    window.addEventListener('hashchange', applyView);
+    document.querySelector('.nav-menu')?.addEventListener('click', ensureHashOnCategoryClick);
 
     lightboxClose.addEventListener('click', (event) => {
         event.stopPropagation();

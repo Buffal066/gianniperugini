@@ -40,6 +40,10 @@
     font-weight: 300;
 }
 
+.nav-menu .nav-link.is-current {
+    color: var(--accent-gold);
+}
+
 .archive-gallery {
     padding: 4rem 0 6rem;
     background: var(--dark-bg);
