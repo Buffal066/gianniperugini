@@ -28,12 +28,12 @@
         "slug": "complete-dark-archive",
         "type": "archive",
         "name": "Complete Dark Archive",
-        "subtitle": "13 collections \u00b7 280 files",
+        "subtitle": "14 collections \u00b7 304 files",
         "price": 39.99,
         "launchPrice": 29.99,
-        "fileCount": 280,
+        "fileCount": 304,
         "preview": "assets/images/archive/digital-art-crimson-requiem-glitch-skull.jpg",
-        "description": "Every series in one download. 140 desktop 4K wallpapers and 140 mobile wallpapers \u2014 save over 70% vs buying individually.",
+        "description": "Every series in one download. 152 desktop 4K wallpapers and 152 mobile wallpapers \u2014 save over 70% vs buying individually.",
         "badge": "Best value",
         "payhipUrl": ""
       },
@@ -42,10 +42,10 @@
         "slug": "commercial-archive",
         "type": "commercial",
         "name": "Commercial License \u2014 Complete Archive",
-        "subtitle": "All 13 collections \u00b7 commercial use",
+        "subtitle": "All 14 collections \u00b7 commercial use",
         "price": 59.99,
         "launchPrice": 49.99,
-        "fileCount": 280,
+        "fileCount": 304,
         "preview": "assets/images/archive/digital-art-wet-neon-noir-alley-pulse.jpg",
         "description": "Full archive with commercial use rights for streams, social, websites, and small business projects.",
         "payhipUrl": ""
@@ -282,6 +282,20 @@
         "fileCount": 24,
         "preview": "assets/images/archive/digital-art-faces-in-void-half-emerge.jpg",
         "description": "Faces emerging from darkness \u2014 whisper crowd, rim eye, pale sink, eclipse, shadow profile, mist pair, hollow gaze.",
+        "payhipUrl": ""
+      },
+      {
+        "id": "ashen-reverie",
+        "slug": "ashen-reverie",
+        "type": "series",
+        "seriesNumber": 14,
+        "name": "Ashen Reverie",
+        "subtitle": "12 desktop + 12 mobile",
+        "price": 9.99,
+        "launchPrice": 7.99,
+        "fileCount": 24,
+        "preview": "assets/images/archive/digital-art-ashen-reverie-smoke-vigil.jpg",
+        "description": "Pale gothic woman in gloom and melancholy \u2014 contemplative poses, muted glowing eyes, crushed blacks, quiet inward mood.",
         "payhipUrl": ""
       }
     ]
