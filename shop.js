@@ -33,6 +33,21 @@
         return labels[type] || type;
     }
 
+    function watermarkedPreviewPath(path) {
+        const lastSlash = path.lastIndexOf('/');
+        const directory = path.slice(0, lastSlash + 1).replace(
+            'assets/images/archive/',
+            'assets/images/watermarked/archive/'
+        );
+        const file = path.slice(lastSlash + 1);
+        const extensionIndex = file.lastIndexOf('.');
+        const watermarkedFile = extensionIndex === -1
+            ? `${file}-watermarked`
+            : `${file.slice(0, extensionIndex)}-watermarked${file.slice(extensionIndex)}`;
+
+        return `${directory}${watermarkedFile}`;
+    }
+
     function createBuyButton(product) {
         const hasUrl = product.payhipUrl && product.payhipUrl.trim() && !product.payhipUrl.includes('PLACEHOLDER');
         const btn = document.createElement('a');
@@ -74,7 +89,7 @@
 
         const image = document.createElement('div');
         image.className = 'shop-card-image';
-        image.style.backgroundImage = `url('${product.preview}')`;
+        image.style.backgroundImage = `url('${watermarkedPreviewPath(product.preview)}')`;
         image.setAttribute('role', 'img');
         image.setAttribute('aria-label', product.name);
 
