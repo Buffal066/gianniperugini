@@ -16,6 +16,31 @@
             "series": "Gothic Nocturne"
         },
         {
+            "file": "digital-art-gothic-cathedral-wrap.jpg",
+            "title": "Gothic Cathedral Wrap",
+            "series": "Gothic Nocturne"
+        },
+        {
+            "file": "digital-art-gothic-exhale-veil.jpg",
+            "title": "Gothic Exhale Veil",
+            "series": "Gothic Nocturne"
+        },
+        {
+            "file": "digital-art-gothic-plastic-gaze.jpg",
+            "title": "Gothic Plastic Gaze",
+            "series": "Gothic Nocturne"
+        },
+        {
+            "file": "digital-art-gothic-profile-mist.jpg",
+            "title": "Gothic Profile Mist",
+            "series": "Gothic Nocturne"
+        },
+        {
+            "file": "digital-art-gothic-torn-breath.jpg",
+            "title": "Gothic Torn Breath",
+            "series": "Gothic Nocturne"
+        },
+        {
             "file": "digital-art-urban-noir-bridge-haze.jpg",
             "title": "Urban Noir Bridge Haze",
             "series": "Urban Noir"
@@ -236,29 +261,39 @@
             "series": "Steel Lanes"
         },
         {
-            "file": "digital-art-crow-shroud-cathedral-wrap.jpg",
-            "title": "Crow Shroud Cathedral Wrap",
-            "series": "Crow Shroud"
+            "file": "digital-art-steel-lanes-gothic-step.jpg",
+            "title": "Steel Lanes Gothic Step",
+            "series": "Steel Lanes"
         },
         {
-            "file": "digital-art-crow-shroud-exhale-veil.jpg",
-            "title": "Crow Shroud Exhale Veil",
-            "series": "Crow Shroud"
+            "file": "digital-art-steel-lanes-shoe-approach.jpg",
+            "title": "Steel Lanes Shoe Approach",
+            "series": "Steel Lanes"
         },
         {
-            "file": "digital-art-crow-shroud-plastic-gaze.jpg",
-            "title": "Crow Shroud Plastic Gaze",
-            "series": "Crow Shroud"
+            "file": "digital-art-steel-lanes-lounge-table.jpg",
+            "title": "Steel Lanes Lounge Table",
+            "series": "Steel Lanes"
         },
         {
-            "file": "digital-art-crow-shroud-profile-mist.jpg",
-            "title": "Crow Shroud Profile Mist",
-            "series": "Crow Shroud"
+            "file": "digital-art-steel-lanes-candle-booth.jpg",
+            "title": "Steel Lanes Candle Booth",
+            "series": "Steel Lanes"
         },
         {
-            "file": "digital-art-crow-shroud-torn-breath.jpg",
-            "title": "Crow Shroud Torn Breath",
-            "series": "Crow Shroud"
+            "file": "digital-art-steel-lanes-vault-approach.jpg",
+            "title": "Steel Lanes Vault Approach",
+            "series": "Steel Lanes"
+        },
+        {
+            "file": "digital-art-steel-lanes-pin-crimson.jpg",
+            "title": "Steel Lanes Pin Crimson",
+            "series": "Steel Lanes"
+        },
+        {
+            "file": "digital-art-steel-lanes-rail-reflection.jpg",
+            "title": "Steel Lanes Rail Reflection",
+            "series": "Steel Lanes"
         },
         {
             "file": "digital-art-midnight-thicket-branch-void.jpg",
@@ -407,7 +442,7 @@
         },
         {
             "file": "digital-art-faces-in-void-crow-eclipse.jpg",
-            "title": "Faces In Void Crow Eclipse",
+            "title": "Faces In Void Eclipse",
             "series": "Faces In Void"
         },
         {
