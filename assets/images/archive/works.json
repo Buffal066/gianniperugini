@@ -41,6 +41,26 @@
             "series": "Gothic Nocturne"
         },
         {
+            "file": "digital-art-gothic-plastic-smoke-01.jpg",
+            "title": "Gothic Plastic Smoke 01",
+            "series": "Gothic Nocturne"
+        },
+        {
+            "file": "digital-art-gothic-plastic-smoke-02.jpg",
+            "title": "Gothic Plastic Smoke 02",
+            "series": "Gothic Nocturne"
+        },
+        {
+            "file": "digital-art-gothic-plastic-smoke-03.jpg",
+            "title": "Gothic Plastic Smoke 03",
+            "series": "Gothic Nocturne"
+        },
+        {
+            "file": "digital-art-gothic-plastic-smoke-04.jpg",
+            "title": "Gothic Plastic Smoke 04",
+            "series": "Gothic Nocturne"
+        },
+        {
             "file": "digital-art-urban-noir-bridge-haze.jpg",
             "title": "Urban Noir Bridge Haze",
             "series": "Urban Noir"
@@ -191,8 +211,38 @@
             "series": "Tactile Void"
         },
         {
+            "file": "digital-art-tactile-void-charred-grain.jpg",
+            "title": "Tactile Void Charred Grain",
+            "series": "Tactile Void"
+        },
+        {
+            "file": "digital-art-tactile-void-cracked-earth.jpg",
+            "title": "Tactile Void Cracked Earth",
+            "series": "Tactile Void"
+        },
+        {
             "file": "digital-art-tactile-void-cracked-ember.jpg",
             "title": "Tactile Void Cracked Ember",
+            "series": "Tactile Void"
+        },
+        {
+            "file": "digital-art-tactile-void-frayed-rope.jpg",
+            "title": "Tactile Void Frayed Rope",
+            "series": "Tactile Void"
+        },
+        {
+            "file": "digital-art-tactile-void-frost-glass.jpg",
+            "title": "Tactile Void Frost Glass",
+            "series": "Tactile Void"
+        },
+        {
+            "file": "digital-art-tactile-void-iron-stain.jpg",
+            "title": "Tactile Void Iron Stain",
+            "series": "Tactile Void"
+        },
+        {
+            "file": "digital-art-tactile-void-oxidized-copper.jpg",
+            "title": "Tactile Void Oxidized Copper",
             "series": "Tactile Void"
         },
         {
@@ -203,6 +253,11 @@
         {
             "file": "digital-art-tactile-void-stone-lichen.jpg",
             "title": "Tactile Void Stone Lichen",
+            "series": "Tactile Void"
+        },
+        {
+            "file": "digital-art-tactile-void-tar-bubbles.jpg",
+            "title": "Tactile Void Tar Bubbles",
             "series": "Tactile Void"
         },
         {
@@ -318,6 +373,41 @@
         {
             "file": "digital-art-midnight-thicket-root-moss.jpg",
             "title": "Midnight Thicket Root Moss",
+            "series": "Midnight Thicket"
+        },
+        {
+            "file": "digital-art-midnight-thicket-dense-wall.jpg",
+            "title": "Midnight Thicket Dense Wall",
+            "series": "Midnight Thicket"
+        },
+        {
+            "file": "digital-art-midnight-thicket-fallen-log.jpg",
+            "title": "Midnight Thicket Fallen Log",
+            "series": "Midnight Thicket"
+        },
+        {
+            "file": "digital-art-midnight-thicket-spiderweb-dew.jpg",
+            "title": "Midnight Thicket Spiderweb Dew",
+            "series": "Midnight Thicket"
+        },
+        {
+            "file": "digital-art-midnight-thicket-creek-reflection.jpg",
+            "title": "Midnight Thicket Creek Reflection",
+            "series": "Midnight Thicket"
+        },
+        {
+            "file": "digital-art-midnight-thicket-owl-silhouette.jpg",
+            "title": "Midnight Thicket Owl Silhouette",
+            "series": "Midnight Thicket"
+        },
+        {
+            "file": "digital-art-midnight-thicket-mist-clearing.jpg",
+            "title": "Midnight Thicket Mist Clearing",
+            "series": "Midnight Thicket"
+        },
+        {
+            "file": "digital-art-midnight-thicket-rain-bark.jpg",
+            "title": "Midnight Thicket Rain Bark",
             "series": "Midnight Thicket"
         },
         {
