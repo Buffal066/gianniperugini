@@ -1,4 +1,4 @@
-﻿{
+{
     "composites": [
         {
             "file": "digital-art-gothic-moonlit-graveyard.jpg",
@@ -33,6 +33,46 @@
         {
             "file": "digital-art-urban-noir-rain-reflections.jpg",
             "title": "Urban Noir Rain Reflections",
+            "series": "Urban Noir"
+        },
+        {
+            "file": "digital-art-urban-noir-alley-headlights.jpg",
+            "title": "Urban Noir Alley Headlights",
+            "series": "Urban Noir"
+        },
+        {
+            "file": "digital-art-urban-noir-quay-dome-haze.jpg",
+            "title": "Urban Noir Quay Dome Haze",
+            "series": "Urban Noir"
+        },
+        {
+            "file": "digital-art-urban-noir-sidewalk-amber.jpg",
+            "title": "Urban Noir Sidewalk Amber",
+            "series": "Urban Noir"
+        },
+        {
+            "file": "digital-art-urban-noir-portal-plaza.jpg",
+            "title": "Urban Noir Portal Plaza",
+            "series": "Urban Noir"
+        },
+        {
+            "file": "digital-art-urban-noir-puddle-mirror.jpg",
+            "title": "Urban Noir Puddle Mirror",
+            "series": "Urban Noir"
+        },
+        {
+            "file": "digital-art-urban-noir-canal-lamps.jpg",
+            "title": "Urban Noir Canal Lamps",
+            "series": "Urban Noir"
+        },
+        {
+            "file": "digital-art-urban-noir-maple-sign-street.jpg",
+            "title": "Urban Noir Maple Sign Street",
+            "series": "Urban Noir"
+        },
+        {
+            "file": "digital-art-urban-noir-wet-cobble-glow.jpg",
+            "title": "Urban Noir Wet Cobble Glow",
             "series": "Urban Noir"
         },
         {
