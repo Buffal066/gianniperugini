@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- deployed: 2026-07-30 13:12:10 -->
+<!-- deployed: 2026-07-30 19:25:25 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Archive - Gianni Perugini</title>
+    <title>Digital Art Store - Gianni Perugini</title>
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
@@ -23,13 +23,18 @@
                 <span class="logo-text">Gianni Perugini</span>
             </a>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="#composites" class="nav-link">Digital Art</a></li>
-                <li><a href="#photography" class="nav-link">Photography</a></li>
-                <li><a href="https://darkvisions.gianniperugini.com" class="nav-link">Video &amp; Motion</a></li>
-                <li><a href="index.html#apps-ui" class="nav-link">Apps &amp; UI</a></li>
-                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="index.html" class="nav-link" data-i18n="home">Home</a></li>
+                <li><a href="#composites" class="nav-link" data-i18n="storeNav">Digital Art Store</a></li>
+                <li><a href="#photography" class="nav-link" data-i18n="photography">Photography</a></li>
+                <li><a href="https://darkvisions.gianniperugini.com" class="nav-link" data-i18n="videoMotion">Video &amp; Motion</a></li>
+                <li><a href="index.html#apps-ui" class="nav-link" data-i18n="appsUi">Apps &amp; UI</a></li>
+                <li><a href="index.html#contact" class="nav-link" data-i18n="contact">Contact</a></li>
             </ul>
+            <div class="archive-language-switch" role="group" aria-label="Choose language">
+                <button type="button" class="archive-language-button is-active" data-language="en" aria-pressed="true">EN</button>
+                <span aria-hidden="true">|</span>
+                <button type="button" class="archive-language-button" data-language="fr" aria-pressed="false">FR</button>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -40,21 +45,77 @@
 
     <section class="archive-hero">
         <div class="archive-hero-content">
-            <p class="archive-eyebrow">Past work</p>
-            <h1 class="archive-title">Creative Archive</h1>
-            <p class="archive-subtitle">
-                Digital art collections, Photoshop composites, promotional artwork, and photography from the field.
+            <p class="archive-eyebrow" data-i18n="eyebrow">Digital downloads</p>
+            <h1 class="archive-title" data-i18n="archiveTitle">Digital Art Store</h1>
+            <p class="archive-subtitle" data-i18n="archiveSubtitle">
+                Dark artwork for personal screens and licensed digital projects. Choose a collection or unlock the complete archive.
             </p>
+            <div class="archive-hero-actions">
+                <a href="#store-products" class="archive-primary-link" data-i18n="browseCollections">Browse collections</a>
+                <a href="#browse-art" class="archive-secondary-link" data-i18n="exploreArtwork">Explore the artwork</a>
+            </div>
         </div>
     </section>
 
-    <section class="archive-gallery">
+    <section id="store-products" class="archive-storefront">
         <div class="container">
+            <header class="store-section-heading">
+                <p class="store-kicker" data-i18n="storeKicker">Start here</p>
+                <h2 data-i18n="storeHeading">Choose how you want to use the art</h2>
+                <p data-i18n="storeIntro">Download a free sample, choose a signature collection, or unlock the complete archive.</p>
+            </header>
+
+            <div id="store-sample" class="store-sample"></div>
+
+            <section class="store-product-group" aria-labelledby="collections-heading">
+                <div class="store-product-group-heading">
+                    <div>
+                        <p class="store-kicker" data-i18n="featuredKicker">Signature series</p>
+                        <h2 id="collections-heading" data-i18n="featuredCollections">Featured collections</h2>
+                    </div>
+                    <p data-i18n="featuredIntro">Four curated series, each delivered in desktop and mobile formats.</p>
+                </div>
+                <div id="store-collections" class="store-product-grid"></div>
+            </section>
+
+            <section class="store-product-group" aria-labelledby="archives-heading">
+                <div class="store-product-group-heading">
+                    <div>
+                        <p class="store-kicker" data-i18n="bestValueKicker">Best value</p>
+                        <h2 id="archives-heading" data-i18n="completeArchives">Complete archives</h2>
+                    </div>
+                    <p data-i18n="completeIntro">Choose the licence that matches how you plan to use the artwork.</p>
+                </div>
+                <div id="store-archives" class="store-product-grid store-product-grid-wide"></div>
+            </section>
+
+            <div class="store-license-grid">
+                <article class="store-license-card">
+                    <p class="store-kicker" data-i18n="personalUseKicker">For yourself</p>
+                    <h3 data-i18n="personalUseTitle">Personal use</h3>
+                    <p data-i18n="personalUseText">Use the artwork as wallpapers and lock screens on your own devices.</p>
+                </article>
+                <article class="store-license-card">
+                    <p class="store-kicker" data-i18n="commercialUseKicker">For your work</p>
+                    <h3 data-i18n="commercialUseTitle">Commercial use</h3>
+                    <p data-i18n="commercialUseText">Use the archive in websites, social content, ads, videos, and flattened client projects.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="browse-art" class="archive-gallery">
+        <div class="container">
+            <header class="archive-gallery-heading">
+                <p class="store-kicker" data-i18n="browseKicker">Browse the art</p>
+                <h2 data-i18n="browseHeading">Explore every collection</h2>
+                <p data-i18n="browseIntro">Select an image to see it larger and discover the collection that includes it.</p>
+            </header>
             <div id="archive-sections"></div>
             <div id="archive-empty" class="archive-empty" hidden>
-                <h2>Add your photos</h2>
-                <p>Export images from Apple Photos into <code>assets/images/archive/</code>, then list them in <code>works.json</code>.</p>
-                <p>Use a <code>photo_</code> prefix for photography; everything else goes under Composites.</p>
+                <h2 data-i18n="addPhotos">Add your photos</h2>
+                <p data-i18n="emptyIntro">Export images from Apple Photos into the archive image folder, then list them in works.json.</p>
+                <p data-i18n="emptyHint">Use a photo_ prefix for photography; everything else goes under Digital Art.</p>
             </div>
         </div>
     </section>
@@ -62,17 +123,33 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-bottom">
-                <p>&copy; 2026 Gianni Perugini. All rights reserved.</p>
+                <p data-i18n="rights">&copy; 2026 Gianni Perugini. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <div id="lightbox" class="lightbox" hidden>
         <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
-        <img id="lightbox-image" src="" alt="">
+        <div class="lightbox-dialog">
+            <div class="lightbox-media">
+                <img id="lightbox-image" src="" alt="">
+            </div>
+            <aside id="lightbox-product" class="lightbox-product" hidden>
+                <p id="lightbox-series" class="lightbox-series"></p>
+                <h2 id="lightbox-title" class="lightbox-title"></h2>
+                <p id="lightbox-availability" class="lightbox-availability"></p>
+                <p id="lightbox-format" class="lightbox-format"></p>
+                <div class="lightbox-purchase">
+                    <span id="lightbox-price" class="lightbox-price"></span>
+                    <a id="lightbox-buy" class="store-buy-button" aria-disabled="true"></a>
+                </div>
+            </aside>
+        </div>
     </div>
 
     <script src="script.js"></script>
+    <script src="archive-i18n.js"></script>
+    <script src="archive-store.js"></script>
     <script src="archive.js"></script>
 </body>
 </html>
