@@ -74,6 +74,15 @@
         return `${localizedSeries(work.series)} — ${artworkTitle}`;
     }
 
+    function seriesAnchor(series) {
+        return `collection-${String(series || '')
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-|-$/g, '')}`;
+    }
+
     function applyStaticTranslations() {
         document.documentElement.lang = currentLanguage;
         document.title = t('documentTitle');
@@ -221,6 +230,7 @@
         groups.forEach((seriesWorks, series) => {
             const group = document.createElement('div');
             group.className = 'archive-series';
+            group.id = seriesAnchor(series);
 
             const groupHeading = document.createElement('h3');
             groupHeading.className = 'archive-series-title';

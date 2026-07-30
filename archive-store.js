@@ -83,10 +83,52 @@
         return Boolean(product.payhipUrl && product.payhipUrl.trim() && !product.payhipUrl.includes('PLACEHOLDER'));
     }
 
+    function seriesAnchor(series) {
+        return `collection-${String(series || '')
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-|-$/g, '')}`;
+    }
+
     function callToAction(product) {
         if (product.type === 'free') return t('downloadSample');
         if (product.type === 'series') return t('viewCollection');
         return t('getArchive');
+    }
+
+    function createPreviewControl(product) {
+        const link = document.createElement('a');
+        link.className = 'store-preview-link';
+        let targetId = 'browse-art';
+
+        if (product.type === 'series') {
+            targetId = seriesAnchor(product.series);
+            link.href = `#${targetId}`;
+            link.textContent = t('previewCollection');
+        } else if (product.type === 'archive' || product.type === 'commercial') {
+            targetId = 'composites';
+            link.href = `#${targetId}`;
+            link.textContent = t('previewArchive');
+        } else {
+            link.href = `#${targetId}`;
+            link.textContent = t('previewSample');
+        }
+
+        link.addEventListener('click', (event) => {
+            const target = document.getElementById(targetId);
+            if (!target) return;
+
+            event.preventDefault();
+            target.scrollIntoView({
+                behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+                block: 'start',
+            });
+            history.replaceState(null, '', '#composites');
+        });
+
+        return link;
     }
 
     function createBuyControl(product) {
@@ -160,8 +202,13 @@
         price.appendChild(amount);
         price.appendChild(note);
 
+        const actions = document.createElement('div');
+        actions.className = 'store-product-actions';
+        actions.appendChild(createPreviewControl(sourceProduct));
+        actions.appendChild(createBuyControl(sourceProduct));
+
         footer.appendChild(price);
-        footer.appendChild(createBuyControl(sourceProduct));
+        footer.appendChild(actions);
         body.appendChild(type);
         body.appendChild(title);
         body.appendChild(subtitle);
