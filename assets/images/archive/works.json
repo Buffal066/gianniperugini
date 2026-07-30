@@ -1,6 +1,186 @@
 {
     "composites": [
         {
+            "file": "digital-art-burned-canvas-ash-weave.jpg",
+            "title": "Burned Canvas Ash Weave",
+            "series": "Burned Canvas"
+        },
+        {
+            "file": "digital-art-burned-canvas-ember-crack.jpg",
+            "title": "Burned Canvas Ember Crack",
+            "series": "Burned Canvas"
+        },
+        {
+            "file": "digital-art-burned-canvas-melted-gilt.jpg",
+            "title": "Burned Canvas Melted Gilt",
+            "series": "Burned Canvas"
+        },
+        {
+            "file": "digital-art-burned-canvas-ruined-frame.jpg",
+            "title": "Burned Canvas Ruined Frame",
+            "series": "Burned Canvas"
+        },
+        {
+            "file": "digital-art-burned-canvas-soot-peel.jpg",
+            "title": "Burned Canvas Soot Peel",
+            "series": "Burned Canvas"
+        },
+        {
+            "file": "digital-art-burned-canvas-blistered-portrait.jpg",
+            "title": "Burned Canvas Blistered Portrait",
+            "series": "Burned Canvas"
+        },
+        {
+            "file": "digital-art-burned-canvas-cinder-lattice.jpg",
+            "title": "Burned Canvas Cinder Lattice",
+            "series": "Burned Canvas"
+        },
+        {
+            "file": "digital-art-burned-canvas-scorched-reliquary.jpg",
+            "title": "Burned Canvas Scorched Reliquary",
+            "series": "Burned Canvas"
+        },
+        {
+            "file": "digital-art-burned-canvas-ember-veil.jpg",
+            "title": "Burned Canvas Ember Veil",
+            "series": "Burned Canvas"
+        },
+        {
+            "file": "digital-art-burned-canvas-carbon-bloom.jpg",
+            "title": "Burned Canvas Carbon Bloom",
+            "series": "Burned Canvas"
+        },
+        {
+            "file": "digital-art-burned-canvas-smolder-edge.jpg",
+            "title": "Burned Canvas Smolder Edge",
+            "series": "Burned Canvas"
+        },
+        {
+            "file": "digital-art-burned-canvas-tar-fracture.jpg",
+            "title": "Burned Canvas Tar Fracture",
+            "series": "Burned Canvas"
+        },
+        {
+            "file": "digital-art-corroded-silence-ash-drift.jpg",
+            "title": "Corroded Silence Ash Drift",
+            "series": "Corroded Silence"
+        },
+        {
+            "file": "digital-art-corroded-silence-charred-grain.jpg",
+            "title": "Corroded Silence Charred Grain",
+            "series": "Corroded Silence"
+        },
+        {
+            "file": "digital-art-corroded-silence-cracked-earth.jpg",
+            "title": "Corroded Silence Cracked Earth",
+            "series": "Corroded Silence"
+        },
+        {
+            "file": "digital-art-corroded-silence-cracked-ember.jpg",
+            "title": "Corroded Silence Cracked Ember",
+            "series": "Corroded Silence"
+        },
+        {
+            "file": "digital-art-corroded-silence-frayed-rope.jpg",
+            "title": "Corroded Silence Frayed Rope",
+            "series": "Corroded Silence"
+        },
+        {
+            "file": "digital-art-corroded-silence-frost-glass.jpg",
+            "title": "Corroded Silence Frost Glass",
+            "series": "Corroded Silence"
+        },
+        {
+            "file": "digital-art-corroded-silence-iron-stain.jpg",
+            "title": "Corroded Silence Iron Stain",
+            "series": "Corroded Silence"
+        },
+        {
+            "file": "digital-art-corroded-silence-oxidized-copper.jpg",
+            "title": "Corroded Silence Oxidized Copper",
+            "series": "Corroded Silence"
+        },
+        {
+            "file": "digital-art-corroded-silence-rust-peel.jpg",
+            "title": "Corroded Silence Rust Peel",
+            "series": "Corroded Silence"
+        },
+        {
+            "file": "digital-art-corroded-silence-stone-lichen.jpg",
+            "title": "Corroded Silence Stone Lichen",
+            "series": "Corroded Silence"
+        },
+        {
+            "file": "digital-art-corroded-silence-tar-bubbles.jpg",
+            "title": "Corroded Silence Tar Bubbles",
+            "series": "Corroded Silence"
+        },
+        {
+            "file": "digital-art-corroded-silence-velvet-fold.jpg",
+            "title": "Corroded Silence Velvet Fold",
+            "series": "Corroded Silence"
+        },
+        {
+            "file": "digital-art-steel-lanes-arch-glow.jpg",
+            "title": "Steel Lanes Arch Glow",
+            "series": "Steel Lanes"
+        },
+        {
+            "file": "digital-art-steel-lanes-brushed-grain.jpg",
+            "title": "Steel Lanes Brushed Grain",
+            "series": "Steel Lanes"
+        },
+        {
+            "file": "digital-art-steel-lanes-chrome-vanish.jpg",
+            "title": "Steel Lanes Chrome Vanish",
+            "series": "Steel Lanes"
+        },
+        {
+            "file": "digital-art-steel-lanes-midnight-deck.jpg",
+            "title": "Steel Lanes Midnight Deck",
+            "series": "Steel Lanes"
+        },
+        {
+            "file": "digital-art-steel-lanes-return-forge.jpg",
+            "title": "Steel Lanes Return Forge",
+            "series": "Steel Lanes"
+        },
+        {
+            "file": "digital-art-steel-lanes-gothic-step.jpg",
+            "title": "Steel Lanes Gothic Step",
+            "series": "Steel Lanes"
+        },
+        {
+            "file": "digital-art-steel-lanes-shoe-approach.jpg",
+            "title": "Steel Lanes Shoe Approach",
+            "series": "Steel Lanes"
+        },
+        {
+            "file": "digital-art-steel-lanes-lounge-table.jpg",
+            "title": "Steel Lanes Lounge Table",
+            "series": "Steel Lanes"
+        },
+        {
+            "file": "digital-art-steel-lanes-candle-booth.jpg",
+            "title": "Steel Lanes Candle Booth",
+            "series": "Steel Lanes"
+        },
+        {
+            "file": "digital-art-steel-lanes-vault-approach.jpg",
+            "title": "Steel Lanes Vault Approach",
+            "series": "Steel Lanes"
+        },
+        {
+            "file": "digital-art-steel-lanes-pin-crimson.jpg",
+            "title": "Steel Lanes Pin Crimson",
+            "series": "Steel Lanes"
+        },
+        {
+            "file": "digital-art-steel-lanes-rail-reflection.jpg",
+            "title": "Steel Lanes Rail Reflection",
+            "series": "Steel Lanes"
+        },
+        {
             "file": "digital-art-midnight-masquerade-moonlit-graveyard.jpg",
             "title": "Midnight Masquerade Moonlit Graveyard",
             "series": "Midnight Masquerade"
@@ -59,6 +239,366 @@
             "file": "digital-art-midnight-masquerade-plastic-smoke-04.jpg",
             "title": "Midnight Masquerade Plastic Smoke 04",
             "series": "Midnight Masquerade"
+        },
+        {
+            "file": "digital-art-faces-in-void-crow-eclipse.jpg",
+            "title": "Faces in Void Eclipse",
+            "series": "Faces in Void"
+        },
+        {
+            "file": "digital-art-faces-in-void-half-emerge.jpg",
+            "title": "Faces in Void Half Emerge",
+            "series": "Faces in Void"
+        },
+        {
+            "file": "digital-art-faces-in-void-rim-eye.jpg",
+            "title": "Faces in Void Rim Eye",
+            "series": "Faces in Void"
+        },
+        {
+            "file": "digital-art-faces-in-void-sink-pale.jpg",
+            "title": "Faces in Void Sink Pale",
+            "series": "Faces in Void"
+        },
+        {
+            "file": "digital-art-faces-in-void-whisper-crowd.jpg",
+            "title": "Faces in Void Whisper Crowd",
+            "series": "Faces in Void"
+        },
+        {
+            "file": "digital-art-faces-in-void-ash-cheek.jpg",
+            "title": "Faces in Void Ash Cheek",
+            "series": "Faces in Void"
+        },
+        {
+            "file": "digital-art-faces-in-void-drowned-whisper.jpg",
+            "title": "Faces in Void Drowned Whisper",
+            "series": "Faces in Void"
+        },
+        {
+            "file": "digital-art-faces-in-void-hollow-gaze.jpg",
+            "title": "Faces in Void Hollow Gaze",
+            "series": "Faces in Void"
+        },
+        {
+            "file": "digital-art-faces-in-void-mist-pair.jpg",
+            "title": "Faces in Void Mist Pair",
+            "series": "Faces in Void"
+        },
+        {
+            "file": "digital-art-faces-in-void-shadow-profile.jpg",
+            "title": "Faces in Void Shadow Profile",
+            "series": "Faces in Void"
+        },
+        {
+            "file": "digital-art-faces-in-void-slit-light.jpg",
+            "title": "Faces in Void Slit Light",
+            "series": "Faces in Void"
+        },
+        {
+            "file": "digital-art-faces-in-void-void-chorus.jpg",
+            "title": "Faces in Void Void Chorus",
+            "series": "Faces in Void"
+        },
+        {
+            "file": "digital-art-cinder-veil-smoke-vigil.jpg",
+            "title": "Cinder Veil Smoke Vigil",
+            "series": "Cinder Veil"
+        },
+        {
+            "file": "digital-art-cinder-veil-ember-watch.jpg",
+            "title": "Cinder Veil Ember Watch",
+            "series": "Cinder Veil"
+        },
+        {
+            "file": "digital-art-cinder-veil-frost-tear.jpg",
+            "title": "Cinder Veil Frost Tear",
+            "series": "Cinder Veil"
+        },
+        {
+            "file": "digital-art-cinder-veil-jade-hollow.jpg",
+            "title": "Cinder Veil Jade Hollow",
+            "series": "Cinder Veil"
+        },
+        {
+            "file": "digital-art-cinder-veil-coal-amber.jpg",
+            "title": "Cinder Veil Coal Amber",
+            "series": "Cinder Veil"
+        },
+        {
+            "file": "digital-art-cinder-veil-violet-ash.jpg",
+            "title": "Cinder Veil Violet Ash",
+            "series": "Cinder Veil"
+        },
+        {
+            "file": "digital-art-cinder-veil-quiet-reckoning.jpg",
+            "title": "Cinder Veil Quiet Reckoning",
+            "series": "Cinder Veil"
+        },
+        {
+            "file": "digital-art-cinder-veil-hollow-prayer.jpg",
+            "title": "Cinder Veil Hollow Prayer",
+            "series": "Cinder Veil"
+        },
+        {
+            "file": "digital-art-cinder-veil-midnight-doubt.jpg",
+            "title": "Cinder Veil Midnight Doubt",
+            "series": "Cinder Veil"
+        },
+        {
+            "file": "digital-art-cinder-veil-pale-soliloquy.jpg",
+            "title": "Cinder Veil Pale Soliloquy",
+            "series": "Cinder Veil"
+        },
+        {
+            "file": "digital-art-cinder-veil-still-threshold.jpg",
+            "title": "Cinder Veil Still Threshold",
+            "series": "Cinder Veil"
+        },
+        {
+            "file": "digital-art-cinder-veil-weary-vigil.jpg",
+            "title": "Cinder Veil Weary Vigil",
+            "series": "Cinder Veil"
+        },
+        {
+            "file": "digital-art-the-burning-gaze-smoke-cathedral.jpg",
+            "title": "The Burning Gaze Smoke Cathedral",
+            "series": "The Burning Gaze"
+        },
+        {
+            "file": "digital-art-the-burning-gaze-ember-iris.jpg",
+            "title": "The Burning Gaze Ember Iris",
+            "series": "The Burning Gaze"
+        },
+        {
+            "file": "digital-art-the-burning-gaze-frost-lens.jpg",
+            "title": "The Burning Gaze Frost Lens",
+            "series": "The Burning Gaze"
+        },
+        {
+            "file": "digital-art-the-burning-gaze-jade-fracture.jpg",
+            "title": "The Burning Gaze Jade Fracture",
+            "series": "The Burning Gaze"
+        },
+        {
+            "file": "digital-art-the-burning-gaze-molten-gem.jpg",
+            "title": "The Burning Gaze Molten Gem",
+            "series": "The Burning Gaze"
+        },
+        {
+            "file": "digital-art-the-burning-gaze-violet-smoke.jpg",
+            "title": "The Burning Gaze Violet Smoke",
+            "series": "The Burning Gaze"
+        },
+        {
+            "file": "digital-art-the-burning-gaze-downcast-ember.jpg",
+            "title": "The Burning Gaze Downcast Ember",
+            "series": "The Burning Gaze"
+        },
+        {
+            "file": "digital-art-the-burning-gaze-prayer-iris.jpg",
+            "title": "The Burning Gaze Prayer Iris",
+            "series": "The Burning Gaze"
+        },
+        {
+            "file": "digital-art-the-burning-gaze-doubted-jade.jpg",
+            "title": "The Burning Gaze Doubted Jade",
+            "series": "The Burning Gaze"
+        },
+        {
+            "file": "digital-art-the-burning-gaze-whisper-violet.jpg",
+            "title": "The Burning Gaze Whisper Violet",
+            "series": "The Burning Gaze"
+        },
+        {
+            "file": "digital-art-the-burning-gaze-threshold-amber.jpg",
+            "title": "The Burning Gaze Threshold Amber",
+            "series": "The Burning Gaze"
+        },
+        {
+            "file": "digital-art-the-burning-gaze-weary-frost.jpg",
+            "title": "The Burning Gaze Weary Frost",
+            "series": "The Burning Gaze"
+        },
+        {
+            "file": "digital-art-till-darkness-aisle-fog.jpg",
+            "title": "Till Darkness Aisle Fog",
+            "series": "Till Darkness"
+        },
+        {
+            "file": "digital-art-till-darkness-black-veil.jpg",
+            "title": "Till Darkness Black Veil",
+            "series": "Till Darkness"
+        },
+        {
+            "file": "digital-art-till-darkness-candle-dance.jpg",
+            "title": "Till Darkness Candle Dance",
+            "series": "Till Darkness"
+        },
+        {
+            "file": "digital-art-till-darkness-graveyard-bride.jpg",
+            "title": "Till Darkness Graveyard Bride",
+            "series": "Till Darkness"
+        },
+        {
+            "file": "digital-art-till-darkness-lace-vow.jpg",
+            "title": "Till Darkness Lace Vow",
+            "series": "Till Darkness"
+        },
+        {
+            "file": "digital-art-till-darkness-candlelit-oath.jpg",
+            "title": "Till Darkness Candlelit Oath",
+            "series": "Till Darkness"
+        },
+        {
+            "file": "digital-art-till-darkness-crimson-aisle.jpg",
+            "title": "Till Darkness Crimson Aisle",
+            "series": "Till Darkness"
+        },
+        {
+            "file": "digital-art-till-darkness-iron-gates.jpg",
+            "title": "Till Darkness Iron Gates",
+            "series": "Till Darkness"
+        },
+        {
+            "file": "digital-art-till-darkness-midnight-altar.jpg",
+            "title": "Till Darkness Midnight Altar",
+            "series": "Till Darkness"
+        },
+        {
+            "file": "digital-art-till-darkness-raven-bouquet.jpg",
+            "title": "Till Darkness Raven Bouquet",
+            "series": "Till Darkness"
+        },
+        {
+            "file": "digital-art-till-darkness-shadow-waltz.jpg",
+            "title": "Till Darkness Shadow Waltz",
+            "series": "Till Darkness"
+        },
+        {
+            "file": "digital-art-till-darkness-veil-embrace.jpg",
+            "title": "Till Darkness Veil Embrace",
+            "series": "Till Darkness"
+        },
+        {
+            "file": "digital-art-stone-sanctuary-cathedral-throne.jpg",
+            "title": "Stone Sanctuary Cathedral Throne",
+            "series": "Stone Sanctuary"
+        },
+        {
+            "file": "digital-art-stone-sanctuary-cloister-moon.jpg",
+            "title": "Stone Sanctuary Cloister Moon",
+            "series": "Stone Sanctuary"
+        },
+        {
+            "file": "digital-art-stone-sanctuary-rose-trace.jpg",
+            "title": "Stone Sanctuary Rose Trace",
+            "series": "Stone Sanctuary"
+        },
+        {
+            "file": "digital-art-stone-sanctuary-spire-storm.jpg",
+            "title": "Stone Sanctuary Spire Storm",
+            "series": "Stone Sanctuary"
+        },
+        {
+            "file": "digital-art-stone-sanctuary-vaulted-shadows.jpg",
+            "title": "Stone Sanctuary Vaulted Shadows",
+            "series": "Stone Sanctuary"
+        },
+        {
+            "file": "digital-art-stone-sanctuary-crypt-stairs.jpg",
+            "title": "Stone Sanctuary Crypt Stairs",
+            "series": "Stone Sanctuary"
+        },
+        {
+            "file": "digital-art-stone-sanctuary-buttress-fog.jpg",
+            "title": "Stone Sanctuary Buttress Fog",
+            "series": "Stone Sanctuary"
+        },
+        {
+            "file": "digital-art-stone-sanctuary-gargoyle-dusk.jpg",
+            "title": "Stone Sanctuary Gargoyle Dusk",
+            "series": "Stone Sanctuary"
+        },
+        {
+            "file": "digital-art-stone-sanctuary-nave-candles.jpg",
+            "title": "Stone Sanctuary Nave Candles",
+            "series": "Stone Sanctuary"
+        },
+        {
+            "file": "digital-art-stone-sanctuary-cloister-rain.jpg",
+            "title": "Stone Sanctuary Cloister Rain",
+            "series": "Stone Sanctuary"
+        },
+        {
+            "file": "digital-art-stone-sanctuary-bell-tower-mist.jpg",
+            "title": "Stone Sanctuary Bell Tower Mist",
+            "series": "Stone Sanctuary"
+        },
+        {
+            "file": "digital-art-stone-sanctuary-stained-aisle.jpg",
+            "title": "Stone Sanctuary Stained Aisle",
+            "series": "Stone Sanctuary"
+        },
+        {
+            "file": "digital-art-blackwood-branch-void.jpg",
+            "title": "Blackwood Branch Void",
+            "series": "Blackwood"
+        },
+        {
+            "file": "digital-art-blackwood-moon-canopy.jpg",
+            "title": "Blackwood Moon Canopy",
+            "series": "Blackwood"
+        },
+        {
+            "file": "digital-art-blackwood-path-fog.jpg",
+            "title": "Blackwood Path Fog",
+            "series": "Blackwood"
+        },
+        {
+            "file": "digital-art-blackwood-pine-storm.jpg",
+            "title": "Blackwood Pine Storm",
+            "series": "Blackwood"
+        },
+        {
+            "file": "digital-art-blackwood-root-moss.jpg",
+            "title": "Blackwood Root Moss",
+            "series": "Blackwood"
+        },
+        {
+            "file": "digital-art-blackwood-dense-wall.jpg",
+            "title": "Blackwood Dense Wall",
+            "series": "Blackwood"
+        },
+        {
+            "file": "digital-art-blackwood-fallen-log.jpg",
+            "title": "Blackwood Fallen Log",
+            "series": "Blackwood"
+        },
+        {
+            "file": "digital-art-blackwood-spiderweb-dew.jpg",
+            "title": "Blackwood Spiderweb Dew",
+            "series": "Blackwood"
+        },
+        {
+            "file": "digital-art-blackwood-creek-reflection.jpg",
+            "title": "Blackwood Creek Reflection",
+            "series": "Blackwood"
+        },
+        {
+            "file": "digital-art-blackwood-owl-silhouette.jpg",
+            "title": "Blackwood Owl Silhouette",
+            "series": "Blackwood"
+        },
+        {
+            "file": "digital-art-blackwood-mist-clearing.jpg",
+            "title": "Blackwood Mist Clearing",
+            "series": "Blackwood"
+        },
+        {
+            "file": "digital-art-blackwood-rain-bark.jpg",
+            "title": "Blackwood Rain Bark",
+            "series": "Blackwood"
         },
         {
             "file": "digital-art-urban-noir-bridge-haze.jpg",
@@ -121,8 +661,123 @@
             "series": "Urban Noir"
         },
         {
+            "file": "digital-art-wet-neon-noir-alley-pulse.jpg",
+            "title": "Wet Neon Noir Alley Pulse",
+            "series": "Wet Neon Noir"
+        },
+        {
+            "file": "digital-art-wet-neon-noir-glass-rain.jpg",
+            "title": "Wet Neon Noir Glass Rain",
+            "series": "Wet Neon Noir"
+        },
+        {
+            "file": "digital-art-wet-neon-noir-plaza-glow.jpg",
+            "title": "Wet Neon Noir Plaza Glow",
+            "series": "Wet Neon Noir"
+        },
+        {
+            "file": "digital-art-wet-neon-noir-track-ember.jpg",
+            "title": "Wet Neon Noir Track Ember",
+            "series": "Wet Neon Noir"
+        },
+        {
+            "file": "digital-art-wet-neon-noir-galiano-cobbles.jpg",
+            "title": "Wet Neon Noir Galiano Cobbles",
+            "series": "Wet Neon Noir"
+        },
+        {
+            "file": "digital-art-wet-neon-noir-alley-car.jpg",
+            "title": "Wet Neon Noir Alley Car",
+            "series": "Wet Neon Noir"
+        },
+        {
+            "file": "digital-art-wet-neon-noir-maple-sidewalk.jpg",
+            "title": "Wet Neon Noir Maple Sidewalk",
+            "series": "Wet Neon Noir"
+        },
+        {
+            "file": "digital-art-wet-neon-noir-depanneur-puddle.jpg",
+            "title": "Wet Neon Noir Depanneur Puddle",
+            "series": "Wet Neon Noir"
+        },
+        {
+            "file": "digital-art-wet-neon-noir-canal-dome.jpg",
+            "title": "Wet Neon Noir Canal Dome",
+            "series": "Wet Neon Noir"
+        },
+        {
+            "file": "digital-art-wet-neon-noir-bonsecours-magenta.jpg",
+            "title": "Wet Neon Noir Bonsecours Magenta",
+            "series": "Wet Neon Noir"
+        },
+        {
+            "file": "digital-art-wet-neon-noir-metal-arch-cobbles.jpg",
+            "title": "Wet Neon Noir Metal Arch Cobbles",
+            "series": "Wet Neon Noir"
+        },
+        {
+            "file": "digital-art-wet-neon-noir-oldport-ember.jpg",
+            "title": "Wet Neon Noir Oldport Ember",
+            "series": "Wet Neon Noir"
+        },
+        {
             "file": "digital-art-static-bloom-abstract-geometry.jpg",
             "title": "Static Bloom Abstract Geometry",
+            "series": "Static Bloom"
+        },
+        {
+            "file": "digital-art-static-bloom-crimson-layers.jpg",
+            "title": "Static Bloom Crimson Layers",
+            "series": "Static Bloom"
+        },
+        {
+            "file": "digital-art-static-bloom-grid-fracture.jpg",
+            "title": "Static Bloom Grid Fracture",
+            "series": "Static Bloom"
+        },
+        {
+            "file": "digital-art-static-bloom-shard-eclipse.jpg",
+            "title": "Static Bloom Shard Eclipse",
+            "series": "Static Bloom"
+        },
+        {
+            "file": "digital-art-static-bloom-smoke-ignition.jpg",
+            "title": "Static Bloom Smoke Ignition",
+            "series": "Static Bloom"
+        },
+        {
+            "file": "digital-art-static-bloom-signal-orchard.jpg",
+            "title": "Static Bloom Signal Orchard",
+            "series": "Static Bloom"
+        },
+        {
+            "file": "digital-art-static-bloom-lattice-detonation.jpg",
+            "title": "Static Bloom Lattice Detonation",
+            "series": "Static Bloom"
+        },
+        {
+            "file": "digital-art-static-bloom-ember-aperture.jpg",
+            "title": "Static Bloom Ember Aperture",
+            "series": "Static Bloom"
+        },
+        {
+            "file": "digital-art-static-bloom-chromatic-fault.jpg",
+            "title": "Static Bloom Chromatic Fault",
+            "series": "Static Bloom"
+        },
+        {
+            "file": "digital-art-static-bloom-neon-monoliths.jpg",
+            "title": "Static Bloom Neon Monoliths",
+            "series": "Static Bloom"
+        },
+        {
+            "file": "digital-art-static-bloom-thermal-cascade.jpg",
+            "title": "Static Bloom Thermal Cascade",
+            "series": "Static Bloom"
+        },
+        {
+            "file": "digital-art-static-bloom-halftone-collapse.jpg",
+            "title": "Static Bloom Halftone Collapse",
             "series": "Static Bloom"
         },
         {
@@ -186,571 +841,6 @@
             "series": "Red Eternity"
         },
         {
-            "file": "digital-art-the-burning-gaze-smoke-cathedral.jpg",
-            "title": "The Burning Gaze Smoke Cathedral",
-            "series": "The Burning Gaze"
-        },
-        {
-            "file": "digital-art-stone-sanctuary-cathedral-throne.jpg",
-            "title": "Stone Sanctuary Cathedral Throne",
-            "series": "Stone Sanctuary"
-        },
-        {
-            "file": "digital-art-stone-sanctuary-cloister-moon.jpg",
-            "title": "Stone Sanctuary Cloister Moon",
-            "series": "Stone Sanctuary"
-        },
-        {
-            "file": "digital-art-stone-sanctuary-rose-trace.jpg",
-            "title": "Stone Sanctuary Rose Trace",
-            "series": "Stone Sanctuary"
-        },
-        {
-            "file": "digital-art-stone-sanctuary-spire-storm.jpg",
-            "title": "Stone Sanctuary Spire Storm",
-            "series": "Stone Sanctuary"
-        },
-        {
-            "file": "digital-art-stone-sanctuary-vaulted-shadows.jpg",
-            "title": "Stone Sanctuary Vaulted Shadows",
-            "series": "Stone Sanctuary"
-        },
-        {
-            "file": "digital-art-stone-sanctuary-crypt-stairs.jpg",
-            "title": "Stone Sanctuary Crypt Stairs",
-            "series": "Stone Sanctuary"
-        },
-        {
-            "file": "digital-art-stone-sanctuary-buttress-fog.jpg",
-            "title": "Stone Sanctuary Buttress Fog",
-            "series": "Stone Sanctuary"
-        },
-        {
-            "file": "digital-art-stone-sanctuary-gargoyle-dusk.jpg",
-            "title": "Stone Sanctuary Gargoyle Dusk",
-            "series": "Stone Sanctuary"
-        },
-        {
-            "file": "digital-art-stone-sanctuary-nave-candles.jpg",
-            "title": "Stone Sanctuary Nave Candles",
-            "series": "Stone Sanctuary"
-        },
-        {
-            "file": "digital-art-stone-sanctuary-cloister-rain.jpg",
-            "title": "Stone Sanctuary Cloister Rain",
-            "series": "Stone Sanctuary"
-        },
-        {
-            "file": "digital-art-stone-sanctuary-bell-tower-mist.jpg",
-            "title": "Stone Sanctuary Bell Tower Mist",
-            "series": "Stone Sanctuary"
-        },
-        {
-            "file": "digital-art-stone-sanctuary-stained-aisle.jpg",
-            "title": "Stone Sanctuary Stained Aisle",
-            "series": "Stone Sanctuary"
-        },
-        {
-            "file": "digital-art-wet-neon-noir-alley-pulse.jpg",
-            "title": "Wet Neon Noir Alley Pulse",
-            "series": "Wet Neon Noir"
-        },
-        {
-            "file": "digital-art-wet-neon-noir-glass-rain.jpg",
-            "title": "Wet Neon Noir Glass Rain",
-            "series": "Wet Neon Noir"
-        },
-        {
-            "file": "digital-art-wet-neon-noir-plaza-glow.jpg",
-            "title": "Wet Neon Noir Plaza Glow",
-            "series": "Wet Neon Noir"
-        },
-        {
-            "file": "digital-art-wet-neon-noir-track-ember.jpg",
-            "title": "Wet Neon Noir Track Ember",
-            "series": "Wet Neon Noir"
-        },
-        {
-            "file": "digital-art-wet-neon-noir-galiano-cobbles.jpg",
-            "title": "Wet Neon Noir Galiano Cobbles",
-            "series": "Wet Neon Noir"
-        },
-        {
-            "file": "digital-art-wet-neon-noir-alley-car.jpg",
-            "title": "Wet Neon Noir Alley Car",
-            "series": "Wet Neon Noir"
-        },
-        {
-            "file": "digital-art-wet-neon-noir-maple-sidewalk.jpg",
-            "title": "Wet Neon Noir Maple Sidewalk",
-            "series": "Wet Neon Noir"
-        },
-        {
-            "file": "digital-art-wet-neon-noir-depanneur-puddle.jpg",
-            "title": "Wet Neon Noir Depanneur Puddle",
-            "series": "Wet Neon Noir"
-        },
-        {
-            "file": "digital-art-wet-neon-noir-canal-dome.jpg",
-            "title": "Wet Neon Noir Canal Dome",
-            "series": "Wet Neon Noir"
-        },
-        {
-            "file": "digital-art-wet-neon-noir-bonsecours-magenta.jpg",
-            "title": "Wet Neon Noir Bonsecours Magenta",
-            "series": "Wet Neon Noir"
-        },
-        {
-            "file": "digital-art-wet-neon-noir-metal-arch-cobbles.jpg",
-            "title": "Wet Neon Noir Metal Arch Cobbles",
-            "series": "Wet Neon Noir"
-        },
-        {
-            "file": "digital-art-wet-neon-noir-oldport-ember.jpg",
-            "title": "Wet Neon Noir Oldport Ember",
-            "series": "Wet Neon Noir"
-        },
-        {
-            "file": "digital-art-static-bloom-crimson-layers.jpg",
-            "title": "Static Bloom Crimson Layers",
-            "series": "Static Bloom"
-        },
-        {
-            "file": "digital-art-static-bloom-grid-fracture.jpg",
-            "title": "Static Bloom Grid Fracture",
-            "series": "Static Bloom"
-        },
-        {
-            "file": "digital-art-static-bloom-shard-eclipse.jpg",
-            "title": "Static Bloom Shard Eclipse",
-            "series": "Static Bloom"
-        },
-        {
-            "file": "digital-art-static-bloom-smoke-ignition.jpg",
-            "title": "Static Bloom Smoke Ignition",
-            "series": "Static Bloom"
-        },
-        {
-            "file": "digital-art-static-bloom-signal-orchard.jpg",
-            "title": "Static Bloom Signal Orchard",
-            "series": "Static Bloom"
-        },
-        {
-            "file": "digital-art-static-bloom-lattice-detonation.jpg",
-            "title": "Static Bloom Lattice Detonation",
-            "series": "Static Bloom"
-        },
-        {
-            "file": "digital-art-static-bloom-ember-aperture.jpg",
-            "title": "Static Bloom Ember Aperture",
-            "series": "Static Bloom"
-        },
-        {
-            "file": "digital-art-static-bloom-chromatic-fault.jpg",
-            "title": "Static Bloom Chromatic Fault",
-            "series": "Static Bloom"
-        },
-        {
-            "file": "digital-art-static-bloom-neon-monoliths.jpg",
-            "title": "Static Bloom Neon Monoliths",
-            "series": "Static Bloom"
-        },
-        {
-            "file": "digital-art-static-bloom-thermal-cascade.jpg",
-            "title": "Static Bloom Thermal Cascade",
-            "series": "Static Bloom"
-        },
-        {
-            "file": "digital-art-static-bloom-halftone-collapse.jpg",
-            "title": "Static Bloom Halftone Collapse",
-            "series": "Static Bloom"
-        },
-        {
-            "file": "digital-art-corroded-silence-ash-drift.jpg",
-            "title": "Corroded Silence Ash Drift",
-            "series": "Corroded Silence"
-        },
-        {
-            "file": "digital-art-corroded-silence-charred-grain.jpg",
-            "title": "Corroded Silence Charred Grain",
-            "series": "Corroded Silence"
-        },
-        {
-            "file": "digital-art-corroded-silence-cracked-earth.jpg",
-            "title": "Corroded Silence Cracked Earth",
-            "series": "Corroded Silence"
-        },
-        {
-            "file": "digital-art-corroded-silence-cracked-ember.jpg",
-            "title": "Corroded Silence Cracked Ember",
-            "series": "Corroded Silence"
-        },
-        {
-            "file": "digital-art-corroded-silence-frayed-rope.jpg",
-            "title": "Corroded Silence Frayed Rope",
-            "series": "Corroded Silence"
-        },
-        {
-            "file": "digital-art-corroded-silence-frost-glass.jpg",
-            "title": "Corroded Silence Frost Glass",
-            "series": "Corroded Silence"
-        },
-        {
-            "file": "digital-art-corroded-silence-iron-stain.jpg",
-            "title": "Corroded Silence Iron Stain",
-            "series": "Corroded Silence"
-        },
-        {
-            "file": "digital-art-corroded-silence-oxidized-copper.jpg",
-            "title": "Corroded Silence Oxidized Copper",
-            "series": "Corroded Silence"
-        },
-        {
-            "file": "digital-art-corroded-silence-rust-peel.jpg",
-            "title": "Corroded Silence Rust Peel",
-            "series": "Corroded Silence"
-        },
-        {
-            "file": "digital-art-corroded-silence-stone-lichen.jpg",
-            "title": "Corroded Silence Stone Lichen",
-            "series": "Corroded Silence"
-        },
-        {
-            "file": "digital-art-corroded-silence-tar-bubbles.jpg",
-            "title": "Corroded Silence Tar Bubbles",
-            "series": "Corroded Silence"
-        },
-        {
-            "file": "digital-art-corroded-silence-velvet-fold.jpg",
-            "title": "Corroded Silence Velvet Fold",
-            "series": "Corroded Silence"
-        },
-        {
-            "file": "digital-art-the-burning-gaze-ember-iris.jpg",
-            "title": "The Burning Gaze Ember Iris",
-            "series": "The Burning Gaze"
-        },
-        {
-            "file": "digital-art-the-burning-gaze-frost-lens.jpg",
-            "title": "The Burning Gaze Frost Lens",
-            "series": "The Burning Gaze"
-        },
-        {
-            "file": "digital-art-the-burning-gaze-jade-fracture.jpg",
-            "title": "The Burning Gaze Jade Fracture",
-            "series": "The Burning Gaze"
-        },
-        {
-            "file": "digital-art-the-burning-gaze-molten-gem.jpg",
-            "title": "The Burning Gaze Molten Gem",
-            "series": "The Burning Gaze"
-        },
-        {
-            "file": "digital-art-the-burning-gaze-violet-smoke.jpg",
-            "title": "The Burning Gaze Violet Smoke",
-            "series": "The Burning Gaze"
-        },
-        {
-            "file": "digital-art-steel-lanes-arch-glow.jpg",
-            "title": "Steel Lanes Arch Glow",
-            "series": "Steel Lanes"
-        },
-        {
-            "file": "digital-art-steel-lanes-brushed-grain.jpg",
-            "title": "Steel Lanes Brushed Grain",
-            "series": "Steel Lanes"
-        },
-        {
-            "file": "digital-art-steel-lanes-chrome-vanish.jpg",
-            "title": "Steel Lanes Chrome Vanish",
-            "series": "Steel Lanes"
-        },
-        {
-            "file": "digital-art-steel-lanes-midnight-deck.jpg",
-            "title": "Steel Lanes Midnight Deck",
-            "series": "Steel Lanes"
-        },
-        {
-            "file": "digital-art-steel-lanes-return-forge.jpg",
-            "title": "Steel Lanes Return Forge",
-            "series": "Steel Lanes"
-        },
-        {
-            "file": "digital-art-steel-lanes-gothic-step.jpg",
-            "title": "Steel Lanes Gothic Step",
-            "series": "Steel Lanes"
-        },
-        {
-            "file": "digital-art-steel-lanes-shoe-approach.jpg",
-            "title": "Steel Lanes Shoe Approach",
-            "series": "Steel Lanes"
-        },
-        {
-            "file": "digital-art-steel-lanes-lounge-table.jpg",
-            "title": "Steel Lanes Lounge Table",
-            "series": "Steel Lanes"
-        },
-        {
-            "file": "digital-art-steel-lanes-candle-booth.jpg",
-            "title": "Steel Lanes Candle Booth",
-            "series": "Steel Lanes"
-        },
-        {
-            "file": "digital-art-steel-lanes-vault-approach.jpg",
-            "title": "Steel Lanes Vault Approach",
-            "series": "Steel Lanes"
-        },
-        {
-            "file": "digital-art-steel-lanes-pin-crimson.jpg",
-            "title": "Steel Lanes Pin Crimson",
-            "series": "Steel Lanes"
-        },
-        {
-            "file": "digital-art-steel-lanes-rail-reflection.jpg",
-            "title": "Steel Lanes Rail Reflection",
-            "series": "Steel Lanes"
-        },
-        {
-            "file": "digital-art-blackwood-branch-void.jpg",
-            "title": "Blackwood Branch Void",
-            "series": "Blackwood"
-        },
-        {
-            "file": "digital-art-blackwood-moon-canopy.jpg",
-            "title": "Blackwood Moon Canopy",
-            "series": "Blackwood"
-        },
-        {
-            "file": "digital-art-blackwood-path-fog.jpg",
-            "title": "Blackwood Path Fog",
-            "series": "Blackwood"
-        },
-        {
-            "file": "digital-art-blackwood-pine-storm.jpg",
-            "title": "Blackwood Pine Storm",
-            "series": "Blackwood"
-        },
-        {
-            "file": "digital-art-blackwood-root-moss.jpg",
-            "title": "Blackwood Root Moss",
-            "series": "Blackwood"
-        },
-        {
-            "file": "digital-art-blackwood-dense-wall.jpg",
-            "title": "Blackwood Dense Wall",
-            "series": "Blackwood"
-        },
-        {
-            "file": "digital-art-blackwood-fallen-log.jpg",
-            "title": "Blackwood Fallen Log",
-            "series": "Blackwood"
-        },
-        {
-            "file": "digital-art-blackwood-spiderweb-dew.jpg",
-            "title": "Blackwood Spiderweb Dew",
-            "series": "Blackwood"
-        },
-        {
-            "file": "digital-art-blackwood-creek-reflection.jpg",
-            "title": "Blackwood Creek Reflection",
-            "series": "Blackwood"
-        },
-        {
-            "file": "digital-art-blackwood-owl-silhouette.jpg",
-            "title": "Blackwood Owl Silhouette",
-            "series": "Blackwood"
-        },
-        {
-            "file": "digital-art-blackwood-mist-clearing.jpg",
-            "title": "Blackwood Mist Clearing",
-            "series": "Blackwood"
-        },
-        {
-            "file": "digital-art-blackwood-rain-bark.jpg",
-            "title": "Blackwood Rain Bark",
-            "series": "Blackwood"
-        },
-        {
-            "file": "digital-art-burned-canvas-ash-weave.jpg",
-            "title": "Burned Canvas Ash Weave",
-            "series": "Burned Canvas"
-        },
-        {
-            "file": "digital-art-burned-canvas-ember-crack.jpg",
-            "title": "Burned Canvas Ember Crack",
-            "series": "Burned Canvas"
-        },
-        {
-            "file": "digital-art-burned-canvas-melted-gilt.jpg",
-            "title": "Burned Canvas Melted Gilt",
-            "series": "Burned Canvas"
-        },
-        {
-            "file": "digital-art-burned-canvas-ruined-frame.jpg",
-            "title": "Burned Canvas Ruined Frame",
-            "series": "Burned Canvas"
-        },
-        {
-            "file": "digital-art-burned-canvas-soot-peel.jpg",
-            "title": "Burned Canvas Soot Peel",
-            "series": "Burned Canvas"
-        },
-        {
-            "file": "digital-art-burned-canvas-blistered-portrait.jpg",
-            "title": "Burned Canvas Blistered Portrait",
-            "series": "Burned Canvas"
-        },
-        {
-            "file": "digital-art-burned-canvas-cinder-lattice.jpg",
-            "title": "Burned Canvas Cinder Lattice",
-            "series": "Burned Canvas"
-        },
-        {
-            "file": "digital-art-burned-canvas-scorched-reliquary.jpg",
-            "title": "Burned Canvas Scorched Reliquary",
-            "series": "Burned Canvas"
-        },
-        {
-            "file": "digital-art-burned-canvas-ember-veil.jpg",
-            "title": "Burned Canvas Ember Veil",
-            "series": "Burned Canvas"
-        },
-        {
-            "file": "digital-art-burned-canvas-carbon-bloom.jpg",
-            "title": "Burned Canvas Carbon Bloom",
-            "series": "Burned Canvas"
-        },
-        {
-            "file": "digital-art-burned-canvas-smolder-edge.jpg",
-            "title": "Burned Canvas Smolder Edge",
-            "series": "Burned Canvas"
-        },
-        {
-            "file": "digital-art-burned-canvas-tar-fracture.jpg",
-            "title": "Burned Canvas Tar Fracture",
-            "series": "Burned Canvas"
-        },
-        {
-            "file": "digital-art-till-darkness-aisle-fog.jpg",
-            "title": "Till Darkness Aisle Fog",
-            "series": "Till Darkness"
-        },
-        {
-            "file": "digital-art-till-darkness-black-veil.jpg",
-            "title": "Till Darkness Black Veil",
-            "series": "Till Darkness"
-        },
-        {
-            "file": "digital-art-till-darkness-candle-dance.jpg",
-            "title": "Till Darkness Candle Dance",
-            "series": "Till Darkness"
-        },
-        {
-            "file": "digital-art-till-darkness-graveyard-bride.jpg",
-            "title": "Till Darkness Graveyard Bride",
-            "series": "Till Darkness"
-        },
-        {
-            "file": "digital-art-till-darkness-lace-vow.jpg",
-            "title": "Till Darkness Lace Vow",
-            "series": "Till Darkness"
-        },
-        {
-            "file": "digital-art-till-darkness-candlelit-oath.jpg",
-            "title": "Till Darkness Candlelit Oath",
-            "series": "Till Darkness"
-        },
-        {
-            "file": "digital-art-till-darkness-crimson-aisle.jpg",
-            "title": "Till Darkness Crimson Aisle",
-            "series": "Till Darkness"
-        },
-        {
-            "file": "digital-art-till-darkness-iron-gates.jpg",
-            "title": "Till Darkness Iron Gates",
-            "series": "Till Darkness"
-        },
-        {
-            "file": "digital-art-till-darkness-midnight-altar.jpg",
-            "title": "Till Darkness Midnight Altar",
-            "series": "Till Darkness"
-        },
-        {
-            "file": "digital-art-till-darkness-raven-bouquet.jpg",
-            "title": "Till Darkness Raven Bouquet",
-            "series": "Till Darkness"
-        },
-        {
-            "file": "digital-art-till-darkness-shadow-waltz.jpg",
-            "title": "Till Darkness Shadow Waltz",
-            "series": "Till Darkness"
-        },
-        {
-            "file": "digital-art-till-darkness-veil-embrace.jpg",
-            "title": "Till Darkness Veil Embrace",
-            "series": "Till Darkness"
-        },
-        {
-            "file": "digital-art-faces-in-void-crow-eclipse.jpg",
-            "title": "Faces In Void Eclipse",
-            "series": "Faces In Void"
-        },
-        {
-            "file": "digital-art-faces-in-void-half-emerge.jpg",
-            "title": "Faces In Void Half Emerge",
-            "series": "Faces In Void"
-        },
-        {
-            "file": "digital-art-faces-in-void-rim-eye.jpg",
-            "title": "Faces In Void Rim Eye",
-            "series": "Faces In Void"
-        },
-        {
-            "file": "digital-art-faces-in-void-sink-pale.jpg",
-            "title": "Faces In Void Sink Pale",
-            "series": "Faces In Void"
-        },
-        {
-            "file": "digital-art-faces-in-void-whisper-crowd.jpg",
-            "title": "Faces In Void Whisper Crowd",
-            "series": "Faces In Void"
-        },
-        {
-            "file": "digital-art-faces-in-void-ash-cheek.jpg",
-            "title": "Faces In Void Ash Cheek",
-            "series": "Faces In Void"
-        },
-        {
-            "file": "digital-art-faces-in-void-drowned-whisper.jpg",
-            "title": "Faces In Void Drowned Whisper",
-            "series": "Faces In Void"
-        },
-        {
-            "file": "digital-art-faces-in-void-hollow-gaze.jpg",
-            "title": "Faces In Void Hollow Gaze",
-            "series": "Faces In Void"
-        },
-        {
-            "file": "digital-art-faces-in-void-mist-pair.jpg",
-            "title": "Faces In Void Mist Pair",
-            "series": "Faces In Void"
-        },
-        {
-            "file": "digital-art-faces-in-void-shadow-profile.jpg",
-            "title": "Faces In Void Shadow Profile",
-            "series": "Faces In Void"
-        },
-        {
-            "file": "digital-art-faces-in-void-slit-light.jpg",
-            "title": "Faces In Void Slit Light",
-            "series": "Faces In Void"
-        },
-        {
-            "file": "digital-art-faces-in-void-void-chorus.jpg",
-            "title": "Faces In Void Void Chorus",
-            "series": "Faces In Void"
-        },
-        {
             "file": "BlackIce Card 2.jpeg"
         },
         {
@@ -806,96 +896,6 @@
         },
         {
             "file": "woods.jpeg"
-        },
-        {
-            "file": "digital-art-cinder-veil-smoke-vigil.jpg",
-            "title": "Cinder Veil Smoke Vigil",
-            "series": "Cinder Veil"
-        },
-        {
-            "file": "digital-art-cinder-veil-ember-watch.jpg",
-            "title": "Cinder Veil Ember Watch",
-            "series": "Cinder Veil"
-        },
-        {
-            "file": "digital-art-cinder-veil-frost-tear.jpg",
-            "title": "Cinder Veil Frost Tear",
-            "series": "Cinder Veil"
-        },
-        {
-            "file": "digital-art-cinder-veil-jade-hollow.jpg",
-            "title": "Cinder Veil Jade Hollow",
-            "series": "Cinder Veil"
-        },
-        {
-            "file": "digital-art-cinder-veil-coal-amber.jpg",
-            "title": "Cinder Veil Coal Amber",
-            "series": "Cinder Veil"
-        },
-        {
-            "file": "digital-art-cinder-veil-violet-ash.jpg",
-            "title": "Cinder Veil Violet Ash",
-            "series": "Cinder Veil"
-        },
-        {
-            "file": "digital-art-cinder-veil-quiet-reckoning.jpg",
-            "title": "Cinder Veil Quiet Reckoning",
-            "series": "Cinder Veil"
-        },
-        {
-            "file": "digital-art-cinder-veil-hollow-prayer.jpg",
-            "title": "Cinder Veil Hollow Prayer",
-            "series": "Cinder Veil"
-        },
-        {
-            "file": "digital-art-cinder-veil-midnight-doubt.jpg",
-            "title": "Cinder Veil Midnight Doubt",
-            "series": "Cinder Veil"
-        },
-        {
-            "file": "digital-art-cinder-veil-pale-soliloquy.jpg",
-            "title": "Cinder Veil Pale Soliloquy",
-            "series": "Cinder Veil"
-        },
-        {
-            "file": "digital-art-cinder-veil-still-threshold.jpg",
-            "title": "Cinder Veil Still Threshold",
-            "series": "Cinder Veil"
-        },
-        {
-            "file": "digital-art-cinder-veil-weary-vigil.jpg",
-            "title": "Cinder Veil Weary Vigil",
-            "series": "Cinder Veil"
-        },
-        {
-            "file": "digital-art-the-burning-gaze-downcast-ember.jpg",
-            "title": "The Burning Gaze Downcast Ember",
-            "series": "The Burning Gaze"
-        },
-        {
-            "file": "digital-art-the-burning-gaze-prayer-iris.jpg",
-            "title": "The Burning Gaze Prayer Iris",
-            "series": "The Burning Gaze"
-        },
-        {
-            "file": "digital-art-the-burning-gaze-doubted-jade.jpg",
-            "title": "The Burning Gaze Doubted Jade",
-            "series": "The Burning Gaze"
-        },
-        {
-            "file": "digital-art-the-burning-gaze-whisper-violet.jpg",
-            "title": "The Burning Gaze Whisper Violet",
-            "series": "The Burning Gaze"
-        },
-        {
-            "file": "digital-art-the-burning-gaze-threshold-amber.jpg",
-            "title": "The Burning Gaze Threshold Amber",
-            "series": "The Burning Gaze"
-        },
-        {
-            "file": "digital-art-the-burning-gaze-weary-frost.jpg",
-            "title": "The Burning Gaze Weary Frost",
-            "series": "The Burning Gaze"
         }
     ],
     "photography": [
