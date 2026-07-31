@@ -3,7 +3,7 @@ from io import BytesIO
 from pathlib import Path
 import zipfile
 
-from PIL import Image, ImageDraw, ImageFont, ImageOps
+from PIL import Image, ImageOps
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,21 +25,8 @@ def add_watermark(image: Image.Image) -> None:
     height = round(seal.height * width / seal.width)
     seal = seal.resize((width, height), Image.Resampling.LANCZOS)
     x = image.width - width - 22
-    y = image.height - height - 42
+    y = image.height - height - 22
     image.paste(seal, (x, y), seal)
-
-    draw = ImageDraw.Draw(image)
-    font = ImageFont.truetype("C:/Windows/Fonts/arial.ttf", 15)
-    label = "gianniperugini.com"
-    bounds = draw.textbbox((0, 0), label, font=font)
-    draw.text(
-        (image.width - (bounds[2] - bounds[0]) - 22, image.height - 25),
-        label,
-        font=font,
-        fill=(194, 52, 49),
-        stroke_width=1,
-        stroke_fill=(0, 0, 0),
-    )
 
 
 def main() -> None:

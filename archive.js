@@ -186,34 +186,74 @@
         if (trigger?.isConnected) trigger.focus();
     }
 
-    function createItem(work, index, extraClass = '') {
+    function createItem(work, index, extraClass = '', previewFormat = currentFormat) {
         const item = document.createElement('button');
         item.type = 'button';
         item.className = `archive-item ${extraClass}`.trim();
+        item.dataset.previewFormat = previewFormat;
         item.style.transitionDelay = `${index * 0.05}s`;
         item.setAttribute('aria-label', `${t('viewImage')}: ${localizedFullTitle(work)}`);
 
         const img = document.createElement('img');
-        img.src = imagePath(work.file, currentFormat);
+        img.src = imagePath(work.file, previewFormat);
         img.dataset.file = work.file;
         img.alt = localizedFullTitle(work);
         img.loading = 'lazy';
 
         item.appendChild(img);
-        item.classList.toggle('is-mobile', currentFormat === 'mobile' && extraClass.includes('digital-art-item'));
+        item.classList.toggle('is-mobile', previewFormat === 'mobile' && extraClass.includes('digital-art-item'));
         if (work.title) {
             const label = document.createElement('span');
             label.className = 'archive-item-label';
             label.textContent = localizedArtworkTitle(work);
             item.appendChild(label);
         }
-        item.addEventListener('click', () => openLightbox(work, item));
+        item.addEventListener('click', () => openLightbox({
+            ...work,
+            format: item.dataset.previewFormat,
+        }, item));
 
         requestAnimationFrame(() => {
             item.classList.add('is-visible');
         });
 
         return item;
+    }
+
+    function createSeriesFormatSwitch(group, initialFormat) {
+        const control = document.createElement('div');
+        control.className = 'format-switch format-switch-series';
+        control.setAttribute('role', 'group');
+        control.setAttribute('aria-label', t('previewFormat'));
+
+        ['desktop', 'mobile'].forEach((format) => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'format-switch-button';
+            button.dataset.format = format;
+            button.textContent = t(format);
+            const active = format === initialFormat;
+            button.classList.toggle('is-active', active);
+            button.setAttribute('aria-pressed', String(active));
+            button.addEventListener('click', () => setSeriesFormat(group, format));
+            control.appendChild(button);
+        });
+
+        return control;
+    }
+
+    function setSeriesFormat(group, format) {
+        if (format !== 'desktop' && format !== 'mobile') return;
+        group.dataset.previewFormat = format;
+        const grid = group.querySelector('.archive-grid');
+        grid?.classList.toggle('is-mobile', format === 'mobile');
+        syncFormatButtons(group.querySelectorAll('.format-switch-series [data-format]'), format);
+        group.querySelectorAll('.archive-item.digital-art-item').forEach((item) => {
+            const image = item.querySelector('img[data-file]');
+            if (image) image.src = imagePath(image.dataset.file, format);
+            item.dataset.previewFormat = format;
+            item.classList.toggle('is-mobile', format === 'mobile');
+        });
     }
 
     function renderSection(id, title, works) {
@@ -271,19 +311,26 @@
             const group = document.createElement('div');
             group.className = 'archive-series';
             group.id = seriesAnchor(series);
+            group.dataset.previewFormat = currentFormat;
+
+            const groupHeader = document.createElement('div');
+            groupHeader.className = 'archive-series-heading';
 
             const groupHeading = document.createElement('h3');
             groupHeading.className = 'archive-series-title';
             groupHeading.textContent = localizedSeries(series);
 
+            groupHeader.appendChild(groupHeading);
+            groupHeader.appendChild(createSeriesFormatSwitch(group, currentFormat));
+
             const grid = document.createElement('div');
             grid.className = 'archive-grid';
             grid.classList.toggle('is-mobile', currentFormat === 'mobile');
             seriesWorks.forEach((work, index) => {
-                grid.appendChild(createItem(work, index, 'digital-art-item'));
+                grid.appendChild(createItem(work, index, 'digital-art-item', currentFormat));
             });
 
-            group.appendChild(groupHeading);
+            group.appendChild(groupHeader);
             group.appendChild(grid);
             section.appendChild(group);
         });
@@ -436,13 +483,8 @@
         if (format !== 'desktop' && format !== 'mobile') return;
         currentFormat = format;
         syncFormatButtons(galleryFormatButtons, currentFormat);
-        document.querySelectorAll('.archive-series .archive-grid').forEach((grid) => {
-            grid.classList.toggle('is-mobile', currentFormat === 'mobile');
-        });
-        document.querySelectorAll('.archive-item.digital-art-item').forEach((item) => {
-            const image = item.querySelector('img[data-file]');
-            if (image) image.src = imagePath(image.dataset.file, currentFormat);
-            item.classList.toggle('is-mobile', currentFormat === 'mobile');
+        document.querySelectorAll('.archive-series').forEach((group) => {
+            setSeriesFormat(group, currentFormat);
         });
     }
 
