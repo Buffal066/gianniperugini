@@ -30,6 +30,7 @@
 
     let worksData = null;
     let currentLanguage = initialLanguage();
+    let lightboxTrigger = null;
 
     function initialLanguage() {
         try {
@@ -133,19 +134,25 @@
         return `assets/images/watermarked/archive/${encodeURIComponent(watermarkedFile)}`;
     }
 
-    function openLightbox(work) {
+    function openLightbox(work, trigger = document.activeElement) {
+        lightboxTrigger = trigger instanceof HTMLElement ? trigger : null;
         lightboxImage.src = imagePath(work.file);
         lightboxImage.alt = localizedFullTitle(work);
         lightbox.hidden = false;
         document.body.style.overflow = 'hidden';
         window.archiveStore?.showForWork(work);
+        requestAnimationFrame(() => lightboxClose?.focus());
     }
 
     function closeLightbox() {
+        if (lightbox.hidden) return;
         lightbox.hidden = true;
-        lightboxImage.src = '';
+        lightboxImage.removeAttribute('src');
         document.body.style.overflow = '';
         window.archiveStore?.clearLightbox();
+        const trigger = lightboxTrigger;
+        lightboxTrigger = null;
+        if (trigger?.isConnected) trigger.focus();
     }
 
     function createItem(work, index, extraClass = '') {
@@ -167,7 +174,7 @@
             label.textContent = localizedArtworkTitle(work);
             item.appendChild(label);
         }
-        item.addEventListener('click', () => openLightbox(work));
+        item.addEventListener('click', () => openLightbox(work, item));
 
         requestAnimationFrame(() => {
             item.classList.add('is-visible');
@@ -371,6 +378,25 @@
         }
     }
 
+    function handleHashChange() {
+        const hash = window.location.hash.toLowerCase();
+        if (hash === '#composites' || hash === '#photography') applyView();
+    }
+
+    function navigateWithinStore(event) {
+        const link = event.target.closest('a[href^="#"]');
+        if (!link) return;
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+
+        event.preventDefault();
+        target.scrollIntoView({
+            behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+            block: 'start',
+        });
+        history.replaceState(null, '', link.getAttribute('href'));
+    }
+
     fetch('assets/images/archive/works.json')
         .then((response) => {
             if (!response.ok) throw new Error('Could not load works list');
@@ -378,14 +404,18 @@
         })
         .then((data) => {
             worksData = data;
-            applyView();
+            applyView({ scrollTop: false });
         })
         .catch(() => {
             empty.hidden = false;
         });
 
-    window.addEventListener('hashchange', applyView);
+    window.addEventListener('hashchange', handleHashChange);
     document.querySelector('.nav-menu')?.addEventListener('click', ensureHashOnCategoryClick);
+    heroActions?.addEventListener('click', navigateWithinStore);
+    window.addEventListener('archive:openwork', (event) => {
+        if (event.detail?.work) openLightbox(event.detail.work, event.detail.trigger);
+    });
     languageButtons.forEach((button) => {
         button.addEventListener('click', () => setLanguage(button.dataset.language));
     });
@@ -400,7 +430,32 @@
     });
 
     document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && !lightbox.hidden) closeLightbox();
+        if (lightbox.hidden) return;
+        if (event.key === 'Escape') {
+            event.preventDefault();
+            closeLightbox();
+            return;
+        }
+        if (event.key !== 'Tab') return;
+
+        const focusable = Array.from(lightbox.querySelectorAll(
+            'a[href]:not([aria-disabled="true"]), button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+        )).filter((element) => !element.hidden && element.getClientRects().length > 0);
+        if (!focusable.length) {
+            event.preventDefault();
+            lightbox.focus();
+            return;
+        }
+
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+            event.preventDefault();
+            last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+            event.preventDefault();
+            first.focus();
+        }
     });
 
     applyStaticTranslations();

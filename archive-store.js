@@ -1,5 +1,6 @@
 (function initArchiveStore() {
     const sampleRoot = document.getElementById('store-sample');
+    const sampleGrid = document.getElementById('sample-artwork-grid');
     const collectionsRoot = document.getElementById('store-collections');
     const archivesRoot = document.getElementById('store-archives');
     const lightboxProduct = document.getElementById('lightbox-product');
@@ -8,8 +9,7 @@
     const lightboxTitle = document.getElementById('lightbox-title');
     const lightboxAvailability = document.getElementById('lightbox-availability');
     const lightboxFormat = document.getElementById('lightbox-format');
-    const lightboxPrice = document.getElementById('lightbox-price');
-    const lightboxBuy = document.getElementById('lightbox-buy');
+    const lightboxOffers = document.getElementById('lightbox-offers');
     const i18n = window.archiveI18n || { ui: { en: {} }, productFr: {}, seriesFr: {}, titleFr: {} };
 
     if (!sampleRoot || !collectionsRoot || !archivesRoot) return;
@@ -72,6 +72,7 @@
     function typeLabel(product) {
         const labels = {
             free: 'freeSample',
+            individual: 'individualWallpaper',
             series: 'collectionPack',
             archive: 'personalArchive',
             commercial: 'commercialArchive',
@@ -94,6 +95,7 @@
 
     function callToAction(product) {
         if (product.type === 'free') return t('downloadSample');
+        if (product.type === 'individual') return t('buyThisWallpaper');
         if (product.type === 'series') return t('viewCollection');
         return t('getArchive');
     }
@@ -112,6 +114,7 @@
             link.href = `#${targetId}`;
             link.textContent = t('previewArchive');
         } else {
+            targetId = 'sample-artworks';
             link.href = `#${targetId}`;
             link.textContent = t('previewSample');
         }
@@ -121,11 +124,12 @@
             if (!target) return;
 
             event.preventDefault();
+            if (product.type === 'free') target.hidden = false;
             target.scrollIntoView({
                 behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
                 block: 'start',
             });
-            history.replaceState(null, '', '#composites');
+            history.replaceState(null, '', `#${targetId}`);
         });
 
         return link;
@@ -205,6 +209,13 @@
         const actions = document.createElement('div');
         actions.className = 'store-product-actions';
         actions.appendChild(createPreviewControl(sourceProduct));
+        if (sourceProduct.termsUrl) {
+            const terms = document.createElement('a');
+            terms.className = 'store-preview-link';
+            terms.href = sourceProduct.termsUrl;
+            terms.textContent = t('viewLicenceTerms');
+            actions.appendChild(terms);
+        }
         actions.appendChild(createBuyControl(sourceProduct));
 
         footer.appendChild(price);
@@ -229,10 +240,15 @@
 
         const items = catalog.products?.items || [];
         const sample = items.find((product) => product.type === 'free');
-        if (sample) sampleRoot.appendChild(createProductCard(sample, 'store-product-card-sample'));
+        if (sample) {
+            sampleRoot.appendChild(createProductCard(sample, 'store-product-card-sample'));
+            renderSamplePreview(sample);
+        }
 
-        items
-            .filter((product) => product.type === 'series')
+        const featuredIds = catalog.products?.featured || [];
+        featuredIds
+            .map((id) => items.find((product) => product.id === id))
+            .filter(Boolean)
             .forEach((product) => collectionsRoot.appendChild(createProductCard(product)));
 
         items
@@ -240,50 +256,114 @@
             .forEach((product) => archivesRoot.appendChild(createProductCard(product, 'store-product-card-wide')));
     }
 
-    function productForWork(work) {
-        const items = catalog?.products?.items || [];
-        if (!work?.series) return null;
-        return items.find((product) => product.series === work.series)
-            || items.find((product) => product.id === 'complete-personal-archive')
-            || null;
+    function renderSamplePreview(sample) {
+        if (!sampleGrid) return;
+        sampleGrid.innerHTML = '';
+
+        (sample.artworks || []).forEach((artwork) => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'sample-artwork';
+
+            const work = {
+                file: artwork.file,
+                title: artwork.title,
+                series: artwork.series,
+                purchaseProductId: sample.id,
+            };
+            const title = `${localizedSeries(work.series)} — ${localizedArtworkTitle(work)}`;
+            const format = artwork.format === 'mobile' ? t('mobileWallpaper') : t('desktopWallpaper');
+            button.setAttribute('aria-label', `${t('viewImage')}: ${title} — ${format}`);
+
+            const image = document.createElement('img');
+            image.src = watermarkedPreviewPath(`assets/images/archive/${artwork.file}`);
+            image.alt = title;
+            image.loading = 'lazy';
+
+            const label = document.createElement('span');
+            label.textContent = `${title} · ${format}`;
+            button.appendChild(image);
+            button.appendChild(label);
+            button.addEventListener('click', () => {
+                window.dispatchEvent(new CustomEvent('archive:openwork', {
+                    detail: { work, trigger: button },
+                }));
+            });
+            sampleGrid.appendChild(button);
+        });
     }
 
-    function updateLightboxBuyControl(sourceProduct) {
-        if (!lightboxBuy) return;
+    function productsForWork(work) {
+        const items = catalog?.products?.items || [];
+        if (!work?.series) return [];
+        if (work.purchaseProductId) {
+            const product = items.find((item) => item.id === work.purchaseProductId);
+            if (product) return [product];
+        }
+        const purchase = catalog?.purchase || {};
+        const individual = purchase.individualWallpaper;
+        const artworkOffers = purchase.artworkOffers?.[work.title];
+        const configuredOffers = Array.isArray(artworkOffers) ? artworkOffers : [];
 
-        lightboxBuy.className = 'store-buy-button';
-        lightboxBuy.removeAttribute('href');
-        lightboxBuy.removeAttribute('target');
-        lightboxBuy.removeAttribute('rel');
+        const resolvedOffers = configuredOffers
+            .map((offer) => {
+                const product = offer.productId
+                    ? items.find((item) => item.id === offer.productId)
+                    : offer;
+                return product ? { ...product, ...offer } : null;
+            })
+            .filter(Boolean);
 
+        const productId = purchase.collectionProductBySeries?.[work.series];
+        const collection = productId
+            ? items.find((product) => product.id === productId)
+            : items.find((product) => product.series === work.series);
+        const offers = [];
+        if (individual) {
+            const artworkOverride = resolvedOffers.find((offer) => offer.type === 'individual');
+            offers.push(artworkOverride ? { ...individual, ...artworkOverride } : individual);
+        }
+        resolvedOffers
+            .filter((offer) => offer.type !== 'individual')
+            .forEach((offer) => offers.push(offer));
+        if (collection && !offers.some((offer) => offer.id === collection.id)) offers.push(collection);
+        return offers;
+    }
+
+    function createLightboxBuyControl(sourceProduct) {
         if (hasPayhipUrl(sourceProduct)) {
-            lightboxBuy.href = sourceProduct.payhipUrl;
-            lightboxBuy.target = '_blank';
-            lightboxBuy.rel = 'noopener noreferrer';
-            lightboxBuy.removeAttribute('aria-disabled');
-            lightboxBuy.textContent = callToAction(sourceProduct);
-            return;
+            const link = document.createElement('a');
+            link.className = 'store-buy-button';
+            link.href = sourceProduct.payhipUrl;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            link.textContent = sourceProduct.cta || callToAction(sourceProduct);
+            return link;
         }
 
-        lightboxBuy.classList.add('is-pending');
-        lightboxBuy.setAttribute('aria-disabled', 'true');
-        lightboxBuy.textContent = t('payhipPending');
-        lightboxBuy.title = t('payhipPendingHelp');
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'store-buy-button is-pending';
+        button.disabled = true;
+        const isIndividual = sourceProduct.type === 'individual';
+        button.textContent = isIndividual ? t('individualComingSoonShort') : t('payhipPending');
+        button.title = isIndividual ? t('individualComingSoon') : t('payhipPendingHelp');
+        return button;
     }
 
     function showForWork(work) {
         activeWork = work;
         if (!catalog || !lightboxProduct) return;
 
-        const sourceProduct = productForWork(work);
-        if (!sourceProduct) {
+        const offers = productsForWork(work);
+        if (!offers.length) {
             lightboxProduct.hidden = true;
             lightboxDialog?.classList.remove('has-product');
             return;
         }
 
+        const sourceProduct = offers[0];
         const product = localizedProduct(sourceProduct);
-        const directCollection = sourceProduct.series === work.series;
 
         lightboxSeries.textContent = localizedSeries(work.series);
         lightboxTitle.textContent = localizedArtworkTitle(work);
@@ -291,9 +371,32 @@
         lightboxFormat.textContent = `${t('formatsIncluded')} · ${
             sourceProduct.type === 'commercial' ? t('commercialLicenceShort') : t('personalLicenceShort')
         }`;
-        lightboxPrice.textContent = priceLabel(sourceProduct);
-        updateLightboxBuyControl(sourceProduct);
-        lightboxProduct.classList.toggle('is-archive-offer', !directCollection);
+        lightboxOffers.innerHTML = '';
+        offers.forEach((offer) => {
+            const localizedOffer = localizedProduct(offer);
+            const row = document.createElement('div');
+            row.className = 'lightbox-offer';
+            if (offer.type === 'individual' && !hasPayhipUrl(offer)) row.classList.add('is-coming-soon');
+            const summary = document.createElement('div');
+            const label = document.createElement('p');
+            label.className = 'lightbox-offer-label';
+            label.textContent = localizedOffer.optionName || localizedOffer.name;
+            const price = document.createElement('span');
+            price.className = 'lightbox-price';
+            price.textContent = priceLabel(offer);
+            const detail = document.createElement('p');
+            detail.className = 'lightbox-offer-detail';
+            detail.textContent = offer.type === 'individual'
+                ? t('individualIncludes')
+                : t('collectionValueMessage');
+            summary.appendChild(label);
+            summary.appendChild(price);
+            summary.appendChild(detail);
+            row.appendChild(summary);
+            row.appendChild(createLightboxBuyControl(offer));
+            lightboxOffers.appendChild(row);
+        });
+        lightboxProduct.classList.remove('is-archive-offer');
         lightboxProduct.hidden = false;
         lightboxDialog?.classList.add('has-product');
     }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- deployed: 2026-07-30 19:54:36 -->
+<!-- deployed: 2026-07-31 12:59:14 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -62,10 +62,32 @@
             <header class="store-section-heading">
                 <p class="store-kicker" data-i18n="storeKicker">Start here</p>
                 <h2 data-i18n="storeHeading">Choose how you want to use the art</h2>
-                <p data-i18n="storeIntro">Download a free sample, choose a signature collection, or unlock the complete archive.</p>
+                <p data-i18n="storeIntro">Choose one wallpaper from $1+, a signature collection from $6+, or the complete archive.</p>
+                <p class="store-tax-note" data-i18n="taxNote">Applicable taxes are calculated at checkout.</p>
             </header>
 
             <div id="store-sample" class="store-sample"></div>
+            <section id="sample-artworks" class="store-sample-preview" aria-labelledby="sample-artworks-heading" hidden>
+                <header class="store-sample-preview-heading">
+                    <p class="store-kicker" data-i18n="samplePreviewKicker">Included in the free sample</p>
+                    <h2 id="sample-artworks-heading" data-i18n="samplePreviewHeading">Preview all six sample files</h2>
+                    <p data-i18n="samplePreviewIntro">These are the exact three desktop and three mobile wallpapers delivered in the sample ZIP.</p>
+                </header>
+                <div id="sample-artwork-grid" class="archive-grid store-sample-grid"></div>
+            </section>
+
+            <aside class="individual-wallpaper-callout" aria-labelledby="individual-wallpaper-heading">
+                <div>
+                    <p class="store-kicker" data-i18n="individualKicker">Buy only the image you want</p>
+                    <h2 id="individual-wallpaper-heading" data-i18n="individualHeading">Individual wallpapers — $1+</h2>
+                    <p data-i18n="individualDescription">Pay what you want. Each purchase will include the selected artwork in 4K desktop and mobile formats for personal use.</p>
+                </div>
+                <div class="individual-wallpaper-action">
+                    <strong data-i18n="individualPriceMessage">$1+ — pay what you want</strong>
+                    <a href="#browse-art" class="store-buy-button" data-i18n="chooseWallpaper">Choose a wallpaper</a>
+                    <span data-i18n="individualComingSoon">Individual checkout is being prepared. Collection purchases are available now.</span>
+                </div>
+            </aside>
 
             <section class="store-product-group" aria-labelledby="collections-heading">
                 <div class="store-product-group-heading">
@@ -98,7 +120,8 @@
                 <article class="store-license-card">
                     <p class="store-kicker" data-i18n="commercialUseKicker">For your work</p>
                     <h3 data-i18n="commercialUseTitle">Commercial use</h3>
-                    <p data-i18n="commercialUseText">Use the archive in websites, social content, ads, videos, and flattened client projects.</p>
+                    <p data-i18n="commercialUseText">Standard commercial use for websites, social posts, digital ads, presentations, videos, stream graphics, and flattened client work. Resale, merchandise, publishing, book covers, logos, NFTs, and AI training are excluded.</p>
+                    <a class="store-terms-link" href="commercial-licence.html" data-i18n="viewLicenceTerms">View the complete licence terms</a>
                 </article>
             </div>
         </div>
@@ -109,7 +132,7 @@
             <header class="archive-gallery-heading">
                 <p class="store-kicker" data-i18n="browseKicker">Browse the art</p>
                 <h2 data-i18n="browseHeading">Explore every collection</h2>
-                <p data-i18n="browseIntro">Every collection is shown in full below. Select an image to see it larger before you purchase.</p>
+                <p data-i18n="browseIntro">Every collection is shown in full below. Select any image to preview its $1+ individual option and its collection.</p>
             </header>
             <div id="archive-sections"></div>
             <div id="archive-empty" class="archive-empty" hidden>
@@ -128,21 +151,18 @@
         </div>
     </footer>
 
-    <div id="lightbox" class="lightbox" hidden>
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-describedby="lightbox-availability lightbox-format" hidden>
         <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
         <div class="lightbox-dialog">
             <div class="lightbox-media">
-                <img id="lightbox-image" src="" alt="">
+                <img id="lightbox-image" alt="">
             </div>
             <aside id="lightbox-product" class="lightbox-product" hidden>
                 <p id="lightbox-series" class="lightbox-series"></p>
                 <h2 id="lightbox-title" class="lightbox-title"></h2>
                 <p id="lightbox-availability" class="lightbox-availability"></p>
                 <p id="lightbox-format" class="lightbox-format"></p>
-                <div class="lightbox-purchase">
-                    <span id="lightbox-price" class="lightbox-price"></span>
-                    <a id="lightbox-buy" class="store-buy-button" aria-disabled="true"></a>
-                </div>
+                <div id="lightbox-offers" class="lightbox-offers"></div>
             </aside>
         </div>
     </div>

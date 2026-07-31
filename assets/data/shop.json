@@ -19,6 +19,14 @@
                 "artworkCount": 6,
                 "preview": "assets/images/archive/digital-art-burned-canvas-ember-crack.jpg",
                 "description": "Try six curated wallpaper files from five gothic, urban, and abstract collections.",
+                "artworks": [
+                    { "file": "digital-art-burned-canvas-ember-crack.jpg", "title": "Burned Canvas Ember Crack", "series": "Burned Canvas", "format": "desktop" },
+                    { "file": "digital-art-midnight-masquerade-portrait-veil.jpg", "title": "Midnight Masquerade Portrait Veil", "series": "Midnight Masquerade", "format": "desktop" },
+                    { "file": "digital-art-steel-lanes-lounge-table.jpg", "title": "Steel Lanes Lounge Table", "series": "Steel Lanes", "format": "desktop" },
+                    { "file": "digital-art-corroded-silence-charred-grain.jpg", "title": "Corroded Silence Charred Grain", "series": "Corroded Silence", "format": "mobile" },
+                    { "file": "digital-art-midnight-masquerade-exhale-veil.jpg", "title": "Midnight Masquerade Exhale Veil", "series": "Midnight Masquerade", "format": "mobile" },
+                    { "file": "digital-art-wet-neon-noir-alley-pulse.jpg", "title": "Wet Neon Noir Alley Pulse", "series": "Wet Neon Noir", "format": "mobile" }
+                ],
                 "payhipUrl": "https://payhip.com/b/lFO2d"
             },
             {
@@ -74,6 +82,136 @@
                 "payhipUrl": "https://payhip.com/b/eTMG3"
             },
             {
+                "id": "steel-lanes",
+                "type": "series",
+                "series": "Steel Lanes",
+                "name": "Steel Lanes",
+                "subtitle": "12 artworks · desktop + mobile",
+                "price": 6,
+                "minimumPrice": true,
+                "artworkCount": 12,
+                "preview": "assets/images/archive/digital-art-steel-lanes-lounge-table.jpg",
+                "description": "Dark cinematic bowling architecture, brushed steel, candlelit lounges, and polished reflections.",
+                "payhipUrl": "https://payhip.com/b/c6q10"
+            },
+            {
+                "id": "faces-in-void",
+                "type": "series",
+                "series": "Faces in Void",
+                "name": "Faces in Void",
+                "subtitle": "12 artworks · desktop + mobile",
+                "price": 6,
+                "minimumPrice": true,
+                "artworkCount": 12,
+                "preview": "assets/images/archive/digital-art-faces-in-void-crow-eclipse.jpg",
+                "description": "Haunting faces emerging from shadow, smoke, ash, and near-total darkness.",
+                "payhipUrl": "https://payhip.com/b/krH6u"
+            },
+            {
+                "id": "cinder-veil",
+                "type": "series",
+                "series": "Cinder Veil",
+                "name": "Cinder Veil",
+                "subtitle": "12 artworks · desktop + mobile",
+                "price": 6,
+                "minimumPrice": true,
+                "artworkCount": 12,
+                "preview": "assets/images/archive/digital-art-cinder-veil-smoke-vigil.jpg",
+                "description": "Intimate portraits shaped by smoke, embers, colored light, and quiet contemplation.",
+                "payhipUrl": "https://payhip.com/b/5gwvV"
+            },
+            {
+                "id": "the-burning-gaze",
+                "type": "series",
+                "series": "The Burning Gaze",
+                "name": "The Burning Gaze",
+                "subtitle": "12 artworks · desktop + mobile",
+                "price": 6,
+                "minimumPrice": true,
+                "artworkCount": 12,
+                "preview": "assets/images/archive/digital-art-the-burning-gaze-smoke-cathedral.jpg",
+                "description": "Surreal close-up eyes illuminated by ember, frost, jade, violet, and molten color.",
+                "payhipUrl": "https://payhip.com/b/yLG1h"
+            },
+            {
+                "id": "till-darkness",
+                "type": "series",
+                "series": "Till Darkness",
+                "name": "Till Darkness",
+                "subtitle": "12 artworks · desktop + mobile",
+                "price": 6,
+                "minimumPrice": true,
+                "artworkCount": 12,
+                "preview": "assets/images/archive/digital-art-till-darkness-aisle-fog.jpg",
+                "description": "A gothic wedding story of candlelit aisles, graveyards, iron gates, lace, and ravens.",
+                "payhipUrl": "https://payhip.com/b/CgMP8"
+            },
+            {
+                "id": "stone-sanctuary",
+                "type": "series",
+                "series": "Stone Sanctuary",
+                "name": "Stone Sanctuary",
+                "subtitle": "12 artworks · desktop + mobile",
+                "price": 6,
+                "minimumPrice": true,
+                "artworkCount": 12,
+                "preview": "assets/images/archive/digital-art-stone-sanctuary-cathedral-throne.jpg",
+                "description": "Monumental gothic stonework, crypt stairs, candlelit naves, mist, and storm-dark spires.",
+                "payhipUrl": "https://payhip.com/b/dGBfZ"
+            },
+            {
+                "id": "blackwood",
+                "type": "series",
+                "series": "Blackwood",
+                "name": "Blackwood",
+                "subtitle": "12 artworks · desktop + mobile",
+                "price": 6,
+                "minimumPrice": true,
+                "artworkCount": 12,
+                "preview": "assets/images/archive/digital-art-blackwood-branch-void.jpg",
+                "description": "Dense nocturnal woodland, moonlit canopies, fog paths, wet bark, moss, and hidden wildlife.",
+                "payhipUrl": "https://payhip.com/b/fMKX4"
+            },
+            {
+                "id": "wet-neon-noir",
+                "type": "series",
+                "series": "Wet Neon Noir",
+                "name": "Wet Neon Noir",
+                "subtitle": "12 artworks · desktop + mobile",
+                "price": 6,
+                "minimumPrice": true,
+                "artworkCount": 12,
+                "preview": "assets/images/archive/digital-art-wet-neon-noir-alley-pulse.jpg",
+                "description": "Rain-soaked Montréal streets transformed by neon color, wet cobbles, glass, and reflections.",
+                "payhipUrl": "https://payhip.com/b/Lb8Vw"
+            },
+            {
+                "id": "static-bloom",
+                "type": "series",
+                "series": "Static Bloom",
+                "name": "Static Bloom",
+                "subtitle": "12 artworks · desktop + mobile",
+                "price": 6,
+                "minimumPrice": true,
+                "artworkCount": 12,
+                "preview": "assets/images/archive/digital-art-static-bloom-abstract-geometry.jpg",
+                "description": "Explosive abstract geometry, chromatic faults, signal patterns, halftones, and thermal color.",
+                "payhipUrl": "https://payhip.com/b/lOU8N"
+            },
+            {
+                "id": "red-eternity",
+                "type": "series",
+                "series": "Red Eternity",
+                "name": "Red Eternity",
+                "subtitle": "12 artworks · desktop + mobile",
+                "price": 6,
+                "minimumPrice": true,
+                "artworkCount": 12,
+                "preview": "assets/images/archive/digital-art-red-eternity-glitch-skull.jpg",
+                "description": "Crimson digital ruins, fractured grids, portals, reliquaries, skulls, shards, and impossible space.",
+                "payhipUrl": "https://payhip.com/b/etTjh"
+            },
+            {
                 "id": "complete-personal-archive",
                 "type": "archive",
                 "name": "Complete Archive — Personal Use",
@@ -89,16 +227,46 @@
             {
                 "id": "complete-commercial-archive",
                 "type": "commercial",
-                "name": "Complete Archive — Commercial Use",
+                "name": "Complete Archive — Standard Commercial Licence",
                 "subtitle": "14 collections · 336 files",
                 "price": 79,
                 "minimumPrice": true,
                 "artworkCount": 168,
                 "preview": "assets/images/archive/digital-art-wet-neon-noir-alley-pulse.jpg",
-                "description": "The complete archive with commercial rights for websites, social content, ads, video, and flattened client projects.",
+                "description": "Standard commercial use for websites, social posts, digital ads, presentations, videos, stream graphics, and flattened client work. Resale, merchandise, publishing, book covers, logos, NFTs, and AI training are excluded.",
                 "badge": "Commercial licence",
+                "termsUrl": "commercial-licence.html",
                 "payhipUrl": "https://payhip.com/b/ZUP3V"
             }
         ]
+    },
+    "purchase": {
+        "individualWallpaper": {
+            "id": "individual-wallpaper",
+            "type": "individual",
+            "name": "Individual wallpaper",
+            "optionName": "Individual wallpaper — desktop + mobile",
+            "price": 1,
+            "minimumPrice": true,
+            "licence": "personal",
+            "status": "coming-soon"
+        },
+        "collectionProductBySeries": {
+            "Burned Canvas": "burned-canvas",
+            "Corroded Silence": "corroded-silence",
+            "Steel Lanes": "steel-lanes",
+            "Midnight Masquerade": "midnight-masquerade",
+            "Faces in Void": "faces-in-void",
+            "Cinder Veil": "cinder-veil",
+            "The Burning Gaze": "the-burning-gaze",
+            "Till Darkness": "till-darkness",
+            "Stone Sanctuary": "stone-sanctuary",
+            "Blackwood": "blackwood",
+            "Urban Noir": "urban-noir",
+            "Wet Neon Noir": "wet-neon-noir",
+            "Static Bloom": "static-bloom",
+            "Red Eternity": "red-eternity"
+        },
+        "artworkOffers": {}
     }
 }
