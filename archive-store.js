@@ -15,7 +15,9 @@
     if (!sampleRoot || !collectionsRoot || !archivesRoot) return;
 
     let catalog = null;
+    let individualProductsByFile = new Map();
     let activeWork = null;
+    const individualPreviewMode = new URLSearchParams(window.location.search).get('individualPreview') === '1';
 
     function language() {
         return document.documentElement.lang === 'fr' ? 'fr' : 'en';
@@ -317,7 +319,23 @@
             if (product) return [product];
         }
         const purchase = catalog?.purchase || {};
-        const individual = purchase.individualWallpaper;
+        const individualBase = purchase.individualWallpaper;
+        const individualListing = individualProductsByFile.get(work.file);
+        const individual = individualBase && individualListing
+            ? {
+                ...individualBase,
+                ...individualListing,
+                id: individualBase.id,
+                listingId: individualListing.id,
+                name: individualListing.name,
+                payhipUrl: individualListing.enabled || individualPreviewMode
+                    ? individualListing.payhipUrl
+                    : '',
+                status: individualListing.payhipUrl && (individualListing.enabled || individualPreviewMode)
+                    ? 'ready'
+                    : 'coming-soon',
+            }
+            : individualBase;
         const artworkOffers = purchase.artworkOffers?.[work.title];
         const configuredOffers = Array.isArray(artworkOffers) ? artworkOffers : [];
 
@@ -433,13 +451,20 @@
         if (activeWork) showForWork(activeWork);
     });
 
-    fetch('assets/data/shop.json', { cache: 'no-store' })
-        .then((response) => {
-            if (!response.ok) throw new Error('Could not load store catalog');
-            return response.json();
+    Promise.all([
+        fetch('assets/data/shop.json', { cache: 'no-store' }),
+        fetch('assets/data/individual-products.json', { cache: 'no-store' }),
+    ])
+        .then(async ([catalogResponse, individualResponse]) => {
+            if (!catalogResponse.ok) throw new Error('Could not load store catalog');
+            if (!individualResponse.ok) throw new Error('Could not load individual products');
+            return Promise.all([catalogResponse.json(), individualResponse.json()]);
         })
-        .then((data) => {
-            catalog = data;
+        .then(([catalogData, individualData]) => {
+            catalog = catalogData;
+            individualProductsByFile = new Map(
+                (individualData.items || []).map((item) => [item.file, item])
+            );
             renderStore();
             if (activeWork) showForWork(activeWork);
         })
