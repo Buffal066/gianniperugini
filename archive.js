@@ -10,7 +10,11 @@
     const heroActions = document.querySelector('.archive-hero-actions');
     const storefront = document.getElementById('store-products');
     const browseHeading = document.querySelector('.archive-gallery-heading h2');
-    const browseIntro = document.querySelector('.archive-gallery-heading > p:last-child');
+    const browseIntro = document.querySelector('.archive-gallery-heading > [data-i18n="browseIntro"]');
+    const galleryFormatSwitch = document.getElementById('gallery-format-switch');
+    const galleryFormatButtons = galleryFormatSwitch?.querySelectorAll('[data-format]') || [];
+    const lightboxFormatSwitch = document.getElementById('lightbox-format-switch');
+    const lightboxFormatButtons = lightboxFormatSwitch?.querySelectorAll('[data-format]') || [];
     const languageSwitch = document.querySelector('.archive-language-switch');
     const languageButtons = document.querySelectorAll('.archive-language-button');
     const i18n = window.archiveI18n || { ui: { en: {} }, seriesFr: {}, titleFr: {} };
@@ -30,7 +34,10 @@
 
     let worksData = null;
     let currentLanguage = initialLanguage();
+    let currentFormat = 'desktop';
     let lightboxTrigger = null;
+    let activeLightboxWork = null;
+    let activeLightboxFormat = 'desktop';
 
     function initialLanguage() {
         try {
@@ -99,6 +106,8 @@
         if (lightboxClose) {
             lightboxClose.setAttribute('aria-label', t('close'));
         }
+        if (galleryFormatSwitch) galleryFormatSwitch.setAttribute('aria-label', t('previewFormat'));
+        if (lightboxFormatSwitch) lightboxFormatSwitch.setAttribute('aria-label', t('previewFormat'));
 
         languageButtons.forEach((button) => {
             const active = button.dataset.language === currentLanguage;
@@ -125,19 +134,39 @@
         if (worksData) applyView({ scrollTop: false });
     }
 
-    function imagePath(file) {
+    function imagePath(file, format = 'desktop') {
         const extensionIndex = file.lastIndexOf('.');
-        const watermarkedFile = extensionIndex === -1
-            ? `${file}-watermarked`
-            : `${file.slice(0, extensionIndex)}-watermarked${file.slice(extensionIndex)}`;
+        const watermarkedFile = format === 'mobile'
+            ? `${file.slice(0, extensionIndex)}-mobile-watermarked${file.slice(extensionIndex)}`
+            : (extensionIndex === -1
+                ? `${file}-watermarked`
+                : `${file.slice(0, extensionIndex)}-watermarked${file.slice(extensionIndex)}`);
+        const directory = format === 'mobile' ? 'mobile' : 'archive';
 
-        return `assets/images/watermarked/archive/${encodeURIComponent(watermarkedFile)}`;
+        return `assets/images/watermarked/${directory}/${encodeURIComponent(watermarkedFile)}`;
+    }
+
+    function syncFormatButtons(buttons, format) {
+        buttons.forEach((button) => {
+            const active = button.dataset.format === format;
+            button.classList.toggle('is-active', active);
+            button.setAttribute('aria-pressed', String(active));
+        });
+    }
+
+    function updateLightboxMedia() {
+        if (!activeLightboxWork) return;
+        lightboxImage.src = imagePath(activeLightboxWork.file, activeLightboxFormat);
+        lightboxImage.alt = `${localizedFullTitle(activeLightboxWork)} - ${t(`${activeLightboxFormat}Preview`)}`;
+        lightboxImage.classList.toggle('is-mobile', activeLightboxFormat === 'mobile');
+        syncFormatButtons(lightboxFormatButtons, activeLightboxFormat);
     }
 
     function openLightbox(work, trigger = document.activeElement) {
         lightboxTrigger = trigger instanceof HTMLElement ? trigger : null;
-        lightboxImage.src = imagePath(work.file);
-        lightboxImage.alt = localizedFullTitle(work);
+        activeLightboxWork = work;
+        activeLightboxFormat = work.format === 'mobile' ? 'mobile' : currentFormat;
+        updateLightboxMedia();
         lightbox.hidden = false;
         document.body.style.overflow = 'hidden';
         window.archiveStore?.showForWork(work);
@@ -148,8 +177,10 @@
         if (lightbox.hidden) return;
         lightbox.hidden = true;
         lightboxImage.removeAttribute('src');
+        lightboxImage.classList.remove('is-mobile');
         document.body.style.overflow = '';
         window.archiveStore?.clearLightbox();
+        activeLightboxWork = null;
         const trigger = lightboxTrigger;
         lightboxTrigger = null;
         if (trigger?.isConnected) trigger.focus();
@@ -163,11 +194,13 @@
         item.setAttribute('aria-label', `${t('viewImage')}: ${localizedFullTitle(work)}`);
 
         const img = document.createElement('img');
-        img.src = imagePath(work.file);
+        img.src = imagePath(work.file, currentFormat);
+        img.dataset.file = work.file;
         img.alt = localizedFullTitle(work);
         img.loading = 'lazy';
 
         item.appendChild(img);
+        item.classList.toggle('is-mobile', currentFormat === 'mobile' && extraClass.includes('digital-art-item'));
         if (work.title) {
             const label = document.createElement('span');
             label.className = 'archive-item-label';
@@ -245,6 +278,7 @@
 
             const grid = document.createElement('div');
             grid.className = 'archive-grid';
+            grid.classList.toggle('is-mobile', currentFormat === 'mobile');
             seriesWorks.forEach((work, index) => {
                 grid.appendChild(createItem(work, index, 'digital-art-item'));
             });
@@ -351,6 +385,7 @@
         if (heroSubtitle) heroSubtitle.textContent = t(view.subtitleKey);
         if (browseHeading) browseHeading.textContent = t(isPhotography ? 'photographyBrowseHeading' : 'browseHeading');
         if (browseIntro) browseIntro.textContent = t(isPhotography ? 'photographyBrowseIntro' : 'browseIntro');
+        if (galleryFormatSwitch) galleryFormatSwitch.hidden = isPhotography;
         syncNav(viewKey);
 
         // Keep URL hash aligned with the active category
@@ -397,6 +432,20 @@
         history.replaceState(null, '', link.getAttribute('href'));
     }
 
+    function setGalleryFormat(format) {
+        if (format !== 'desktop' && format !== 'mobile') return;
+        currentFormat = format;
+        syncFormatButtons(galleryFormatButtons, currentFormat);
+        document.querySelectorAll('.archive-series .archive-grid').forEach((grid) => {
+            grid.classList.toggle('is-mobile', currentFormat === 'mobile');
+        });
+        document.querySelectorAll('.archive-item.digital-art-item').forEach((item) => {
+            const image = item.querySelector('img[data-file]');
+            if (image) image.src = imagePath(image.dataset.file, currentFormat);
+            item.classList.toggle('is-mobile', currentFormat === 'mobile');
+        });
+    }
+
     fetch('assets/images/archive/works.json')
         .then((response) => {
             if (!response.ok) throw new Error('Could not load works list');
@@ -418,6 +467,15 @@
     });
     languageButtons.forEach((button) => {
         button.addEventListener('click', () => setLanguage(button.dataset.language));
+    });
+    galleryFormatButtons.forEach((button) => {
+        button.addEventListener('click', () => setGalleryFormat(button.dataset.format));
+    });
+    lightboxFormatButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            activeLightboxFormat = button.dataset.format;
+            updateLightboxMedia();
+        });
     });
 
     lightboxClose.addEventListener('click', (event) => {
@@ -459,4 +517,5 @@
     });
 
     applyStaticTranslations();
+    syncFormatButtons(galleryFormatButtons, currentFormat);
 })();

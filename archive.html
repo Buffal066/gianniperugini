@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- deployed: 2026-07-31 12:59:14 -->
+<!-- deployed: 2026-07-31 15:27:15 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -133,6 +133,11 @@
                 <p class="store-kicker" data-i18n="browseKicker">Browse the art</p>
                 <h2 data-i18n="browseHeading">Explore every collection</h2>
                 <p data-i18n="browseIntro">Every collection is shown in full below. Select any image to preview its $1+ individual option and its collection.</p>
+                <div id="gallery-format-switch" class="format-switch" role="group" aria-label="Choose preview format">
+                    <span class="format-switch-label" data-i18n="previewFormat">Preview format</span>
+                    <button type="button" class="format-switch-button is-active" data-format="desktop" data-i18n="desktop">Desktop</button>
+                    <button type="button" class="format-switch-button" data-format="mobile" data-i18n="mobile">Mobile</button>
+                </div>
             </header>
             <div id="archive-sections"></div>
             <div id="archive-empty" class="archive-empty" hidden>
@@ -156,6 +161,10 @@
         <div class="lightbox-dialog">
             <div class="lightbox-media">
                 <img id="lightbox-image" alt="">
+                <div id="lightbox-format-switch" class="format-switch format-switch-lightbox" role="group" aria-label="Choose preview format">
+                    <button type="button" class="format-switch-button is-active" data-format="desktop" data-i18n="desktop">Desktop</button>
+                    <button type="button" class="format-switch-button" data-format="mobile" data-i18n="mobile">Mobile</button>
+                </div>
             </div>
             <aside id="lightbox-product" class="lightbox-product" hidden>
                 <p id="lightbox-series" class="lightbox-series"></p>

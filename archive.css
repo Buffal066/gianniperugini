@@ -147,7 +147,7 @@
 
 .store-section-heading > p:last-child,
 .store-product-group-heading > p,
-.archive-gallery-heading > p:last-child,
+.archive-gallery-heading > [data-i18n="browseIntro"],
 .archive-portfolio-heading > p:last-child {
     max-width: 680px;
     color: var(--text-secondary);
@@ -561,6 +561,50 @@
     margin-bottom: 3.5rem;
 }
 
+.format-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 1.25rem;
+    padding: 0.35rem;
+    border: 1px solid var(--border-color);
+    background: #080808;
+}
+
+.format-switch-label {
+    padding: 0 0.65rem;
+    color: var(--text-secondary);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.format-switch-button {
+    min-height: 40px;
+    padding: 0.6rem 1rem;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.format-switch-button:hover,
+.format-switch-button:focus-visible {
+    color: var(--text-primary);
+    border-color: var(--accent-red);
+    outline: none;
+}
+
+.format-switch-button.is-active {
+    border-color: var(--accent-red);
+    background: rgba(142, 23, 23, 0.22);
+    color: var(--text-primary);
+}
+
 .archive-section {
     scroll-margin-top: 100px;
     margin-bottom: 4rem;
@@ -621,6 +665,10 @@
     gap: 1.5rem;
 }
 
+.archive-grid.is-mobile {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+}
+
 .archive-item {
     position: relative;
     aspect-ratio: 4 / 3;
@@ -635,6 +683,10 @@
 
 .archive-item.digital-art-item {
     aspect-ratio: 16 / 9;
+}
+
+.archive-item.digital-art-item.is-mobile {
+    aspect-ratio: 9 / 16;
 }
 
 .archive-item.is-visible {
@@ -807,6 +859,7 @@
 }
 
 .lightbox-media {
+    position: relative;
     display: flex;
     min-width: 0;
     min-height: 0;
@@ -815,11 +868,25 @@
     background: #000;
 }
 
+.format-switch-lightbox {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 2;
+    margin: 0;
+    background: rgba(8, 8, 8, 0.9);
+}
+
 .lightbox img {
     width: 100%;
     max-height: 88vh;
     object-fit: contain;
     cursor: default;
+}
+
+.lightbox img.is-mobile {
+    width: auto;
+    max-width: 100%;
 }
 
 .lightbox-product {
@@ -908,6 +975,20 @@
 
     .archive-grid {
         grid-template-columns: 1fr;
+    }
+
+    .archive-grid.is-mobile {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.8rem;
+    }
+
+    .format-switch-label {
+        display: none;
+    }
+
+    .format-switch-lightbox {
+        top: 0.65rem;
+        left: 0.65rem;
     }
 
     .individual-wallpaper-callout {

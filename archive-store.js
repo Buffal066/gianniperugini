@@ -48,22 +48,28 @@
         return originalArtworkTitle(work);
     }
 
-    function watermarkedPreviewPath(path) {
+    function watermarkedPreviewPath(path, format = 'desktop') {
         const lastSlash = path.lastIndexOf('/');
-        const directory = path.slice(0, lastSlash + 1).replace(
-            'assets/images/archive/',
-            'assets/images/watermarked/archive/'
-        );
+        const directory = format === 'mobile'
+            ? 'assets/images/watermarked/mobile/'
+            : path.slice(0, lastSlash + 1).replace(
+                'assets/images/archive/',
+                'assets/images/watermarked/archive/'
+            );
         const file = path.slice(lastSlash + 1);
         const extensionIndex = file.lastIndexOf('.');
-        const watermarkedFile = extensionIndex === -1
-            ? `${file}-watermarked`
-            : `${file.slice(0, extensionIndex)}-watermarked${file.slice(extensionIndex)}`;
+        const watermarkedFile = format === 'mobile'
+            ? `${file.slice(0, extensionIndex)}-mobile-watermarked${file.slice(extensionIndex)}`
+            : (extensionIndex === -1
+                ? `${file}-watermarked`
+                : `${file.slice(0, extensionIndex)}-watermarked${file.slice(extensionIndex)}`);
 
         return `${directory}${watermarkedFile}`;
     }
 
     function priceLabel(product) {
+        if (product.type === 'series') return t('collectionStartingPrice');
+        if (product.type === 'archive') return t('archiveStartingPrice');
         return language() === 'fr'
             ? `${product.price} $ US+`
             : `$${product.price}+ USD`;
@@ -188,7 +194,9 @@
 
         const subtitle = document.createElement('p');
         subtitle.className = 'store-product-subtitle';
-        subtitle.textContent = product.subtitle;
+        subtitle.textContent = sourceProduct.type === 'series'
+            ? t('collectionFormatChoices')
+            : (sourceProduct.type === 'archive' ? t('archiveFormatChoices') : product.subtitle);
 
         const description = document.createElement('p');
         description.className = 'store-product-description';
@@ -202,7 +210,9 @@
         const amount = document.createElement('strong');
         amount.textContent = priceLabel(sourceProduct);
         const note = document.createElement('span');
-        note.textContent = t('payWhatYouWant');
+        note.textContent = sourceProduct.type === 'series' || sourceProduct.type === 'archive'
+            ? t('chooseFormat')
+            : t('payWhatYouWant');
         price.appendChild(amount);
         price.appendChild(note);
 
@@ -269,6 +279,7 @@
                 file: artwork.file,
                 title: artwork.title,
                 series: artwork.series,
+                format: artwork.format,
                 purchaseProductId: sample.id,
             };
             const title = `${localizedSeries(work.series)} — ${localizedArtworkTitle(work)}`;
@@ -276,7 +287,7 @@
             button.setAttribute('aria-label', `${t('viewImage')}: ${title} — ${format}`);
 
             const image = document.createElement('img');
-            image.src = watermarkedPreviewPath(`assets/images/archive/${artwork.file}`);
+            image.src = watermarkedPreviewPath(`assets/images/archive/${artwork.file}`, artwork.format);
             image.alt = title;
             image.loading = 'lazy';
 
@@ -388,7 +399,7 @@
             detail.className = 'lightbox-offer-detail';
             detail.textContent = offer.type === 'individual'
                 ? t('individualIncludes')
-                : t('collectionValueMessage');
+                : (offer.type === 'series' ? t('collectionChoiceDetail') : t('collectionValueMessage'));
             summary.appendChild(label);
             summary.appendChild(price);
             summary.appendChild(detail);
