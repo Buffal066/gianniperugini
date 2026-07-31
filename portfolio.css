@@ -1,0 +1,77 @@
+.portfolio-hero {
+    min-height: 430px;
+}
+
+.portfolio-gallery {
+    padding-top: clamp(3.5rem, 7vw, 6rem);
+}
+
+.portfolio-heading {
+    max-width: 760px;
+    margin-bottom: 2.5rem;
+}
+
+.portfolio-heading h2 {
+    margin: 0.35rem 0 0.8rem;
+    color: var(--text-primary);
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 400;
+}
+
+.portfolio-heading > p:last-child {
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.portfolio-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.portfolio-grid .archive-item {
+    aspect-ratio: 4 / 3;
+}
+
+.portfolio-grid .archive-item-label {
+    padding: 0.55rem 0.75rem;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.86));
+}
+
+.portfolio-lightbox-dialog {
+    display: flex;
+    width: min(1180px, 92vw);
+    max-height: 88vh;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.portfolio-lightbox-dialog img {
+    display: block;
+    max-width: 100%;
+    max-height: calc(88vh - 3rem);
+    object-fit: contain;
+}
+
+.portfolio-lightbox-title {
+    margin: 0;
+    color: var(--text-secondary);
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}

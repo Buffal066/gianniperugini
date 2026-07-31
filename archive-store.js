@@ -70,6 +70,11 @@
     function priceLabel(product) {
         if (product.type === 'series') return t('collectionStartingPrice');
         if (product.type === 'archive') return t('archiveStartingPrice');
+        if (product.type === 'individual') {
+            return language() === 'fr'
+                ? `Minimum de ${product.price} $ US`
+                : `$${product.price} USD minimum`;
+        }
         return language() === 'fr'
             ? `${product.price} $ US+`
             : `$${product.price}+ USD`;
@@ -398,7 +403,7 @@
             const detail = document.createElement('p');
             detail.className = 'lightbox-offer-detail';
             detail.textContent = offer.type === 'individual'
-                ? t('individualIncludes')
+                ? t('individualSupportDetail')
                 : (offer.type === 'series' ? t('collectionChoiceDetail') : t('collectionValueMessage'));
             summary.appendChild(label);
             summary.appendChild(price);

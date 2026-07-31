@@ -295,13 +295,9 @@
         section.appendChild(heading);
 
         const groups = new Map();
-        const portfolioWorks = [];
         works.forEach((work) => {
             if (!work.file) return;
-            if (!work.series) {
-                portfolioWorks.push(work);
-                return;
-            }
+            if (!work.series) return;
             const series = work.series;
             if (!groups.has(series)) groups.set(series, []);
             groups.get(series).push(work);
@@ -336,39 +332,6 @@
         });
 
         sectionsRoot.appendChild(section);
-
-        if (portfolioWorks.length) {
-            const portfolio = document.createElement('section');
-            portfolio.className = 'archive-section archive-portfolio';
-            portfolio.id = 'portfolio-archive';
-
-            const portfolioHeader = document.createElement('header');
-            portfolioHeader.className = 'archive-portfolio-heading';
-
-            const kicker = document.createElement('p');
-            kicker.className = 'store-kicker';
-            kicker.textContent = t('portfolioKicker');
-
-            const portfolioTitle = document.createElement('h2');
-            portfolioTitle.className = 'archive-section-title';
-            portfolioTitle.textContent = t('portfolioHeading');
-
-            const intro = document.createElement('p');
-            intro.textContent = t('portfolioIntro');
-
-            const grid = document.createElement('div');
-            grid.className = 'archive-grid archive-portfolio-grid';
-            portfolioWorks.forEach((work, index) => {
-                grid.appendChild(createItem(work, index, 'portfolio-item'));
-            });
-
-            portfolioHeader.appendChild(kicker);
-            portfolioHeader.appendChild(portfolioTitle);
-            portfolioHeader.appendChild(intro);
-            portfolio.appendChild(portfolioHeader);
-            portfolio.appendChild(grid);
-            sectionsRoot.appendChild(portfolio);
-        }
 
         return true;
     }

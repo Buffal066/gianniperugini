@@ -193,7 +193,7 @@
         });
     }
 
-    fetch('assets/data/shop.json')
+    fetch('assets/data/shop.json?v=20260731-4k-labels')
         .then((response) => {
             if (!response.ok) throw new Error('Failed to load shop catalog');
             return response.json();
