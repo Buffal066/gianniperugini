@@ -943,9 +943,13 @@
 
 .lightbox-offer {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr);
     align-items: center;
     gap: 0.8rem;
+}
+
+.lightbox-offer .store-buy-button {
+    width: 100%;
 }
 
 .lightbox-offer-label {
