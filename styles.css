@@ -21,6 +21,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -119,6 +120,10 @@ body {
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
 }
 
 .hamburger span {
@@ -630,6 +635,24 @@ section {
 
 .form-group {
     position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.contact-value {
+    text-decoration: none;
+}
+
+.contact-value:hover,
+.contact-value:focus-visible {
+    color: var(--accent-gold);
 }
 
 .form-group input,

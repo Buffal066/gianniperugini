@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<!-- deployed: 2026-07-31 16:59:04 -->
+<!-- deployed: 2026-07-31 23:12:02 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Gianni Perugini</title>
     <meta name="description" content="Selected composites, promotional artwork, and earlier creative work by Gianni Perugini.">
+    <link rel="canonical" href="https://gianniperugini.com/portfolio.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Portfolio - Gianni Perugini">
+    <meta property="og:description" content="Selected composites, promotional artwork, and earlier creative work by Gianni Perugini.">
+    <meta property="og:url" content="https://gianniperugini.com/portfolio.html">
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="archive.css?v=20260731-portfolio">
+    <link rel="stylesheet" href="styles.css?v=20260731-site-fixes-2">
+    <link rel="stylesheet" href="archive.css?v=20260731-site-fixes">
     <link rel="stylesheet" href="portfolio.css?v=20260731-portfolio">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +29,7 @@
             <a href="index.html" class="logo logo-link">
                 <span class="logo-text">Gianni Perugini</span>
             </a>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="primary-navigation">
                 <li><a href="index.html" class="nav-link" data-i18n="home">Home</a></li>
                 <li><a href="archive.html#composites" class="nav-link" data-i18n="store">Digital Art Store</a></li>
                 <li><a href="portfolio.html" class="nav-link is-current" aria-current="page" data-i18n="portfolio">Portfolio</a></li>
@@ -38,11 +43,11 @@
                 <span aria-hidden="true">|</span>
                 <button type="button" class="archive-language-button" data-language="fr" aria-pressed="false">FR</button>
             </div>
-            <div class="hamburger">
+            <button type="button" class="hamburger" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -84,7 +89,7 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
-    <script src="portfolio.js?v=20260731-portfolio"></script>
+    <script src="script.js?v=20260731-site-fixes"></script>
+    <script src="portfolio.js?v=20260731-site-fixes"></script>
 </body>
 </html>

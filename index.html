@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<!-- deployed: 2026-07-31 16:59:04 -->
+<!-- deployed: 2026-07-31 23:12:02 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gianni Perugini - Creative & Digital Media</title>
+    <meta name="description" content="Gianni Perugini is a creative director and digital media specialist creating digital art, photography, motion work, and interface concepts.">
+    <link rel="canonical" href="https://gianniperugini.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gianni Perugini - Creative & Digital Media">
+    <meta property="og:description" content="Creative direction, digital art, photography, motion work, and interface concepts by Gianni Perugini.">
+    <meta property="og:url" content="https://gianniperugini.com/">
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="styles.css?v=20260731-site-fixes-2">
+    <link rel="stylesheet" href="landing.css?v=20260731-site-fixes">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -23,7 +29,7 @@
             <div class="logo">
                 <span class="logo-text">Gianni Perugini</span>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="primary-navigation">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="archive.html#composites" class="nav-link">Digital Art Store</a></li>
                 <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
@@ -33,11 +39,11 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <button type="button" class="hamburger" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -124,23 +130,27 @@
                     <div class="contact-details">
                         <div class="contact-item">
                             <span class="contact-label">Email</span>
-                            <span class="contact-value">contact@gianniperugini.com</span>
+                            <a class="contact-value" href="mailto:contact@gianniperugini.com">contact@gianniperugini.com</a>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" id="contact-form">
+                <form class="contact-form" id="contact-form" method="post">
                     <input type="hidden" name="_subject" value="New message from gianniperugini.com">
                     <input type="hidden" name="_captcha" value="false">
                     <div class="form-group">
+                        <label for="name">Your name</label>
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
+                        <label for="email">Your email</label>
                         <input type="email" id="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
+                        <label for="subject">Subject</label>
                         <input type="text" id="subject" name="subject" placeholder="Subject" required>
                     </div>
                     <div class="form-group">
+                        <label for="message">Tell me about your project</label>
                         <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
@@ -153,11 +163,11 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-bottom">
-                <p>&copy; 2025 Gianni Perugini. All rights reserved.</p>
+                <p>&copy; 2026 Gianni Perugini. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20260731-site-fixes"></script>
 </body>
 </html>

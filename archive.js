@@ -61,14 +61,22 @@
         return i18n.seriesFr[series] || series;
     }
 
+    function titleFromFile(file = '') {
+        const stem = file.replace(/\.[^.]+$/, '').replace(/^photo[_-]?/i, '');
+        const words = stem.replace(/[_-]+/g, ' ').trim();
+        if (!words) return t('archiveWork');
+        if (/^\d+$/.test(words)) return `Photograph ${words}`;
+        return words.replace(/\b\w/g, (letter) => letter.toUpperCase());
+    }
+
     function originalArtworkTitle(work) {
-        if (!work.title) return '';
+        if (!work.title) return titleFromFile(work.file);
         if (!work.series || !work.title.startsWith(work.series)) return work.title;
         return work.title.slice(work.series.length).trim();
     }
 
     function localizedArtworkTitle(work) {
-        if (!work.title) return '';
+        if (!work.title) return titleFromFile(work.file);
         if (currentLanguage === 'fr') {
             return i18n.titleFr[work.title] || originalArtworkTitle(work);
         }
@@ -167,6 +175,7 @@
         activeLightboxWork = work;
         activeLightboxFormat = work.format === 'mobile' ? 'mobile' : currentFormat;
         updateLightboxMedia();
+        lightbox.setAttribute('aria-label', localizedFullTitle(work));
         lightbox.hidden = false;
         document.body.style.overflow = 'hidden';
         window.archiveStore?.showForWork(work);
@@ -199,6 +208,7 @@
         img.dataset.file = work.file;
         img.alt = localizedFullTitle(work);
         img.loading = 'lazy';
+        img.decoding = 'async';
 
         item.appendChild(img);
         item.classList.toggle('is-mobile', previewFormat === 'mobile' && extraClass.includes('digital-art-item'));

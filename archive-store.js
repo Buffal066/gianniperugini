@@ -180,6 +180,7 @@
         image.src = watermarkedPreviewPath(sourceProduct.preview);
         image.alt = product.name;
         image.loading = 'lazy';
+        image.decoding = 'async';
         imageWrap.appendChild(image);
 
         if (product.badge) {
@@ -297,6 +298,7 @@
             image.src = watermarkedPreviewPath(`assets/images/archive/${artwork.file}`, artwork.format);
             image.alt = title;
             image.loading = 'lazy';
+            image.decoding = 'async';
 
             const label = document.createElement('span');
             label.textContent = `${title} · ${format}`;

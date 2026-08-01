@@ -105,6 +105,7 @@
             image.src = previewPath(work.file);
             image.alt = title;
             image.loading = 'lazy';
+            image.decoding = 'async';
 
             const label = document.createElement('span');
             label.className = 'archive-item-label';

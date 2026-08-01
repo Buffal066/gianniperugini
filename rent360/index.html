@@ -26,7 +26,7 @@
             </a>
             <div class="nav-menu-wrap">
                 <span class="nav-indicator"></span>
-                <ul class="nav-menu">
+                <ul class="nav-menu" id="rent360-navigation">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#features" class="nav-link">Features</a></li>
                     <li><a href="#more-features" class="nav-link">More</a></li>
@@ -36,9 +36,9 @@
             </div>
             <a href="#demo" class="btn btn-primary btn-sm nav-cta">Book a Demo</a>
             <a href="/" class="btn btn-secondary btn-sm nav-back">← Portfolio</a>
-            <div class="hamburger" id="hamburger">
+            <button type="button" class="hamburger" id="hamburger" aria-label="Open navigation" aria-controls="rent360-navigation" aria-expanded="false">
                 <span></span><span></span><span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -189,17 +189,17 @@
                 <p class="section-subtitle">Automate check-ins, upsells, cleaning, and payments so your business works for you — not the other way around.</p>
             </div>
 
-            <div class="feature-tabs stagger" role="tablist">
-                <button class="feature-tab active" data-tab="pre-arrival" role="tab">Pre-Arrival & Upsells</button>
-                <button class="feature-tab" data-tab="website" role="tab">Website Builder</button>
-                <button class="feature-tab" data-tab="reservation" role="tab">Reservation Tool</button>
-                <button class="feature-tab" data-tab="cleaning" role="tab">Cleaning Dashboard</button>
-                <button class="feature-tab" data-tab="keys" role="tab">Keys Management</button>
+            <div class="feature-tabs stagger" role="tablist" aria-label="Rent360 features">
+                <button class="feature-tab active" id="tab-pre-arrival" data-tab="pre-arrival" role="tab" aria-selected="true" aria-controls="panel-pre-arrival" tabindex="0">Pre-Arrival & Upsells</button>
+                <button class="feature-tab" id="tab-website" data-tab="website" role="tab" aria-selected="false" aria-controls="panel-website" tabindex="-1">Website Builder</button>
+                <button class="feature-tab" id="tab-reservation" data-tab="reservation" role="tab" aria-selected="false" aria-controls="panel-reservation" tabindex="-1">Reservation Tool</button>
+                <button class="feature-tab" id="tab-cleaning" data-tab="cleaning" role="tab" aria-selected="false" aria-controls="panel-cleaning" tabindex="-1">Cleaning Dashboard</button>
+                <button class="feature-tab" id="tab-keys" data-tab="keys" role="tab" aria-selected="false" aria-controls="panel-keys" tabindex="-1">Keys Management</button>
             </div>
 
             <div class="feature-panels reveal">
                 <!-- Pre-Arrival -->
-                <article class="feature-panel active" id="panel-pre-arrival" data-panel="pre-arrival">
+                <article class="feature-panel active" id="panel-pre-arrival" data-panel="pre-arrival" role="tabpanel" aria-labelledby="tab-pre-arrival">
                     <div class="feature-panel-copy">
                         <h3>Pre-Arrival & Upsells tool</h3>
                         <p>Our AI-driven Pre-Arrival system adds $100 per booking on average while keeping your property protected and guests happy.</p>
@@ -233,7 +233,7 @@
                 </article>
 
                 <!-- Website Builder -->
-                <article class="feature-panel" id="panel-website" data-panel="website">
+                <article class="feature-panel" id="panel-website" data-panel="website" role="tabpanel" aria-labelledby="tab-website" hidden>
                     <div class="feature-panel-copy">
                         <h3>Custom Website Booking</h3>
                         <p>Go beyond listings — create a fast, mobile-optimized booking website that displays real-time availability, collects payments, and syncs automatically with your property data.</p>
@@ -259,7 +259,7 @@
                 </article>
 
                 <!-- Reservation -->
-                <article class="feature-panel" id="panel-reservation" data-panel="reservation">
+                <article class="feature-panel" id="panel-reservation" data-panel="reservation" role="tabpanel" aria-labelledby="tab-reservation" hidden>
                     <div class="feature-panel-copy">
                         <h3>Reservation Tool</h3>
                         <p>Stop losing guests to slow replies or OTA commissions. Our Reservation Tool helps your team respond in seconds, extend all stays direct and avoid 18% OTA commissions, and relocate guests — all without errors or manual work.</p>
@@ -284,7 +284,7 @@
                 </article>
 
                 <!-- Cleaning -->
-                <article class="feature-panel" id="panel-cleaning" data-panel="cleaning">
+                <article class="feature-panel" id="panel-cleaning" data-panel="cleaning" role="tabpanel" aria-labelledby="tab-cleaning" hidden>
                     <div class="feature-panel-copy">
                         <h3>Cleaning Dashboard</h3>
                         <p>Most PMS platforms only display a cleaning calendar — they don't actually manage your operations. Our Smart Dashboard automates scheduling, tracks every clean, and adapts instantly to cancellations, extensions, or no-shows.</p>
@@ -309,7 +309,7 @@
                 </article>
 
                 <!-- Keys -->
-                <article class="feature-panel" id="panel-keys" data-panel="keys">
+                <article class="feature-panel" id="panel-keys" data-panel="keys" role="tabpanel" aria-labelledby="tab-keys" hidden>
                     <div class="feature-panel-copy">
                         <h3>Keys Management System</h3>
                         <p>Eliminate confusion, loss, and access delays with an automated process that keeps your entire team accountable and every property secure.</p>
@@ -521,7 +521,7 @@
         <div class="container reveal">
             <h2>Grow your rentals,<br><span class="highlight">not your workload.</span></h2>
             <p>Let automation handle the details while you focus on happier guests and higher profits.</p>
-            <a href="#" class="btn btn-primary btn-lg">Book a Demo</a>
+            <a href="mailto:contact@gianniperugini.com?subject=Rent360%20Demo%20Request" class="btn btn-primary btn-lg">Request a Demo</a>
         </div>
     </section>
 
@@ -545,6 +545,6 @@
     </footer>
 
     <script src="https://unpkg.com/lenis@1.3.25/dist/lenis.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js?v=20260731-site-fixes"></script>
 </body>
 </html>

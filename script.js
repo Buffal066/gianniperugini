@@ -100,17 +100,27 @@ const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
 if (hamburger && navMenu) {
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
+    const setMenuOpen = (open) => {
+        hamburger.classList.toggle('active', open);
+        navMenu.classList.toggle('active', open);
+        hamburger.setAttribute('aria-expanded', String(open));
+        hamburger.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    };
+
+    hamburger.addEventListener('click', () => setMenuOpen(!navMenu.classList.contains('active')));
 
     // Close mobile menu when clicking on a link
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
+            setMenuOpen(false);
         });
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && navMenu.classList.contains('active')) {
+            setMenuOpen(false);
+            hamburger.focus();
+        }
     });
 }
 
@@ -192,32 +202,58 @@ document.querySelectorAll('.portfolio-item').forEach((item, index) => {
 // Form submission handler
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        const originalLabel = submitButton?.textContent;
         const formData = new FormData(contactForm);
-        fetch('https://formsubmit.co/ajax/contact@gianniperugini.com', {
-            method: 'POST',
-            body: formData
-        }).then(response => {
+        if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+        }
+
+        try {
+            const response = await fetch('https://formsubmit.co/ajax/contact@gianniperugini.com', {
+                method: 'POST',
+                headers: { Accept: 'application/json' },
+                body: formData
+            });
+            if (!response.ok) throw new Error(`Message service returned ${response.status}`);
             showConfirmation('Thank you for your message! We will get back to you soon.');
             contactForm.reset();
-        }).catch(error => {
-            showConfirmation('Thank you for your message! We will get back to you soon.');
-            contactForm.reset();
-        });
+        } catch (error) {
+            console.error('Contact form submission failed:', error);
+            showConfirmation('Your message could not be sent. Please try again, or email contact@gianniperugini.com directly.');
+        } finally {
+            if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.textContent = originalLabel || 'Send Message';
+            }
+        }
     });
 }
 
 function showConfirmation(message) {
     const overlay = document.createElement('div');
     overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center;z-index:9999;';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.setAttribute('aria-label', 'Message status');
     const box = document.createElement('div');
     box.style.cssText = 'background:#1a1a1a;border:1px solid #cc0000;padding:2.5rem;max-width:400px;text-align:center;color:#fff;font-family:Roboto,sans-serif;';
-    box.innerHTML = '<p style="font-size:1.1rem;line-height:1.6;margin-bottom:1.5rem;">' + message + '</p><button style="background:#cc0000;color:#fff;border:none;padding:0.6rem 2rem;font-size:0.9rem;text-transform:uppercase;letter-spacing:1px;cursor:pointer;">OK</button>';
-    box.querySelector('button').addEventListener('click', () => overlay.remove());
+    const paragraph = document.createElement('p');
+    paragraph.style.cssText = 'font-size:1.1rem;line-height:1.6;margin-bottom:1.5rem;';
+    paragraph.textContent = message;
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.style.cssText = 'background:#cc0000;color:#fff;border:none;padding:0.6rem 2rem;font-size:0.9rem;text-transform:uppercase;letter-spacing:1px;cursor:pointer;';
+    button.textContent = 'OK';
+    box.append(paragraph, button);
+    button.addEventListener('click', () => overlay.remove());
     overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
     overlay.appendChild(box);
     document.body.appendChild(overlay);
+    button.focus();
 }
 
 // Add parallax effect to hero section (skip landing page — spotlight uses fixed layers)

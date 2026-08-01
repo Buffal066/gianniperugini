@@ -15,16 +15,26 @@ const hamburger = document.getElementById('hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
 if (hamburger && navMenu) {
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active');
-    });
+    const setMenuOpen = (open) => {
+        navMenu.classList.toggle('active', open);
+        hamburger.classList.toggle('active', open);
+        hamburger.setAttribute('aria-expanded', String(open));
+        hamburger.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    };
+
+    hamburger.addEventListener('click', () => setMenuOpen(!navMenu.classList.contains('active')));
 
     document.querySelectorAll('.nav-link').forEach((link) => {
         link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            hamburger.classList.remove('active');
+            setMenuOpen(false);
         });
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && navMenu.classList.contains('active')) {
+            setMenuOpen(false);
+            hamburger.focus();
+        }
     });
 }
 
@@ -132,19 +142,42 @@ const featureTabs = document.querySelectorAll('.feature-tab');
 const featurePanels = document.querySelectorAll('.feature-panel');
 
 featureTabs.forEach((tab) => {
-    tab.addEventListener('click', () => {
+    const activateTab = () => {
         const target = tab.dataset.tab;
 
         featureTabs.forEach((t) => {
             t.classList.remove('active');
             t.setAttribute('aria-selected', 'false');
+            t.setAttribute('tabindex', '-1');
         });
-        featurePanels.forEach((p) => p.classList.remove('active'));
+        featurePanels.forEach((p) => {
+            p.classList.remove('active');
+            p.hidden = true;
+        });
 
         tab.classList.add('active');
         tab.setAttribute('aria-selected', 'true');
+        tab.setAttribute('tabindex', '0');
         const panel = document.querySelector(`[data-panel="${target}"]`);
-        if (panel) panel.classList.add('active');
+        if (panel) {
+            panel.classList.add('active');
+            panel.hidden = false;
+        }
+    };
+
+    tab.addEventListener('click', activateTab);
+    tab.addEventListener('keydown', (event) => {
+        const tabs = Array.from(featureTabs);
+        const index = tabs.indexOf(tab);
+        let nextIndex = null;
+        if (event.key === 'ArrowRight' || event.key === 'ArrowDown') nextIndex = (index + 1) % tabs.length;
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') nextIndex = (index - 1 + tabs.length) % tabs.length;
+        if (event.key === 'Home') nextIndex = 0;
+        if (event.key === 'End') nextIndex = tabs.length - 1;
+        if (nextIndex === null) return;
+        event.preventDefault();
+        tabs[nextIndex].focus();
+        tabs[nextIndex].click();
     });
 });
 

@@ -210,6 +210,9 @@ body {
     gap: 5px;
     cursor: pointer;
     padding: 6px;
+    border: 0;
+    background: transparent;
+    color: inherit;
 }
 .hamburger span {
     width: 20px; height: 1.5px;
@@ -1434,4 +1437,9 @@ body {
     .feature-tab { text-align: center; }
     .cta-section .container { padding: 56px 24px; }
     .nav-pill { padding: 8px 8px 8px 18px; }
+    .navbar { padding-inline: 8px; }
+    .container { padding-inline: 16px; }
+    .hero-title { font-size: clamp(2rem, 12vw, 3rem); overflow-wrap: anywhere; }
+    .orbit-stage { width: min(520px, calc(100vw - 24px)); height: min(520px, calc(100vw - 24px)); }
+    .footer-nav { justify-content: center; flex-wrap: wrap; }
 }

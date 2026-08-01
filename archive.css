@@ -269,7 +269,7 @@
 .store-product-type,
 .lightbox-series {
     margin: 0;
-    color: var(--accent-gold);
+    color: #ff4d4d;
     font-family: 'Roboto', sans-serif;
     font-size: 0.72rem;
     letter-spacing: 0.16em;
