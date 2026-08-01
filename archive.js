@@ -209,6 +209,8 @@
         img.alt = localizedFullTitle(work);
         img.loading = 'lazy';
         img.decoding = 'async';
+        img.width = previewFormat === 'mobile' ? 1440 : 3840;
+        img.height = previewFormat === 'mobile' ? 2560 : 2160;
 
         item.appendChild(img);
         item.classList.toggle('is-mobile', previewFormat === 'mobile' && extraClass.includes('digital-art-item'));
@@ -260,7 +262,11 @@
         syncFormatButtons(group.querySelectorAll('.format-switch-series [data-format]'), format);
         group.querySelectorAll('.archive-item.digital-art-item').forEach((item) => {
             const image = item.querySelector('img[data-file]');
-            if (image) image.src = imagePath(image.dataset.file, format);
+            if (image) {
+                image.src = imagePath(image.dataset.file, format);
+                image.width = format === 'mobile' ? 1440 : 3840;
+                image.height = format === 'mobile' ? 2560 : 2160;
+            }
             item.dataset.previewFormat = format;
             item.classList.toggle('is-mobile', format === 'mobile');
         });
@@ -324,7 +330,11 @@
 
             const groupHeading = document.createElement('h3');
             groupHeading.className = 'archive-series-title';
-            groupHeading.textContent = localizedSeries(series);
+            const groupLink = document.createElement('a');
+            groupLink.className = 'archive-series-title-link';
+            groupLink.href = `digital-art/${seriesAnchor(series).replace(/^collection-/, '')}.html`;
+            groupLink.textContent = localizedSeries(series);
+            groupHeading.appendChild(groupLink);
 
             groupHeader.appendChild(groupHeading);
             groupHeader.appendChild(createSeriesFormatSwitch(group, currentFormat));

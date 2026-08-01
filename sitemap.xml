@@ -1,7 +1,903 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://gianniperugini.com/</loc></url>
-  <url><loc>https://gianniperugini.com/archive.html</loc></url>
-  <url><loc>https://gianniperugini.com/portfolio.html</loc></url>
-  <url><loc>https://gianniperugini.com/commercial-licence.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url><loc>https://gianniperugini.com/</loc><lastmod>2026-08-01</lastmod></url>
+  <url><loc>https://gianniperugini.com/archive.html</loc><lastmod>2026-08-01</lastmod></url>
+  <url><loc>https://gianniperugini.com/portfolio.html</loc><lastmod>2026-08-01</lastmod></url>
+  <url><loc>https://gianniperugini.com/commercial-licence.html</loc><lastmod>2026-08-01</lastmod></url>
+  <url>
+    <loc>https://gianniperugini.com/digital-art/burned-canvas.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-burned-canvas-ash-weave-watermarked.jpg</image:loc>
+      <image:title>Ash Weave</image:title>
+      <image:caption>Ash Weave, a 4K desktop wallpaper from the Burned Canvas collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-burned-canvas-ember-crack-watermarked.jpg</image:loc>
+      <image:title>Ember Crack</image:title>
+      <image:caption>Ember Crack, a 4K desktop wallpaper from the Burned Canvas collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-burned-canvas-melted-gilt-watermarked.jpg</image:loc>
+      <image:title>Melted Gilt</image:title>
+      <image:caption>Melted Gilt, a 4K desktop wallpaper from the Burned Canvas collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-burned-canvas-ruined-frame-watermarked.jpg</image:loc>
+      <image:title>Ruined Frame</image:title>
+      <image:caption>Ruined Frame, a 4K desktop wallpaper from the Burned Canvas collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-burned-canvas-soot-peel-watermarked.jpg</image:loc>
+      <image:title>Soot Peel</image:title>
+      <image:caption>Soot Peel, a 4K desktop wallpaper from the Burned Canvas collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-burned-canvas-blistered-portrait-watermarked.jpg</image:loc>
+      <image:title>Blistered Portrait</image:title>
+      <image:caption>Blistered Portrait, a 4K desktop wallpaper from the Burned Canvas collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-burned-canvas-cinder-lattice-watermarked.jpg</image:loc>
+      <image:title>Cinder Lattice</image:title>
+      <image:caption>Cinder Lattice, a 4K desktop wallpaper from the Burned Canvas collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-burned-canvas-scorched-reliquary-watermarked.jpg</image:loc>
+      <image:title>Scorched Reliquary</image:title>
+      <image:caption>Scorched Reliquary, a 4K desktop wallpaper from the Burned Canvas collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-burned-canvas-ember-veil-watermarked.jpg</image:loc>
+      <image:title>Ember Veil</image:title>
+      <image:caption>Ember Veil, a 4K desktop wallpaper from the Burned Canvas collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-burned-canvas-carbon-bloom-watermarked.jpg</image:loc>
+      <image:title>Carbon Bloom</image:title>
+      <image:caption>Carbon Bloom, a 4K desktop wallpaper from the Burned Canvas collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-burned-canvas-smolder-edge-watermarked.jpg</image:loc>
+      <image:title>Smolder Edge</image:title>
+      <image:caption>Smolder Edge, a 4K desktop wallpaper from the Burned Canvas collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-burned-canvas-tar-fracture-watermarked.jpg</image:loc>
+      <image:title>Tar Fracture</image:title>
+      <image:caption>Tar Fracture, a 4K desktop wallpaper from the Burned Canvas collection by Gianni Perugini.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://gianniperugini.com/digital-art/corroded-silence.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-corroded-silence-ash-drift-watermarked.jpg</image:loc>
+      <image:title>Ash Drift</image:title>
+      <image:caption>Ash Drift, a 4K desktop wallpaper from the Corroded Silence collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-corroded-silence-charred-grain-watermarked.jpg</image:loc>
+      <image:title>Charred Grain</image:title>
+      <image:caption>Charred Grain, a 4K desktop wallpaper from the Corroded Silence collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-corroded-silence-cracked-earth-watermarked.jpg</image:loc>
+      <image:title>Cracked Earth</image:title>
+      <image:caption>Cracked Earth, a 4K desktop wallpaper from the Corroded Silence collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-corroded-silence-cracked-ember-watermarked.jpg</image:loc>
+      <image:title>Cracked Ember</image:title>
+      <image:caption>Cracked Ember, a 4K desktop wallpaper from the Corroded Silence collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-corroded-silence-frayed-rope-watermarked.jpg</image:loc>
+      <image:title>Frayed Rope</image:title>
+      <image:caption>Frayed Rope, a 4K desktop wallpaper from the Corroded Silence collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-corroded-silence-frost-glass-watermarked.jpg</image:loc>
+      <image:title>Frost Glass</image:title>
+      <image:caption>Frost Glass, a 4K desktop wallpaper from the Corroded Silence collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-corroded-silence-iron-stain-watermarked.jpg</image:loc>
+      <image:title>Iron Stain</image:title>
+      <image:caption>Iron Stain, a 4K desktop wallpaper from the Corroded Silence collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-corroded-silence-oxidized-copper-watermarked.jpg</image:loc>
+      <image:title>Oxidized Copper</image:title>
+      <image:caption>Oxidized Copper, a 4K desktop wallpaper from the Corroded Silence collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-corroded-silence-rust-peel-watermarked.jpg</image:loc>
+      <image:title>Rust Peel</image:title>
+      <image:caption>Rust Peel, a 4K desktop wallpaper from the Corroded Silence collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-corroded-silence-stone-lichen-watermarked.jpg</image:loc>
+      <image:title>Stone Lichen</image:title>
+      <image:caption>Stone Lichen, a 4K desktop wallpaper from the Corroded Silence collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-corroded-silence-tar-bubbles-watermarked.jpg</image:loc>
+      <image:title>Tar Bubbles</image:title>
+      <image:caption>Tar Bubbles, a 4K desktop wallpaper from the Corroded Silence collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-corroded-silence-velvet-fold-watermarked.jpg</image:loc>
+      <image:title>Velvet Fold</image:title>
+      <image:caption>Velvet Fold, a 4K desktop wallpaper from the Corroded Silence collection by Gianni Perugini.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://gianniperugini.com/digital-art/midnight-masquerade.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-midnight-masquerade-moonlit-graveyard-watermarked.jpg</image:loc>
+      <image:title>Moonlit Graveyard</image:title>
+      <image:caption>Moonlit Graveyard, a 4K desktop wallpaper from the Midnight Masquerade collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-midnight-masquerade-portrait-veil-watermarked.jpg</image:loc>
+      <image:title>Portrait Veil</image:title>
+      <image:caption>Portrait Veil, a 4K desktop wallpaper from the Midnight Masquerade collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-midnight-masquerade-window-sanctuary-watermarked.jpg</image:loc>
+      <image:title>Window Sanctuary</image:title>
+      <image:caption>Window Sanctuary, a 4K desktop wallpaper from the Midnight Masquerade collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-midnight-masquerade-cathedral-wrap-watermarked.jpg</image:loc>
+      <image:title>Cathedral Wrap</image:title>
+      <image:caption>Cathedral Wrap, a 4K desktop wallpaper from the Midnight Masquerade collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-midnight-masquerade-exhale-veil-watermarked.jpg</image:loc>
+      <image:title>Exhale Veil</image:title>
+      <image:caption>Exhale Veil, a 4K desktop wallpaper from the Midnight Masquerade collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-midnight-masquerade-plastic-gaze-watermarked.jpg</image:loc>
+      <image:title>Plastic Gaze</image:title>
+      <image:caption>Plastic Gaze, a 4K desktop wallpaper from the Midnight Masquerade collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-midnight-masquerade-profile-mist-watermarked.jpg</image:loc>
+      <image:title>Profile Mist</image:title>
+      <image:caption>Profile Mist, a 4K desktop wallpaper from the Midnight Masquerade collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-midnight-masquerade-torn-breath-watermarked.jpg</image:loc>
+      <image:title>Torn Breath</image:title>
+      <image:caption>Torn Breath, a 4K desktop wallpaper from the Midnight Masquerade collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-midnight-masquerade-plastic-smoke-01-watermarked.jpg</image:loc>
+      <image:title>Plastic Smoke 01</image:title>
+      <image:caption>Plastic Smoke 01, a 4K desktop wallpaper from the Midnight Masquerade collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-midnight-masquerade-plastic-smoke-02-watermarked.jpg</image:loc>
+      <image:title>Plastic Smoke 02</image:title>
+      <image:caption>Plastic Smoke 02, a 4K desktop wallpaper from the Midnight Masquerade collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-midnight-masquerade-plastic-smoke-03-watermarked.jpg</image:loc>
+      <image:title>Plastic Smoke 03</image:title>
+      <image:caption>Plastic Smoke 03, a 4K desktop wallpaper from the Midnight Masquerade collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-midnight-masquerade-plastic-smoke-04-watermarked.jpg</image:loc>
+      <image:title>Plastic Smoke 04</image:title>
+      <image:caption>Plastic Smoke 04, a 4K desktop wallpaper from the Midnight Masquerade collection by Gianni Perugini.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://gianniperugini.com/digital-art/urban-noir.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-urban-noir-bridge-haze-watermarked.jpg</image:loc>
+      <image:title>Bridge Haze</image:title>
+      <image:caption>Bridge Haze, a 4K desktop wallpaper from the Urban Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-urban-noir-cobblestone-tracks-watermarked.jpg</image:loc>
+      <image:title>Cobblestone Tracks</image:title>
+      <image:caption>Cobblestone Tracks, a 4K desktop wallpaper from the Urban Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-urban-noir-industrial-plaza-watermarked.jpg</image:loc>
+      <image:title>Industrial Plaza</image:title>
+      <image:caption>Industrial Plaza, a 4K desktop wallpaper from the Urban Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-urban-noir-rain-reflections-watermarked.jpg</image:loc>
+      <image:title>Rain Reflections</image:title>
+      <image:caption>Rain Reflections, a 4K desktop wallpaper from the Urban Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-urban-noir-alley-headlights-watermarked.jpg</image:loc>
+      <image:title>Alley Headlights</image:title>
+      <image:caption>Alley Headlights, a 4K desktop wallpaper from the Urban Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-urban-noir-quay-dome-haze-watermarked.jpg</image:loc>
+      <image:title>Quay Dome Haze</image:title>
+      <image:caption>Quay Dome Haze, a 4K desktop wallpaper from the Urban Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-urban-noir-sidewalk-amber-watermarked.jpg</image:loc>
+      <image:title>Sidewalk Amber</image:title>
+      <image:caption>Sidewalk Amber, a 4K desktop wallpaper from the Urban Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-urban-noir-portal-plaza-watermarked.jpg</image:loc>
+      <image:title>Portal Plaza</image:title>
+      <image:caption>Portal Plaza, a 4K desktop wallpaper from the Urban Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-urban-noir-puddle-mirror-watermarked.jpg</image:loc>
+      <image:title>Puddle Mirror</image:title>
+      <image:caption>Puddle Mirror, a 4K desktop wallpaper from the Urban Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-urban-noir-canal-lamps-watermarked.jpg</image:loc>
+      <image:title>Canal Lamps</image:title>
+      <image:caption>Canal Lamps, a 4K desktop wallpaper from the Urban Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-urban-noir-maple-sign-street-watermarked.jpg</image:loc>
+      <image:title>Maple Sign Street</image:title>
+      <image:caption>Maple Sign Street, a 4K desktop wallpaper from the Urban Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-urban-noir-wet-cobble-glow-watermarked.jpg</image:loc>
+      <image:title>Wet Cobble Glow</image:title>
+      <image:caption>Wet Cobble Glow, a 4K desktop wallpaper from the Urban Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://gianniperugini.com/digital-art/steel-lanes.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-steel-lanes-arch-glow-watermarked.jpg</image:loc>
+      <image:title>Arch Glow</image:title>
+      <image:caption>Arch Glow, a 4K desktop wallpaper from the Steel Lanes collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-steel-lanes-brushed-grain-watermarked.jpg</image:loc>
+      <image:title>Brushed Grain</image:title>
+      <image:caption>Brushed Grain, a 4K desktop wallpaper from the Steel Lanes collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-steel-lanes-chrome-vanish-watermarked.jpg</image:loc>
+      <image:title>Chrome Vanish</image:title>
+      <image:caption>Chrome Vanish, a 4K desktop wallpaper from the Steel Lanes collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-steel-lanes-midnight-deck-watermarked.jpg</image:loc>
+      <image:title>Midnight Deck</image:title>
+      <image:caption>Midnight Deck, a 4K desktop wallpaper from the Steel Lanes collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-steel-lanes-return-forge-watermarked.jpg</image:loc>
+      <image:title>Return Forge</image:title>
+      <image:caption>Return Forge, a 4K desktop wallpaper from the Steel Lanes collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-steel-lanes-gothic-step-watermarked.jpg</image:loc>
+      <image:title>Gothic Step</image:title>
+      <image:caption>Gothic Step, a 4K desktop wallpaper from the Steel Lanes collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-steel-lanes-shoe-approach-watermarked.jpg</image:loc>
+      <image:title>Shoe Approach</image:title>
+      <image:caption>Shoe Approach, a 4K desktop wallpaper from the Steel Lanes collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-steel-lanes-lounge-table-watermarked.jpg</image:loc>
+      <image:title>Lounge Table</image:title>
+      <image:caption>Lounge Table, a 4K desktop wallpaper from the Steel Lanes collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-steel-lanes-candle-booth-watermarked.jpg</image:loc>
+      <image:title>Candle Booth</image:title>
+      <image:caption>Candle Booth, a 4K desktop wallpaper from the Steel Lanes collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-steel-lanes-vault-approach-watermarked.jpg</image:loc>
+      <image:title>Vault Approach</image:title>
+      <image:caption>Vault Approach, a 4K desktop wallpaper from the Steel Lanes collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-steel-lanes-pin-crimson-watermarked.jpg</image:loc>
+      <image:title>Pin Crimson</image:title>
+      <image:caption>Pin Crimson, a 4K desktop wallpaper from the Steel Lanes collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-steel-lanes-rail-reflection-watermarked.jpg</image:loc>
+      <image:title>Rail Reflection</image:title>
+      <image:caption>Rail Reflection, a 4K desktop wallpaper from the Steel Lanes collection by Gianni Perugini.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://gianniperugini.com/digital-art/faces-in-void.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-faces-in-void-crow-eclipse-watermarked.jpg</image:loc>
+      <image:title>Eclipse</image:title>
+      <image:caption>Eclipse, a 4K desktop wallpaper from the Faces in Void collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-faces-in-void-half-emerge-watermarked.jpg</image:loc>
+      <image:title>Half Emerge</image:title>
+      <image:caption>Half Emerge, a 4K desktop wallpaper from the Faces in Void collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-faces-in-void-rim-eye-watermarked.jpg</image:loc>
+      <image:title>Rim Eye</image:title>
+      <image:caption>Rim Eye, a 4K desktop wallpaper from the Faces in Void collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-faces-in-void-sink-pale-watermarked.jpg</image:loc>
+      <image:title>Sink Pale</image:title>
+      <image:caption>Sink Pale, a 4K desktop wallpaper from the Faces in Void collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-faces-in-void-whisper-crowd-watermarked.jpg</image:loc>
+      <image:title>Whisper Crowd</image:title>
+      <image:caption>Whisper Crowd, a 4K desktop wallpaper from the Faces in Void collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-faces-in-void-ash-cheek-watermarked.jpg</image:loc>
+      <image:title>Ash Cheek</image:title>
+      <image:caption>Ash Cheek, a 4K desktop wallpaper from the Faces in Void collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-faces-in-void-drowned-whisper-watermarked.jpg</image:loc>
+      <image:title>Drowned Whisper</image:title>
+      <image:caption>Drowned Whisper, a 4K desktop wallpaper from the Faces in Void collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-faces-in-void-hollow-gaze-watermarked.jpg</image:loc>
+      <image:title>Hollow Gaze</image:title>
+      <image:caption>Hollow Gaze, a 4K desktop wallpaper from the Faces in Void collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-faces-in-void-mist-pair-watermarked.jpg</image:loc>
+      <image:title>Mist Pair</image:title>
+      <image:caption>Mist Pair, a 4K desktop wallpaper from the Faces in Void collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-faces-in-void-shadow-profile-watermarked.jpg</image:loc>
+      <image:title>Shadow Profile</image:title>
+      <image:caption>Shadow Profile, a 4K desktop wallpaper from the Faces in Void collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-faces-in-void-slit-light-watermarked.jpg</image:loc>
+      <image:title>Slit Light</image:title>
+      <image:caption>Slit Light, a 4K desktop wallpaper from the Faces in Void collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-faces-in-void-void-chorus-watermarked.jpg</image:loc>
+      <image:title>Void Chorus</image:title>
+      <image:caption>Void Chorus, a 4K desktop wallpaper from the Faces in Void collection by Gianni Perugini.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://gianniperugini.com/digital-art/cinder-veil.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-cinder-veil-smoke-vigil-watermarked.jpg</image:loc>
+      <image:title>Smoke Vigil</image:title>
+      <image:caption>Smoke Vigil, a 4K desktop wallpaper from the Cinder Veil collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-cinder-veil-ember-watch-watermarked.jpg</image:loc>
+      <image:title>Ember Watch</image:title>
+      <image:caption>Ember Watch, a 4K desktop wallpaper from the Cinder Veil collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-cinder-veil-frost-tear-watermarked.jpg</image:loc>
+      <image:title>Frost Tear</image:title>
+      <image:caption>Frost Tear, a 4K desktop wallpaper from the Cinder Veil collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-cinder-veil-jade-hollow-watermarked.jpg</image:loc>
+      <image:title>Jade Hollow</image:title>
+      <image:caption>Jade Hollow, a 4K desktop wallpaper from the Cinder Veil collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-cinder-veil-coal-amber-watermarked.jpg</image:loc>
+      <image:title>Coal Amber</image:title>
+      <image:caption>Coal Amber, a 4K desktop wallpaper from the Cinder Veil collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-cinder-veil-violet-ash-watermarked.jpg</image:loc>
+      <image:title>Violet Ash</image:title>
+      <image:caption>Violet Ash, a 4K desktop wallpaper from the Cinder Veil collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-cinder-veil-quiet-reckoning-watermarked.jpg</image:loc>
+      <image:title>Quiet Reckoning</image:title>
+      <image:caption>Quiet Reckoning, a 4K desktop wallpaper from the Cinder Veil collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-cinder-veil-hollow-prayer-watermarked.jpg</image:loc>
+      <image:title>Hollow Prayer</image:title>
+      <image:caption>Hollow Prayer, a 4K desktop wallpaper from the Cinder Veil collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-cinder-veil-midnight-doubt-watermarked.jpg</image:loc>
+      <image:title>Midnight Doubt</image:title>
+      <image:caption>Midnight Doubt, a 4K desktop wallpaper from the Cinder Veil collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-cinder-veil-pale-soliloquy-watermarked.jpg</image:loc>
+      <image:title>Pale Soliloquy</image:title>
+      <image:caption>Pale Soliloquy, a 4K desktop wallpaper from the Cinder Veil collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-cinder-veil-still-threshold-watermarked.jpg</image:loc>
+      <image:title>Still Threshold</image:title>
+      <image:caption>Still Threshold, a 4K desktop wallpaper from the Cinder Veil collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-cinder-veil-weary-vigil-watermarked.jpg</image:loc>
+      <image:title>Weary Vigil</image:title>
+      <image:caption>Weary Vigil, a 4K desktop wallpaper from the Cinder Veil collection by Gianni Perugini.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://gianniperugini.com/digital-art/the-burning-gaze.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-the-burning-gaze-smoke-cathedral-watermarked.jpg</image:loc>
+      <image:title>Smoke Cathedral</image:title>
+      <image:caption>Smoke Cathedral, a 4K desktop wallpaper from the The Burning Gaze collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-the-burning-gaze-ember-iris-watermarked.jpg</image:loc>
+      <image:title>Ember Iris</image:title>
+      <image:caption>Ember Iris, a 4K desktop wallpaper from the The Burning Gaze collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-the-burning-gaze-frost-lens-watermarked.jpg</image:loc>
+      <image:title>Frost Lens</image:title>
+      <image:caption>Frost Lens, a 4K desktop wallpaper from the The Burning Gaze collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-the-burning-gaze-jade-fracture-watermarked.jpg</image:loc>
+      <image:title>Jade Fracture</image:title>
+      <image:caption>Jade Fracture, a 4K desktop wallpaper from the The Burning Gaze collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-the-burning-gaze-molten-gem-watermarked.jpg</image:loc>
+      <image:title>Molten Gem</image:title>
+      <image:caption>Molten Gem, a 4K desktop wallpaper from the The Burning Gaze collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-the-burning-gaze-violet-smoke-watermarked.jpg</image:loc>
+      <image:title>Violet Smoke</image:title>
+      <image:caption>Violet Smoke, a 4K desktop wallpaper from the The Burning Gaze collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-the-burning-gaze-downcast-ember-watermarked.jpg</image:loc>
+      <image:title>Downcast Ember</image:title>
+      <image:caption>Downcast Ember, a 4K desktop wallpaper from the The Burning Gaze collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-the-burning-gaze-prayer-iris-watermarked.jpg</image:loc>
+      <image:title>Prayer Iris</image:title>
+      <image:caption>Prayer Iris, a 4K desktop wallpaper from the The Burning Gaze collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-the-burning-gaze-doubted-jade-watermarked.jpg</image:loc>
+      <image:title>Doubted Jade</image:title>
+      <image:caption>Doubted Jade, a 4K desktop wallpaper from the The Burning Gaze collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-the-burning-gaze-whisper-violet-watermarked.jpg</image:loc>
+      <image:title>Whisper Violet</image:title>
+      <image:caption>Whisper Violet, a 4K desktop wallpaper from the The Burning Gaze collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-the-burning-gaze-threshold-amber-watermarked.jpg</image:loc>
+      <image:title>Threshold Amber</image:title>
+      <image:caption>Threshold Amber, a 4K desktop wallpaper from the The Burning Gaze collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-the-burning-gaze-weary-frost-watermarked.jpg</image:loc>
+      <image:title>Weary Frost</image:title>
+      <image:caption>Weary Frost, a 4K desktop wallpaper from the The Burning Gaze collection by Gianni Perugini.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://gianniperugini.com/digital-art/till-darkness.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-till-darkness-aisle-fog-watermarked.jpg</image:loc>
+      <image:title>Aisle Fog</image:title>
+      <image:caption>Aisle Fog, a 4K desktop wallpaper from the Till Darkness collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-till-darkness-black-veil-watermarked.jpg</image:loc>
+      <image:title>Black Veil</image:title>
+      <image:caption>Black Veil, a 4K desktop wallpaper from the Till Darkness collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-till-darkness-candle-dance-watermarked.jpg</image:loc>
+      <image:title>Candle Dance</image:title>
+      <image:caption>Candle Dance, a 4K desktop wallpaper from the Till Darkness collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-till-darkness-graveyard-bride-watermarked.jpg</image:loc>
+      <image:title>Graveyard Bride</image:title>
+      <image:caption>Graveyard Bride, a 4K desktop wallpaper from the Till Darkness collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-till-darkness-lace-vow-watermarked.jpg</image:loc>
+      <image:title>Lace Vow</image:title>
+      <image:caption>Lace Vow, a 4K desktop wallpaper from the Till Darkness collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-till-darkness-candlelit-oath-watermarked.jpg</image:loc>
+      <image:title>Candlelit Oath</image:title>
+      <image:caption>Candlelit Oath, a 4K desktop wallpaper from the Till Darkness collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-till-darkness-crimson-aisle-watermarked.jpg</image:loc>
+      <image:title>Crimson Aisle</image:title>
+      <image:caption>Crimson Aisle, a 4K desktop wallpaper from the Till Darkness collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-till-darkness-iron-gates-watermarked.jpg</image:loc>
+      <image:title>Iron Gates</image:title>
+      <image:caption>Iron Gates, a 4K desktop wallpaper from the Till Darkness collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-till-darkness-midnight-altar-watermarked.jpg</image:loc>
+      <image:title>Midnight Altar</image:title>
+      <image:caption>Midnight Altar, a 4K desktop wallpaper from the Till Darkness collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-till-darkness-raven-bouquet-watermarked.jpg</image:loc>
+      <image:title>Raven Bouquet</image:title>
+      <image:caption>Raven Bouquet, a 4K desktop wallpaper from the Till Darkness collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-till-darkness-shadow-waltz-watermarked.jpg</image:loc>
+      <image:title>Shadow Waltz</image:title>
+      <image:caption>Shadow Waltz, a 4K desktop wallpaper from the Till Darkness collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-till-darkness-veil-embrace-watermarked.jpg</image:loc>
+      <image:title>Veil Embrace</image:title>
+      <image:caption>Veil Embrace, a 4K desktop wallpaper from the Till Darkness collection by Gianni Perugini.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://gianniperugini.com/digital-art/stone-sanctuary.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-stone-sanctuary-cathedral-throne-watermarked.jpg</image:loc>
+      <image:title>Cathedral Throne</image:title>
+      <image:caption>Cathedral Throne, a 4K desktop wallpaper from the Stone Sanctuary collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-stone-sanctuary-cloister-moon-watermarked.jpg</image:loc>
+      <image:title>Cloister Moon</image:title>
+      <image:caption>Cloister Moon, a 4K desktop wallpaper from the Stone Sanctuary collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-stone-sanctuary-rose-trace-watermarked.jpg</image:loc>
+      <image:title>Rose Trace</image:title>
+      <image:caption>Rose Trace, a 4K desktop wallpaper from the Stone Sanctuary collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-stone-sanctuary-spire-storm-watermarked.jpg</image:loc>
+      <image:title>Spire Storm</image:title>
+      <image:caption>Spire Storm, a 4K desktop wallpaper from the Stone Sanctuary collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-stone-sanctuary-vaulted-shadows-watermarked.jpg</image:loc>
+      <image:title>Vaulted Shadows</image:title>
+      <image:caption>Vaulted Shadows, a 4K desktop wallpaper from the Stone Sanctuary collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-stone-sanctuary-crypt-stairs-watermarked.jpg</image:loc>
+      <image:title>Crypt Stairs</image:title>
+      <image:caption>Crypt Stairs, a 4K desktop wallpaper from the Stone Sanctuary collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-stone-sanctuary-buttress-fog-watermarked.jpg</image:loc>
+      <image:title>Buttress Fog</image:title>
+      <image:caption>Buttress Fog, a 4K desktop wallpaper from the Stone Sanctuary collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-stone-sanctuary-gargoyle-dusk-watermarked.jpg</image:loc>
+      <image:title>Gargoyle Dusk</image:title>
+      <image:caption>Gargoyle Dusk, a 4K desktop wallpaper from the Stone Sanctuary collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-stone-sanctuary-nave-candles-watermarked.jpg</image:loc>
+      <image:title>Nave Candles</image:title>
+      <image:caption>Nave Candles, a 4K desktop wallpaper from the Stone Sanctuary collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-stone-sanctuary-cloister-rain-watermarked.jpg</image:loc>
+      <image:title>Cloister Rain</image:title>
+      <image:caption>Cloister Rain, a 4K desktop wallpaper from the Stone Sanctuary collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-stone-sanctuary-bell-tower-mist-watermarked.jpg</image:loc>
+      <image:title>Bell Tower Mist</image:title>
+      <image:caption>Bell Tower Mist, a 4K desktop wallpaper from the Stone Sanctuary collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-stone-sanctuary-stained-aisle-watermarked.jpg</image:loc>
+      <image:title>Stained Aisle</image:title>
+      <image:caption>Stained Aisle, a 4K desktop wallpaper from the Stone Sanctuary collection by Gianni Perugini.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://gianniperugini.com/digital-art/blackwood.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-blackwood-branch-void-watermarked.jpg</image:loc>
+      <image:title>Branch Void</image:title>
+      <image:caption>Branch Void, a 4K desktop wallpaper from the Blackwood collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-blackwood-moon-canopy-watermarked.jpg</image:loc>
+      <image:title>Moon Canopy</image:title>
+      <image:caption>Moon Canopy, a 4K desktop wallpaper from the Blackwood collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-blackwood-path-fog-watermarked.jpg</image:loc>
+      <image:title>Path Fog</image:title>
+      <image:caption>Path Fog, a 4K desktop wallpaper from the Blackwood collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-blackwood-pine-storm-watermarked.jpg</image:loc>
+      <image:title>Pine Storm</image:title>
+      <image:caption>Pine Storm, a 4K desktop wallpaper from the Blackwood collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-blackwood-root-moss-watermarked.jpg</image:loc>
+      <image:title>Root Moss</image:title>
+      <image:caption>Root Moss, a 4K desktop wallpaper from the Blackwood collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-blackwood-dense-wall-watermarked.jpg</image:loc>
+      <image:title>Dense Wall</image:title>
+      <image:caption>Dense Wall, a 4K desktop wallpaper from the Blackwood collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-blackwood-fallen-log-watermarked.jpg</image:loc>
+      <image:title>Fallen Log</image:title>
+      <image:caption>Fallen Log, a 4K desktop wallpaper from the Blackwood collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-blackwood-spiderweb-dew-watermarked.jpg</image:loc>
+      <image:title>Spiderweb Dew</image:title>
+      <image:caption>Spiderweb Dew, a 4K desktop wallpaper from the Blackwood collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-blackwood-creek-reflection-watermarked.jpg</image:loc>
+      <image:title>Creek Reflection</image:title>
+      <image:caption>Creek Reflection, a 4K desktop wallpaper from the Blackwood collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-blackwood-owl-silhouette-watermarked.jpg</image:loc>
+      <image:title>Owl Silhouette</image:title>
+      <image:caption>Owl Silhouette, a 4K desktop wallpaper from the Blackwood collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-blackwood-mist-clearing-watermarked.jpg</image:loc>
+      <image:title>Mist Clearing</image:title>
+      <image:caption>Mist Clearing, a 4K desktop wallpaper from the Blackwood collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-blackwood-rain-bark-watermarked.jpg</image:loc>
+      <image:title>Rain Bark</image:title>
+      <image:caption>Rain Bark, a 4K desktop wallpaper from the Blackwood collection by Gianni Perugini.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://gianniperugini.com/digital-art/wet-neon-noir.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-wet-neon-noir-alley-pulse-watermarked.jpg</image:loc>
+      <image:title>Alley Pulse</image:title>
+      <image:caption>Alley Pulse, a 4K desktop wallpaper from the Wet Neon Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-wet-neon-noir-glass-rain-watermarked.jpg</image:loc>
+      <image:title>Glass Rain</image:title>
+      <image:caption>Glass Rain, a 4K desktop wallpaper from the Wet Neon Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-wet-neon-noir-plaza-glow-watermarked.jpg</image:loc>
+      <image:title>Plaza Glow</image:title>
+      <image:caption>Plaza Glow, a 4K desktop wallpaper from the Wet Neon Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-wet-neon-noir-track-ember-watermarked.jpg</image:loc>
+      <image:title>Track Ember</image:title>
+      <image:caption>Track Ember, a 4K desktop wallpaper from the Wet Neon Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-wet-neon-noir-galiano-cobbles-watermarked.jpg</image:loc>
+      <image:title>Galiano Cobbles</image:title>
+      <image:caption>Galiano Cobbles, a 4K desktop wallpaper from the Wet Neon Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-wet-neon-noir-alley-car-watermarked.jpg</image:loc>
+      <image:title>Alley Car</image:title>
+      <image:caption>Alley Car, a 4K desktop wallpaper from the Wet Neon Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-wet-neon-noir-maple-sidewalk-watermarked.jpg</image:loc>
+      <image:title>Maple Sidewalk</image:title>
+      <image:caption>Maple Sidewalk, a 4K desktop wallpaper from the Wet Neon Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-wet-neon-noir-depanneur-puddle-watermarked.jpg</image:loc>
+      <image:title>Depanneur Puddle</image:title>
+      <image:caption>Depanneur Puddle, a 4K desktop wallpaper from the Wet Neon Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-wet-neon-noir-canal-dome-watermarked.jpg</image:loc>
+      <image:title>Canal Dome</image:title>
+      <image:caption>Canal Dome, a 4K desktop wallpaper from the Wet Neon Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-wet-neon-noir-bonsecours-magenta-watermarked.jpg</image:loc>
+      <image:title>Bonsecours Magenta</image:title>
+      <image:caption>Bonsecours Magenta, a 4K desktop wallpaper from the Wet Neon Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-wet-neon-noir-metal-arch-cobbles-watermarked.jpg</image:loc>
+      <image:title>Metal Arch Cobbles</image:title>
+      <image:caption>Metal Arch Cobbles, a 4K desktop wallpaper from the Wet Neon Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-wet-neon-noir-oldport-ember-watermarked.jpg</image:loc>
+      <image:title>Oldport Ember</image:title>
+      <image:caption>Oldport Ember, a 4K desktop wallpaper from the Wet Neon Noir collection by Gianni Perugini.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://gianniperugini.com/digital-art/static-bloom.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-static-bloom-abstract-geometry-watermarked.jpg</image:loc>
+      <image:title>Abstract Geometry</image:title>
+      <image:caption>Abstract Geometry, a 4K desktop wallpaper from the Static Bloom collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-static-bloom-crimson-layers-watermarked.jpg</image:loc>
+      <image:title>Crimson Layers</image:title>
+      <image:caption>Crimson Layers, a 4K desktop wallpaper from the Static Bloom collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-static-bloom-grid-fracture-watermarked.jpg</image:loc>
+      <image:title>Grid Fracture</image:title>
+      <image:caption>Grid Fracture, a 4K desktop wallpaper from the Static Bloom collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-static-bloom-shard-eclipse-watermarked.jpg</image:loc>
+      <image:title>Shard Eclipse</image:title>
+      <image:caption>Shard Eclipse, a 4K desktop wallpaper from the Static Bloom collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-static-bloom-smoke-ignition-watermarked.jpg</image:loc>
+      <image:title>Smoke Ignition</image:title>
+      <image:caption>Smoke Ignition, a 4K desktop wallpaper from the Static Bloom collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-static-bloom-signal-orchard-watermarked.jpg</image:loc>
+      <image:title>Signal Orchard</image:title>
+      <image:caption>Signal Orchard, a 4K desktop wallpaper from the Static Bloom collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-static-bloom-lattice-detonation-watermarked.jpg</image:loc>
+      <image:title>Lattice Detonation</image:title>
+      <image:caption>Lattice Detonation, a 4K desktop wallpaper from the Static Bloom collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-static-bloom-ember-aperture-watermarked.jpg</image:loc>
+      <image:title>Ember Aperture</image:title>
+      <image:caption>Ember Aperture, a 4K desktop wallpaper from the Static Bloom collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-static-bloom-chromatic-fault-watermarked.jpg</image:loc>
+      <image:title>Chromatic Fault</image:title>
+      <image:caption>Chromatic Fault, a 4K desktop wallpaper from the Static Bloom collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-static-bloom-neon-monoliths-watermarked.jpg</image:loc>
+      <image:title>Neon Monoliths</image:title>
+      <image:caption>Neon Monoliths, a 4K desktop wallpaper from the Static Bloom collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-static-bloom-thermal-cascade-watermarked.jpg</image:loc>
+      <image:title>Thermal Cascade</image:title>
+      <image:caption>Thermal Cascade, a 4K desktop wallpaper from the Static Bloom collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-static-bloom-halftone-collapse-watermarked.jpg</image:loc>
+      <image:title>Halftone Collapse</image:title>
+      <image:caption>Halftone Collapse, a 4K desktop wallpaper from the Static Bloom collection by Gianni Perugini.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://gianniperugini.com/digital-art/red-eternity.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-red-eternity-glitch-skull-watermarked.jpg</image:loc>
+      <image:title>Glitch Skull</image:title>
+      <image:caption>Glitch Skull, a 4K desktop wallpaper from the Red Eternity collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-red-eternity-grid-distortion-watermarked.jpg</image:loc>
+      <image:title>Grid Distortion</image:title>
+      <image:caption>Grid Distortion, a 4K desktop wallpaper from the Red Eternity collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-red-eternity-portal-breach-watermarked.jpg</image:loc>
+      <image:title>Portal Breach</image:title>
+      <image:caption>Portal Breach, a 4K desktop wallpaper from the Red Eternity collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-red-eternity-reliquary-shatter-watermarked.jpg</image:loc>
+      <image:title>Reliquary Shatter</image:title>
+      <image:caption>Reliquary Shatter, a 4K desktop wallpaper from the Red Eternity collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-red-eternity-cone-cathedral-watermarked.jpg</image:loc>
+      <image:title>Cone Cathedral</image:title>
+      <image:caption>Cone Cathedral, a 4K desktop wallpaper from the Red Eternity collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-red-eternity-sphere-orbit-watermarked.jpg</image:loc>
+      <image:title>Sphere Orbit</image:title>
+      <image:caption>Sphere Orbit, a 4K desktop wallpaper from the Red Eternity collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-red-eternity-floor-fracture-watermarked.jpg</image:loc>
+      <image:title>Floor Fracture</image:title>
+      <image:caption>Floor Fracture, a 4K desktop wallpaper from the Red Eternity collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-red-eternity-wire-cascade-watermarked.jpg</image:loc>
+      <image:title>Wire Cascade</image:title>
+      <image:caption>Wire Cascade, a 4K desktop wallpaper from the Red Eternity collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-red-eternity-shard-storm-watermarked.jpg</image:loc>
+      <image:title>Shard Storm</image:title>
+      <image:caption>Shard Storm, a 4K desktop wallpaper from the Red Eternity collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-red-eternity-dual-horizon-watermarked.jpg</image:loc>
+      <image:title>Dual Horizon</image:title>
+      <image:caption>Dual Horizon, a 4K desktop wallpaper from the Red Eternity collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-red-eternity-void-ascent-watermarked.jpg</image:loc>
+      <image:title>Void Ascent</image:title>
+      <image:caption>Void Ascent, a 4K desktop wallpaper from the Red Eternity collection by Gianni Perugini.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://gianniperugini.com/assets/images/watermarked/archive/digital-art-red-eternity-screen-tear-watermarked.jpg</image:loc>
+      <image:title>Screen Tear</image:title>
+      <image:caption>Screen Tear, a 4K desktop wallpaper from the Red Eternity collection by Gianni Perugini.</image:caption>
+    </image:image>
+  </url>
 </urlset>

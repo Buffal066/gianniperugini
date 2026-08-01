@@ -1,0 +1,269 @@
+:root {
+    color-scheme: dark;
+}
+
+body {
+    background: #080808;
+    color: #f4f4f4;
+}
+
+.collection-container {
+    width: min(1160px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+.collection-hero {
+    padding: 8.5rem 0 5rem;
+    background:
+        radial-gradient(circle at 18% 20%, rgba(168, 18, 34, .16), transparent 36rem),
+        linear-gradient(180deg, #0b0b0b 0%, #080808 100%);
+    border-bottom: 1px solid #282828;
+}
+
+.collection-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .65rem;
+    margin-bottom: 2.6rem;
+    color: #a8a8a8;
+    font-size: .78rem;
+    letter-spacing: .05em;
+}
+
+.collection-breadcrumb a {
+    color: #d7d7d7;
+    text-underline-offset: .25em;
+}
+
+.collection-kicker {
+    margin: 0 0 .8rem;
+    color: #ef263f;
+    font: 600 .72rem/1.3 'Roboto', sans-serif;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+}
+
+.collection-hero h1,
+.collection-gallery-section h2,
+.collection-faq h2 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+.collection-hero h1 {
+    max-width: 14ch;
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    line-height: .98;
+}
+
+.collection-lead {
+    max-width: 760px;
+    margin: 1.5rem 0 0;
+    color: #c4c4c4;
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+    line-height: 1.7;
+}
+
+.collection-facts {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1px;
+    max-width: 900px;
+    margin: 2.5rem 0;
+    padding: 1px;
+    background: #292929;
+    list-style: none;
+}
+
+.collection-facts li {
+    padding: 1.1rem;
+    background: #0d0d0d;
+    color: #aaa;
+    font-size: .82rem;
+}
+
+.collection-facts strong {
+    display: block;
+    margin-bottom: .3rem;
+    color: #fff;
+    font-family: 'Cinzel', serif;
+    font-size: 1.05rem;
+}
+
+.collection-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+}
+
+.collection-buy,
+.collection-secondary {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    padding: .75rem 1.2rem;
+    border: 1px solid #e31731;
+    color: #fff;
+    font: 700 .74rem 'Roboto', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.collection-buy {
+    background: #a91125;
+}
+
+.collection-buy:hover,
+.collection-buy:focus-visible {
+    background: #d51c35;
+}
+
+.collection-secondary {
+    background: transparent;
+}
+
+.collection-note {
+    margin: 1rem 0 0;
+    color: #989898;
+    font-size: .85rem;
+}
+
+.collection-gallery-section,
+.collection-faq {
+    padding: 5.5rem 0;
+}
+
+.collection-gallery-section h2,
+.collection-faq h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.collection-gallery-section > .collection-container > p:not(.collection-kicker) {
+    max-width: 740px;
+    color: #aaa;
+    line-height: 1.7;
+}
+
+.collection-gallery-mobile-section {
+    background: #0c0c0c;
+    border-block: 1px solid #232323;
+}
+
+.collection-gallery {
+    display: grid;
+    gap: 1.1rem;
+    margin-top: 2.25rem;
+}
+
+.collection-gallery-desktop {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.collection-gallery-mobile {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.collection-artwork {
+    margin: 0;
+    border: 1px solid #292929;
+    background: #0b0b0b;
+}
+
+.collection-artwork a {
+    display: block;
+    overflow: hidden;
+}
+
+.collection-artwork img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform .25s ease;
+}
+
+.collection-artwork a:hover img,
+.collection-artwork a:focus-visible img {
+    transform: scale(1.02);
+}
+
+.collection-artwork figcaption {
+    padding: .8rem;
+    color: #c8c8c8;
+    font: 400 .78rem 'Cinzel', serif;
+}
+
+.collection-faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.collection-faq-grid article {
+    padding: 1.5rem;
+    border: 1px solid #292929;
+    background: #0c0c0c;
+}
+
+.collection-faq-grid h3 {
+    margin: 0 0 .7rem;
+    font: 400 1.05rem 'Cinzel', serif;
+}
+
+.collection-faq-grid p,
+.collection-final-cta p {
+    margin: 0;
+    color: #aaa;
+    line-height: 1.7;
+}
+
+.collection-final-cta {
+    margin-top: 3.5rem;
+    padding: 2rem;
+    border-left: 3px solid #c4182f;
+    background: rgba(196, 24, 47, .07);
+}
+
+.collection-final-cta h2 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.collection-final-cta p {
+    margin: .75rem 0 1.3rem;
+}
+
+@media (max-width: 850px) {
+    .collection-facts,
+    .collection-gallery-desktop,
+    .collection-gallery-mobile {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .collection-container {
+        width: min(100% - 28px, 1160px);
+    }
+
+    .collection-hero {
+        padding-top: 7rem;
+    }
+
+    .collection-facts,
+    .collection-faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-gallery-desktop {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .collection-artwork img {
+        transition: none;
+    }
+}

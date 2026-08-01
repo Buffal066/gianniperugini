@@ -410,6 +410,22 @@
     font-size: clamp(1.55rem, 3vw, 2.25rem);
 }
 
+.store-product-title-link,
+.archive-series-title-link {
+    color: inherit;
+    text-decoration-color: rgba(224, 189, 118, 0.45);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.24em;
+}
+
+.store-product-title-link:hover,
+.store-product-title-link:focus-visible,
+.archive-series-title-link:hover,
+.archive-series-title-link:focus-visible {
+    color: #e0bd76;
+    text-decoration-color: currentColor;
+}
+
 .store-product-subtitle {
     margin: 0 0 1rem;
     color: var(--text-primary);
@@ -563,6 +579,71 @@
     color: var(--text-secondary);
     font-size: 0.88rem;
     line-height: 1.65;
+}
+
+.store-faq {
+    margin-top: 5rem;
+    padding-top: 4rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.store-faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.store-faq-grid article {
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.store-faq-grid h3 {
+    margin: 0 0 0.65rem;
+    font: 400 1rem 'Cinzel', serif;
+}
+
+.store-faq-grid p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    line-height: 1.7;
+}
+
+.store-collection-index {
+    margin-top: 5rem;
+    padding-top: 4rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.store-collection-index-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    margin: 0;
+    padding: 1px;
+    background: var(--border-color);
+    list-style: none;
+}
+
+.store-collection-index-list li {
+    background: #0b0b0b;
+}
+
+.store-collection-index-list a {
+    display: block;
+    padding: 1.1rem;
+    color: var(--text-primary);
+    font: 400 0.88rem 'Cinzel', serif;
+    text-decoration-color: rgba(224, 189, 118, 0.45);
+    text-underline-offset: 0.25em;
+}
+
+.store-collection-index-list a:hover,
+.store-collection-index-list a:focus-visible {
+    color: #e0bd76;
+    text-decoration-color: currentColor;
 }
 
 .archive-gallery {
@@ -1054,6 +1135,8 @@
     .store-product-grid,
     .store-product-grid-wide,
     .store-license-grid,
+    .store-faq-grid,
+    .store-collection-index-list,
     .store-product-card-sample,
     .store-product-card-wide {
         grid-template-columns: 1fr;

@@ -181,6 +181,8 @@
         image.alt = product.name;
         image.loading = 'lazy';
         image.decoding = 'async';
+        image.width = 3840;
+        image.height = 2160;
         imageWrap.appendChild(image);
 
         if (product.badge) {
@@ -198,7 +200,15 @@
         type.textContent = typeLabel(sourceProduct);
 
         const title = document.createElement('h3');
-        title.textContent = product.name;
+        if (sourceProduct.type === 'series') {
+            const detailsLink = document.createElement('a');
+            detailsLink.className = 'store-product-title-link';
+            detailsLink.href = `digital-art/${sourceProduct.id}.html`;
+            detailsLink.textContent = product.name;
+            title.appendChild(detailsLink);
+        } else {
+            title.textContent = product.name;
+        }
 
         const subtitle = document.createElement('p');
         subtitle.className = 'store-product-subtitle';
@@ -299,6 +309,8 @@
             image.alt = title;
             image.loading = 'lazy';
             image.decoding = 'async';
+            image.width = artwork.format === 'mobile' ? 1440 : 3840;
+            image.height = artwork.format === 'mobile' ? 2560 : 2160;
 
             const label = document.createElement('span');
             label.textContent = `${title} · ${format}`;
