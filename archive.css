@@ -285,16 +285,31 @@
 }
 
 .store-product-group-heading {
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+        "kicker empty"
+        "title intro";
+    align-items: baseline;
+    column-gap: 2rem;
+    row-gap: 0.35rem;
     margin-bottom: 1.8rem;
 }
 
+.store-product-group-heading > .store-kicker {
+    grid-area: kicker;
+}
+
+.store-product-group-heading > h2 {
+    grid-area: title;
+    margin: 0;
+    line-height: 1.15;
+}
+
 .store-product-group-heading > p {
+    grid-area: intro;
     max-width: none;
-    margin-bottom: 0.35rem;
+    margin: 0;
     white-space: nowrap;
 }
 
@@ -785,10 +800,10 @@
     margin-bottom: 1.25rem;
     color: var(--text-primary);
     font-family: 'Cinzel', serif;
-    font-size: 1rem;
+    font-size: clamp(1.3rem, 1.7vw, 1.55rem);
     font-weight: 400;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .archive-grid {
@@ -1338,6 +1353,7 @@
     }
 
     .store-product-group-heading {
+        display: flex;
         align-items: start;
         flex-direction: column;
         gap: 0.5rem;
