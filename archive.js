@@ -306,11 +306,6 @@
         section.className = 'archive-section';
         section.id = 'composites';
 
-        const heading = document.createElement('h2');
-        heading.className = 'archive-section-title';
-        heading.textContent = t('digitalArt');
-        section.appendChild(heading);
-
         const groups = new Map();
         works.forEach((work) => {
             if (!work.file) return;

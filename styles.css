@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap');
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -22,6 +24,47 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+}
+
+/* Authentic Macondo Swash Caps Regular 400 for display headings. */
+.hero-title,
+.section-title,
+.logo-text,
+.service-card h3,
+.why-item h3,
+.portfolio-overlay h4,
+.contact-info h3,
+.archive-title,
+.store-section-heading h2,
+.store-product-group-heading h2,
+.archive-gallery-heading h2,
+.individual-wallpaper-callout h2,
+.store-sample-preview-heading h2,
+.store-product-body h3,
+.store-help-link strong,
+.archive-section-title,
+.archive-series-title,
+.archive-empty h2,
+.lightbox-title,
+.mobile-store-guide-heading h2,
+.mobile-store-quick-links h3,
+.collection-hero h1,
+.collection-gallery-section h2,
+.collection-faq h2,
+.portfolio-heading h2,
+.faq-hero h1,
+.faq-contact h2,
+.licensing-hero h1,
+.licensing-options h2,
+.licensing-decision h2,
+.licence-page h1,
+.licence-block h2 {
+    font-family: 'Macondo Swash Caps', Georgia, serif !important;
+    font-weight: 400 !important;
+}
+
+.archive-section-title {
+    font-size: clamp(2.3rem, 4vw, 3rem) !important;
 }
 
 body {

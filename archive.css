@@ -6,9 +6,11 @@
 }
 
 .archive-hero {
-    padding: 10rem 20px 4rem;
+    padding: 7rem 20px 2.75rem;
     text-align: center;
-    background: var(--darker-bg);
+    background:
+        linear-gradient(90deg, rgba(3, 3, 3, 0.9), rgba(3, 3, 3, 0.76) 50%, rgba(3, 3, 3, 0.9)),
+        url('assets/images/watermarked/archive/digital-art-burned-canvas-ash-weave-watermarked.jpg') center 52% / cover no-repeat;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -22,21 +24,21 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     color: var(--accent-gold);
-    margin-bottom: 1rem;
+    margin-bottom: 0.55rem;
 }
 
 .archive-title {
     font-family: 'Cinzel', serif;
-    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-size: clamp(2rem, 4vw, 3.1rem);
     font-weight: 600;
     letter-spacing: 3px;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.75rem;
 }
 
 .archive-subtitle {
     color: var(--text-secondary);
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1rem;
+    line-height: 1.6;
     font-weight: 300;
 }
 
@@ -45,7 +47,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.8rem;
-    margin-top: 2rem;
+    margin-top: 1.25rem;
 }
 
 .archive-primary-link,
@@ -53,8 +55,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 46px;
-    padding: 0.75rem 1.2rem;
+    min-height: 42px;
+    padding: 0.65rem 1.1rem;
     border: 1px solid var(--accent-gold);
     color: var(--text-primary);
     font-family: 'Roboto', sans-serif;
@@ -291,8 +293,9 @@
 }
 
 .store-product-group-heading > p {
-    max-width: 460px;
+    max-width: none;
     margin-bottom: 0.35rem;
+    white-space: nowrap;
 }
 
 .store-product-grid {
@@ -555,11 +558,22 @@
     text-decoration: underline;
     text-decoration-color: rgba(197, 160, 89, 0.5);
     text-underline-offset: 0.3em;
+    white-space: nowrap;
 }
 
 .store-preview-link:hover {
     color: var(--text-primary);
     text-decoration-color: currentColor;
+}
+
+#store-archives .store-preview-link[href="#composites"] {
+    font-size: 0.68rem;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
+#store-archives .store-preview-link[href="commercial-licence.html"] {
+    white-space: normal;
 }
 
 .store-buy-button.is-pending,
@@ -1294,7 +1308,10 @@
         flex: 1;
     }
     .archive-hero {
-        padding: 8rem 20px 3rem;
+        padding: 7rem 20px 2rem;
+        background:
+            linear-gradient(180deg, rgba(3, 3, 3, 0.84), rgba(3, 3, 3, 0.9)),
+            url('assets/images/watermarked/mobile/digital-art-burned-canvas-ash-weave-mobile-watermarked.jpg') center 44% / cover no-repeat;
     }
 
     .archive-grid {
@@ -1324,6 +1341,11 @@
         align-items: start;
         flex-direction: column;
         gap: 0.5rem;
+    }
+
+    .store-product-group-heading > p,
+    .store-preview-link {
+        white-space: normal;
     }
 
     .store-product-grid,
