@@ -6,7 +6,9 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const primaryPages = [
     'index.html',
     'archive.html',
-    'portfolio.html',
+    'projects.html',
+    'about.html',
+    'contact.html',
     'commercial-licence.html',
     'faq.html',
     'licensing.html',

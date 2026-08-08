@@ -1,4 +1,23 @@
 /* Landing Page - Projects Section */
+.home-page {
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.home-page .landing-hero {
+    height: 100dvh;
+    min-height: 100dvh;
+}
+
+.content-page-main {
+    min-height: 100dvh;
+    padding-top: 72px;
+}
+
+.content-page-main > section {
+    min-height: calc(100dvh - 72px);
+}
+
 .projects {
     background: var(--darker-bg);
     position: relative;
@@ -25,6 +44,7 @@
 .project-card {
     background: var(--accent-dark);
     border: 1px solid var(--border-color);
+    border-radius: var(--frame-radius, 10px);
     overflow: hidden;
     text-decoration: none;
     color: inherit;
@@ -255,6 +275,7 @@
     padding: 2rem;
 }
 
+.project-info h2,
 .project-info h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.6rem;

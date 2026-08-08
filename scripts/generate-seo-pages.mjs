@@ -147,10 +147,10 @@ function collectionPage(product) {
             <ul class="nav-menu" id="primary-navigation">
                 <li><a href="../index.html" class="nav-link">Home</a></li>
                 <li><a href="../archive.html" class="nav-link is-current" aria-current="page">Digital Art Store</a></li>
-                <li><a href="../portfolio.html" class="nav-link">Portfolio</a></li>
                 <li><a href="../archive.html#photography" class="nav-link">Photography</a></li>
-                <li><a href="https://glacenoire.com" class="nav-link">Video &amp; Motion</a></li>
-                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="../projects.html" class="nav-link">Projects</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
             </ul>
             <button type="button" class="hamburger" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
         </div>
@@ -248,8 +248,12 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url><loc>${baseUrl}/</loc><lastmod>${today}</lastmod></url>
   <url><loc>${baseUrl}/archive.html</loc><lastmod>${today}</lastmod></url>
-  <url><loc>${baseUrl}/portfolio.html</loc><lastmod>${today}</lastmod></url>
+  <url><loc>${baseUrl}/projects.html</loc><lastmod>${today}</lastmod></url>
+  <url><loc>${baseUrl}/about.html</loc><lastmod>${today}</lastmod></url>
+  <url><loc>${baseUrl}/contact.html</loc><lastmod>${today}</lastmod></url>
   <url><loc>${baseUrl}/commercial-licence.html</loc><lastmod>${today}</lastmod></url>
+  <url><loc>${baseUrl}/faq.html</loc><lastmod>${today}</lastmod></url>
+  <url><loc>${baseUrl}/licensing.html</loc><lastmod>${today}</lastmod></url>
 ${imageEntries}
 </urlset>
 `;

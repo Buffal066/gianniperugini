@@ -17,6 +17,7 @@ body {
     min-height: 34px;
     padding: 0.35rem;
     border: 0;
+    border-radius: var(--button-radius, 8px);
     background: transparent;
     color: var(--text-secondary);
     font: inherit;
@@ -112,6 +113,7 @@ body {
     margin-top: 4rem;
     padding: 1.6rem;
     border-left: 3px solid var(--accent-red);
+    border-radius: var(--frame-radius, 10px);
     background: rgba(196, 24, 47, 0.07);
 }
 

@@ -211,6 +211,7 @@ body {
     cursor: pointer;
     padding: 6px;
     border: 0;
+    border-radius: 8px;
     background: transparent;
     color: inherit;
 }

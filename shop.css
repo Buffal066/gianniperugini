@@ -107,10 +107,12 @@
 .shop-card {
     background: var(--accent-dark);
     border: 1px solid var(--border-color);
+    border-radius: var(--frame-radius, 10px);
     display: flex;
     flex-direction: column;
     transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 0;
+    overflow: hidden;
     transform: translateY(20px);
 }
 
@@ -224,6 +226,7 @@
     background: var(--accent-gold);
     color: #fff;
     border: none;
+    border-radius: var(--button-radius, 8px);
     padding: 0.65rem 1.25rem;
     font-size: 0.75rem;
     font-weight: 700;
@@ -270,6 +273,7 @@
 
 .shop-info-card {
     border: 1px solid var(--border-color);
+    border-radius: var(--frame-radius, 10px);
     padding: 1.75rem;
     background: var(--accent-dark);
 }

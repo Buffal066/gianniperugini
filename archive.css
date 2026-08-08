@@ -418,6 +418,7 @@
     top: 0.9rem;
     left: 0.9rem;
     padding: 0.4rem 0.65rem;
+    border-radius: 6px;
     background: var(--accent-gold);
     color: var(--darker-bg);
     font-family: 'Roboto', sans-serif;
@@ -1041,7 +1042,7 @@
     min-width: 0;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem;
+    padding: 0.9rem 2rem;
     border-left: 1px solid var(--border-color);
 }
 
@@ -1468,4 +1469,45 @@
         height: auto;
         aspect-ratio: 16 / 9;
     }
+}
+
+/* Consistent rounded treatment for interactive controls. */
+.archive-primary-link,
+.archive-secondary-link,
+.archive-language-button,
+.store-buy-button,
+.format-switch,
+.format-switch-button,
+.sample-artwork,
+.archive-item,
+.mobile-store-tab,
+.mobile-category-toggle {
+    border-radius: var(--button-radius, 8px);
+}
+
+.lightbox-close {
+    border-radius: 50%;
+}
+
+/* Rounded frames and panels across the store and portfolio. */
+.individual-wallpaper-callout,
+.store-sample-preview,
+.store-product-card,
+.store-license-card,
+.store-help-link,
+.archive-empty,
+.archive-example,
+.lightbox-dialog,
+.mobile-category-card,
+.mobile-store-quick-links a {
+    border-radius: var(--frame-radius, 10px);
+}
+
+.individual-wallpaper-callout,
+.store-sample-preview,
+.store-product-card,
+.archive-empty,
+.lightbox-dialog,
+.mobile-category-card {
+    overflow: hidden;
 }

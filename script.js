@@ -246,7 +246,7 @@ function showConfirmation(message) {
     paragraph.textContent = message;
     const button = document.createElement('button');
     button.type = 'button';
-    button.style.cssText = 'background:#cc0000;color:#fff;border:none;padding:0.6rem 2rem;font-size:0.9rem;text-transform:uppercase;letter-spacing:1px;cursor:pointer;';
+    button.style.cssText = 'background:#cc0000;color:#fff;border:none;border-radius:8px;padding:0.6rem 2rem;font-size:0.9rem;text-transform:uppercase;letter-spacing:1px;cursor:pointer;';
     button.textContent = 'OK';
     box.append(paragraph, button);
     button.addEventListener('click', () => overlay.remove());

@@ -17,6 +17,7 @@ body {
     min-height: 34px;
     padding: 0.35rem;
     border: 0;
+    border-radius: var(--button-radius, 8px);
     background: transparent;
     color: var(--text-secondary);
     font: inherit;
@@ -71,6 +72,7 @@ body {
 .licensing-options article {
     padding: 2rem;
     border: 1px solid var(--border-color);
+    border-radius: var(--frame-radius, 10px);
     background: rgba(255, 255, 255, 0.018);
 }
 
@@ -94,6 +96,7 @@ body {
     margin-top: 2rem;
     padding: 1.5rem;
     border-left: 3px solid var(--accent-red);
+    border-radius: var(--frame-radius, 10px);
     background: rgba(196, 24, 47, 0.07);
 }
 
@@ -114,6 +117,7 @@ body {
     padding: 0.75rem 1rem;
     align-items: center;
     border: 1px solid var(--border-color);
+    border-radius: var(--button-radius, 8px);
     color: var(--text-primary);
     font-size: 0.72rem;
     font-weight: 600;

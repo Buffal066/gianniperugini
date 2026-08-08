@@ -73,6 +73,8 @@ body {
     margin: 2.5rem 0;
     padding: 1px;
     background: #292929;
+    border-radius: var(--frame-radius, 10px);
+    overflow: hidden;
     list-style: none;
 }
 
@@ -105,6 +107,7 @@ body {
     justify-content: center;
     padding: .75rem 1.2rem;
     border: 1px solid #e31731;
+    border-radius: var(--button-radius, 8px);
     color: #fff;
     font: 700 .74rem 'Roboto', sans-serif;
     letter-spacing: .1em;
@@ -169,7 +172,9 @@ body {
 .collection-artwork {
     margin: 0;
     border: 1px solid #292929;
+    border-radius: var(--frame-radius, 10px);
     background: #0b0b0b;
+    overflow: hidden;
 }
 
 .collection-artwork a {
@@ -205,6 +210,7 @@ body {
 .collection-faq-grid article {
     padding: 1.5rem;
     border: 1px solid #292929;
+    border-radius: var(--frame-radius, 10px);
     background: #0c0c0c;
 }
 
@@ -224,6 +230,7 @@ body {
     margin-top: 3.5rem;
     padding: 2rem;
     border-left: 3px solid #c4182f;
+    border-radius: var(--frame-radius, 10px);
     background: rgba(196, 24, 47, .07);
 }
 

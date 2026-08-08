@@ -273,16 +273,12 @@
         });
     }
 
-    function renderSection(id, title, works) {
+    function renderSection(id, works) {
         if (!Array.isArray(works) || works.length === 0) return false;
 
         const section = document.createElement('section');
         section.className = 'archive-section';
         section.id = id;
-
-        const heading = document.createElement('h2');
-        heading.className = 'archive-section-title';
-        heading.textContent = title;
 
         const grid = document.createElement('div');
         grid.className = 'archive-grid';
@@ -293,7 +289,6 @@
             grid.appendChild(createItem(work, index));
         });
 
-        section.appendChild(heading);
         section.appendChild(grid);
         sectionsRoot.appendChild(section);
         return true;
@@ -401,7 +396,7 @@
 
         let shown = false;
         if (isPhotography) {
-            shown = renderSection('photography', t('photography'), photography);
+            shown = renderSection('photography', photography);
         } else if (isGuidedMobileStore) {
             shown = true;
         } else {
@@ -474,7 +469,7 @@
         });
     }
 
-    fetch('assets/images/archive/works.json')
+    fetch('assets/images/archive/works.json?v=20260808-photography-cleanup')
         .then((response) => {
             if (!response.ok) throw new Error('Could not load works list');
             return response.json();

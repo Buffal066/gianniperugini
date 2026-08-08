@@ -19,6 +19,8 @@
     --border-color: #2a2a2a;
     --shadow-dark: rgba(0, 0, 0, 0.8);
     --shadow-glow: rgba(204, 0, 0, 0.3);
+    --button-radius: 8px;
+    --frame-radius: 10px;
 }
 
 html {
@@ -165,6 +167,7 @@ body {
     gap: 5px;
     padding: 0;
     border: 0;
+    border-radius: var(--button-radius);
     background: transparent;
     color: inherit;
 }
@@ -300,6 +303,7 @@ body {
     font-weight: 600;
     transition: all 0.3s ease;
     border: 2px solid;
+    border-radius: var(--button-radius);
     display: inline-block;
 }
 
@@ -429,6 +433,7 @@ section {
     background: var(--accent-dark);
     padding: 2.5rem;
     border: 1px solid var(--border-color);
+    border-radius: var(--frame-radius);
     position: relative;
     transition: all 0.3s ease;
     overflow: hidden;
@@ -568,6 +573,7 @@ section {
     aspect-ratio: 4/3;
     background: var(--accent-dark);
     border: 1px solid var(--border-color);
+    border-radius: var(--frame-radius);
     overflow: hidden;
     cursor: pointer;
 }
@@ -704,6 +710,7 @@ section {
     padding: 1rem;
     background: var(--accent-dark);
     border: 1px solid var(--border-color);
+    border-radius: var(--frame-radius);
     color: var(--text-primary);
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
