@@ -3,7 +3,14 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const primaryPages = ['index.html', 'archive.html', 'portfolio.html', 'commercial-licence.html'];
+const primaryPages = [
+    'index.html',
+    'archive.html',
+    'portfolio.html',
+    'commercial-licence.html',
+    'faq.html',
+    'licensing.html',
+];
 const collectionDirectory = path.join(root, 'digital-art');
 const collectionPages = (await readdir(collectionDirectory))
     .filter((file) => file.endsWith('.html'))

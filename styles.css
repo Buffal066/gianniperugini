@@ -736,6 +736,25 @@ section {
     font-size: 0.9rem;
 }
 
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 0.8rem;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    text-decoration-color: transparent;
+    text-underline-offset: 0.25em;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+    color: var(--accent-gold);
+    text-decoration-color: currentColor;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {

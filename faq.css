@@ -1,0 +1,153 @@
+body {
+    background: #080808;
+    color: var(--text-primary);
+}
+
+.faq-language-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-left: 1rem;
+    color: var(--text-secondary);
+    font-size: 0.72rem;
+}
+
+.faq-language-button {
+    min-width: 34px;
+    min-height: 34px;
+    padding: 0.35rem;
+    border: 0;
+    background: transparent;
+    color: var(--text-secondary);
+    font: inherit;
+    cursor: pointer;
+}
+
+.faq-language-button.is-active {
+    color: var(--accent-red);
+}
+
+.faq-page {
+    width: min(900px, calc(100% - 40px));
+    min-height: 70vh;
+    margin: 0 auto;
+    padding: 9rem 0 6rem;
+}
+
+.faq-hero {
+    max-width: 720px;
+    margin-bottom: 3rem;
+}
+
+.faq-kicker {
+    margin: 0;
+    color: var(--accent-red);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.faq-hero h1 {
+    margin: 0.6rem 0 0.8rem;
+    font: 400 clamp(2.5rem, 7vw, 4.6rem)/1.05 'Playfair Display', serif;
+}
+
+.faq-hero > p:last-child,
+.faq-list p,
+.faq-contact p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.faq-list {
+    border-top: 1px solid var(--border-color);
+}
+
+.faq-list details {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.faq-list summary {
+    position: relative;
+    padding: 1.4rem 3rem 1.4rem 0;
+    color: var(--text-primary);
+    font: 400 1rem/1.5 'Cinzel', serif;
+    list-style: none;
+    cursor: pointer;
+}
+
+.faq-list summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-list summary::after {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    color: var(--accent-red);
+    content: '+';
+    font: 300 1.5rem 'Roboto', sans-serif;
+    transform: translateY(-50%);
+}
+
+.faq-list details[open] summary::after {
+    content: '−';
+}
+
+.faq-list details > p {
+    max-width: 740px;
+    margin: -0.2rem 0 1.4rem;
+}
+
+.faq-list details > a,
+.faq-contact a {
+    display: inline-block;
+    margin: -0.4rem 0 1.5rem;
+    color: var(--accent-gold);
+    text-underline-offset: 0.3em;
+}
+
+.faq-contact {
+    margin-top: 4rem;
+    padding: 1.6rem;
+    border-left: 3px solid var(--accent-red);
+    background: rgba(196, 24, 47, 0.07);
+}
+
+.faq-contact h2 {
+    margin: 0 0 0.5rem;
+    font: 400 1.5rem 'Playfair Display', serif;
+}
+
+.faq-contact p {
+    margin: 0 0 1rem;
+}
+
+.faq-contact a {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .faq-language-switch {
+        margin-left: auto;
+        margin-right: 0.6rem;
+    }
+
+    .faq-language-button {
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .faq-page {
+        padding-top: 7.5rem;
+    }
+
+    .faq-hero {
+        margin-bottom: 2rem;
+    }
+
+    .faq-list summary {
+        font-size: 0.9rem;
+    }
+}

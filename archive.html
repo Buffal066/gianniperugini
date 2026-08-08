@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- deployed: 2026-08-08 13:14:08 -->
+<!-- deployed: 2026-08-08 15:24:28 -->
 <html lang="en-CA">
 <head>
     <meta charset="UTF-8">
@@ -26,8 +26,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="stylesheet" href="styles.css?v=20260731-site-fixes-2">
-    <link rel="stylesheet" href="archive.css?v=20260807-mobile-categories">
+    <link rel="stylesheet" href="styles.css?v=20260808-faq">
+    <link rel="stylesheet" href="archive.css?v=20260808-compact-spacing">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -130,7 +130,8 @@
                 <h3 id="mobile-quick-heading" data-i18n="mobileQuickHeading">More ways to shop</h3>
                 <a href="https://payhip.com/b/lFO2d" data-i18n="mobileFreeSample">Free sample</a>
                 <a href="https://payhip.com/b/WDg0R" data-i18n="mobileCompleteArchive">Complete archive</a>
-                <a href="commercial-licence.html" data-i18n="mobileCommercialLicence">Commercial licence</a>
+                <a href="licensing.html" data-i18n="licensingLink">Licensing</a>
+                <a href="faq.html" data-i18n="faqLink">FAQ</a>
             </nav>
         </div>
     </section>
@@ -189,69 +190,22 @@
                 <div id="store-archives" class="store-product-grid store-product-grid-wide"></div>
             </section>
 
-            <div class="store-license-grid">
-                <article class="store-license-card">
-                    <p class="store-kicker" data-i18n="personalUseKicker">For yourself</p>
-                    <h3 data-i18n="personalUseTitle">Personal use</h3>
-                    <p data-i18n="personalUseText">Use the artwork as wallpapers and lock screens on your own devices.</p>
-                </article>
-                <article class="store-license-card">
-                    <p class="store-kicker" data-i18n="commercialUseKicker">For your work</p>
-                    <h3 data-i18n="commercialUseTitle">Commercial use</h3>
-                    <p data-i18n="commercialUseText">Standard commercial use for websites, social posts, digital ads, presentations, videos, stream graphics, and flattened client work. Resale, merchandise, publishing, book covers, logos, NFTs, and AI training are excluded.</p>
-                    <a class="store-terms-link" href="commercial-licence.html" data-i18n="viewLicenceTerms">View the complete licence terms</a>
-                </article>
+            <div class="store-guidance-links" id="store-guidance">
+                <aside class="store-help-link" aria-label="Licensing help">
+                    <div>
+                        <strong data-i18n="notSureLicence">Not sure which licence you need?</strong>
+                        <span data-i18n="licenceChoiceIntro">Personal use is for your own screens. Commercial use covers eligible business and client projects.</span>
+                    </div>
+                    <a href="licensing.html" data-i18n="compareLicences">Compare licences</a>
+                </aside>
+                <aside class="store-help-link" aria-label="Store help">
+                    <div>
+                        <strong data-i18n="questionsBeforeBuying">Questions before buying?</strong>
+                        <span data-i18n="questionsBeforeBuyingIntro">Find clear answers about formats, pricing, delivery, and licensing.</span>
+                    </div>
+                    <a href="faq.html" data-i18n="visitFaq">View the FAQ</a>
+                </aside>
             </div>
-
-            <section class="store-faq" aria-labelledby="store-faq-heading">
-                <header class="store-section-heading">
-                    <p class="store-kicker" data-i18n="faqKicker">Buying guide</p>
-                    <h2 id="store-faq-heading" data-i18n="faqHeading">Digital art store questions</h2>
-                    <p data-i18n="faqIntro">Clear answers about formats, pricing, delivery, and licensing.</p>
-                </header>
-                <div class="store-faq-grid">
-                    <article>
-                        <h3 data-i18n="faqFormatsQuestion">What formats are included in a collection?</h3>
-                        <p data-i18n="faqFormatsAnswer">Choose 12 mobile JPG wallpapers, 12 4K desktop JPG wallpapers, or all 24 files. Mobile compositions are shown separately because some differ from the desktop versions.</p>
-                    </article>
-                    <article>
-                        <h3 data-i18n="faqPwywQuestion">What does “pay what you want” mean?</h3>
-                        <p data-i18n="faqPwywAnswer">The displayed amount is the minimum. You may enter a higher amount if you would like to support my work. Thank you for your support.</p>
-                    </article>
-                    <article>
-                        <h3 data-i18n="faqDeliveryQuestion">Will anything be shipped?</h3>
-                        <p data-i18n="faqDeliveryAnswer">No. These are digital products. Payhip provides the download after checkout.</p>
-                    </article>
-                    <article>
-                        <h3 data-i18n="faqLicenceQuestion">What is the difference between personal and commercial use?</h3>
-                        <p data-i18n="faqLicenceAnswer">Personal-use products are for your own screens. The Standard Commercial Licence covers specified business and client uses; read the licence page for its limits.</p>
-                    </article>
-                </div>
-            </section>
-
-            <section class="store-collection-index" aria-labelledby="collection-index-heading">
-                <header class="store-section-heading">
-                    <p class="store-kicker" data-i18n="collectionGuidesKicker">Collection guides</p>
-                    <h2 id="collection-index-heading" data-i18n="collectionGuidesHeading">Explore each collection in detail</h2>
-                    <p data-i18n="collectionGuidesIntro">Open a permanent collection page to compare every desktop and mobile wallpaper before visiting Payhip.</p>
-                </header>
-                <ul class="store-collection-index-list">
-                    <li><a href="digital-art/burned-canvas.html">Burned Canvas</a></li>
-                    <li><a href="digital-art/corroded-silence.html">Corroded Silence</a></li>
-                    <li><a href="digital-art/midnight-masquerade.html">Midnight Masquerade</a></li>
-                    <li><a href="digital-art/urban-noir.html">Urban Noir</a></li>
-                    <li><a href="digital-art/steel-lanes.html">Steel Lanes</a></li>
-                    <li><a href="digital-art/faces-in-void.html">Faces in Void</a></li>
-                    <li><a href="digital-art/cinder-veil.html">Cinder Veil</a></li>
-                    <li><a href="digital-art/the-burning-gaze.html">The Burning Gaze</a></li>
-                    <li><a href="digital-art/till-darkness.html">Till Darkness</a></li>
-                    <li><a href="digital-art/stone-sanctuary.html">Stone Sanctuary</a></li>
-                    <li><a href="digital-art/blackwood.html">Blackwood</a></li>
-                    <li><a href="digital-art/wet-neon-noir.html">Wet Neon Noir</a></li>
-                    <li><a href="digital-art/static-bloom.html">Static Bloom</a></li>
-                    <li><a href="digital-art/red-eternity.html">Red Eternity</a></li>
-                </ul>
-            </section>
         </div>
     </section>
 
@@ -261,11 +215,6 @@
                 <p class="store-kicker" data-i18n="browseKicker">Browse the art</p>
                 <h2 data-i18n="browseHeading">Explore every collection</h2>
                 <p data-i18n="browseIntro">Every collection is shown in full below. Select any image to preview its $1-minimum individual option and its collection.</p>
-                <div id="gallery-format-switch" class="format-switch" role="group" aria-label="Choose preview format">
-                    <span class="format-switch-label" data-i18n="previewFormat">Preview format</span>
-                    <button type="button" class="format-switch-button is-active" data-format="desktop" data-i18n="desktop">Desktop</button>
-                    <button type="button" class="format-switch-button" data-format="mobile" data-i18n="mobile">Mobile</button>
-                </div>
             </header>
             <div id="archive-sections"></div>
             <div id="archive-empty" class="archive-empty" hidden>
@@ -280,6 +229,10 @@
         <div class="container">
             <div class="footer-bottom">
                 <p data-i18n="rights">&copy; 2026 Gianni Perugini. All rights reserved.</p>
+                <nav class="footer-links" aria-label="Help and policies">
+                    <a href="faq.html" data-i18n="faqLink">FAQ</a>
+                    <a href="licensing.html" data-i18n="licensingLink">Licensing</a>
+                </nav>
             </div>
         </div>
     </footer>
@@ -305,7 +258,7 @@
     </div>
 
     <script src="script.js?v=20260731-site-fixes"></script>
-    <script src="archive-i18n.js?v=20260807-mobile-categories"></script>
+    <script src="archive-i18n.js?v=20260808-licensing"></script>
     <script src="archive-store.js?v=20260801-seo"></script>
     <script src="archive-mobile.js?v=20260807-mobile-categories"></script>
     <script src="archive.js?v=20260807-mobile-categories"></script>
