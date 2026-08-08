@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- deployed: 2026-08-01 12:07:02 -->
+<!-- deployed: 2026-08-08 13:14:08 -->
 <html lang="en-CA">
 <head>
     <meta charset="UTF-8">
@@ -27,7 +27,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
     <link rel="stylesheet" href="styles.css?v=20260731-site-fixes-2">
-    <link rel="stylesheet" href="archive.css?v=20260801-seo">
+    <link rel="stylesheet" href="archive.css?v=20260807-mobile-categories">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -104,6 +104,34 @@
                 <a href="#store-products" class="archive-primary-link" data-i18n="browseCollections">Browse collections</a>
                 <a href="#browse-art" class="archive-secondary-link" data-i18n="exploreArtwork">Explore the artwork</a>
             </div>
+        </div>
+    </section>
+
+    <section class="mobile-store-guide" aria-labelledby="mobile-store-heading">
+        <div class="container">
+            <header class="mobile-store-guide-heading">
+                <p class="store-kicker" data-i18n="mobileGuideKicker">Shop by style</p>
+                <h2 id="mobile-store-heading" data-i18n="mobileGuideHeading">Choose the art you want to explore</h2>
+                <p data-i18n="mobileGuideIntro">Start with a focused collection style. Formats and purchase options are explained on each collection page.</p>
+            </header>
+            <div class="mobile-store-tabs" role="tablist" aria-label="Choose an art category" data-i18n-aria-label="mobileCategoryLabel">
+                <button id="mobile-tab-dark" class="mobile-store-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="mobile-category-panel" data-mobile-category="dark" data-i18n="darkArt">Dark Art</button>
+                <button id="mobile-tab-contemporary" class="mobile-store-tab" type="button" role="tab" aria-selected="false" aria-controls="mobile-category-panel" data-mobile-category="contemporary" data-i18n="contemporaryArt">Contemporary Art</button>
+            </div>
+            <div id="mobile-category-panel" class="mobile-category-panel" role="tabpanel" aria-labelledby="mobile-tab-dark">
+                <div class="mobile-category-intro">
+                    <h3 id="mobile-category-title">Dark Art</h3>
+                    <p id="mobile-category-description"></p>
+                </div>
+                <div id="mobile-category-collections" class="mobile-category-grid"></div>
+                <button id="mobile-category-toggle" class="mobile-category-toggle" type="button"></button>
+            </div>
+            <nav class="mobile-store-quick-links" aria-labelledby="mobile-quick-heading">
+                <h3 id="mobile-quick-heading" data-i18n="mobileQuickHeading">More ways to shop</h3>
+                <a href="https://payhip.com/b/lFO2d" data-i18n="mobileFreeSample">Free sample</a>
+                <a href="https://payhip.com/b/WDg0R" data-i18n="mobileCompleteArchive">Complete archive</a>
+                <a href="commercial-licence.html" data-i18n="mobileCommercialLicence">Commercial licence</a>
+            </nav>
         </div>
     </section>
 
@@ -277,8 +305,9 @@
     </div>
 
     <script src="script.js?v=20260731-site-fixes"></script>
-    <script src="archive-i18n.js?v=20260801-seo"></script>
+    <script src="archive-i18n.js?v=20260807-mobile-categories"></script>
     <script src="archive-store.js?v=20260801-seo"></script>
-    <script src="archive.js?v=20260801-seo"></script>
+    <script src="archive-mobile.js?v=20260807-mobile-categories"></script>
+    <script src="archive.js?v=20260807-mobile-categories"></script>
 </body>
 </html>

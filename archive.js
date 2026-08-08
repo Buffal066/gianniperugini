@@ -38,6 +38,7 @@
     let lightboxTrigger = null;
     let activeLightboxWork = null;
     let activeLightboxFormat = 'desktop';
+    const mobileStoreQuery = window.matchMedia('(max-width: 768px)');
 
     function initialLanguage() {
         try {
@@ -396,18 +397,23 @@
         const view = VIEWS[viewKey];
         const composites = worksData.composites;
         const photography = worksData.photography;
+        const isPhotography = viewKey === 'photography';
+        const isGuidedMobileStore = !isPhotography && mobileStoreQuery.matches;
+
+        document.body.classList.toggle('is-photography-view', isPhotography);
 
         sectionsRoot.innerHTML = '';
 
         let shown = false;
-        if (viewKey === 'photography') {
+        if (isPhotography) {
             shown = renderSection('photography', t('photography'), photography);
+        } else if (isGuidedMobileStore) {
+            shown = true;
         } else {
             shown = renderDigitalArtSection(composites);
         }
 
         empty.hidden = shown;
-        const isPhotography = viewKey === 'photography';
         if (storefront) storefront.hidden = isPhotography;
         if (heroActions) heroActions.hidden = isPhotography;
         if (heroEyebrow) heroEyebrow.textContent = t(isPhotography ? 'photographyEyebrow' : 'eyebrow');
@@ -447,6 +453,8 @@
         const hash = window.location.hash.toLowerCase();
         if (hash === '#composites' || hash === '#photography') applyView();
     }
+
+    mobileStoreQuery.addEventListener?.('change', () => applyView({ scrollTop: false }));
 
     function navigateWithinStore(event) {
         const link = event.target.closest('a[href^="#"]');
