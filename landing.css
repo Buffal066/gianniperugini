@@ -46,12 +46,12 @@
     position: relative;
 }
 
-.project-image:has(.dark-visions-card-image) {
+.project-image:has(.glace-noire-card-image) {
     height: 300px;
     background: #050505;
 }
 
-.project-image:has(.dark-visions-card-image)::after {
+.project-image:has(.glace-noire-card-image)::after {
     content: '';
     position: absolute;
     inset: 0;
@@ -200,7 +200,7 @@
     transform: scale(1.05);
 }
 
-.project-card:hover .dark-visions-card-image {
+.project-card:hover .glace-noire-card-image {
     transform: none;
 }
 
@@ -218,7 +218,7 @@
         );
 }
 
-.dark-visions-card-image {
+.glace-noire-card-image {
     background-color: #050505;
     background-image: url('assets/images/JB.jpeg');
     background-position: 50% 34%;

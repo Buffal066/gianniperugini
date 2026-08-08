@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- deployed: 2026-08-08 17:24:30 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Display Font Preview — Gianni Perugini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Astloch:wght@400;700&family=Butcherman&family=Cinzel+Decorative:wght@400;700&family=Cormorant+SC:wght@400;600&family=Creepster&family=Eater&family=Fondamento:ital@0;1&family=Germania+One&family=Grenze+Gotisch:wght@400;500;600&family=IM+Fell+English+SC&family=Marcellus+SC&family=MedievalSharp&family=Metal+Mania&family=New+Rocker&family=Nosifer&family=Pirata+One&family=Trade+Winds&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #070707;
+            --panel: #0d0d0e;
+            --line: #292929;
+            --red: #df1f26;
+            --gold: #d7b66f;
+            --text: #f3eee5;
+            --muted: #a6a2a0;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            background:
+                radial-gradient(circle at 8% 0%, rgba(135, 15, 20, 0.15), transparent 30rem),
+                var(--bg);
+            color: var(--text);
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            position: sticky;
+            z-index: 10;
+            top: 0;
+            padding: 22px clamp(20px, 5vw, 72px);
+            border-bottom: 1px solid var(--line);
+            background: rgba(7, 7, 7, 0.95);
+            backdrop-filter: blur(12px);
+        }
+
+        header p { margin: 0; }
+
+        .eyebrow {
+            color: var(--red);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+        }
+
+        header h1 {
+            margin: 8px 0 6px;
+            font: 400 clamp(28px, 4vw, 50px) Georgia, serif;
+        }
+
+        .intro {
+            max-width: 920px;
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.55;
+        }
+
+        main {
+            width: min(1520px, calc(100% - 40px));
+            margin: 0 auto;
+            padding: 40px 0 70px;
+        }
+
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 24px;
+            margin-bottom: 26px;
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .legend strong { color: var(--gold); }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        article {
+            position: relative;
+            min-width: 0;
+            padding: clamp(22px, 3.2vw, 42px);
+            overflow: hidden;
+            border: 1px solid var(--line);
+            background:
+                linear-gradient(120deg, rgba(130, 18, 24, 0.07), transparent 40%),
+                var(--panel);
+        }
+
+        article.recommended { border-color: rgba(215, 182, 111, 0.58); }
+
+        .meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 25px;
+            font-size: 11px;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+        }
+
+        .number { color: var(--red); font-weight: 700; }
+        .font-name { color: var(--muted); }
+        .recommended .font-name { color: var(--gold); }
+
+        .sample {
+            margin: 0;
+            color: var(--text);
+            font-family: var(--preview-font);
+            font-size: clamp(31px, 4.2vw, 59px);
+            font-weight: var(--preview-weight, 400);
+            line-height: 1.04;
+            overflow-wrap: anywhere;
+        }
+
+        .secondary {
+            margin: 16px 0 0;
+            color: var(--gold);
+            font-family: var(--preview-font);
+            font-size: clamp(19px, 2.3vw, 31px);
+            font-weight: var(--preview-weight, 400);
+            line-height: 1.15;
+        }
+
+        .caption {
+            margin: 22px 0 0;
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 800px) {
+            .grid { grid-template-columns: 1fr; }
+            main { width: min(100% - 28px, 720px); }
+            header { position: static; padding-inline: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p class="eyebrow">Typography experiment · no website changes yet</p>
+        <h1>20 dark display fonts</h1>
+        <p class="intro">Compare only the large headings. Your current smaller explanatory text would remain unchanged. Gold-bordered cards are my strongest matches for your refined dark-art style.</p>
+    </header>
+    <main>
+        <div class="legend">
+            <span><strong>Refined dark:</strong> 01–08</span>
+            <span><strong>Dark fantasy:</strong> 09–14</span>
+            <span><strong>More theatrical:</strong> 15–20</span>
+        </div>
+        <section class="grid" aria-label="Dark font comparisons">
+            <article class="recommended" style="--preview-font:'Grenze Gotisch';--preview-weight:500"><div class="meta"><span class="number">01</span><span class="font-name">Grenze Gotisch · recommended</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Distinctive gothic structure without becoming difficult to read.</p></article>
+            <article class="recommended" style="--preview-font:'Cormorant SC';--preview-weight:600"><div class="meta"><span class="number">02</span><span class="font-name">Cormorant SC · recommended</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Elegant, cinematic and closest to your current refinement.</p></article>
+            <article class="recommended" style="--preview-font:'Cinzel Decorative';--preview-weight:700"><div class="meta"><span class="number">03</span><span class="font-name">Cinzel Decorative · recommended</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Ornate Roman-gothic character with strong brand presence.</p></article>
+            <article class="recommended" style="--preview-font:'IM Fell English SC'"><div class="meta"><span class="number">04</span><span class="font-name">IM Fell English SC · recommended</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Old-print irregularity that feels archival and handcrafted.</p></article>
+            <article class="recommended" style="--preview-font:'Marcellus SC'"><div class="meta"><span class="number">05</span><span class="font-name">Marcellus SC · recommended</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Restrained, mysterious and highly usable across the full site.</p></article>
+            <article style="--preview-font:'Fondamento'"><div class="meta"><span class="number">06</span><span class="font-name">Fondamento</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Calligraphic and historical, with a subtle occult-manuscript mood.</p></article>
+            <article style="--preview-font:'Almendra Display'"><div class="meta"><span class="number">07</span><span class="font-name">Almendra Display</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Weathered, expressive lettering suited to burned and corroded art.</p></article>
+            <article style="--preview-font:'Germania One'"><div class="meta"><span class="number">08</span><span class="font-name">Germania One</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Bold gothic influence with clean modern readability.</p></article>
+            <article style="--preview-font:'Pirata One'"><div class="meta"><span class="number">09</span><span class="font-name">Pirata One</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Confident blackletter energy, dramatic but still usable.</p></article>
+            <article style="--preview-font:'MedievalSharp'"><div class="meta"><span class="number">10</span><span class="font-name">MedievalSharp</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Hand-drawn medieval texture with an indie dark-fantasy feel.</p></article>
+            <article style="--preview-font:'Trade Winds'"><div class="meta"><span class="number">11</span><span class="font-name">Trade Winds</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Angular, carved shapes with cinematic title-card character.</p></article>
+            <article style="--preview-font:'New Rocker'"><div class="meta"><span class="number">12</span><span class="font-name">New Rocker</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Contemporary gothic attitude with stronger music-poster energy.</p></article>
+            <article style="--preview-font:'Metal Mania'"><div class="meta"><span class="number">13</span><span class="font-name">Metal Mania</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Sharp and aggressive, best for selective hero headings.</p></article>
+            <article style="--preview-font:'Astloch';--preview-weight:700"><div class="meta"><span class="number">14</span><span class="font-name">Astloch Bold</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Decorative calligraphy with unusual silhouettes and rhythm.</p></article>
+            <article style="--preview-font:'UnifrakturCook';--preview-weight:700"><div class="meta"><span class="number">15</span><span class="font-name">UnifrakturCook</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Authentic blackletter, powerful but less readable at a glance.</p></article>
+            <article style="--preview-font:'UnifrakturMaguntia'"><div class="meta"><span class="number">16</span><span class="font-name">UnifrakturMaguntia</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Traditional Fraktur with a ceremonial, historical tone.</p></article>
+            <article style="--preview-font:'Eater'"><div class="meta"><span class="number">17</span><span class="font-name">Eater</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Organic decay and corrosion; expressive rather than elegant.</p></article>
+            <article style="--preview-font:'Creepster'"><div class="meta"><span class="number">18</span><span class="font-name">Creepster</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Classic horror-poster personality with a playful edge.</p></article>
+            <article style="--preview-font:'Butcherman'"><div class="meta"><span class="number">19</span><span class="font-name">Butcherman</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Distressed horror display; visually strong but intentionally extreme.</p></article>
+            <article style="--preview-font:'Nosifer'"><div class="meta"><span class="number">20</span><span class="font-name">Nosifer</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Dripping theatrical horror—the most extreme option in the set.</p></article>
+        </section>
+    </main>
+</body>
+</html>

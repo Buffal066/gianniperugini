@@ -149,7 +149,7 @@ function collectionPage(product) {
                 <li><a href="../archive.html" class="nav-link is-current" aria-current="page">Digital Art Store</a></li>
                 <li><a href="../portfolio.html" class="nav-link">Portfolio</a></li>
                 <li><a href="../archive.html#photography" class="nav-link">Photography</a></li>
-                <li><a href="https://darkvisions.gianniperugini.com" class="nav-link">Video &amp; Motion</a></li>
+                <li><a href="https://glacenoire.com" class="nav-link">Video &amp; Motion</a></li>
                 <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
             </ul>
             <button type="button" class="hamburger" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span><span></span></button>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- deployed: 2026-08-08 17:24:30 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almendra Display Treatments — Gianni Perugini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #070707;
+            --panel: #0d0d0e;
+            --line: #292929;
+            --red: #df1f26;
+            --gold: #d7b66f;
+            --text: #f3eee5;
+            --muted: #aaa5a0;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            background:
+                radial-gradient(circle at 8% 0%, rgba(135, 15, 20, 0.16), transparent 30rem),
+                var(--bg);
+            color: var(--text);
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            position: sticky;
+            z-index: 10;
+            top: 0;
+            padding: 20px clamp(20px, 5vw, 72px);
+            border-bottom: 1px solid var(--line);
+            background: rgba(7, 7, 7, 0.96);
+            backdrop-filter: blur(12px);
+        }
+
+        header p { margin: 0; }
+
+        .eyebrow {
+            color: var(--red);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+        }
+
+        header h1 {
+            margin: 7px 0 5px;
+            font-family: "Almendra Display", Georgia, serif;
+            font-size: clamp(38px, 5vw, 66px);
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        .intro {
+            max-width: 980px;
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .notice {
+            margin-top: 10px;
+            color: var(--gold);
+            font-size: 12px;
+        }
+
+        main {
+            width: min(1520px, calc(100% - 40px));
+            margin: 0 auto;
+            padding: 34px 0 70px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        article {
+            min-width: 0;
+            padding: clamp(22px, 3vw, 38px);
+            overflow: hidden;
+            border: 1px solid var(--line);
+            background: linear-gradient(120deg, rgba(130, 18, 24, 0.07), transparent 40%), var(--panel);
+        }
+
+        article.recommended { border-color: rgba(215, 182, 111, 0.65); }
+
+        .meta {
+            display: flex;
+            justify-content: space-between;
+            gap: 14px;
+            margin-bottom: 22px;
+            color: var(--muted);
+            font-size: 10px;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+        }
+
+        .number { color: var(--red); font-weight: 700; }
+        .recommended .treatment { color: var(--gold); }
+
+        .sample,
+        .secondary {
+            font-family: "Almendra Display", Georgia, serif;
+            font-weight: var(--weight, 400);
+            letter-spacing: var(--tracking, normal);
+            -webkit-text-stroke: var(--stroke, 0) var(--stroke-color, currentColor);
+            text-shadow: var(--shadow, none);
+        }
+
+        .sample {
+            margin: 0;
+            color: var(--sample-color, var(--text));
+            font-size: clamp(37px, 5vw, 70px);
+            line-height: 0.98;
+            overflow-wrap: anywhere;
+        }
+
+        .secondary {
+            margin: 16px 0 0;
+            color: var(--secondary-color, var(--gold));
+            font-size: clamp(23px, 2.7vw, 38px);
+            line-height: 1.05;
+        }
+
+        .caption {
+            margin: 21px 0 0;
+            color: var(--muted);
+            font-size: 11px;
+            line-height: 1.5;
+        }
+
+        .outline .sample,
+        .outline .secondary {
+            color: transparent;
+            --stroke: 0.8px;
+            --stroke-color: #f3eee5;
+        }
+
+        .outline .secondary { --stroke-color: var(--gold); }
+
+        @media (max-width: 800px) {
+            .grid { grid-template-columns: 1fr; }
+            main { width: min(100% - 28px, 720px); }
+            header { position: static; padding-inline: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p class="eyebrow">Typography experiment · no website changes yet</p>
+        <h1>Almendra Display</h1>
+        <p class="intro">Ten treatments of your first-batch choice 07, shown on the large headings where it would be used. Your smaller explanatory type would remain unchanged.</p>
+        <p class="notice">Almendra Display supplies one authentic Regular 400 file. Options marked “synthetic” use browser styling to imitate heavier weights.</p>
+    </header>
+
+    <main>
+        <section class="grid" aria-label="Almendra Display treatments">
+            <article class="recommended">
+                <div class="meta"><span class="number">A1</span><span class="treatment">Authentic regular · 400</span></div>
+                <p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p>
+                <p class="caption">The original font exactly as designed: weathered, expressive, and highly distinctive.</p>
+            </article>
+
+            <article style="--tracking:.085em">
+                <div class="meta"><span class="number">A2</span><span class="treatment">Airy regular · lighter mood</span></div>
+                <p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p>
+                <p class="caption">Wider spacing gives the lettering more air and makes it feel visually lighter.</p>
+            </article>
+
+            <article style="--tracking:-.035em">
+                <div class="meta"><span class="number">A3</span><span class="treatment">Tight regular · compact</span></div>
+                <p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p>
+                <p class="caption">A denser title treatment with more impact, while keeping the authentic weight.</p>
+            </article>
+
+            <article class="outline">
+                <div class="meta"><span class="number">A4</span><span class="treatment">Fine engraved outline</span></div>
+                <p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p>
+                <p class="caption">The thinnest-looking option, with a carved and slightly spectral quality.</p>
+            </article>
+
+            <article style="--weight:500">
+                <div class="meta"><span class="number">A5</span><span class="treatment">Synthetic medium · 500</span></div>
+                <p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p>
+                <p class="caption">A restrained browser-generated thickening that remains close to the original.</p>
+            </article>
+
+            <article class="recommended" style="--weight:600">
+                <div class="meta"><span class="number">A6</span><span class="treatment">Synthetic semibold · recommended</span></div>
+                <p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p>
+                <p class="caption">My preferred heavier treatment: stronger at hero size without losing too much detail.</p>
+            </article>
+
+            <article style="--weight:700;--stroke:.2px;--stroke-color:#f3eee5">
+                <div class="meta"><span class="number">A7</span><span class="treatment">Synthetic bold · 700</span></div>
+                <p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p>
+                <p class="caption">The thickest straightforward option, intended for large promotional headings.</p>
+            </article>
+
+            <article style="--shadow:1px 1px 0 #711116,2px 2px 0 #3b090b,3px 3px 0 #160303">
+                <div class="meta"><span class="number">A8</span><span class="treatment">Crimson carved shadow</span></div>
+                <p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p>
+                <p class="caption">A subtle dark-red relief that connects the typography to your site’s accent colour.</p>
+            </article>
+
+            <article style="--tracking:.03em;--shadow:0 0 13px rgba(215,182,111,.3)">
+                <div class="meta"><span class="number">A9</span><span class="treatment">Antique gold glow</span></div>
+                <p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p>
+                <p class="caption">A softer cinematic treatment with restrained warmth around the letterforms.</p>
+            </article>
+
+            <article style="--weight:600;--tracking:.015em;--shadow:-1px -1px 0 #050505,1px 1px 0 #6d1115,2px 2px 7px rgba(0,0,0,.9)">
+                <div class="meta"><span class="number">A10</span><span class="treatment">Deep relic · semibold</span></div>
+                <p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p>
+                <p class="caption">A heavier dimensional finish suited to selective hero titles and campaign artwork.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- deployed: 2026-08-08 17:24:30 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalist Font Variations — Gianni Perugini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Macondo&family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
+    <style>
+        :root { color-scheme: dark; --bg:#070707; --panel:#0d0d0e; --line:#292929; --red:#df1f26; --gold:#d7b66f; --text:#f3eee5; --muted:#aaa5a0; }
+        * { box-sizing: border-box; }
+        body { margin:0; background:radial-gradient(circle at 8% 0%,rgba(135,15,20,.15),transparent 30rem),var(--bg); color:var(--text); font-family:Arial,sans-serif; }
+        header { position:sticky; z-index:10; top:0; padding:20px clamp(20px,5vw,72px); border-bottom:1px solid var(--line); background:rgba(7,7,7,.96); backdrop-filter:blur(12px); }
+        header p { margin:0; }
+        .eyebrow { color:var(--red); font-size:11px; font-weight:700; letter-spacing:.22em; text-transform:uppercase; }
+        header h1 { margin:7px 0 5px; font:400 clamp(27px,3.5vw,45px) Georgia,serif; }
+        .intro { max-width:980px; color:var(--muted); font-size:13px; line-height:1.5; }
+        .notice { margin-top:10px; color:var(--gold); font-size:12px; }
+        main { width:min(1520px,calc(100% - 40px)); margin:0 auto; padding:34px 0 70px; }
+        .family { margin-bottom:58px; }
+        .family-heading { display:flex; align-items:end; justify-content:space-between; gap:22px; margin-bottom:20px; padding-bottom:14px; border-bottom:1px solid var(--line); }
+        .family-heading h2 { margin:0; font:400 clamp(28px,4vw,48px) Georgia,serif; }
+        .family-heading p { max-width:520px; margin:0; color:var(--muted); font-size:12px; line-height:1.5; }
+        .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+        article { min-width:0; padding:clamp(20px,3vw,36px); overflow:hidden; border:1px solid var(--line); background:linear-gradient(120deg,rgba(130,18,24,.07),transparent 40%),var(--panel); }
+        article.recommended { border-color:rgba(215,182,111,.58); }
+        .meta { display:flex; justify-content:space-between; gap:14px; margin-bottom:21px; color:var(--muted); font-size:10px; letter-spacing:.13em; text-transform:uppercase; }
+        .number { color:var(--red); font-weight:700; }
+        .recommended .treatment { color:var(--gold); }
+        .sample { margin:0; color:var(--text); font-family:var(--font); font-size:clamp(32px,4.1vw,58px); font-weight:var(--weight,400); line-height:1.03; letter-spacing:var(--tracking,normal); overflow-wrap:anywhere; -webkit-text-stroke:var(--stroke,0) var(--stroke-color,currentColor); text-shadow:var(--shadow,none); }
+        .secondary { margin:14px 0 0; color:var(--gold); font-family:var(--font); font-size:clamp(19px,2.2vw,30px); font-weight:var(--weight,400); letter-spacing:var(--tracking,normal); -webkit-text-stroke:var(--stroke,0) var(--stroke-color,currentColor); text-shadow:var(--shadow,none); }
+        .outline .sample,.outline .secondary { color:transparent; --stroke:1px; --stroke-color:#f3eee5; }
+        .outline .secondary { --stroke-color:var(--gold); }
+        .caption { margin:19px 0 0; color:var(--muted); font-size:11px; line-height:1.5; }
+        .companions { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+        .companion { border-color:rgba(215,182,111,.4); }
+        @media (max-width:800px) { .grid,.companions{grid-template-columns:1fr} main{width:min(100% - 28px,720px)} header{position:static;padding-inline:20px}.family-heading{align-items:start;flex-direction:column} }
+    </style>
+</head>
+<body>
+    <header>
+        <p class="eyebrow">Finalist study · no production changes</p>
+        <h1>IM Fell English SC × Macondo Swash Caps</h1>
+        <p class="intro">Twenty treatments using your two finalists, followed by their genuine companion families. The small explanatory type remains unchanged.</p>
+        <p class="notice">Important: both selected Google Fonts contain only Regular 400. Cards marked “synthetic” are browser-created weights, not separate font files.</p>
+    </header>
+    <main>
+        <section class="family" style="--font:'IM Fell English SC'">
+            <div class="family-heading"><h2>IM Fell English SC</h2><p>Aged English printing with irregular edges. This is your old-batch choice 04.</p></div>
+            <div class="grid">
+                <article class="recommended"><div class="meta"><span class="number">F1</span><span class="treatment">Authentic regular · 400</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">The real supplied weight and the most faithful historical texture.</p></article>
+                <article style="--tracking:.075em"><div class="meta"><span class="number">F2</span><span class="treatment">Airy · regular 400</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">More breathing room creates a visually lighter, more ceremonial treatment.</p></article>
+                <article style="--tracking:-.025em"><div class="meta"><span class="number">F3</span><span class="treatment">Tight · regular 400</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Denser spacing gives the same font more impact without fake weight.</p></article>
+                <article style="--weight:500"><div class="meta"><span class="number">F4</span><span class="treatment">Synthetic medium · 500</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">A subtle browser-generated thickening.</p></article>
+                <article class="recommended" style="--weight:600"><div class="meta"><span class="number">F5</span><span class="treatment">Synthetic semibold · 600</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">My preferred heavier option: stronger while retaining the printed texture.</p></article>
+                <article style="--weight:700"><div class="meta"><span class="number">F6</span><span class="treatment">Synthetic bold · 700</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">A pronounced artificial bold for hero titles.</p></article>
+                <article style="--weight:900;--stroke:.3px;--stroke-color:#f3eee5"><div class="meta"><span class="number">F7</span><span class="treatment">Synthetic black + edge</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">The thickest practical treatment; powerful but loses some fine character.</p></article>
+                <article class="outline"><div class="meta"><span class="number">F8</span><span class="treatment">Fine outline</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Visually thin and spectral, best for occasional feature headings.</p></article>
+                <article style="--shadow:1px 1px 0 #6e1014,2px 2px 0 #280708"><div class="meta"><span class="number">F9</span><span class="treatment">Crimson engraved shadow</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">A restrained red printed edge that connects with the artwork palette.</p></article>
+                <article style="--tracking:.035em;--shadow:0 0 12px rgba(215,182,111,.25)"><div class="meta"><span class="number">F10</span><span class="treatment">Soft relic glow</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">A subtle museum-like glow without changing the actual font weight.</p></article>
+            </div>
+        </section>
+
+        <section class="family" style="--font:'Macondo Swash Caps'">
+            <div class="family-heading"><h2>Macondo Swash Caps</h2><p>Hand-cut swash lettering with unusual movement. This is your new-batch choice 12.</p></div>
+            <div class="grid">
+                <article class="recommended"><div class="meta"><span class="number">M1</span><span class="treatment">Authentic regular · 400</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">The real supplied weight with all original swash detail intact.</p></article>
+                <article style="--tracking:.075em"><div class="meta"><span class="number">M2</span><span class="treatment">Airy · regular 400</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">The lighter-looking option, using space instead of false thinning.</p></article>
+                <article style="--tracking:-.03em"><div class="meta"><span class="number">M3</span><span class="treatment">Tight · regular 400</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">More compact and emblematic, like a film title.</p></article>
+                <article style="--weight:500"><div class="meta"><span class="number">M4</span><span class="treatment">Synthetic medium · 500</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">A small browser-created increase in weight.</p></article>
+                <article class="recommended" style="--weight:600"><div class="meta"><span class="number">M5</span><span class="treatment">Synthetic semibold · 600</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">My preferred heavier treatment for this family.</p></article>
+                <article style="--weight:700"><div class="meta"><span class="number">M6</span><span class="treatment">Synthetic bold · 700</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Strong display weight, though some counters become less delicate.</p></article>
+                <article style="--weight:900;--stroke:.3px;--stroke-color:#f3eee5"><div class="meta"><span class="number">M7</span><span class="treatment">Synthetic black + edge</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Maximum density for rare promotional uses.</p></article>
+                <article class="outline"><div class="meta"><span class="number">M8</span><span class="treatment">Fine outline</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">An ethereal, lighter-looking treatment that preserves the swashes.</p></article>
+                <article style="--shadow:1px 1px 0 #6e1014,2px 2px 0 #280708"><div class="meta"><span class="number">M9</span><span class="treatment">Crimson carved shadow</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Adds depth and a controlled dark-red accent.</p></article>
+                <article style="--tracking:.035em;--shadow:0 0 12px rgba(215,182,111,.25)"><div class="meta"><span class="number">M10</span><span class="treatment">Soft relic glow</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Softens the handmade edges and adds cinematic atmosphere.</p></article>
+            </div>
+        </section>
+
+        <section class="family">
+            <div class="family-heading"><h2>Genuine companion families</h2><p>These are separate, real font files by the same designers—not simulated weights.</p></div>
+            <div class="companions">
+                <article class="companion" style="--font:'IM Fell English'"><div class="meta"><span class="number">C1</span><span class="treatment">IM Fell English · roman</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Mixed lowercase and capitals; more literary and flexible.</p></article>
+                <article class="companion" style="--font:'IM Fell English';font-style:italic"><div class="meta"><span class="number">C2</span><span class="treatment">IM Fell English · italic</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">A genuine italic file with strong historic calligraphy.</p></article>
+                <article class="companion" style="--font:'Macondo'"><div class="meta"><span class="number">C3</span><span class="treatment">Macondo · companion</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Less ornate than Swash Caps and easier to use across many headings.</p></article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

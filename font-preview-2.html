@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- deployed: 2026-08-08 17:24:30 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antique Dark Font Preview — Gianni Perugini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra&family=Almendra+SC&family=Caudex:wght@400;700&family=Cormorant+Unicase:wght@400;600&family=Eagle+Lake&family=Goudy+Bookletter+1911&family=Grenze:wght@400;500;600&family=IM+Fell+DW+Pica+SC&family=IM+Fell+Double+Pica+SC&family=IM+Fell+French+Canon+SC&family=IM+Fell+Great+Primer+SC&family=Inknut+Antiqua:wght@400;600&family=Lancelot&family=Macondo+Swash+Caps&family=Metamorphous&family=Rosarivo:ital@0;1&family=Sorts+Mill+Goudy:ital@0;1&family=Spectral+SC:wght@400;600&family=Uncial+Antiqua&family=Vollkorn+SC:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #070707;
+            --panel: #0d0d0e;
+            --line: #292929;
+            --red: #df1f26;
+            --gold: #d7b66f;
+            --text: #f3eee5;
+            --muted: #a6a2a0;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            background: radial-gradient(circle at 8% 0%, rgba(135, 15, 20, 0.15), transparent 30rem), var(--bg);
+            color: var(--text);
+            font-family: Arial, sans-serif;
+        }
+        header {
+            position: sticky;
+            z-index: 10;
+            top: 0;
+            padding: 22px clamp(20px, 5vw, 72px);
+            border-bottom: 1px solid var(--line);
+            background: rgba(7, 7, 7, 0.95);
+            backdrop-filter: blur(12px);
+        }
+        header p { margin: 0; }
+        .eyebrow { color: var(--red); font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; }
+        header h1 { margin: 8px 0 6px; font: 400 clamp(28px, 4vw, 50px) Georgia, serif; }
+        .intro { max-width: 950px; color: var(--muted); font-size: 14px; line-height: 1.55; }
+        main { width: min(1520px, calc(100% - 40px)); margin: 0 auto; padding: 40px 0 70px; }
+        .legend { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-bottom: 26px; color: var(--muted); font-size: 12px; }
+        .legend strong { color: var(--gold); }
+        .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+        article {
+            min-width: 0;
+            padding: clamp(22px, 3.2vw, 42px);
+            overflow: hidden;
+            border: 1px solid var(--line);
+            background: linear-gradient(120deg, rgba(130, 18, 24, 0.07), transparent 40%), var(--panel);
+        }
+        article.recommended { border-color: rgba(215, 182, 111, 0.58); }
+        .meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 25px; font-size: 11px; letter-spacing: 0.13em; text-transform: uppercase; }
+        .number { color: var(--red); font-weight: 700; }
+        .font-name { color: var(--muted); }
+        .recommended .font-name { color: var(--gold); }
+        .sample { margin: 0; color: var(--text); font-family: var(--preview-font); font-size: clamp(31px, 4.2vw, 59px); font-weight: var(--preview-weight, 400); line-height: 1.04; overflow-wrap: anywhere; }
+        .secondary { margin: 16px 0 0; color: var(--gold); font-family: var(--preview-font); font-size: clamp(19px, 2.3vw, 31px); font-weight: var(--preview-weight, 400); line-height: 1.15; }
+        .caption { margin: 22px 0 0; color: var(--muted); font-size: 12px; line-height: 1.5; }
+        @media (max-width: 800px) {
+            .grid { grid-template-columns: 1fr; }
+            main { width: min(100% - 28px, 720px); }
+            header { position: static; padding-inline: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p class="eyebrow">Round two · inspired by your choices 04, 06 and 07</p>
+        <h1>20 antique and calligraphic dark fonts</h1>
+        <p class="intro">This set stays close to IM Fell English SC, Fondamento and Almendra Display: historical print, hand-drawn calligraphy and elegant irregularity. Gold-bordered cards are my strongest candidates for a full-site heading system.</p>
+    </header>
+    <main>
+        <div class="legend"><span><strong>Aged print:</strong> 01–07</span><span><strong>Calligraphic dark:</strong> 08–14</span><span><strong>Refined antique:</strong> 15–20</span></div>
+        <section class="grid" aria-label="Antique dark font comparisons">
+            <article class="recommended" style="--preview-font:'IM Fell French Canon SC'"><div class="meta"><span class="number">01</span><span class="font-name">IM Fell French Canon SC · recommended</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Tall, weathered print forms with elegant historical authority.</p></article>
+            <article class="recommended" style="--preview-font:'IM Fell Great Primer SC'"><div class="meta"><span class="number">02</span><span class="font-name">IM Fell Great Primer SC · recommended</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">A wider, grander relative of your IM Fell choice.</p></article>
+            <article style="--preview-font:'IM Fell DW Pica SC'"><div class="meta"><span class="number">03</span><span class="font-name">IM Fell DW Pica SC</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Compact antique print with visible handmade imperfections.</p></article>
+            <article style="--preview-font:'IM Fell Double Pica SC'"><div class="meta"><span class="number">04</span><span class="font-name">IM Fell Double Pica SC</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">A heavier old-press texture with strong editorial character.</p></article>
+            <article class="recommended" style="--preview-font:'Almendra SC'"><div class="meta"><span class="number">05</span><span class="font-name">Almendra SC · recommended</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Ornate, readable and closely related to Almendra Display.</p></article>
+            <article style="--preview-font:'Almendra'"><div class="meta"><span class="number">06</span><span class="font-name">Almendra</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Softer and more fluid, with subtle medieval calligraphy.</p></article>
+            <article style="--preview-font:'Goudy Bookletter 1911'"><div class="meta"><span class="number">07</span><span class="font-name">Goudy Bookletter 1911</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Aged literary serif with a warm, archival personality.</p></article>
+            <article class="recommended" style="--preview-font:'Uncial Antiqua'"><div class="meta"><span class="number">08</span><span class="font-name">Uncial Antiqua · recommended</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Ancient manuscript shapes that remain unusually readable.</p></article>
+            <article style="--preview-font:'Eagle Lake'"><div class="meta"><span class="number">09</span><span class="font-name">Eagle Lake</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Elegant hand lettering with mysterious fantasy movement.</p></article>
+            <article style="--preview-font:'Metamorphous'"><div class="meta"><span class="number">10</span><span class="font-name">Metamorphous</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Angular manuscript influence with restrained drama.</p></article>
+            <article style="--preview-font:'Lancelot'"><div class="meta"><span class="number">11</span><span class="font-name">Lancelot</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Narrow and ornamental, suited to secondary display headings.</p></article>
+            <article style="--preview-font:'Macondo Swash Caps'"><div class="meta"><span class="number">12</span><span class="font-name">Macondo Swash Caps</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Expressive swashes and hand-cut shapes with artistic energy.</p></article>
+            <article style="--preview-font:'Rosarivo'"><div class="meta"><span class="number">13</span><span class="font-name">Rosarivo</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Refined calligraphic serif with a quieter historical mood.</p></article>
+            <article style="--preview-font:'Sorts Mill Goudy'"><div class="meta"><span class="number">14</span><span class="font-name">Sorts Mill Goudy</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Classic old-book typography with organic irregularity.</p></article>
+            <article class="recommended" style="--preview-font:'Cormorant Unicase';--preview-weight:600"><div class="meta"><span class="number">15</span><span class="font-name">Cormorant Unicase · recommended</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Elegant mixed-case shapes create a distinctive, modern occult tone.</p></article>
+            <article style="--preview-font:'Spectral SC';--preview-weight:600"><div class="meta"><span class="number">16</span><span class="font-name">Spectral SC</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Polished and cinematic with subtle old-style tension.</p></article>
+            <article style="--preview-font:'Vollkorn SC';--preview-weight:600"><div class="meta"><span class="number">17</span><span class="font-name">Vollkorn SC</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Dense, serious small capitals with excellent readability.</p></article>
+            <article style="--preview-font:'Inknut Antiqua';--preview-weight:600"><div class="meta"><span class="number">18</span><span class="font-name">Inknut Antiqua</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Heavy historical serif with sculptural presence.</p></article>
+            <article style="--preview-font:'Caudex';--preview-weight:700"><div class="meta"><span class="number">19</span><span class="font-name">Caudex Bold</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">Formal antique serif with unusual carved details.</p></article>
+            <article style="--preview-font:'Grenze';--preview-weight:500"><div class="meta"><span class="number">20</span><span class="font-name">Grenze</span></div><p class="sample">Digital Art Store</p><p class="secondary">Complete Archives</p><p class="caption">A softer editorial relative of Grenze Gotisch with dark atmosphere.</p></article>
+        </section>
+    </main>
+</body>
+</html>
