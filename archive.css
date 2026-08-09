@@ -701,6 +701,10 @@
     background: #080808;
 }
 
+.format-switch[hidden] {
+    display: none;
+}
+
 .format-switch-label {
     padding: 0 0.65rem;
     color: var(--text-secondary);
