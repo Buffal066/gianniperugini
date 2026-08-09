@@ -300,3 +300,67 @@ function typeWriter(element, text, speed = 50) {
 //     typeWriter(subtitle, originalText, 30);
 // });
 
+// Collection pages show the most relevant preview format for the current device.
+(function initCollectionPreviewFormat() {
+    const desktopSection = document.querySelector('.collection-gallery-section:not(.collection-gallery-mobile-section)');
+    const mobileSection = document.querySelector('.collection-gallery-mobile-section');
+    if (!desktopSection || !mobileSection) return;
+
+    desktopSection.id = 'desktop-gallery';
+    desktopSection.dataset.collectionFormat = 'desktop';
+    mobileSection.id = 'mobile-gallery';
+    mobileSection.dataset.collectionFormat = 'mobile';
+
+    const picker = document.createElement('section');
+    picker.id = 'collection-previews';
+    picker.className = 'collection-format-picker';
+    picker.setAttribute('aria-labelledby', 'collection-format-heading');
+    picker.innerHTML = `
+        <div class="collection-container collection-format-picker-inner">
+            <div>
+                <p class="collection-kicker">Preview format</p>
+                <h2 id="collection-format-heading">Choose what you want to preview</h2>
+            </div>
+            <div class="collection-format-buttons" role="group" aria-label="Choose wallpaper preview format">
+                <button type="button" class="collection-format-button" data-collection-format-button="mobile">Mobile</button>
+                <button type="button" class="collection-format-button" data-collection-format-button="desktop">4K Desktop</button>
+            </div>
+        </div>`;
+    desktopSection.before(picker);
+
+    document.querySelectorAll('.collection-secondary[href="#desktop-gallery"]').forEach((link) => {
+        link.setAttribute('href', '#collection-previews');
+    });
+
+    const formatButtons = Array.from(picker.querySelectorAll('[data-collection-format-button]'));
+    const mobileQuery = window.matchMedia('(max-width: 768px)');
+    let userSelectedFormat = false;
+
+    function setFormat(format, { userSelected = false } = {}) {
+        const nextFormat = format === 'mobile' ? 'mobile' : 'desktop';
+        desktopSection.hidden = nextFormat !== 'desktop';
+        mobileSection.hidden = nextFormat !== 'mobile';
+        formatButtons.forEach((button) => {
+            const active = button.dataset.collectionFormatButton === nextFormat;
+            button.classList.toggle('is-active', active);
+            button.setAttribute('aria-pressed', String(active));
+        });
+        if (userSelected) userSelectedFormat = true;
+    }
+
+    formatButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            setFormat(button.dataset.collectionFormatButton, { userSelected: true });
+        });
+    });
+
+    mobileQuery.addEventListener?.('change', (event) => {
+        if (!userSelectedFormat) setFormat(event.matches ? 'mobile' : 'desktop');
+    });
+
+    const requestedFormat = window.location.hash === '#mobile-gallery'
+        ? 'mobile'
+        : (window.location.hash === '#desktop-gallery' ? 'desktop' : null);
+    setFormat(requestedFormat || (mobileQuery.matches ? 'mobile' : 'desktop'));
+})();
+

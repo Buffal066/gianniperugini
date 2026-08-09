@@ -134,7 +134,7 @@ function collectionPage(product) {
     <link rel="icon" href="../favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
     <link rel="stylesheet" href="../styles.css?v=20260801-seo">
-    <link rel="stylesheet" href="../collection.css?v=20260801-seo">
+    <link rel="stylesheet" href="../collection.css?v=20260809-responsive-formats">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -219,7 +219,7 @@ function collectionPage(product) {
     </main>
 
     <footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; 2026 Gianni Perugini. All rights reserved.</p></div></div></footer>
-    <script src="../script.js?v=20260801-seo"></script>
+    <script src="../script.js?v=20260809-responsive-formats"></script>
 </body>
 </html>
 `;

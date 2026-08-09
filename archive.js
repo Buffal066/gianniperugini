@@ -167,6 +167,9 @@
 
     function updateLightboxMedia() {
         if (!activeLightboxWork) return;
+        const hasAlternateFormats = Boolean(activeLightboxWork.series);
+        if (!hasAlternateFormats) activeLightboxFormat = 'desktop';
+        if (lightboxFormatSwitch) lightboxFormatSwitch.hidden = !hasAlternateFormats;
         lightboxImage.src = imagePath(activeLightboxWork.file, activeLightboxFormat);
         lightboxImage.alt = `${localizedFullTitle(activeLightboxWork)} - ${t(`${activeLightboxFormat}Preview`)}`;
         lightboxImage.draggable = false;
@@ -178,7 +181,9 @@
     function openLightbox(work, trigger = document.activeElement) {
         lightboxTrigger = trigger instanceof HTMLElement ? trigger : null;
         activeLightboxWork = work;
-        activeLightboxFormat = work.format === 'mobile' ? 'mobile' : currentFormat;
+        activeLightboxFormat = work.series
+            ? (work.format === 'mobile' ? 'mobile' : currentFormat)
+            : 'desktop';
         updateLightboxMedia();
         lightbox.setAttribute('aria-label', localizedFullTitle(work));
         lightbox.hidden = false;

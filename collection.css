@@ -139,6 +139,66 @@ body {
     padding: 5.5rem 0;
 }
 
+.collection-gallery-section[hidden] {
+    display: none;
+}
+
+.collection-format-picker {
+    padding: 2rem 0;
+    border-bottom: 1px solid #282828;
+    background: #0b0b0b;
+}
+
+.collection-format-picker-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.collection-format-picker h2 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.65rem, 4vw, 2.4rem);
+    font-weight: 400;
+}
+
+.collection-format-buttons {
+    display: inline-grid;
+    grid-template-columns: repeat(2, minmax(130px, 1fr));
+    border: 1px solid #343434;
+    border-radius: var(--button-radius, 8px);
+    overflow: hidden;
+}
+
+.collection-format-button {
+    min-height: 48px;
+    padding: .75rem 1.15rem;
+    border: 0;
+    border-radius: 0;
+    background: #0b0b0b;
+    color: #bcbcbc;
+    cursor: pointer;
+    font: 700 .72rem 'Roboto', sans-serif;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.collection-format-button + .collection-format-button {
+    border-left: 1px solid #343434;
+}
+
+.collection-format-button:hover,
+.collection-format-button:focus-visible {
+    color: #fff;
+    background: #171717;
+}
+
+.collection-format-button.is-active {
+    color: #fff;
+    background: #a91125;
+}
+
 .collection-gallery-section h2,
 .collection-faq h2 {
     font-size: clamp(2rem, 5vw, 3.5rem);
@@ -262,6 +322,16 @@ body {
     .collection-facts,
     .collection-faq-grid {
         grid-template-columns: 1fr;
+    }
+
+    .collection-format-picker-inner {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .collection-format-buttons {
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .collection-gallery-desktop {
