@@ -367,7 +367,8 @@
             ? items.find((product) => product.id === productId)
             : items.find((product) => product.series === work.series);
         const offers = [];
-        if (individual) {
+        const individualIsAvailable = individual && (hasPayhipUrl(individual) || individualPreviewMode);
+        if (individualIsAvailable) {
             const artworkOverride = resolvedOffers.find((offer) => offer.type === 'individual');
             offers.push(artworkOverride ? { ...individual, ...artworkOverride } : individual);
         }

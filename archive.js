@@ -15,6 +15,7 @@
     const galleryFormatButtons = galleryFormatSwitch?.querySelectorAll('[data-format]') || [];
     const lightboxFormatSwitch = document.getElementById('lightbox-format-switch');
     const lightboxFormatButtons = lightboxFormatSwitch?.querySelectorAll('[data-format]') || [];
+    const previewProtectionNotice = document.getElementById('preview-protection-notice');
     const languageSwitch = document.querySelector('.archive-language-switch');
     const languageButtons = document.querySelectorAll('.archive-language-button');
     const i18n = window.archiveI18n || { ui: { en: {} }, seriesFr: {}, titleFr: {} };
@@ -38,6 +39,7 @@
     let lightboxTrigger = null;
     let activeLightboxWork = null;
     let activeLightboxFormat = 'desktop';
+    let previewProtectionTimer = null;
     const mobileStoreQuery = window.matchMedia('(max-width: 768px)');
 
     function initialLanguage() {
@@ -167,6 +169,8 @@
         if (!activeLightboxWork) return;
         lightboxImage.src = imagePath(activeLightboxWork.file, activeLightboxFormat);
         lightboxImage.alt = `${localizedFullTitle(activeLightboxWork)} - ${t(`${activeLightboxFormat}Preview`)}`;
+        lightboxImage.draggable = false;
+        lightboxImage.dataset.protectedPreview = String(Boolean(activeLightboxWork.series));
         lightboxImage.classList.toggle('is-mobile', activeLightboxFormat === 'mobile');
         syncFormatButtons(lightboxFormatButtons, activeLightboxFormat);
     }
@@ -187,6 +191,7 @@
         if (lightbox.hidden) return;
         lightbox.hidden = true;
         lightboxImage.removeAttribute('src');
+        delete lightboxImage.dataset.protectedPreview;
         lightboxImage.classList.remove('is-mobile');
         document.body.style.overflow = '';
         window.archiveStore?.clearLightbox();
@@ -212,6 +217,7 @@
         img.decoding = 'async';
         img.width = previewFormat === 'mobile' ? 1440 : 3840;
         img.height = previewFormat === 'mobile' ? 2560 : 2160;
+        if (extraClass.includes('digital-art-item')) img.draggable = false;
 
         item.appendChild(img);
         item.classList.toggle('is-mobile', previewFormat === 'mobile' && extraClass.includes('digital-art-item'));
@@ -468,6 +474,40 @@
             setSeriesFormat(group, currentFormat);
         });
     }
+
+    function isProtectedPreview(target) {
+        if (!(target instanceof Element)) return false;
+        return target.matches('.archive-item.digital-art-item img')
+            || target.matches('#lightbox-image[data-protected-preview="true"]');
+    }
+
+    function showPreviewProtectionNotice() {
+        if (!previewProtectionNotice) return;
+        window.clearTimeout(previewProtectionTimer);
+        previewProtectionNotice.textContent = t('previewProtectionNotice');
+        previewProtectionNotice.hidden = false;
+        requestAnimationFrame(() => previewProtectionNotice.classList.add('is-visible'));
+        previewProtectionTimer = window.setTimeout(() => {
+            previewProtectionNotice.classList.remove('is-visible');
+            window.setTimeout(() => {
+                if (!previewProtectionNotice.classList.contains('is-visible')) {
+                    previewProtectionNotice.hidden = true;
+                }
+            }, 180);
+        }, 2600);
+    }
+
+    document.addEventListener('contextmenu', (event) => {
+        if (!isProtectedPreview(event.target)) return;
+        event.preventDefault();
+        showPreviewProtectionNotice();
+    });
+
+    document.addEventListener('dragstart', (event) => {
+        if (!isProtectedPreview(event.target)) return;
+        event.preventDefault();
+        showPreviewProtectionNotice();
+    });
 
     fetch('assets/images/archive/works.json?v=20260808-photography-cleanup')
         .then((response) => {

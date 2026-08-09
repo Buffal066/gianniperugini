@@ -1037,6 +1037,36 @@
     max-width: 100%;
 }
 
+.preview-protection-notice {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 2100;
+    max-width: min(420px, calc(100vw - 2rem));
+    margin: 0;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--accent-red);
+    border-radius: var(--frame-radius, 10px);
+    background: rgba(8, 8, 8, 0.96);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    color: var(--text-primary);
+    font-size: 0.82rem;
+    line-height: 1.45;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.18s ease, transform 0.18s ease;
+    pointer-events: none;
+}
+
+.preview-protection-notice[hidden] {
+    display: none;
+}
+
+.preview-protection-notice.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .lightbox-product {
     display: flex;
     min-width: 0;
