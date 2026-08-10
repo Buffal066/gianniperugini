@@ -4,7 +4,7 @@
   "currency": "USD",
   "minimumPrice": 1,
   "payWhatYouWant": true,
-  "visibility": "invisible",
+  "visibility": "visible",
   "itemCount": 168,
   "items": [
     {
@@ -23,9 +23,9 @@
       "zipRelativePath": "blackwood/blackwood-branch-void-individual.zip",
       "zipSizeBytes": 3600869,
       "sha256": "64613feec0b0cd0bae1d561eb1aff11611666c0d489073a17da0d601393860ca",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/RVGdB",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-blackwood-creek-reflection",
@@ -43,9 +43,9 @@
       "zipRelativePath": "blackwood/blackwood-creek-reflection-individual.zip",
       "zipSizeBytes": 1878595,
       "sha256": "78d3c716c551c92638240d6148708847df1dc7fcacd2a4528560e14db5ba994c",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/4kjFd",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-blackwood-dense-wall",
@@ -63,9 +63,9 @@
       "zipRelativePath": "blackwood/blackwood-dense-wall-individual.zip",
       "zipSizeBytes": 2070855,
       "sha256": "7d86636eec503252ae6aed305dc742b38d478cdc05b570253e2559033c26c1c8",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/LzMKe",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-blackwood-fallen-log",
@@ -83,9 +83,9 @@
       "zipRelativePath": "blackwood/blackwood-fallen-log-individual.zip",
       "zipSizeBytes": 1712633,
       "sha256": "14c2974e49461cf69175393d18ca55761e1c65f15c08cd12268e9bd8bfddfb9a",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/VegSw",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-blackwood-mist-clearing",
@@ -103,9 +103,9 @@
       "zipRelativePath": "blackwood/blackwood-mist-clearing-individual.zip",
       "zipSizeBytes": 1829429,
       "sha256": "6d40ab1284141fbe96c30d26e75a7ad3854e5d082c8b1eb2fcb71e912362c0e9",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/lm3Yz",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-blackwood-moon-canopy",
@@ -123,9 +123,9 @@
       "zipRelativePath": "blackwood/blackwood-moon-canopy-individual.zip",
       "zipSizeBytes": 3705554,
       "sha256": "bd1f4aaa00fccce502c99cebc8f6998057ddaa14814d54e957baac23902c2239",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/jU6OD",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-blackwood-owl-silhouette",
@@ -143,9 +143,9 @@
       "zipRelativePath": "blackwood/blackwood-owl-silhouette-individual.zip",
       "zipSizeBytes": 1793052,
       "sha256": "0215ebb42ea322514d11ca00e196d509adbb54bacfe6c9cfff20f2311ac36bd0",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/vcHR8",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-blackwood-path-fog",
@@ -163,9 +163,9 @@
       "zipRelativePath": "blackwood/blackwood-path-fog-individual.zip",
       "zipSizeBytes": 3708283,
       "sha256": "69d3bf0465b62aa58121f2ce160d82340358b369a279da4e3f21d1772acbd6c2",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/2Nbgk",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-blackwood-pine-storm",
@@ -183,9 +183,9 @@
       "zipRelativePath": "blackwood/blackwood-pine-storm-individual.zip",
       "zipSizeBytes": 3104976,
       "sha256": "893c77c920d7c837a263f2c79f2799112e7d34bbce0dd103729cf3eb1207780f",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/bJBV3",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-blackwood-rain-bark",
@@ -203,9 +203,9 @@
       "zipRelativePath": "blackwood/blackwood-rain-bark-individual.zip",
       "zipSizeBytes": 1663540,
       "sha256": "707117fc9978e69313ac0837533a11d3698c454f4fdca49bcd10824f3f005807",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/wpVZ3",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-blackwood-root-moss",
@@ -223,9 +223,9 @@
       "zipRelativePath": "blackwood/blackwood-root-moss-individual.zip",
       "zipSizeBytes": 4014168,
       "sha256": "0484c4d210d35068d5cf085406d318df34edaa36400fd4af7fe00c785a7b6877",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/Ovz3R",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-blackwood-spiderweb-dew",
@@ -243,9 +243,9 @@
       "zipRelativePath": "blackwood/blackwood-spiderweb-dew-individual.zip",
       "zipSizeBytes": 1693741,
       "sha256": "48bf59693528233f08443a57b2a98d50d91a223f4961fc54f08c3169157fe674",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/4uWeZ",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-burned-canvas-ash-weave",
@@ -263,9 +263,9 @@
       "zipRelativePath": "burned-canvas/burned-canvas-ash-weave-individual.zip",
       "zipSizeBytes": 5074035,
       "sha256": "165476d43ecfb71c6d9f04349ed03653fab0ca82dfd8351049c6c59cad93e772",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/ZPTwK",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-burned-canvas-blistered-portrait",
@@ -283,9 +283,9 @@
       "zipRelativePath": "burned-canvas/burned-canvas-blistered-portrait-individual.zip",
       "zipSizeBytes": 4422798,
       "sha256": "b7489dc04fa804c064d21d0c447957afd1dd5bcb2d7826aab7806c2b73d906ee",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/urxac",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-burned-canvas-carbon-bloom",
@@ -303,9 +303,9 @@
       "zipRelativePath": "burned-canvas/burned-canvas-carbon-bloom-individual.zip",
       "zipSizeBytes": 4482346,
       "sha256": "3e7f50a236220674952839744ad4ba5658129bb25e6b2d92ff9dca5e530e2db9",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/BCM7S",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-burned-canvas-cinder-lattice",
@@ -323,9 +323,9 @@
       "zipRelativePath": "burned-canvas/burned-canvas-cinder-lattice-individual.zip",
       "zipSizeBytes": 4308107,
       "sha256": "8e127b4149026540f45fe9ca0f272839949ae67386e3a795bd95275542be9194",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/QIi10",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-burned-canvas-ember-crack",
@@ -343,9 +343,9 @@
       "zipRelativePath": "burned-canvas/burned-canvas-ember-crack-individual.zip",
       "zipSizeBytes": 4811772,
       "sha256": "c30fe20905d23cc71e4b06d5d1daa35480dea0f5a758e495c656f31a63c5c148",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/JWleg",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-burned-canvas-ember-veil",
@@ -363,9 +363,9 @@
       "zipRelativePath": "burned-canvas/burned-canvas-ember-veil-individual.zip",
       "zipSizeBytes": 4124962,
       "sha256": "106561ffacce3693c8f6b2a469086af8e721d6861f3f34453233d6226b45a5b3",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/z5gNF",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-burned-canvas-melted-gilt",
@@ -383,9 +383,9 @@
       "zipRelativePath": "burned-canvas/burned-canvas-melted-gilt-individual.zip",
       "zipSizeBytes": 4480655,
       "sha256": "5982d579360ff110e7c4c320e2c3ddd546a9d4a5fc3439b609b6027ee47cb48b",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/E7nqU",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-burned-canvas-ruined-frame",
@@ -403,9 +403,9 @@
       "zipRelativePath": "burned-canvas/burned-canvas-ruined-frame-individual.zip",
       "zipSizeBytes": 3618372,
       "sha256": "1a6552c238f85c303b4825678cb3589fe2a9830689e864f71e28ef6293473c91",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/F8zTB",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-burned-canvas-scorched-reliquary",
@@ -423,9 +423,9 @@
       "zipRelativePath": "burned-canvas/burned-canvas-scorched-reliquary-individual.zip",
       "zipSizeBytes": 4471732,
       "sha256": "0eb25b7ab9c30835837016c6fa2b7d0a6c84675dab82c5f3f408e36d00aefb35",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/JeqTN",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-burned-canvas-smolder-edge",
@@ -443,9 +443,9 @@
       "zipRelativePath": "burned-canvas/burned-canvas-smolder-edge-individual.zip",
       "zipSizeBytes": 3641213,
       "sha256": "d9ac6910ecbb7247a256cd7369518ffcb8408d61696a3ff23d0e00cfe64742ad",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/AerEC",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-burned-canvas-soot-peel",
@@ -463,9 +463,9 @@
       "zipRelativePath": "burned-canvas/burned-canvas-soot-peel-individual.zip",
       "zipSizeBytes": 4253894,
       "sha256": "f5a252c4d191390696aa787419c09cf581ee70ea8c2963b282ef3a21784ddb73",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/8gtnS",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-burned-canvas-tar-fracture",
@@ -483,9 +483,9 @@
       "zipRelativePath": "burned-canvas/burned-canvas-tar-fracture-individual.zip",
       "zipSizeBytes": 4629558,
       "sha256": "a23739fe36e2706661062f078b97e257d765b17fbc9218ab34928a5aeb250bcc",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/F62oQ",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-cinder-veil-coal-amber",
@@ -503,9 +503,9 @@
       "zipRelativePath": "cinder-veil/cinder-veil-coal-amber-individual.zip",
       "zipSizeBytes": 2760456,
       "sha256": "74abf443d1e0def80774aadb79b5732dfe2d2e83a11ef8499934d3282c690c24",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/hcJuF",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-cinder-veil-ember-watch",
@@ -523,9 +523,9 @@
       "zipRelativePath": "cinder-veil/cinder-veil-ember-watch-individual.zip",
       "zipSizeBytes": 2413655,
       "sha256": "aeb54d4238f39e3786ea565dd4bb7b04732c20a752f8d4727d8e08539199ea10",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/WTFht",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-cinder-veil-frost-tear",
@@ -543,9 +543,9 @@
       "zipRelativePath": "cinder-veil/cinder-veil-frost-tear-individual.zip",
       "zipSizeBytes": 3041888,
       "sha256": "f4f932bb0ba6861da9ddc38a68786b38339052232b802a3845270b7d903b6bc4",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/nhUxA",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-cinder-veil-hollow-prayer",
@@ -563,9 +563,9 @@
       "zipRelativePath": "cinder-veil/cinder-veil-hollow-prayer-individual.zip",
       "zipSizeBytes": 1988567,
       "sha256": "6292d1bcf0f51ea3faa446e20e7484f622195f0ff3e7f4857b69ff303fe7d594",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/ZW2Iu",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-cinder-veil-jade-hollow",
@@ -583,9 +583,9 @@
       "zipRelativePath": "cinder-veil/cinder-veil-jade-hollow-individual.zip",
       "zipSizeBytes": 2554983,
       "sha256": "3a238c4986cdc9eff4b82ac2ec4d47f5b2fe01509320f7b0347359172939f79d",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/CcJXV",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-cinder-veil-midnight-doubt",
@@ -603,9 +603,9 @@
       "zipRelativePath": "cinder-veil/cinder-veil-midnight-doubt-individual.zip",
       "zipSizeBytes": 2194241,
       "sha256": "6feab86f749e0f959de4923a705d86e15cdfbb57171c86bdca7124b0e7a3a1f1",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/dboKG",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-cinder-veil-pale-soliloquy",
@@ -623,9 +623,9 @@
       "zipRelativePath": "cinder-veil/cinder-veil-pale-soliloquy-individual.zip",
       "zipSizeBytes": 2167539,
       "sha256": "b2f069e231d7519aff643caab604a34850d4c822eb9c8eb86d73d1d23b687ea7",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/hsXp9",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-cinder-veil-quiet-reckoning",
@@ -643,9 +643,9 @@
       "zipRelativePath": "cinder-veil/cinder-veil-quiet-reckoning-individual.zip",
       "zipSizeBytes": 1819638,
       "sha256": "e7117554d0483f20e69422e0a8ef5c1f0cdc21d630f4c0f77535839806c3590d",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/y3mN1",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-cinder-veil-smoke-vigil",
@@ -663,9 +663,9 @@
       "zipRelativePath": "cinder-veil/cinder-veil-smoke-vigil-individual.zip",
       "zipSizeBytes": 2738735,
       "sha256": "ca4e1539fbc7b021f1d77c45eea1c532d3c791eea175ba004401973ae23e6761",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/yL8az",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-cinder-veil-still-threshold",
@@ -683,9 +683,9 @@
       "zipRelativePath": "cinder-veil/cinder-veil-still-threshold-individual.zip",
       "zipSizeBytes": 1686487,
       "sha256": "d4a37f5e6291e1fa85c60a2ef02ecbc4115baf8e3e751bb103b896d218e68f9a",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/6Rz98",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-cinder-veil-violet-ash",
@@ -703,9 +703,9 @@
       "zipRelativePath": "cinder-veil/cinder-veil-violet-ash-individual.zip",
       "zipSizeBytes": 2539739,
       "sha256": "00adb1d1588c6349653c5e43aff495ab9367862e479e76dfbc8cf004f0a5b57f",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/0o6tH",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-cinder-veil-weary-vigil",
@@ -723,9 +723,9 @@
       "zipRelativePath": "cinder-veil/cinder-veil-weary-vigil-individual.zip",
       "zipSizeBytes": 2041439,
       "sha256": "d062ea853a5e13c60ee162b2a25390864d0e0992dc66b671b7e0a34a0d973670",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/Bv3WJ",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-corroded-silence-ash-drift",
@@ -743,9 +743,9 @@
       "zipRelativePath": "corroded-silence/corroded-silence-ash-drift-individual.zip",
       "zipSizeBytes": 4885995,
       "sha256": "e9ea4933fccbe5320c97af6df4eddff1d705e46d2783810a6edcc1f8e28a8725",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/s25Uw",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-corroded-silence-charred-grain",
@@ -763,9 +763,9 @@
       "zipRelativePath": "corroded-silence/corroded-silence-charred-grain-individual.zip",
       "zipSizeBytes": 3666192,
       "sha256": "01b0f795f68cc07a2c9efb2021f90248e4381c3a0e25bfc5b6eeb0cc6125e5c1",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/nrM0s",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-corroded-silence-cracked-earth",
@@ -783,9 +783,9 @@
       "zipRelativePath": "corroded-silence/corroded-silence-cracked-earth-individual.zip",
       "zipSizeBytes": 4476754,
       "sha256": "fd485a8ab37af995e268ab4b39f916f61b769abe80919b8c6a72fe8651d6d003",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/5pcMv",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-corroded-silence-cracked-ember",
@@ -803,9 +803,9 @@
       "zipRelativePath": "corroded-silence/corroded-silence-cracked-ember-individual.zip",
       "zipSizeBytes": 5346722,
       "sha256": "c31f7d0ff95988dbb7cc5418225af729ed33c7a9cd5cd1003292e0d1df92c743",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/Z5X2y",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-corroded-silence-frayed-rope",
@@ -823,9 +823,9 @@
       "zipRelativePath": "corroded-silence/corroded-silence-frayed-rope-individual.zip",
       "zipSizeBytes": 3558728,
       "sha256": "4e79b0fb061cf34f6754526a6376dfb2f9b86a616a7ed1e7f6f0373a8143d3c4",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/eiCHd",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-corroded-silence-frost-glass",
@@ -843,9 +843,9 @@
       "zipRelativePath": "corroded-silence/corroded-silence-frost-glass-individual.zip",
       "zipSizeBytes": 5236529,
       "sha256": "c75ec302077a7a6ce41226babdc6e530a3315d1c0c3988eb6e3b5ac14b93e709",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/aWZdm",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-corroded-silence-iron-stain",
@@ -863,9 +863,9 @@
       "zipRelativePath": "corroded-silence/corroded-silence-iron-stain-individual.zip",
       "zipSizeBytes": 4754961,
       "sha256": "fb5a5d163da08e197fafe9b2fd8049519cfa7b4534369049f0da590a4e564f69",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/U8bmZ",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-corroded-silence-oxidized-copper",
@@ -883,9 +883,9 @@
       "zipRelativePath": "corroded-silence/corroded-silence-oxidized-copper-individual.zip",
       "zipSizeBytes": 5067186,
       "sha256": "ec8888f8c6432a282a27b1336f70f68518b6d4c5cf0af30fca95947b495cdcbe",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/3sj6o",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-corroded-silence-rust-peel",
@@ -903,9 +903,9 @@
       "zipRelativePath": "corroded-silence/corroded-silence-rust-peel-individual.zip",
       "zipSizeBytes": 5866543,
       "sha256": "0c973f7fa14de105f8434f77fbeee6fd70bc13ce28269e29143a1bc9018a4c7b",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/FLDXv",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-corroded-silence-stone-lichen",
@@ -923,9 +923,9 @@
       "zipRelativePath": "corroded-silence/corroded-silence-stone-lichen-individual.zip",
       "zipSizeBytes": 5962856,
       "sha256": "584c2c381afd625706119aea95770041e136f9225df86772d2e463c5a5d454b6",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/iY6EU",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-corroded-silence-tar-bubbles",
@@ -943,9 +943,9 @@
       "zipRelativePath": "corroded-silence/corroded-silence-tar-bubbles-individual.zip",
       "zipSizeBytes": 3552296,
       "sha256": "feac08b96bcdd3df1f00b136a6d21f39bc0bc454853fb00e8c5ddb3413fd4a12",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/EvBqD",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-corroded-silence-velvet-fold",
@@ -963,9 +963,9 @@
       "zipRelativePath": "corroded-silence/corroded-silence-velvet-fold-individual.zip",
       "zipSizeBytes": 4991554,
       "sha256": "ca91361acfa971b47462f6eac6d9be677773ab4e09873efae9eae70942cccc85",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/FgQLh",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-faces-in-void-ash-cheek",
@@ -983,9 +983,9 @@
       "zipRelativePath": "faces-in-void/faces-in-void-ash-cheek-individual.zip",
       "zipSizeBytes": 1548218,
       "sha256": "3b5de7964887e5cbce06a3b8f9a2ef31acd8d1366d35b61b20d4f0a617712705",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/zU8OL",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-faces-in-void-drowned-whisper",
@@ -1003,9 +1003,9 @@
       "zipRelativePath": "faces-in-void/faces-in-void-drowned-whisper-individual.zip",
       "zipSizeBytes": 1738271,
       "sha256": "fe2fc224f6f7f3ab87aaf3b610ef460945353967a8dc66dfb06bd10b5da6e314",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/3Jjh0",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-faces-in-void-crow-eclipse",
@@ -1023,9 +1023,9 @@
       "zipRelativePath": "faces-in-void/faces-in-void-crow-eclipse-individual.zip",
       "zipSizeBytes": 1653463,
       "sha256": "e902aac11c4c0d91f3d1dcd45b7a1ab0bc7deb896a5c4ae9dd18567e6a7fb348",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/bBDGz",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-faces-in-void-half-emerge",
@@ -1043,9 +1043,9 @@
       "zipRelativePath": "faces-in-void/faces-in-void-half-emerge-individual.zip",
       "zipSizeBytes": 1273692,
       "sha256": "dce85a94135780ebfa3a6c88a4c93f574d63c72b45c31d52c96911ef4e1f81dd",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/JFdfR",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-faces-in-void-hollow-gaze",
@@ -1063,9 +1063,9 @@
       "zipRelativePath": "faces-in-void/faces-in-void-hollow-gaze-individual.zip",
       "zipSizeBytes": 1999763,
       "sha256": "fb8787317c973037b3f42da845b531f20706c60372d0c40cfa18dc1c154f4b37",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/ifzyG",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-faces-in-void-mist-pair",
@@ -1083,9 +1083,9 @@
       "zipRelativePath": "faces-in-void/faces-in-void-mist-pair-individual.zip",
       "zipSizeBytes": 1599627,
       "sha256": "d66f98a118b379b3f77f558358ab8ab65020d88c88e7909df0670bb198f79f3b",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/FjCVk",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-faces-in-void-rim-eye",
@@ -1103,9 +1103,9 @@
       "zipRelativePath": "faces-in-void/faces-in-void-rim-eye-individual.zip",
       "zipSizeBytes": 1398062,
       "sha256": "97cc7940efc235afd38e7def1e26dec2d829b5187bdeb0b674811ac78eaeac5f",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/Ql0Lo",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-faces-in-void-shadow-profile",
@@ -1123,9 +1123,9 @@
       "zipRelativePath": "faces-in-void/faces-in-void-shadow-profile-individual.zip",
       "zipSizeBytes": 1254233,
       "sha256": "0b48bc2c25c5a4a652c68f2893e9bf77ae0551216c34f3071438b3ac2a732db8",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/yFBih",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-faces-in-void-sink-pale",
@@ -1143,9 +1143,9 @@
       "zipRelativePath": "faces-in-void/faces-in-void-sink-pale-individual.zip",
       "zipSizeBytes": 1864733,
       "sha256": "67efee226eadd57b6f2f9d78f62c120c773041781df8622fe7c326bebf80e140",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/vaj6u",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-faces-in-void-slit-light",
@@ -1163,9 +1163,9 @@
       "zipRelativePath": "faces-in-void/faces-in-void-slit-light-individual.zip",
       "zipSizeBytes": 693589,
       "sha256": "712afa2574d8db2045e6418fcc47a190a32cd1114df0178bf0acb62fb36c2bb8",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/WdBJ3",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-faces-in-void-void-chorus",
@@ -1183,9 +1183,9 @@
       "zipRelativePath": "faces-in-void/faces-in-void-void-chorus-individual.zip",
       "zipSizeBytes": 2153909,
       "sha256": "420cc98fd56c0da33d3b2dac29f5ce5f5f7fb41b66cd90cf9743de8d3e1cf80c",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/xa4bs",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-faces-in-void-whisper-crowd",
@@ -1203,9 +1203,9 @@
       "zipRelativePath": "faces-in-void/faces-in-void-whisper-crowd-individual.zip",
       "zipSizeBytes": 2200468,
       "sha256": "1f8a5818f58e015a7e5e6de3be48a5b91938066b9678c5a60629726d1d7f91f8",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/iS6n9",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-midnight-masquerade-cathedral-wrap",
@@ -1223,9 +1223,9 @@
       "zipRelativePath": "midnight-masquerade/midnight-masquerade-cathedral-wrap-individual.zip",
       "zipSizeBytes": 3067709,
       "sha256": "bbeeefa7be2a56fcc5872d4d494d399c764fda6cac14b6bd6871694963d62f11",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/Jh6rN",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-midnight-masquerade-exhale-veil",
@@ -1243,9 +1243,9 @@
       "zipRelativePath": "midnight-masquerade/midnight-masquerade-exhale-veil-individual.zip",
       "zipSizeBytes": 3054738,
       "sha256": "36e917cd2aa05791823cce7ba21f26dc8f7107412af8cc41782943d52b7223c9",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/NFG4h",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-midnight-masquerade-moonlit-graveyard",
@@ -1263,9 +1263,9 @@
       "zipRelativePath": "midnight-masquerade/midnight-masquerade-moonlit-graveyard-individual.zip",
       "zipSizeBytes": 2346939,
       "sha256": "22dfe71417d70d12a19f73f37754f4e5ecf8f9c60a4a0a1bb67fcd139cb01c48",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/dlaFL",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-midnight-masquerade-plastic-gaze",
@@ -1283,9 +1283,9 @@
       "zipRelativePath": "midnight-masquerade/midnight-masquerade-plastic-gaze-individual.zip",
       "zipSizeBytes": 3018980,
       "sha256": "3ea5915dc09762ed0ea08c5b31919f1911d8f57f7212508ff284578227cef844",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/LW19o",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-midnight-masquerade-plastic-smoke-01",
@@ -1303,9 +1303,9 @@
       "zipRelativePath": "midnight-masquerade/midnight-masquerade-plastic-smoke-01-individual.zip",
       "zipSizeBytes": 2508309,
       "sha256": "90d0a0db0d453228d6837599a79bcba74247a9f63e4c3037c5297e6989c0d511",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/3o4PV",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-midnight-masquerade-plastic-smoke-02",
@@ -1323,9 +1323,9 @@
       "zipRelativePath": "midnight-masquerade/midnight-masquerade-plastic-smoke-02-individual.zip",
       "zipSizeBytes": 2678530,
       "sha256": "2b6f63eb06dde519480c608cbde79aa33502c7b9a88affa0fc3b68f9b6f8c750",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/qZhpi",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-midnight-masquerade-plastic-smoke-03",
@@ -1343,9 +1343,9 @@
       "zipRelativePath": "midnight-masquerade/midnight-masquerade-plastic-smoke-03-individual.zip",
       "zipSizeBytes": 2398440,
       "sha256": "2114daa0b7929f1f44a1a06da13297ec7de893866204b215cffcb94345a065bd",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/PU96M",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-midnight-masquerade-plastic-smoke-04",
@@ -1363,9 +1363,9 @@
       "zipRelativePath": "midnight-masquerade/midnight-masquerade-plastic-smoke-04-individual.zip",
       "zipSizeBytes": 2460902,
       "sha256": "17203be87c277700829fc8fdcdefc4481821c02c046eb2af4c9446d46bb602e0",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/izXx2",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-midnight-masquerade-portrait-veil",
@@ -1383,9 +1383,9 @@
       "zipRelativePath": "midnight-masquerade/midnight-masquerade-portrait-veil-individual.zip",
       "zipSizeBytes": 1989750,
       "sha256": "110000f14f481178684e6eb438514e723d20d0b9a2f66f3cb16f8c0bc126fdc6",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/0DgrX",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-midnight-masquerade-profile-mist",
@@ -1403,9 +1403,9 @@
       "zipRelativePath": "midnight-masquerade/midnight-masquerade-profile-mist-individual.zip",
       "zipSizeBytes": 2641256,
       "sha256": "98181747c575edd16ffff853d0a8383179bc13a238114361260190fec2ecf120",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/tmGAX",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-midnight-masquerade-torn-breath",
@@ -1423,9 +1423,9 @@
       "zipRelativePath": "midnight-masquerade/midnight-masquerade-torn-breath-individual.zip",
       "zipSizeBytes": 2986498,
       "sha256": "a8b391a6369944cd80895c11990807423d19fd72265acc6dc1a1192201da287c",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/AEaso",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-midnight-masquerade-window-sanctuary",
@@ -1443,9 +1443,9 @@
       "zipRelativePath": "midnight-masquerade/midnight-masquerade-window-sanctuary-individual.zip",
       "zipSizeBytes": 2017842,
       "sha256": "0f570825bd3fb9d86ee9bf27845179bc94e54df5bf3f5519dd2d0d4081f0033e",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/xtbOi",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-red-eternity-cone-cathedral",
@@ -1463,9 +1463,9 @@
       "zipRelativePath": "red-eternity/red-eternity-cone-cathedral-individual.zip",
       "zipSizeBytes": 4548920,
       "sha256": "690eb76f6c1c665e6d0f0ded1156fff4f56df2eb7b4d41022e32be83528c790b",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/JUa4n",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-red-eternity-dual-horizon",
@@ -1483,9 +1483,9 @@
       "zipRelativePath": "red-eternity/red-eternity-dual-horizon-individual.zip",
       "zipSizeBytes": 4552412,
       "sha256": "bdd98416a5c8ad31e06622921aec7717db5205487cf10295cecef2bb781cad40",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/BwdAh",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-red-eternity-floor-fracture",
@@ -1503,9 +1503,9 @@
       "zipRelativePath": "red-eternity/red-eternity-floor-fracture-individual.zip",
       "zipSizeBytes": 4545737,
       "sha256": "725d5a9738b56c4b634887d47f9db8adaf0273e4b53d2f54aa90b2d294977e4b",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/zu149",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-red-eternity-glitch-skull",
@@ -1523,9 +1523,9 @@
       "zipRelativePath": "red-eternity/red-eternity-glitch-skull-individual.zip",
       "zipSizeBytes": 4535562,
       "sha256": "95d83b71bd331f875f0a59581e9ec4fe3e2b76b4274bfd1b69f8e362c9dc3756",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/vmfeo",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-red-eternity-grid-distortion",
@@ -1543,9 +1543,9 @@
       "zipRelativePath": "red-eternity/red-eternity-grid-distortion-individual.zip",
       "zipSizeBytes": 5210138,
       "sha256": "86bb8fedbfedeb8d4f9426df76a2d2fa4bdfc832e00642376df3996b1f63641c",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/KWoJy",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-red-eternity-portal-breach",
@@ -1563,9 +1563,9 @@
       "zipRelativePath": "red-eternity/red-eternity-portal-breach-individual.zip",
       "zipSizeBytes": 4113126,
       "sha256": "fe70f1bb8eb629bd8aee0671502586a3477e56e8d3cdf9bf8ebb6bd197a07afd",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/Yirf0",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-red-eternity-reliquary-shatter",
@@ -1583,9 +1583,9 @@
       "zipRelativePath": "red-eternity/red-eternity-reliquary-shatter-individual.zip",
       "zipSizeBytes": 3481055,
       "sha256": "d7dd8f89b20cf3dc7c068edbc23547e3803714554a311b3c44680bea1892759b",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/UFmhX",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-red-eternity-screen-tear",
@@ -1603,9 +1603,9 @@
       "zipRelativePath": "red-eternity/red-eternity-screen-tear-individual.zip",
       "zipSizeBytes": 4628675,
       "sha256": "99e81c918c796e91f146980ea9ec607bec9cf08fee3a3da106285e49a67b8fd8",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/lDdJ1",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-red-eternity-shard-storm",
@@ -1623,9 +1623,9 @@
       "zipRelativePath": "red-eternity/red-eternity-shard-storm-individual.zip",
       "zipSizeBytes": 3376762,
       "sha256": "ec3caca9ab4efcceb940b8f9283fe587a0b176ac7cce62b9b4cf199bf6fcac12",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/l761h",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-red-eternity-sphere-orbit",
@@ -1643,9 +1643,9 @@
       "zipRelativePath": "red-eternity/red-eternity-sphere-orbit-individual.zip",
       "zipSizeBytes": 3587966,
       "sha256": "eb01fc76399bd920d63d531f17820a238df2221a5886e432d6d84d44087c91fc",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/wRWrs",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-red-eternity-void-ascent",
@@ -1663,9 +1663,9 @@
       "zipRelativePath": "red-eternity/red-eternity-void-ascent-individual.zip",
       "zipSizeBytes": 4072123,
       "sha256": "cef70f2634febb9535ca8431b87e587e3fea67d7e4a30000a6ad5a5777e2790f",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/E8NUW",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-red-eternity-wire-cascade",
@@ -1683,9 +1683,9 @@
       "zipRelativePath": "red-eternity/red-eternity-wire-cascade-individual.zip",
       "zipSizeBytes": 4227184,
       "sha256": "2fd761b2183c4adda9cfdbbd73e9eb65e2422214abb215ec7ea07f17cd78800f",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/ba3Pc",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-static-bloom-abstract-geometry",
@@ -1703,9 +1703,9 @@
       "zipRelativePath": "static-bloom/static-bloom-abstract-geometry-individual.zip",
       "zipSizeBytes": 4818252,
       "sha256": "79274edd097db6bba00443f92a995062dd39f4bcec9a3683a96a3f39bb1872cf",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/z94Po",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-static-bloom-chromatic-fault",
@@ -1723,9 +1723,9 @@
       "zipRelativePath": "static-bloom/static-bloom-chromatic-fault-individual.zip",
       "zipSizeBytes": 5445251,
       "sha256": "d60819cbcbddc4b08c78d3694ef689e41dad1756838168e67a2863da31dcbd28",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/7SK8x",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-static-bloom-crimson-layers",
@@ -1743,9 +1743,9 @@
       "zipRelativePath": "static-bloom/static-bloom-crimson-layers-individual.zip",
       "zipSizeBytes": 5676776,
       "sha256": "8baaa57d8c042918622858d1800fd312cbaf8e76705b73d285b68f32bbadb828",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/ayA1k",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-static-bloom-ember-aperture",
@@ -1763,9 +1763,9 @@
       "zipRelativePath": "static-bloom/static-bloom-ember-aperture-individual.zip",
       "zipSizeBytes": 4956677,
       "sha256": "76147022cf02e9da15b3e954687a86895b452e6131f185b4ec58384850f6f068",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/4waJs",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-static-bloom-grid-fracture",
@@ -1783,9 +1783,9 @@
       "zipRelativePath": "static-bloom/static-bloom-grid-fracture-individual.zip",
       "zipSizeBytes": 5549894,
       "sha256": "a688b34bd2b2f617c4fdd9d0e33916b7ae116dd107ced7bb5493bba84cfcff9b",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/3f6uZ",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-static-bloom-halftone-collapse",
@@ -1803,9 +1803,9 @@
       "zipRelativePath": "static-bloom/static-bloom-halftone-collapse-individual.zip",
       "zipSizeBytes": 5200572,
       "sha256": "e67934a7cb13b851e10badc35dfb3b0f6c91eefe33e99a4825b89ef9423d4c59",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/xMhUN",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-static-bloom-lattice-detonation",
@@ -1823,9 +1823,9 @@
       "zipRelativePath": "static-bloom/static-bloom-lattice-detonation-individual.zip",
       "zipSizeBytes": 5254648,
       "sha256": "1a21cfa81991a1ab6647616119b3441d50ffca7c68a10c69b8fe387a8fcee0b6",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/Y1qaT",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-static-bloom-neon-monoliths",
@@ -1843,9 +1843,9 @@
       "zipRelativePath": "static-bloom/static-bloom-neon-monoliths-individual.zip",
       "zipSizeBytes": 3957817,
       "sha256": "2a0ad2925a3f3ba0cca852ae5c11f652e4208864efa34768ff0990fc9e3d6132",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/PGAkt",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-static-bloom-shard-eclipse",
@@ -1863,9 +1863,9 @@
       "zipRelativePath": "static-bloom/static-bloom-shard-eclipse-individual.zip",
       "zipSizeBytes": 5492600,
       "sha256": "ea7d978a78e079df147af961ba27a48509a663947771849e5f24ddb5d61458da",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/5bO4j",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-static-bloom-signal-orchard",
@@ -1883,9 +1883,9 @@
       "zipRelativePath": "static-bloom/static-bloom-signal-orchard-individual.zip",
       "zipSizeBytes": 4511917,
       "sha256": "baf97891fe61d14483165f4d36d1992414f1fbc3bd8a879becf8352680569d97",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/I8W9M",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-static-bloom-smoke-ignition",
@@ -1903,9 +1903,9 @@
       "zipRelativePath": "static-bloom/static-bloom-smoke-ignition-individual.zip",
       "zipSizeBytes": 4477868,
       "sha256": "c094f1a3dcc30800a9841ec98754856911457d8e45007ae94e5bf0991766f0f8",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/XZr3x",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-static-bloom-thermal-cascade",
@@ -1923,9 +1923,9 @@
       "zipRelativePath": "static-bloom/static-bloom-thermal-cascade-individual.zip",
       "zipSizeBytes": 4660581,
       "sha256": "77cede7f35090c995ef8d1058ba94949e10fb2d3f5066a09af140742d9f829c9",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/xgvGz",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-steel-lanes-arch-glow",
@@ -1943,9 +1943,9 @@
       "zipRelativePath": "steel-lanes/steel-lanes-arch-glow-individual.zip",
       "zipSizeBytes": 4413711,
       "sha256": "f117f51c65bdcbb958abc210c8c40a4ba8f298293ea5c3051a92303d951ce108",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/73QgG",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-steel-lanes-brushed-grain",
@@ -1963,9 +1963,9 @@
       "zipRelativePath": "steel-lanes/steel-lanes-brushed-grain-individual.zip",
       "zipSizeBytes": 4118848,
       "sha256": "767be361c34c760c5a2c63d40ff7d54f7e907a703861e8abddeab734d2226ac3",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/0ZRHy",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-steel-lanes-candle-booth",
@@ -1983,9 +1983,9 @@
       "zipRelativePath": "steel-lanes/steel-lanes-candle-booth-individual.zip",
       "zipSizeBytes": 3466018,
       "sha256": "03c5c62d833e6f0aab580269637dccf999a7b3f7fc1a86aa51a9ee9619fec82b",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/sDxn2",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-steel-lanes-chrome-vanish",
@@ -2003,9 +2003,9 @@
       "zipRelativePath": "steel-lanes/steel-lanes-chrome-vanish-individual.zip",
       "zipSizeBytes": 4721828,
       "sha256": "32cd2c6abc23ec973bcd494a7edb55b360c8ad8ac8a72f76a36997c7d1e36e7f",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/Uzv3e",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-steel-lanes-gothic-step",
@@ -2023,9 +2023,9 @@
       "zipRelativePath": "steel-lanes/steel-lanes-gothic-step-individual.zip",
       "zipSizeBytes": 2541341,
       "sha256": "eeda07aacd6099f8739bb8bcf3eb8d98689c72f10e8d84227d58a4da85dcf6ca",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/NWCwf",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-steel-lanes-lounge-table",
@@ -2043,9 +2043,9 @@
       "zipRelativePath": "steel-lanes/steel-lanes-lounge-table-individual.zip",
       "zipSizeBytes": 4009594,
       "sha256": "4d3b6bee8291d038e02e55001d89b165e042cfffc6dd05594c6483cfb6f8eb4b",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/Jxw4a",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-steel-lanes-midnight-deck",
@@ -2063,9 +2063,9 @@
       "zipRelativePath": "steel-lanes/steel-lanes-midnight-deck-individual.zip",
       "zipSizeBytes": 3973871,
       "sha256": "a5eca67316da46d06d86ad018b59651b9831a0e3bab7367a2f1cd4a8fc3f8a4b",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/2yiSD",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-steel-lanes-pin-crimson",
@@ -2083,9 +2083,9 @@
       "zipRelativePath": "steel-lanes/steel-lanes-pin-crimson-individual.zip",
       "zipSizeBytes": 4326800,
       "sha256": "d6903ed343b9b176de874165efd9c7f0fa8eca443a06b8d05e18d7bd0052757b",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/f8epM",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-steel-lanes-rail-reflection",
@@ -2103,9 +2103,9 @@
       "zipRelativePath": "steel-lanes/steel-lanes-rail-reflection-individual.zip",
       "zipSizeBytes": 4107154,
       "sha256": "bad7e866cb2e89a6ed4fc87d2aded3841e8522a6e6d6ce38a6d4ab1518ca8c56",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/duGYe",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-steel-lanes-return-forge",
@@ -2123,9 +2123,9 @@
       "zipRelativePath": "steel-lanes/steel-lanes-return-forge-individual.zip",
       "zipSizeBytes": 3590128,
       "sha256": "cf5e0f957cdcc75b5faf31a5666d41f0c944ff4b4fff0be19ae1d03fe8f7fe24",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/XxaQN",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-steel-lanes-shoe-approach",
@@ -2143,9 +2143,9 @@
       "zipRelativePath": "steel-lanes/steel-lanes-shoe-approach-individual.zip",
       "zipSizeBytes": 2631565,
       "sha256": "f56924fcf1466c92eadfcbbe1033d01354ed01d85a8703db4df3c8e197063955",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/nFZjV",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-steel-lanes-vault-approach",
@@ -2163,9 +2163,9 @@
       "zipRelativePath": "steel-lanes/steel-lanes-vault-approach-individual.zip",
       "zipSizeBytes": 4449132,
       "sha256": "6969fb17ed2a87c689c808d80734dd05a8eef346951d34dc51f7ba1e595b8a96",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/9fdhJ",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-stone-sanctuary-bell-tower-mist",
@@ -2183,9 +2183,9 @@
       "zipRelativePath": "stone-sanctuary/stone-sanctuary-bell-tower-mist-individual.zip",
       "zipSizeBytes": 2397752,
       "sha256": "27a66c19c2967dca5d2d8d311b732854a68207a00766241516b18b88fb5661dd",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/Xt5ze",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-stone-sanctuary-buttress-fog",
@@ -2203,9 +2203,9 @@
       "zipRelativePath": "stone-sanctuary/stone-sanctuary-buttress-fog-individual.zip",
       "zipSizeBytes": 2565796,
       "sha256": "fd5a15bb0f181249752e741136cc8118937d1565218950d6fec3b5d4355e2c93",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/f48xK",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-stone-sanctuary-cathedral-throne",
@@ -2223,9 +2223,9 @@
       "zipRelativePath": "stone-sanctuary/stone-sanctuary-cathedral-throne-individual.zip",
       "zipSizeBytes": 2731282,
       "sha256": "7fb3ba782d76b820eaf2cdce5f9d0d0a0bd671f5851e7111209739af106edb9a",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/bl5xX",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-stone-sanctuary-cloister-moon",
@@ -2243,9 +2243,9 @@
       "zipRelativePath": "stone-sanctuary/stone-sanctuary-cloister-moon-individual.zip",
       "zipSizeBytes": 3879993,
       "sha256": "6e42b061a63ff54475ce0dbbbe6ef04ec863785b5a07540749a3abbefc0cf750",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/WDcSQ",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-stone-sanctuary-cloister-rain",
@@ -2263,9 +2263,9 @@
       "zipRelativePath": "stone-sanctuary/stone-sanctuary-cloister-rain-individual.zip",
       "zipSizeBytes": 3587666,
       "sha256": "189f82651eee2a24a11f9fa1e15c77eb6622db277976e0acba79fabbac4b53fa",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/cjnEJ",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-stone-sanctuary-crypt-stairs",
@@ -2283,9 +2283,9 @@
       "zipRelativePath": "stone-sanctuary/stone-sanctuary-crypt-stairs-individual.zip",
       "zipSizeBytes": 2675237,
       "sha256": "9556b73be4e88a32e5f41c35c88f143dfcff75213b26e7dc5bd4c6daecd8c80e",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/utVoY",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-stone-sanctuary-gargoyle-dusk",
@@ -2303,9 +2303,9 @@
       "zipRelativePath": "stone-sanctuary/stone-sanctuary-gargoyle-dusk-individual.zip",
       "zipSizeBytes": 2584379,
       "sha256": "52dda78ac23bb8b4cfb05592e18bb008066a094ce0996f43b27b77354a7367e8",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/gWwER",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-stone-sanctuary-nave-candles",
@@ -2323,9 +2323,9 @@
       "zipRelativePath": "stone-sanctuary/stone-sanctuary-nave-candles-individual.zip",
       "zipSizeBytes": 4068097,
       "sha256": "105843a82d932b53dc102b8dffd7b1e9a5da735b1878eeabfe0d309c215d0c83",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/Tw0Pi",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-stone-sanctuary-rose-trace",
@@ -2343,9 +2343,9 @@
       "zipRelativePath": "stone-sanctuary/stone-sanctuary-rose-trace-individual.zip",
       "zipSizeBytes": 4894576,
       "sha256": "b39e73dd109bbbc7c8d9ee9eda7c9b284f2fd19dca7238a76cbbfb0b324014bc",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/OpEl1",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-stone-sanctuary-spire-storm",
@@ -2363,9 +2363,9 @@
       "zipRelativePath": "stone-sanctuary/stone-sanctuary-spire-storm-individual.zip",
       "zipSizeBytes": 4077618,
       "sha256": "2e7f5e80b1abac7f82f11660e54f0967c56453051b38be91130d06bcceb48b98",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/q4jTP",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-stone-sanctuary-stained-aisle",
@@ -2383,9 +2383,9 @@
       "zipRelativePath": "stone-sanctuary/stone-sanctuary-stained-aisle-individual.zip",
       "zipSizeBytes": 4204631,
       "sha256": "a36c5afb48387f9fbe836c5c3d8a2d1f1bb6c5bd6e0575385feccddab6acb3f9",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/hVqgX",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-stone-sanctuary-vaulted-shadows",
@@ -2403,9 +2403,9 @@
       "zipRelativePath": "stone-sanctuary/stone-sanctuary-vaulted-shadows-individual.zip",
       "zipSizeBytes": 4203661,
       "sha256": "055e2511ef61a224b3a019e40f43a5ec3cb753eb4d4fccf6689a489aaa321601",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/fNSqI",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-the-burning-gaze-doubted-jade",
@@ -2423,9 +2423,9 @@
       "zipRelativePath": "the-burning-gaze/the-burning-gaze-doubted-jade-individual.zip",
       "zipSizeBytes": 2936191,
       "sha256": "0de5c1d06c93fd5f7ab0afac78204d5da79df60d6196000110c9b87352fc715c",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/vVUpQ",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-the-burning-gaze-downcast-ember",
@@ -2443,9 +2443,9 @@
       "zipRelativePath": "the-burning-gaze/the-burning-gaze-downcast-ember-individual.zip",
       "zipSizeBytes": 2922270,
       "sha256": "c1a76cb73585fab930a342d952f700e1b3a1be174545ea6189a9ffd77af9d528",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/2QBgL",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-the-burning-gaze-ember-iris",
@@ -2463,9 +2463,9 @@
       "zipRelativePath": "the-burning-gaze/the-burning-gaze-ember-iris-individual.zip",
       "zipSizeBytes": 2832056,
       "sha256": "1994d8a77aeaf5e2a1e30b26fc43fa1acad0003df052c29ed77c814d54f6d876",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/RSgno",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-the-burning-gaze-frost-lens",
@@ -2483,9 +2483,9 @@
       "zipRelativePath": "the-burning-gaze/the-burning-gaze-frost-lens-individual.zip",
       "zipSizeBytes": 2900541,
       "sha256": "7728c449ee52e73d4bad091a84c811b58c4455cf8e15122f8af5a0f39a25d4f1",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/08Lih",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-the-burning-gaze-jade-fracture",
@@ -2503,9 +2503,9 @@
       "zipRelativePath": "the-burning-gaze/the-burning-gaze-jade-fracture-individual.zip",
       "zipSizeBytes": 2706688,
       "sha256": "75fef494d096fd11c53f1e06ca173c9b91c0d50c8e4e1fe499ac419c19b36405",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/s0xkX",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-the-burning-gaze-molten-gem",
@@ -2523,9 +2523,9 @@
       "zipRelativePath": "the-burning-gaze/the-burning-gaze-molten-gem-individual.zip",
       "zipSizeBytes": 3289754,
       "sha256": "4ab5b41300fee6137ec1b5052cdd60e524cf334b362fe991a5616ca00092b893",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/7E9DN",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-the-burning-gaze-prayer-iris",
@@ -2543,9 +2543,9 @@
       "zipRelativePath": "the-burning-gaze/the-burning-gaze-prayer-iris-individual.zip",
       "zipSizeBytes": 2633783,
       "sha256": "3bb2ff2654eff83a4a059fe7c2d056783691e32932d9f70ffee4b48713eaf753",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/8BaxR",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-the-burning-gaze-smoke-cathedral",
@@ -2563,9 +2563,9 @@
       "zipRelativePath": "the-burning-gaze/the-burning-gaze-smoke-cathedral-individual.zip",
       "zipSizeBytes": 3196851,
       "sha256": "9811355069c9281f0c586ac358ab52e47b09c59bfc6c16c378e086033a0edaf9",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/7J3hz",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-the-burning-gaze-threshold-amber",
@@ -2583,9 +2583,9 @@
       "zipRelativePath": "the-burning-gaze/the-burning-gaze-threshold-amber-individual.zip",
       "zipSizeBytes": 2605765,
       "sha256": "adecf75ca1d3c50dfd8fb96ad7b3fe491e49b6b53d485fb8be511faeedf1608e",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/BOvqx",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-the-burning-gaze-violet-smoke",
@@ -2603,9 +2603,9 @@
       "zipRelativePath": "the-burning-gaze/the-burning-gaze-violet-smoke-individual.zip",
       "zipSizeBytes": 2611196,
       "sha256": "bd2740a391e6a22051d6b97e3bfc2f6cb5d3ed6bb5b3fd25d39cc539d17fdfe8",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/6Mc2U",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-the-burning-gaze-weary-frost",
@@ -2623,9 +2623,9 @@
       "zipRelativePath": "the-burning-gaze/the-burning-gaze-weary-frost-individual.zip",
       "zipSizeBytes": 2707595,
       "sha256": "97ec913e646f6937694baaf1d4001a49bab7c49a667c5fbc506801c8f4052a96",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/CTc6q",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-the-burning-gaze-whisper-violet",
@@ -2643,9 +2643,9 @@
       "zipRelativePath": "the-burning-gaze/the-burning-gaze-whisper-violet-individual.zip",
       "zipSizeBytes": 2823354,
       "sha256": "8a9b1aee8567b65db47d2dd6864b195c65d2198c588ee7739bcec83bb6091be7",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/a7IZc",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-till-darkness-aisle-fog",
@@ -2663,9 +2663,9 @@
       "zipRelativePath": "till-darkness/till-darkness-aisle-fog-individual.zip",
       "zipSizeBytes": 3297305,
       "sha256": "ae3c75fc21f8141b2e21fcdc842283228d7186337e1de573531ae9e41c75b20c",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/Ahc5k",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-till-darkness-black-veil",
@@ -2683,9 +2683,9 @@
       "zipRelativePath": "till-darkness/till-darkness-black-veil-individual.zip",
       "zipSizeBytes": 3143025,
       "sha256": "9e1678be40c224a70ad8f68babe001f25dbb31780c98f1b99354b66980614912",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/QNU9f",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-till-darkness-candle-dance",
@@ -2703,9 +2703,9 @@
       "zipRelativePath": "till-darkness/till-darkness-candle-dance-individual.zip",
       "zipSizeBytes": 3229024,
       "sha256": "12024d5e843d25d75ec64c6d3d758f20e38825ed4c9fe16cb04c9f3274f2ae0d",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/FqM87",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-till-darkness-candlelit-oath",
@@ -2723,9 +2723,9 @@
       "zipRelativePath": "till-darkness/till-darkness-candlelit-oath-individual.zip",
       "zipSizeBytes": 1666315,
       "sha256": "e235e193b2c08c36daf9f63e2d0c58e9ac55989b5e951f777a9c37ee6d16371a",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/TWqh0",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-till-darkness-crimson-aisle",
@@ -2743,9 +2743,9 @@
       "zipRelativePath": "till-darkness/till-darkness-crimson-aisle-individual.zip",
       "zipSizeBytes": 2117382,
       "sha256": "85eb9c2c382e56f7e55f33d6cc9a74db9aac29ffb8ccf797661192a6fda466ca",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/JvZ6H",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-till-darkness-graveyard-bride",
@@ -2763,9 +2763,9 @@
       "zipRelativePath": "till-darkness/till-darkness-graveyard-bride-individual.zip",
       "zipSizeBytes": 2879252,
       "sha256": "50b6cedd50d91e5ff14b5a29cefb99c4e12ad1d30814427c49f3d52f12134363",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/0LwZM",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-till-darkness-iron-gates",
@@ -2783,9 +2783,9 @@
       "zipRelativePath": "till-darkness/till-darkness-iron-gates-individual.zip",
       "zipSizeBytes": 1985853,
       "sha256": "2a36c7e189de3cdb94e0ce29598b9556f3b8f62c2d451cf590c4ef32e580e0ac",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/Nvfr1",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-till-darkness-lace-vow",
@@ -2803,9 +2803,9 @@
       "zipRelativePath": "till-darkness/till-darkness-lace-vow-individual.zip",
       "zipSizeBytes": 2704616,
       "sha256": "4f502deade76619a09a4b587d297d391b2a8728db39871448e9643afd04ac12b",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/BaiYU",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-till-darkness-midnight-altar",
@@ -2823,9 +2823,9 @@
       "zipRelativePath": "till-darkness/till-darkness-midnight-altar-individual.zip",
       "zipSizeBytes": 2159790,
       "sha256": "1bc151497d81cfd1a916d78ab09752ede017ed2f19103273dc0b7f0d63116c41",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/GZEoL",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-till-darkness-raven-bouquet",
@@ -2843,9 +2843,9 @@
       "zipRelativePath": "till-darkness/till-darkness-raven-bouquet-individual.zip",
       "zipSizeBytes": 1665205,
       "sha256": "a171f3116e793333feea2030c6cc6cdbdd1607bb3a5d6975fb1c2fefa4917424",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/Onp9I",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-till-darkness-shadow-waltz",
@@ -2863,9 +2863,9 @@
       "zipRelativePath": "till-darkness/till-darkness-shadow-waltz-individual.zip",
       "zipSizeBytes": 1598618,
       "sha256": "e19c086ccc06b8abeb1282f44ce42017ce8f95004f31724873a865153ad72b7a",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/0qQAZ",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-till-darkness-veil-embrace",
@@ -2883,9 +2883,9 @@
       "zipRelativePath": "till-darkness/till-darkness-veil-embrace-individual.zip",
       "zipSizeBytes": 1740035,
       "sha256": "5b8cc12ba8051e470e4a985d494322f8315eaa9a2653f409bff0f89df661d2f6",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/YkqfP",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-urban-noir-alley-headlights",
@@ -2903,9 +2903,9 @@
       "zipRelativePath": "urban-noir/urban-noir-alley-headlights-individual.zip",
       "zipSizeBytes": 3239048,
       "sha256": "8fdc41fc48ad7423765900730c24547efd94e1203ea94b93945ebf9cfa219990",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/oCxvL",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-urban-noir-bridge-haze",
@@ -2923,9 +2923,9 @@
       "zipRelativePath": "urban-noir/urban-noir-bridge-haze-individual.zip",
       "zipSizeBytes": 3589236,
       "sha256": "ba8cf767c755e47523d26ed4c26f85e143d9e8ab71147757c3c0f108c6581ad2",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/r9cH5",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-urban-noir-canal-lamps",
@@ -2943,9 +2943,9 @@
       "zipRelativePath": "urban-noir/urban-noir-canal-lamps-individual.zip",
       "zipSizeBytes": 3524771,
       "sha256": "1110cb83487360499fd2cfac903bef0772cbe1e82805ff9c7d858e09bcc7c99d",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/diQXP",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-urban-noir-cobblestone-tracks",
@@ -2963,9 +2963,9 @@
       "zipRelativePath": "urban-noir/urban-noir-cobblestone-tracks-individual.zip",
       "zipSizeBytes": 3861113,
       "sha256": "95958fe67af37e0d66624e225cd09bbc82517d381a4de73b56e7850d7c480574",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/SkmBu",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-urban-noir-industrial-plaza",
@@ -2983,9 +2983,9 @@
       "zipRelativePath": "urban-noir/urban-noir-industrial-plaza-individual.zip",
       "zipSizeBytes": 3161712,
       "sha256": "22198ec37ca553be24dc0ce175f6b3617ab08dbdba89b801ab53f9bab81bdaf0",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/lFW59",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-urban-noir-maple-sign-street",
@@ -3003,9 +3003,9 @@
       "zipRelativePath": "urban-noir/urban-noir-maple-sign-street-individual.zip",
       "zipSizeBytes": 3085713,
       "sha256": "2f18befc199a831250cc99c05c394bb9cffbd5549d19ef6880088793d4bd65e6",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/dPZK3",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-urban-noir-portal-plaza",
@@ -3023,9 +3023,9 @@
       "zipRelativePath": "urban-noir/urban-noir-portal-plaza-individual.zip",
       "zipSizeBytes": 3985151,
       "sha256": "8115027bc7c20f29ac556a445e7cc687fbaf825f4a3433eabae8954e79d0e83b",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/YVABg",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-urban-noir-puddle-mirror",
@@ -3043,9 +3043,9 @@
       "zipRelativePath": "urban-noir/urban-noir-puddle-mirror-individual.zip",
       "zipSizeBytes": 3985578,
       "sha256": "b1ff28780f4b0ff08b9627617da6ff4f3db0a90abbe0623f34ec3a58e64d34a0",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/BC4iP",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-urban-noir-quay-dome-haze",
@@ -3063,9 +3063,9 @@
       "zipRelativePath": "urban-noir/urban-noir-quay-dome-haze-individual.zip",
       "zipSizeBytes": 2765757,
       "sha256": "c0a7d4dcf2fcee39bbe559183da2a1ec8a60e2a61c57f01805426600bbf28dec",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/ZF7yU",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-urban-noir-rain-reflections",
@@ -3083,9 +3083,9 @@
       "zipRelativePath": "urban-noir/urban-noir-rain-reflections-individual.zip",
       "zipSizeBytes": 3276953,
       "sha256": "b2bdd19a5217c7538def07519d288db56550c3667559af16f11f66847dfc3ac5",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/0tE62",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-urban-noir-sidewalk-amber",
@@ -3103,9 +3103,9 @@
       "zipRelativePath": "urban-noir/urban-noir-sidewalk-amber-individual.zip",
       "zipSizeBytes": 3231634,
       "sha256": "95176c46de36456ba557a1fd49cced8252c3eb5ec6fd15d0c3b8e9acda3fe14e",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/3tGvS",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-urban-noir-wet-cobble-glow",
@@ -3123,9 +3123,9 @@
       "zipRelativePath": "urban-noir/urban-noir-wet-cobble-glow-individual.zip",
       "zipSizeBytes": 3197013,
       "sha256": "f95e3cada2b3cba2b50de71ff4a426a470f02b4a12558e83554ec6d4627cb4c5",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/DjHgl",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-wet-neon-noir-alley-car",
@@ -3143,9 +3143,9 @@
       "zipRelativePath": "wet-neon-noir/wet-neon-noir-alley-car-individual.zip",
       "zipSizeBytes": 3323625,
       "sha256": "ad9fa9da0a59a4aa4a3b2fae1af3463fb52565db521cebf6c0bd5f81d7d76f1e",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/0skxz",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-wet-neon-noir-alley-pulse",
@@ -3163,9 +3163,9 @@
       "zipRelativePath": "wet-neon-noir/wet-neon-noir-alley-pulse-individual.zip",
       "zipSizeBytes": 3705288,
       "sha256": "110aa7bee6d5be67a02eae2ec358b2375a679a47335e384c7e13d1cc2a8b1871",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/tLXZN",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-wet-neon-noir-bonsecours-magenta",
@@ -3183,9 +3183,9 @@
       "zipRelativePath": "wet-neon-noir/wet-neon-noir-bonsecours-magenta-individual.zip",
       "zipSizeBytes": 3604907,
       "sha256": "9b59f3c194291c66890673fb0fcdca6f9ecc825cce50983a43860d7016114c21",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/E3lJu",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-wet-neon-noir-canal-dome",
@@ -3203,9 +3203,9 @@
       "zipRelativePath": "wet-neon-noir/wet-neon-noir-canal-dome-individual.zip",
       "zipSizeBytes": 3601819,
       "sha256": "42dc14136197b16fe69887369be524248351b18572d663f127d2d853abbdb6b8",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/WtO4u",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-wet-neon-noir-depanneur-puddle",
@@ -3223,9 +3223,9 @@
       "zipRelativePath": "wet-neon-noir/wet-neon-noir-depanneur-puddle-individual.zip",
       "zipSizeBytes": 4495806,
       "sha256": "09067eacd3f3f1ae5450f37bd042e1333e2211fa3304dea72e930be3326f30f5",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/IbByY",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-wet-neon-noir-galiano-cobbles",
@@ -3243,9 +3243,9 @@
       "zipRelativePath": "wet-neon-noir/wet-neon-noir-galiano-cobbles-individual.zip",
       "zipSizeBytes": 3391096,
       "sha256": "ec05c0c03315d91844e12cc37a49d1ac4c670d090369d26f7ab6951c88efce3e",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/c5MJt",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-wet-neon-noir-glass-rain",
@@ -3263,9 +3263,9 @@
       "zipRelativePath": "wet-neon-noir/wet-neon-noir-glass-rain-individual.zip",
       "zipSizeBytes": 4997153,
       "sha256": "b6107398dd8996bebab6f4e01e267ae52eaee27a216edf9d0b75745f16ac5905",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/hVNWq",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-wet-neon-noir-maple-sidewalk",
@@ -3283,9 +3283,9 @@
       "zipRelativePath": "wet-neon-noir/wet-neon-noir-maple-sidewalk-individual.zip",
       "zipSizeBytes": 3277385,
       "sha256": "cc67c9c5446c1a4b4add42337415f36c53b312095ff74440282ef48b09cea453",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/0fsra",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-wet-neon-noir-metal-arch-cobbles",
@@ -3303,9 +3303,9 @@
       "zipRelativePath": "wet-neon-noir/wet-neon-noir-metal-arch-cobbles-individual.zip",
       "zipSizeBytes": 4131631,
       "sha256": "4d19991cddf96199d8b4817ee977c3b1a2579fc5c40b821907c613dcbf8c61cb",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/L9qJ5",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-wet-neon-noir-oldport-ember",
@@ -3323,9 +3323,9 @@
       "zipRelativePath": "wet-neon-noir/wet-neon-noir-oldport-ember-individual.zip",
       "zipSizeBytes": 4100410,
       "sha256": "5494e71e8d56317a20ea74dfc35365093361347302363bea80ad52b85e07e525",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/Twvc6",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-wet-neon-noir-plaza-glow",
@@ -3343,9 +3343,9 @@
       "zipRelativePath": "wet-neon-noir/wet-neon-noir-plaza-glow-individual.zip",
       "zipSizeBytes": 4460422,
       "sha256": "9a320ccc4bbd334789fac93ca2b80167fe805329675f172a1fca3c448ba4dd6f",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/nt5ry",
+      "visibility": "visible",
+      "enabled": true
     },
     {
       "id": "individual-wet-neon-noir-track-ember",
@@ -3363,9 +3363,9 @@
       "zipRelativePath": "wet-neon-noir/wet-neon-noir-track-ember-individual.zip",
       "zipSizeBytes": 4739869,
       "sha256": "5fb9e2b4b79dd9ea9bc3ec0060383d566d0ef169eb98b1232448d39cb0fb1ee7",
-      "payhipUrl": "",
-      "visibility": "invisible",
-      "enabled": false
+      "payhipUrl": "https://payhip.com/b/9TOsx",
+      "visibility": "visible",
+      "enabled": true
     }
   ]
 }
