@@ -110,6 +110,11 @@ body {
     font-family: 'Cinzel', serif;
 }
 
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 .logo-text {
     font-size: 1.5rem;
     font-weight: 700;
@@ -128,6 +133,7 @@ body {
     display: flex;
     list-style: none;
     gap: 1rem;
+    margin-left: auto;
 }
 
 .nav-link {
@@ -158,6 +164,43 @@ body {
 
 .nav-link:hover::after {
     width: 100%;
+}
+
+.nav-menu .nav-link.is-current,
+.nav-menu .nav-link[aria-current="page"] {
+    color: var(--accent-gold);
+}
+
+.archive-language-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-left: 2.75rem;
+    color: var(--border-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7rem;
+}
+
+.archive-language-button {
+    padding: 0.25rem 0.15rem;
+    border: 0;
+    background: transparent;
+    color: var(--text-secondary);
+    font: inherit;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.archive-language-button:hover,
+.archive-language-button:focus-visible {
+    color: var(--text-primary);
+    outline: none;
+}
+
+.archive-language-button.is-active {
+    color: var(--accent-gold);
 }
 
 .hamburger {
@@ -819,6 +862,11 @@ section {
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
         border-top: 1px solid var(--border-color);
+        margin-left: 0;
+    }
+
+    .archive-language-switch {
+        margin-left: auto;
     }
 
     .nav-menu.active {

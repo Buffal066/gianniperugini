@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- deployed: 2026-08-10 02:05:48 -->
+<!-- deployed: 2026-08-10 02:30:06 -->
 <html lang="en-CA">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gianni Perugini - Creative & Digital Media</title>
+    <title data-i18n-document="homePageTitle">Gianni Perugini - Creative & Digital Media</title>
     <meta name="description" content="Gianni Perugini is a creative director and digital media specialist creating digital art, photography, motion work, and interface concepts.">
     <link rel="canonical" href="https://gianniperugini.com/">
     <meta name="robots" content="index, follow, max-image-preview:large">
@@ -26,7 +26,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="stylesheet" href="styles.css?v=20260808-rounded-frames">
+    <link rel="stylesheet" href="styles.css?v=20260810-lang-gap2">
     <link rel="stylesheet" href="landing.css?v=20260808-home-routes">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,20 +67,25 @@
 </head>
 <body class="home-page">
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary navigation" data-i18n-aria-label="primaryNav">
         <div class="nav-container">
-            <div class="logo">
+            <a href="index.html" class="logo logo-link">
                 <span class="logo-text">Gianni Perugini</span>
-            </div>
+            </a>
             <ul class="nav-menu" id="primary-navigation">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="archive.html#composites" class="nav-link">Digital Art Store</a></li>
-                <li><a href="archive.html#photography" class="nav-link">Photography</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="#home" class="nav-link is-current" aria-current="page" data-i18n="home">Home</a></li>
+                <li><a href="archive.html#composites" class="nav-link" data-i18n="storeNav">Digital Art Store</a></li>
+                <li><a href="archive.html#photography" class="nav-link" data-i18n="photography">Photography</a></li>
+                <li><a href="projects.html" class="nav-link" data-i18n="projects">Projects</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="about">About</a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n="contact">Contact</a></li>
             </ul>
-            <button type="button" class="hamburger" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
+            <div class="archive-language-switch" role="group" aria-label="Choose language" data-i18n-aria-label="languageLabel">
+                <button type="button" class="archive-language-button is-active" data-language="en" aria-pressed="true">EN</button>
+                <span aria-hidden="true">|</span>
+                <button type="button" class="archive-language-button" data-language="fr" aria-pressed="false">FR</button>
+            </div>
+            <button type="button" class="hamburger" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false" data-i18n-aria-label="openNav">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -97,10 +102,11 @@
             <h1 class="hero-title">
                 <span class="title-line full-name">Gianni Perugini</span>
             </h1>
-            <p class="hero-subtitle">Creative director. Digital media specialist.</p>
+            <p class="hero-subtitle" data-i18n="heroSubtitle">Creative director. Digital media specialist.</p>
         </div>
     </section>
 
-    <script src="script.js?v=20260808-rounded-buttons"></script>
+    <script src="site-i18n.js?v=20260810-full-site"></script>
+    <script src="script.js?v=20260810-full-site"></script>
 </body>
 </html>

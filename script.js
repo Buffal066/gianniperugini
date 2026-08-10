@@ -95,16 +95,105 @@
     });
 })();
 
+function getSiteStrings() {
+    const pack = window.siteI18n;
+    if (!pack) return null;
+    const lang = document.documentElement.lang?.startsWith('fr') ? 'fr' : 'en';
+    return pack[lang] || pack.en;
+}
+
+// Language switch (store owns full i18n via archive.js)
+(function initSiteLanguageSwitch() {
+    if (document.querySelector('script[src*="archive.js"]')) return;
+
+    const languageButtons = document.querySelectorAll('.archive-language-button');
+    if (!languageButtons.length || !window.siteI18n) return;
+
+    const applyTranslations = (language) => {
+        const strings = window.siteI18n[language] || window.siteI18n.en;
+        document.querySelectorAll('[data-i18n]').forEach((element) => {
+            const key = element.getAttribute('data-i18n');
+            if (key && Object.prototype.hasOwnProperty.call(strings, key)) {
+                element.textContent = strings[key];
+            }
+        });
+        document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => {
+            const key = element.getAttribute('data-i18n-placeholder');
+            if (key && Object.prototype.hasOwnProperty.call(strings, key)) {
+                element.setAttribute('placeholder', strings[key]);
+            }
+        });
+        document.querySelectorAll('[data-i18n-value]').forEach((element) => {
+            const key = element.getAttribute('data-i18n-value');
+            if (key && Object.prototype.hasOwnProperty.call(strings, key)) {
+                element.value = strings[key];
+            }
+        });
+        document.querySelectorAll('[data-i18n-aria-label]').forEach((element) => {
+            const key = element.getAttribute('data-i18n-aria-label');
+            if (key && Object.prototype.hasOwnProperty.call(strings, key)) {
+                element.setAttribute('aria-label', strings[key]);
+            }
+        });
+        document.querySelectorAll('[data-i18n-document]').forEach((element) => {
+            const key = element.getAttribute('data-i18n-document');
+            if (key && Object.prototype.hasOwnProperty.call(strings, key)) {
+                document.title = strings[key];
+            }
+        });
+        const hamburgerBtn = document.querySelector('.hamburger');
+        const menuOpen = document.querySelector('.nav-menu')?.classList.contains('active');
+        if (hamburgerBtn) {
+            hamburgerBtn.setAttribute('aria-label', menuOpen ? strings.closeNav : strings.openNav);
+        }
+    };
+
+    const setLanguage = (language) => {
+        const next = language === 'fr' ? 'fr' : 'en';
+        document.documentElement.lang = next === 'fr' ? 'fr-CA' : 'en-CA';
+        try {
+            localStorage.setItem('gp-archive-language', next);
+        } catch (_) {
+            /* ignore */
+        }
+        languageButtons.forEach((button) => {
+            const active = button.dataset.language === next;
+            button.classList.toggle('is-active', active);
+            button.setAttribute('aria-pressed', String(active));
+        });
+        applyTranslations(next);
+    };
+
+    let initial = 'en';
+    try {
+        const saved = localStorage.getItem('gp-archive-language');
+        if (saved === 'en' || saved === 'fr') initial = saved;
+    } catch (_) {
+        /* ignore */
+    }
+    setLanguage(initial);
+
+    languageButtons.forEach((button) => {
+        button.addEventListener('click', () => setLanguage(button.dataset.language));
+    });
+})();
+
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
 if (hamburger && navMenu) {
     const setMenuOpen = (open) => {
+        const strings = getSiteStrings();
         hamburger.classList.toggle('active', open);
         navMenu.classList.toggle('active', open);
         hamburger.setAttribute('aria-expanded', String(open));
-        hamburger.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+        hamburger.setAttribute(
+            'aria-label',
+            open
+                ? (strings?.closeNav || 'Close navigation')
+                : (strings?.openNav || 'Open navigation')
+        );
     };
 
     hamburger.addEventListener('click', () => setMenuOpen(!navMenu.classList.contains('active')));
@@ -204,12 +293,13 @@ const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
+        const strings = getSiteStrings() || {};
         const submitButton = contactForm.querySelector('button[type="submit"]');
         const originalLabel = submitButton?.textContent;
         const formData = new FormData(contactForm);
         if (submitButton) {
             submitButton.disabled = true;
-            submitButton.textContent = 'Sending...';
+            submitButton.textContent = strings.sending || 'Sending...';
         }
 
         try {
@@ -219,26 +309,27 @@ if (contactForm) {
                 body: formData
             });
             if (!response.ok) throw new Error(`Message service returned ${response.status}`);
-            showConfirmation('Thank you for your message! We will get back to you soon.');
+            showConfirmation(strings.formSuccess || 'Thank you for your message! We will get back to you soon.');
             contactForm.reset();
         } catch (error) {
             console.error('Contact form submission failed:', error);
-            showConfirmation('Your message could not be sent. Please try again, or email contact@gianniperugini.com directly.');
+            showConfirmation(strings.formError || 'Your message could not be sent. Please try again, or email contact@gianniperugini.com directly.');
         } finally {
             if (submitButton) {
                 submitButton.disabled = false;
-                submitButton.textContent = originalLabel || 'Send Message';
+                submitButton.textContent = originalLabel || strings.sendMessage || 'Send Message';
             }
         }
     });
 }
 
 function showConfirmation(message) {
+    const strings = getSiteStrings() || {};
     const overlay = document.createElement('div');
     overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center;z-index:9999;';
     overlay.setAttribute('role', 'dialog');
     overlay.setAttribute('aria-modal', 'true');
-    overlay.setAttribute('aria-label', 'Message status');
+    overlay.setAttribute('aria-label', strings.messageStatus || 'Message status');
     const box = document.createElement('div');
     box.style.cssText = 'background:#1a1a1a;border:1px solid #cc0000;padding:2.5rem;max-width:400px;text-align:center;color:#fff;font-family:Roboto,sans-serif;';
     const paragraph = document.createElement('p');
@@ -247,7 +338,7 @@ function showConfirmation(message) {
     const button = document.createElement('button');
     button.type = 'button';
     button.style.cssText = 'background:#cc0000;color:#fff;border:none;border-radius:8px;padding:0.6rem 2rem;font-size:0.9rem;text-transform:uppercase;letter-spacing:1px;cursor:pointer;';
-    button.textContent = 'OK';
+    button.textContent = strings.ok || 'OK';
     box.append(paragraph, button);
     button.addEventListener('click', () => overlay.remove());
     overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
