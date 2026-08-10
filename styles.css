@@ -876,6 +876,7 @@ section {
 
     .hamburger {
         display: flex;
+        margin-left: 0.9rem;
     }
 
     .hamburger.active span:nth-child(1) {

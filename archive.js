@@ -35,12 +35,12 @@
 
     let worksData = null;
     let currentLanguage = initialLanguage();
-    let currentFormat = 'desktop';
+    const mobileStoreQuery = window.matchMedia('(max-width: 768px)');
+    let currentFormat = mobileStoreQuery.matches ? 'mobile' : 'desktop';
     let lightboxTrigger = null;
     let activeLightboxWork = null;
-    let activeLightboxFormat = 'desktop';
+    let activeLightboxFormat = currentFormat;
     let previewProtectionTimer = null;
-    const mobileStoreQuery = window.matchMedia('(max-width: 768px)');
 
     function initialLanguage() {
         try {
@@ -157,7 +157,13 @@
         }
 
         applyStaticTranslations();
-        if (worksData) applyView({ scrollTop: false });
+        if (worksData) {
+            const scrollY = window.scrollY;
+            applyView({ scrollTop: false, followDeepLink: false });
+            requestAnimationFrame(() => {
+                window.scrollTo({ top: scrollY, behavior: 'auto' });
+            });
+        }
     }
 
     function imagePath(file, format = 'desktop') {
@@ -448,7 +454,7 @@
         });
     }
 
-    function applyView({ scrollTop = true } = {}) {
+    function applyView({ scrollTop = true, followDeepLink = true } = {}) {
         if (!worksData) return;
 
         const viewKey = activeViewKey();
@@ -456,7 +462,6 @@
         const composites = worksData.composites;
         const photography = worksData.photography;
         const isPhotography = viewKey === 'photography';
-        const isGuidedMobileStore = !isPhotography && mobileStoreQuery.matches;
 
         document.body.classList.toggle('is-photography-view', isPhotography);
 
@@ -465,8 +470,6 @@
         let shown = false;
         if (isPhotography) {
             shown = renderSection('photography', photography);
-        } else if (isGuidedMobileStore) {
-            shown = true;
         } else {
             shown = renderDigitalArtSection(composites);
         }
@@ -496,7 +499,7 @@
             }
         }
 
-        if (deepLinkTarget) {
+        if (followDeepLink && deepLinkTarget) {
             requestAnimationFrame(() => {
                 deepLinkTarget.scrollIntoView({
                     behavior: 'auto',
@@ -527,7 +530,17 @@
         if (hash === '#composites' || hash === '#photography') applyView();
     }
 
-    mobileStoreQuery.addEventListener?.('change', () => applyView({ scrollTop: false }));
+    mobileStoreQuery.addEventListener?.('change', () => {
+        currentFormat = mobileStoreQuery.matches ? 'mobile' : 'desktop';
+        activeLightboxFormat = currentFormat;
+        const scrollY = window.scrollY;
+        applyView({ scrollTop: false, followDeepLink: false });
+        syncFormatButtons(galleryFormatButtons, currentFormat);
+        syncFormatButtons(lightboxFormatButtons, currentFormat);
+        requestAnimationFrame(() => {
+            window.scrollTo({ top: scrollY, behavior: 'auto' });
+        });
+    });
 
     function navigateWithinStore(event) {
         const link = event.target.closest('a[href^="#"]');
@@ -551,6 +564,10 @@
             setSeriesFormat(group, currentFormat);
         });
     }
+
+    window.addEventListener('archive:setpreviewformat', (event) => {
+        setGalleryFormat(event.detail?.format);
+    });
 
     function isProtectedPreview(target) {
         if (!(target instanceof Element)) return false;

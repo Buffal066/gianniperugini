@@ -1183,6 +1183,7 @@
 }
 
 .lightbox-dialog {
+    position: relative;
     display: grid;
     width: min(1480px, 100%);
     max-height: 88vh;
@@ -1195,6 +1196,25 @@
 
 .lightbox-dialog.has-product {
     grid-template-columns: minmax(0, 1fr) minmax(340px, 440px);
+    grid-template-areas:
+        "media product"
+        "media product";
+}
+
+.lightbox-dialog.has-product .format-switch-lightbox {
+    grid-area: media;
+    align-self: start;
+    justify-self: start;
+}
+
+.lightbox-dialog.has-product .lightbox-media {
+    grid-area: media;
+}
+
+.lightbox-dialog.has-product .lightbox-product {
+    grid-area: product;
+    align-self: stretch;
+    height: 100%;
 }
 
 .lightbox-media {
@@ -1261,10 +1281,16 @@
 .lightbox-product {
     display: flex;
     min-width: 0;
+    min-height: 0;
+    max-height: 100%;
     flex-direction: column;
-    justify-content: center;
-    padding: 0.9rem 2rem;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 0.9rem 1.5rem 1.25rem;
     border-left: 1px solid var(--border-color);
+    -webkit-overflow-scrolling: touch;
 }
 
 .lightbox-product[hidden] {
@@ -1291,7 +1317,7 @@
     font-size: 0.68rem;
     letter-spacing: 0.01em;
     line-height: 1.45;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .lightbox-purchase {
@@ -1306,9 +1332,10 @@
 .lightbox-offers {
     display: flex;
     flex-direction: column;
+    flex: 1 1 auto;
     gap: 1rem;
-    margin-top: 1.7rem;
-    padding-top: 1.4rem;
+    margin-top: 1.25rem;
+    padding-top: 1.1rem;
     border-top: 1px solid var(--border-color);
 }
 
@@ -1343,7 +1370,7 @@
     font-size: 0.62rem;
     letter-spacing: 0.01em;
     line-height: 1.4;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .lightbox-offer.is-coming-soon {
@@ -1363,24 +1390,10 @@
 
 @media (max-width: 768px) {
 
-    body:not(.is-photography-view) .archive-storefront,
-    body:not(.is-photography-view) .archive-gallery,
-    body:not(.is-photography-view) .archive-hero-actions {
-        display: none;
-    }
-
-    body:not(.is-photography-view) .mobile-store-guide {
-        display: block;
-    }
-
-    body.is-photography-view .mobile-store-guide {
-        display: none;
-    }
-
+    /* Mobile uses the same Featured / Other collections storefront +
+       12-artwork gallery preview as desktop (no Dark/Contemporary guide). */
     .mobile-store-guide {
-        padding: 2.8rem 0 4rem;
-        border-top: 1px solid var(--border-color);
-        background: radial-gradient(circle at 0 0, rgba(211, 18, 32, 0.1), transparent 28rem), var(--bg-primary);
+        display: none !important;
     }
 
     .mobile-store-guide-heading {
@@ -1596,9 +1609,60 @@
         display: none;
     }
 
+    .lightbox-dialog,
+    .lightbox-dialog.has-product {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+        grid-template-areas: none;
+    }
+
+    .lightbox-dialog.has-product .format-switch-lightbox,
+    .lightbox-dialog.has-product .lightbox-media,
+    .lightbox-dialog.has-product .lightbox-product {
+        grid-area: auto;
+        justify-self: stretch;
+        align-self: stretch;
+    }
+
     .format-switch-lightbox {
-        top: 0.65rem;
-        left: 0.65rem;
+        position: static;
+        order: 0;
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0.45rem;
+        border: 0;
+        border-bottom: 1px solid var(--border-color);
+        border-radius: 0;
+        background: #080808;
+    }
+
+    .format-switch-lightbox .format-switch-button {
+        flex: 1;
+        min-height: 36px;
+        padding: 0.45rem 0.75rem;
+    }
+
+    .lightbox-media {
+        order: 1;
+        flex: 0 0 auto;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .lightbox img,
+    .lightbox img.is-mobile {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        max-height: 42vh;
+        margin: 0 auto;
+    }
+
+    .lightbox-product {
+        order: 2;
     }
 
     .individual-wallpaper-callout {
@@ -1681,28 +1745,45 @@
     .lightbox {
         align-items: stretch;
         justify-content: start;
-        overflow-y: auto;
+        overflow: hidden;
         padding: 3.5rem 0.8rem 1rem;
     }
 
-    .lightbox-dialog {
-        max-height: none;
-        grid-template-columns: 1fr;
-        overflow: visible;
+    .lightbox-dialog,
+    .lightbox-dialog.has-product {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-height: calc(100dvh - 4.5rem);
+        overflow: hidden;
     }
 
     .lightbox-dialog.has-product {
-        grid-template-columns: 1fr;
+        grid-template-columns: none;
     }
 
     .lightbox img {
-        max-height: 62vh;
+        max-height: 42vh;
     }
 
     .lightbox-product {
-        padding: 1.4rem;
+        flex: 1 1 auto;
+        min-height: 0;
+        max-height: none;
+        padding: 1rem 1.1rem 1.2rem;
         border-top: 1px solid var(--border-color);
         border-left: 0;
+    }
+
+    .lightbox-title {
+        margin: 0.4rem 0 0.7rem;
+        font-size: clamp(1.45rem, 7vw, 1.9rem);
+    }
+
+    .lightbox-offers {
+        margin-top: 1rem;
+        padding-top: 0.9rem;
+        gap: 0.85rem;
     }
 
     .lightbox-format,

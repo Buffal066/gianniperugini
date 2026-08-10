@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- deployed: 2026-08-10 03:00:55 -->
+<!-- deployed: 2026-08-10 10:49:47 -->
 <html lang="en-CA">
 <head>
     <meta charset="UTF-8">
@@ -27,7 +27,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
     <link rel="stylesheet" href="styles.css?v=20260810-lang-gap2">
-    <link rel="stylesheet" href="archive.css?v=20260810-lang-gap2">
+    <link rel="stylesheet" href="archive.css?v=20260810-lightbox-scroll">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -97,7 +97,7 @@
             <p class="archive-eyebrow" data-i18n="eyebrow">Digital downloads</p>
             <h1 class="archive-title" data-i18n="archiveTitle">Digital Art Store</h1>
             <p class="archive-subtitle" data-i18n="archiveSubtitle">
-                Dark artwork for personal screens and licensed digital projects. Choose a collection or unlock the complete archive.
+                Artwork for personal screens and licensed digital projects. Choose a collection or unlock the complete archive.
             </p>
             <div class="archive-hero-actions">
                 <a href="#store-products" class="archive-primary-link" data-i18n="browseCollections">Browse collections</a>
@@ -137,13 +137,6 @@
 
     <section id="store-products" class="archive-storefront">
         <div class="container">
-            <header class="store-section-heading">
-                <p class="store-kicker" data-i18n="storeKicker">Start here</p>
-                <h2 data-i18n="storeHeading">Choose how you want to use the art</h2>
-                <p data-i18n="storeIntro">Choose a collection format from $4, or unlock the complete personal archive from $19.</p>
-                <p class="store-tax-note" data-i18n="taxNote">Applicable taxes are calculated at checkout.</p>
-            </header>
-
             <div id="store-sample" class="store-sample"></div>
             <section id="sample-artworks" class="store-sample-preview" aria-labelledby="sample-artworks-heading" hidden>
                 <header class="store-sample-preview-heading">
@@ -224,12 +217,12 @@
     <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Artwork preview" hidden>
         <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
         <div class="lightbox-dialog">
+            <div id="lightbox-format-switch" class="format-switch format-switch-lightbox" role="group" aria-label="Choose preview format">
+                <button type="button" class="format-switch-button is-active" data-format="desktop" data-i18n="desktop">Desktop</button>
+                <button type="button" class="format-switch-button" data-format="mobile" data-i18n="mobile">Mobile</button>
+            </div>
             <div class="lightbox-media">
                 <img id="lightbox-image" alt="">
-                <div id="lightbox-format-switch" class="format-switch format-switch-lightbox" role="group" aria-label="Choose preview format">
-                    <button type="button" class="format-switch-button is-active" data-format="desktop" data-i18n="desktop">Desktop</button>
-                    <button type="button" class="format-switch-button" data-format="mobile" data-i18n="mobile">Mobile</button>
-                </div>
             </div>
             <aside id="lightbox-product" class="lightbox-product" hidden>
                 <p id="lightbox-series" class="lightbox-series"></p>

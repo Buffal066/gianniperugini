@@ -151,6 +151,15 @@
 
             event.preventDefault();
             if (product.type === 'free') target.hidden = false;
+
+            // Match desktop behavior (scroll to gallery), with format defaulting
+            // to mobile previews on small screens and desktop on larger ones.
+            window.dispatchEvent(new CustomEvent('archive:setpreviewformat', {
+                detail: {
+                    format: window.matchMedia('(max-width: 768px)').matches ? 'mobile' : 'desktop',
+                },
+            }));
+
             target.scrollIntoView({
                 behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
                 block: 'start',
