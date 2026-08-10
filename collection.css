@@ -91,6 +91,17 @@ body {
     color: #fff;
     font-family: 'Cinzel', serif;
     font-size: 1.05rem;
+    font-variant-numeric: lining-nums;
+}
+
+.collection-facts .price-figure,
+.collection-price .price-figure,
+.collection-note .price-figure {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.22em;
+    font-weight: 500;
+    font-variant-numeric: lining-nums;
+    letter-spacing: 0.02em;
 }
 
 .collection-actions {
@@ -121,7 +132,7 @@ body {
 
 .collection-buy:hover,
 .collection-buy:focus-visible {
-    background: #d51c35;
+    background: rgba(255, 255, 255, 0.06);
 }
 
 .collection-secondary {

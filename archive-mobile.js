@@ -44,7 +44,9 @@
         const name = document.createElement('strong');
         name.textContent = localizedName(product);
         const price = document.createElement('span');
-        price.textContent = t('mobileCollectionPrice');
+        price.innerHTML = String(t('mobileCollectionPrice'))
+            .replace(/\$(\d+)/g, '$<span class="price-figure">$1</span>')
+            .replace(/(\d+)(\s*\$)/g, '<span class="price-figure">$1</span>$2');
         const action = document.createElement('span');
         action.className = 'mobile-category-card-action';
         action.textContent = t('mobileOpenCollection');

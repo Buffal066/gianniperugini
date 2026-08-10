@@ -18,7 +18,7 @@
                 "minimumPrice": true,
                 "artworkCount": 6,
                 "preview": "assets/images/archive/digital-art-burned-canvas-ember-crack.jpg",
-                "description": "Try six curated wallpaper files from five gothic, urban, and abstract collections.",
+                "description": "Try six curated wallpapers from five gothic, urban, and abstract collections.",
                 "artworks": [
                     { "file": "digital-art-burned-canvas-ember-crack.jpg", "title": "Burned Canvas Ember Crack", "series": "Burned Canvas", "format": "desktop" },
                     { "file": "digital-art-midnight-masquerade-portrait-veil.jpg", "title": "Midnight Masquerade Portrait Veil", "series": "Midnight Masquerade", "format": "desktop" },

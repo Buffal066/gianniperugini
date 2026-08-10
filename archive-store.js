@@ -2,6 +2,8 @@
     const sampleRoot = document.getElementById('store-sample');
     const sampleGrid = document.getElementById('sample-artwork-grid');
     const collectionsRoot = document.getElementById('store-collections');
+    const otherCollectionsRoot = document.getElementById('store-other-collections');
+    const otherCollectionsToggle = document.getElementById('other-collections-toggle');
     const archivesRoot = document.getElementById('store-archives');
     const lightboxProduct = document.getElementById('lightbox-product');
     const lightboxDialog = document.querySelector('.lightbox-dialog');
@@ -17,6 +19,7 @@
     let catalog = null;
     let individualProductsByFile = new Map();
     let activeWork = null;
+    let otherCollectionsExpanded = false;
     const individualPreviewMode = new URLSearchParams(window.location.search).get('individualPreview') === '1';
 
     function language() {
@@ -69,6 +72,12 @@
         return `${directory}${watermarkedFile}`;
     }
 
+    function wrapPriceFigures(text) {
+        return String(text)
+            .replace(/\$(\d+)/g, '$<span class="price-figure">$1</span>')
+            .replace(/(\d+)(\s*\$)/g, '<span class="price-figure">$1</span>$2');
+    }
+
     function priceLabel(product) {
         if (product.type === 'series') return t('collectionStartingPrice');
         if (product.type === 'archive') return t('archiveStartingPrice');
@@ -80,6 +89,10 @@
         return language() === 'fr'
             ? `${product.price} $ US+`
             : `$${product.price}+ USD`;
+    }
+
+    function priceLabelHtml(product) {
+        return wrapPriceFigures(priceLabel(product));
     }
 
     function typeLabel(product) {
@@ -212,9 +225,14 @@
 
         const subtitle = document.createElement('p');
         subtitle.className = 'store-product-subtitle';
-        subtitle.textContent = sourceProduct.type === 'series'
+        const subtitleText = sourceProduct.type === 'series'
             ? t('collectionFormatChoices')
             : (sourceProduct.type === 'archive' ? t('archiveFormatChoices') : product.subtitle);
+        if (/\$\d|\d+\s*\$/i.test(String(subtitleText || ''))) {
+            subtitle.innerHTML = wrapPriceFigures(subtitleText);
+        } else {
+            subtitle.textContent = subtitleText;
+        }
 
         const description = document.createElement('p');
         description.className = 'store-product-description';
@@ -226,13 +244,14 @@
         const price = document.createElement('div');
         price.className = 'store-product-price';
         const amount = document.createElement('strong');
-        amount.textContent = priceLabel(sourceProduct);
-        const note = document.createElement('span');
-        note.textContent = sourceProduct.type === 'series' || sourceProduct.type === 'archive'
-            ? t('chooseFormat')
-            : t('payWhatYouWant');
+        amount.innerHTML = priceLabelHtml(sourceProduct);
         price.appendChild(amount);
-        price.appendChild(note);
+        // Format choices already appear in the subtitle for series/archive cards.
+        if (sourceProduct.type !== 'series' && sourceProduct.type !== 'archive') {
+            const note = document.createElement('span');
+            note.textContent = t('payWhatYouWant');
+            price.appendChild(note);
+        }
 
         const actions = document.createElement('div');
         actions.className = 'store-product-actions';
@@ -259,11 +278,23 @@
         return card;
     }
 
+    function syncOtherCollectionsToggle() {
+        if (!otherCollectionsToggle || !otherCollectionsRoot) return;
+        const hasOthers = otherCollectionsRoot.childElementCount > 0;
+        otherCollectionsToggle.hidden = !hasOthers;
+        otherCollectionsToggle.setAttribute('aria-expanded', String(otherCollectionsExpanded));
+        otherCollectionsToggle.textContent = otherCollectionsExpanded
+            ? t('hideOtherCollections')
+            : t('otherCollections');
+        otherCollectionsRoot.hidden = !hasOthers || !otherCollectionsExpanded;
+    }
+
     function renderStore() {
         if (!catalog) return;
 
         sampleRoot.innerHTML = '';
         collectionsRoot.innerHTML = '';
+        if (otherCollectionsRoot) otherCollectionsRoot.innerHTML = '';
         archivesRoot.innerHTML = '';
 
         const items = catalog.products?.items || [];
@@ -274,10 +305,18 @@
         }
 
         const featuredIds = catalog.products?.featured || [];
+        const featuredIdSet = new Set(featuredIds);
         featuredIds
             .map((id) => items.find((product) => product.id === id))
             .filter(Boolean)
             .forEach((product) => collectionsRoot.appendChild(createProductCard(product)));
+
+        if (otherCollectionsRoot) {
+            items
+                .filter((product) => product.type === 'series' && !featuredIdSet.has(product.id))
+                .forEach((product) => otherCollectionsRoot.appendChild(createProductCard(product)));
+        }
+        syncOtherCollectionsToggle();
 
         items
             .filter((product) => product.type === 'archive' || product.type === 'commercial')
@@ -425,6 +464,7 @@
             const localizedOffer = localizedProduct(offer);
             const row = document.createElement('div');
             row.className = 'lightbox-offer';
+            if (offer.type === 'individual') row.classList.add('is-individual');
             if (offer.type === 'individual' && !hasPayhipUrl(offer)) row.classList.add('is-coming-soon');
             const summary = document.createElement('div');
             const label = document.createElement('p');
@@ -432,7 +472,7 @@
             label.textContent = localizedOffer.optionName || localizedOffer.name;
             const price = document.createElement('span');
             price.className = 'lightbox-price';
-            price.textContent = priceLabel(offer);
+            price.innerHTML = priceLabelHtml(offer);
             const detail = document.createElement('p');
             detail.className = 'lightbox-offer-detail';
             detail.textContent = offer.type === 'individual'
@@ -460,6 +500,17 @@
         showForWork,
         clearLightbox,
     };
+
+    otherCollectionsToggle?.addEventListener('click', () => {
+        otherCollectionsExpanded = !otherCollectionsExpanded;
+        syncOtherCollectionsToggle();
+        if (otherCollectionsExpanded && otherCollectionsRoot) {
+            otherCollectionsRoot.scrollIntoView({
+                behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+                block: 'nearest',
+            });
+        }
+    });
 
     window.addEventListener('archive:languagechange', () => {
         renderStore();

@@ -102,13 +102,28 @@
             .replace(/^-|-$/g, '')}`;
     }
 
+    function wrapPriceFigures(text) {
+        return String(text)
+            .replace(/\$(\d+)/g, '$<span class="price-figure">$1</span>')
+            .replace(/(\d+)(\s*\$)/g, '<span class="price-figure">$1</span>$2');
+    }
+
+    function hasListedPrice(text) {
+        return /\$\d|\d+\s*\$/i.test(String(text));
+    }
+
     function applyStaticTranslations() {
         document.documentElement.lang = currentLanguage;
         document.title = t('documentTitle');
 
         document.querySelectorAll('[data-i18n]').forEach((element) => {
             const key = element.dataset.i18n;
-            element.textContent = t(key);
+            const value = t(key);
+            if (hasListedPrice(value)) {
+                element.innerHTML = wrapPriceFigures(value);
+            } else {
+                element.textContent = value;
+            }
         });
 
         if (languageSwitch) {
@@ -244,6 +259,23 @@
         return item;
     }
 
+    const SERIES_COLLECTION_BUY = {
+        'Burned Canvas': 'https://payhip.com/b/ewRz3',
+        'Corroded Silence': 'https://payhip.com/b/dp8mI',
+        'Midnight Masquerade': 'https://payhip.com/b/e8jNn',
+        'Urban Noir': 'https://payhip.com/b/eTMG3',
+        'Steel Lanes': 'https://payhip.com/b/c6q10',
+        'Faces in Void': 'https://payhip.com/b/krH6u',
+        'Cinder Veil': 'https://payhip.com/b/5gwvV',
+        'The Burning Gaze': 'https://payhip.com/b/yLG1h',
+        'Till Darkness': 'https://payhip.com/b/CgMP8',
+        'Stone Sanctuary': 'https://payhip.com/b/dGBfZ',
+        'Blackwood': 'https://payhip.com/b/fMKX4',
+        'Wet Neon Noir': 'https://payhip.com/b/Lb8Vw',
+        'Static Bloom': 'https://payhip.com/b/lOU8N',
+        'Red Eternity': 'https://payhip.com/b/etTjh',
+    };
+
     function createSeriesFormatSwitch(group, initialFormat) {
         const control = document.createElement('div');
         control.className = 'format-switch format-switch-series';
@@ -264,6 +296,25 @@
         });
 
         return control;
+    }
+
+    function createSeriesControls(group, series, initialFormat) {
+        const controls = document.createElement('div');
+        controls.className = 'archive-series-controls';
+
+        const buyUrl = SERIES_COLLECTION_BUY[series];
+        if (buyUrl) {
+            const buy = document.createElement('a');
+            buy.className = 'archive-series-buy';
+            buy.href = buyUrl;
+            buy.target = '_blank';
+            buy.rel = 'noopener noreferrer';
+            buy.textContent = t('viewCollection');
+            controls.appendChild(buy);
+        }
+
+        controls.appendChild(createSeriesFormatSwitch(group, initialFormat));
+        return controls;
     }
 
     function setSeriesFormat(group, format) {
@@ -339,7 +390,7 @@
             groupHeading.appendChild(groupLink);
 
             groupHeader.appendChild(groupHeading);
-            groupHeader.appendChild(createSeriesFormatSwitch(group, currentFormat));
+            groupHeader.appendChild(createSeriesControls(group, series, currentFormat));
 
             const grid = document.createElement('div');
             grid.className = 'archive-grid';
@@ -362,6 +413,12 @@
         const hash = (window.location.hash || '').replace(/^#/, '').toLowerCase();
         if (hash === 'photography') return 'photography';
         return 'composites';
+    }
+
+    function deepLinkId() {
+        const hash = (window.location.hash || '').replace(/^#/, '');
+        if (!hash || hash === 'composites' || hash === 'photography') return '';
+        return hash;
     }
 
     function syncNav(viewKey) {
@@ -425,13 +482,28 @@
         if (galleryFormatSwitch) galleryFormatSwitch.hidden = isPhotography;
         syncNav(viewKey);
 
-        // Keep URL hash aligned with the active category
-        const desiredHash = `#${view.hash}`;
-        if (window.location.hash !== desiredHash) {
-            history.replaceState(null, '', desiredHash);
+        const pendingDeepLink = deepLinkId();
+        const deepLinkTarget = pendingDeepLink
+            ? document.getElementById(pendingDeepLink)
+            : null;
+
+        // Preserve in-page deep links (e.g. #collection-burned-canvas).
+        // Only normalize to the category hash when there is no deep link target.
+        if (!pendingDeepLink) {
+            const desiredHash = `#${view.hash}`;
+            if (window.location.hash !== desiredHash) {
+                history.replaceState(null, '', desiredHash);
+            }
         }
 
-        if (scrollTop) {
+        if (deepLinkTarget) {
+            requestAnimationFrame(() => {
+                deepLinkTarget.scrollIntoView({
+                    behavior: 'auto',
+                    block: 'start',
+                });
+            });
+        } else if (scrollTop) {
             window.scrollTo({ top: 0, behavior: 'auto' });
         }
     }
