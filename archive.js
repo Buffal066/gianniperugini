@@ -352,9 +352,12 @@
         grid.className = 'archive-grid';
         grid.setAttribute('aria-live', 'polite');
 
+        // Photography only ships desktop watermarked previews (no mobile variants).
+        const previewFormat = id === 'photography' ? 'desktop' : currentFormat;
+
         works.forEach((work, index) => {
             if (!work.file) return;
-            grid.appendChild(createItem(work, index));
+            grid.appendChild(createItem(work, index, '', previewFormat));
         });
 
         section.appendChild(grid);
