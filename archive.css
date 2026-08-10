@@ -554,6 +554,7 @@
 #store-collections .store-product-description,
 #store-other-collections .store-product-description {
     flex: 0 1 auto;
+    margin-bottom: 1.75rem;
     font-size: 0.78rem;
     line-height: 1.45;
 }
@@ -655,7 +656,7 @@
     align-items: stretch;
     flex-direction: column;
     gap: 0.3rem;
-    margin-top: 1rem;
+    margin-top: auto;
     padding-top: 1.15rem;
 }
 
