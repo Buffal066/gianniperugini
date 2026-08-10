@@ -654,9 +654,38 @@
 #store-other-collections .store-product-footer {
     align-items: stretch;
     flex-direction: column;
-    gap: 0.55rem;
+    gap: 0.3rem;
     margin-top: 1rem;
-    padding-top: 0.85rem;
+    padding-top: 1.15rem;
+}
+
+#store-collections .store-product-price,
+#store-other-collections .store-product-price {
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#store-collections .store-product-price strong,
+#store-other-collections .store-product-price strong {
+    color: var(--text-primary);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+    white-space: nowrap;
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "lnum" 1;
+}
+
+#store-collections .store-product-price .price-figure,
+#store-other-collections .store-product-price .price-figure {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.05em;
+    font-weight: 500;
 }
 
 #store-collections .store-product-actions,
@@ -674,6 +703,8 @@
 
 #store-collections .store-preview-link,
 #store-other-collections .store-preview-link {
+    min-height: 0;
+    padding: 0.15rem 0;
     white-space: normal;
     text-align: center;
 }
