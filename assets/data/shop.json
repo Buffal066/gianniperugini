@@ -249,7 +249,7 @@
             "price": 1,
             "minimumPrice": true,
             "licence": "personal",
-            "status": "coming-soon"
+            "status": "live"
         },
         "collectionProductBySeries": {
             "Burned Canvas": "burned-canvas",
