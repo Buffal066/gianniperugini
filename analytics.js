@@ -1,5 +1,5 @@
 (function () {
-    var MEASUREMENT_ID = 'G-EZ82P4XTPJ';
+    var MEASUREMENT_ID = 'G-EZ82P4XTFW';
 
     window.dataLayer = window.dataLayer || [];
     window.gtag = function gtag() {
