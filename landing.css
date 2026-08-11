@@ -468,3 +468,47 @@
     height: 240px;
     background: #050505;
 }
+
+/* Contact page — Glace-style full section */
+.contact-page {
+    background:
+        linear-gradient(180deg, rgba(5, 5, 5, 0.72), rgba(5, 5, 5, 0.88)),
+        url('assets/images/landing-bg.png') center / cover fixed;
+}
+
+.contact-page .content-page-main {
+    min-height: calc(100dvh - 72px);
+}
+
+.contact-page .contact--page {
+    min-height: calc(100dvh - 72px);
+    padding: clamp(6.5rem, 12vh, 8rem) 0 5rem;
+    background: rgba(3, 8, 12, 0.42);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}
+
+.contact-page .contact--page .section-title {
+    margin-bottom: 1rem;
+}
+
+.contact-page .contact--page .section-subtitle {
+    margin-bottom: 0;
+}
+
+.contact-page .contact-content {
+    margin-top: 3.5rem;
+}
+
+.contact-page .contact-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.7rem, 3vw, 2rem);
+    margin-bottom: 1.5rem;
+    color: var(--accent-gold);
+    font-weight: 700;
+}
+
+.contact-page .footer {
+    background: rgba(5, 5, 5, 0.88);
+}
+
