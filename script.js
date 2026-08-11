@@ -95,6 +95,121 @@
     });
 })();
 
+// Localized, irregular brightness flicker on real streetlight bulbs.
+(function initLandingHeroFlickers() {
+    const hero = document.querySelector('.landing-hero');
+    const lights = Array.from(document.querySelectorAll('.landing-hero-flicker-light'));
+
+    if (!hero || !lights.length) return;
+
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    const imageWidth = 1600;
+    const imageHeight = 900;
+
+    function positionLights() {
+        const rect = hero.getBoundingClientRect();
+        const scale = Math.max(rect.width / imageWidth, rect.height / imageHeight);
+        const renderedWidth = imageWidth * scale;
+        const renderedHeight = imageHeight * scale;
+        const offsetX = (rect.width - renderedWidth) / 2;
+        const offsetY = (rect.height - renderedHeight) / 2;
+
+        lights.forEach((light) => {
+            const imageX = Number(light.dataset.imageX);
+            const imageY = Number(light.dataset.imageY);
+            const baseSize = Number(light.dataset.lightSize);
+
+            light.style.setProperty('--light-x', `${offsetX + imageX * scale}px`);
+            light.style.setProperty('--light-y', `${offsetY + imageY * scale}px`);
+            light.style.setProperty('--light-size', `${baseSize * scale}px`);
+        });
+    }
+
+    positionLights();
+
+    if ('ResizeObserver' in window) {
+        const observer = new ResizeObserver(positionLights);
+        observer.observe(hero);
+    } else {
+        window.addEventListener('resize', positionLights, { passive: true });
+    }
+
+    if (reducedMotion.matches || typeof lights[0].animate !== 'function') return;
+
+    const randomBetween = (minimum, maximum) => minimum + Math.random() * (maximum - minimum);
+
+    function createNaturalFlickerFrames(intensity, minimumPulses, maximumPulses) {
+        const pulses = Math.floor(randomBetween(minimumPulses, maximumPulses + 1));
+        const timeline = [{ opacity: 0, time: 0 }];
+        let time = randomBetween(0.08, 0.2);
+
+        for (let pulse = 0; pulse < pulses; pulse += 1) {
+            timeline.push({
+                opacity: randomBetween(intensity * 0.58, intensity),
+                time
+            });
+            time += randomBetween(0.035, 0.11);
+            timeline.push({
+                opacity: randomBetween(0, intensity * 0.1),
+                time
+            });
+            time += randomBetween(0.025, pulse % 2 === 0 ? 0.09 : 0.17);
+        }
+
+        time += randomBetween(0.12, 0.3);
+        timeline.push({ opacity: 0, time });
+
+        return timeline.map((frame) => ({
+            opacity: frame.opacity,
+            offset: frame.time / time
+        }));
+    }
+
+    function scheduleNaturalFlicker(light, delay) {
+        window.setTimeout(() => {
+            if (reducedMotion.matches) return;
+
+            const glow = light.querySelector('.landing-hero-light-glow');
+            const isPrimary = light.classList.contains('landing-hero-flicker-light--dramatic');
+            const intensity = isPrimary ? randomBetween(0.48, 0.68) : randomBetween(0.24, 0.4);
+            const frames = createNaturalFlickerFrames(
+                intensity,
+                isPrimary ? 5 : 3,
+                isPrimary ? 9 : 6
+            );
+            const animation = glow.animate(frames, {
+                duration: isPrimary ? randomBetween(850, 1650) : randomBetween(1200, 2300),
+                easing: 'linear'
+            });
+
+            animation.finished
+                .catch(() => {})
+                .finally(() => scheduleNaturalFlicker(
+                    light,
+                    isPrimary ? randomBetween(1800, 6500) : randomBetween(4500, 14000)
+                ));
+        }, delay);
+    }
+
+    lights.forEach((light, index) => {
+        const isPrimary = light.classList.contains('landing-hero-flicker-light--dramatic');
+        const initialDelay = isPrimary
+            ? randomBetween(700, 2200)
+            : 1400 + index * 900 + randomBetween(0, 1300);
+        scheduleNaturalFlicker(light, initialDelay);
+    });
+
+    reducedMotion.addEventListener('change', (event) => {
+        if (!event.matches) return;
+
+        lights.forEach((light) => {
+            light.getAnimations({ subtree: true }).forEach((animation) => animation.cancel());
+            light.querySelector('.landing-hero-light-glow').style.opacity = '0';
+        });
+    });
+})();
+
 function getSiteStrings() {
     const pack = window.siteI18n;
     if (!pack) return null;

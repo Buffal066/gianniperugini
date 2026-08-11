@@ -163,7 +163,8 @@
 }
 
 .landing-hero-bg-dim,
-.landing-hero-bg-lit {
+.landing-hero-bg-lit,
+.landing-hero-flickers {
     position: absolute;
     inset: 0;
     pointer-events: none;
@@ -206,6 +207,49 @@
 
 .landing-hero.is-spotlight-active .landing-hero-bg-lit {
     transition: opacity 0.12s ease-out;
+}
+
+.landing-hero-flickers {
+    z-index: 3;
+    overflow: hidden;
+}
+
+.landing-hero-flicker-light {
+    position: absolute;
+    left: var(--light-x, -200px);
+    top: var(--light-y, -200px);
+    width: var(--light-size, 60px);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.landing-hero-light-glow {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    opacity: 0;
+    will-change: opacity;
+}
+
+.landing-hero-light-glow {
+    inset: -8%;
+    mix-blend-mode: screen;
+    background: radial-gradient(
+        circle,
+        rgba(255, 252, 238, 0.72) 0 2%,
+        rgba(248, 247, 240, 0.32) 6%,
+        rgba(225, 231, 246, 0.12) 15%,
+        rgba(208, 218, 242, 0.04) 27%,
+        transparent 48%
+    );
+    filter: blur(0.25px) brightness(1.18);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .landing-hero-light-glow {
+        opacity: 0;
+    }
 }
 
 .landing-hero .hero-overlay {
@@ -386,6 +430,10 @@
 @media (max-width: 768px) {
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .landing-hero-flicker-light--wide {
+        display: none;
     }
 }
 
