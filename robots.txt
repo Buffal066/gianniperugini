@@ -1,13 +1,21 @@
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /ember-cathedral.html
+Disallow: /ember-cathedral
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /ember-cathedral.html
+Disallow: /ember-cathedral
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /ember-cathedral.html
+Disallow: /ember-cathedral
 
 User-agent: *
 Allow: /
+Disallow: /ember-cathedral.html
+Disallow: /ember-cathedral
 
 Sitemap: https://gianniperugini.com/sitemap.xml
