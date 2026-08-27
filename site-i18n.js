@@ -10,7 +10,9 @@ window.siteI18n = {
         projects: 'Projects',
         about: 'About',
         contact: 'Contact',
-        heroSubtitle: 'Creative director. Digital media specialist.',
+        heroSubtitle: 'AI Creative Designer / Creative Technologist',
+        heroLede: 'I combine design, generative AI, motion, UX/UI, and front-end technology to create campaigns, interfaces, and interactive digital experiences.',
+        viewWork: 'View work',
         aboutTitle: 'About',
         aboutEyebrow: 'Profile',
         aboutSubtitle: 'Creative direction, digital media, and atmospheric design.',
@@ -58,7 +60,7 @@ window.siteI18n = {
         footerHelp: 'Help and policies',
         faq: 'FAQ',
         licensing: 'Licensing',
-        homePageTitle: 'Gianni Perugini - Creative & Digital Media'
+        homePageTitle: 'Gianni Perugini — AI Creative Designer / Creative Technologist'
     },
     fr: {
         languageLabel: 'Choisir la langue',
@@ -71,7 +73,9 @@ window.siteI18n = {
         projects: 'Réalisations',
         about: 'À propos',
         contact: 'Contact',
-        heroSubtitle: 'Directeur créatif. Spécialiste du numérique.',
+        heroSubtitle: 'Designer créatif IA / Technologue créatif',
+        heroLede: 'Je combine design, IA générative, motion, UX/UI et technologies front-end pour créer des campagnes, des interfaces et des expériences numériques interactives.',
+        viewWork: 'Voir les réalisations',
         aboutTitle: 'À propos',
         aboutEyebrow: 'Profil',
         aboutSubtitle: 'Direction créative, médias numériques et design atmosphérique.',
@@ -119,6 +123,6 @@ window.siteI18n = {
         footerHelp: 'Aide et politiques',
         faq: 'FAQ',
         licensing: 'Licences',
-        homePageTitle: 'Gianni Perugini - Créatif et médias numériques'
+        homePageTitle: 'Gianni Perugini — Designer créatif IA / Technologue créatif'
     }
 };

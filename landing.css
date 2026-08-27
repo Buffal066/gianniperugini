@@ -313,12 +313,33 @@
 }
 
 .landing-hero .hero-subtitle {
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1.5px;
+    margin-bottom: 1rem;
+}
+
+.landing-hero .hero-lede {
+    max-width: 28rem;
+    margin: 0 0 1.75rem auto;
+    color: var(--text-secondary);
+    font-size: clamp(0.92rem, 1.4vw, 1.05rem);
+    font-weight: 300;
+    line-height: 1.55;
+    letter-spacing: 0.04em;
 }
 
 .landing-hero .hero-buttons {
-    display: none;
+    display: flex;
+    position: static;
+    left: auto;
+    bottom: auto;
+    justify-content: flex-end;
+    margin: 0;
+    pointer-events: auto;
+}
+
+.landing-hero .hero-buttons a {
+    pointer-events: auto;
 }
 
 .project-card:hover .project-image-inner {
@@ -434,6 +455,10 @@
 
     .landing-hero-flicker-light--wide {
         display: none;
+    }
+
+    .landing-hero .hero-lede {
+        max-width: 100%;
     }
 }
 
