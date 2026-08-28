@@ -606,7 +606,7 @@
         showPreviewProtectionNotice();
     });
 
-    fetch('assets/images/archive/works.json?v=20260808-photography-cleanup')
+    fetch('assets/images/archive/works.json?v=20260828-photo-pylons')
         .then((response) => {
             if (!response.ok) throw new Error('Could not load works list');
             return response.json();

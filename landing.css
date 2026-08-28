@@ -156,6 +156,7 @@
 /* Landing page hero background override */
 .landing-hero {
     background: #050505;
+    align-items: stretch;
 }
 
 .landing-hero::before {
@@ -271,10 +272,15 @@
 }
 
 .landing-hero .hero-content {
-    margin-left: auto;
-    margin-right: 8%;
+    position: absolute;
+    top: auto;
+    right: 8%;
+    bottom: 1.75rem;
+    left: auto;
+    height: auto;
+    margin: 0;
     justify-content: flex-end;
-    padding-bottom: 60px;
+    padding: 0;
     text-align: right;
     z-index: 4;
     pointer-events: none;
@@ -459,6 +465,14 @@
 
     .landing-hero .hero-lede {
         max-width: 100%;
+    }
+
+    .landing-hero .hero-content {
+        right: 20px;
+        left: 20px;
+        bottom: max(1.25rem, env(safe-area-inset-bottom, 0px) + 1rem);
+        margin: 0;
+        padding: 0;
     }
 }
 
