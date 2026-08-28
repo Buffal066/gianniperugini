@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- deployed: 2026-08-28 18:02:03 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Cathedral window P options | Gianni Perugini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #080808;
+            --card: #0c0c0c;
+            --line: #2a2a2a;
+            --crimson: #cc0000;
+            --white: #fff;
+            --muted: #9a9a9a;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: var(--bg);
+            color: var(--white);
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 300;
+        }
+        header, .wrap {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        header { padding: 2.25rem 1.5rem 1.1rem; }
+        h1 {
+            font-size: 0.78rem;
+            font-weight: 400;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--crimson);
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.95rem;
+            line-height: 1.55;
+            max-width: 46rem;
+            margin-top: 0.65rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            padding: 0.5rem 0 3rem;
+        }
+        @media (min-width: 900px) {
+            .grid { grid-template-columns: 1fr 1fr; }
+        }
+        .card {
+            border: 1px solid var(--line);
+            background: var(--card);
+            padding: 1.15rem 1.25rem 1.4rem;
+        }
+        .meta {
+            display: flex;
+            justify-content: space-between;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            font-size: 0.7rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--crimson);
+        }
+        .meta b { font-weight: 400; color: var(--muted); letter-spacing: 0.03em; text-transform: none; }
+        .mark-row {
+            display: flex;
+            align-items: flex-end;
+            gap: 0.7rem;
+            flex-wrap: wrap;
+        }
+        .word {
+            display: inline-flex;
+            align-items: flex-end;
+            gap: 0.18rem;
+        }
+        .rest {
+            font-size: 1.7rem;
+            letter-spacing: 0.08em;
+            line-height: 1;
+            padding-bottom: 0.28rem;
+        }
+        .window {
+            display: grid;
+            place-items: end center;
+            width: 3.15rem;
+            height: 4.15rem;
+            padding: 0.48rem 0.32rem 0.38rem;
+            background:
+                linear-gradient(#0c0c0c, #0c0c0c) padding-box,
+                linear-gradient(#cc0000, #7a0000) border-box;
+            border: 1px solid transparent;
+            clip-path: polygon(50% 0, 100% 18%, 100% 100%, 0 100%, 0 18%);
+        }
+        .window svg {
+            width: 1.85rem;
+            height: 2.35rem;
+            color: var(--white);
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+    <svg aria-hidden="true" width="0" height="0" style="position:absolute">
+        <defs>
+            <path id="letter-g" d="M58.2 18.4c-3.6-8.6-14.2-14.2-28.1-14.2C14.2 4.2 3 16.8 3 38.6c0 23.2 11.6 36.2 30.4 36.2 9.6 0 17.4-3.4 22.6-9.2v8.6h10.8V28.8H44.6v10.4h9.2c-1.2 10.4-8.2 16.8-18.8 16.8-12.6 0-19.4-9.8-19.4-25.8 0-15.2 6.6-24.6 18.6-24.6 6.8 0 12.2 2.8 14.8 8.2l9.2-5.4Z"/>
+            <path id="p1" d="M10 8h21c15.5 0 26 8.2 26 23.2 0 15.2-10.4 24.2-26.4 24.2H24v32H10V8Zm14 13.2v21.2h7.2c8.6 0 13.4-4.6 13.4-10.6 0-6-4.6-10.6-13.2-10.6H24Z"/>
+            <path id="p2" d="M12 8h18v18h8l18 18-18 18h-8v26H12V8Zm18 24v20h5l9-10-9-10h-5Z"/>
+            <path id="p3" d="M14 8h18c12.5 0 21 6.2 21 17.4S44.5 43 32 43H28v45H14V8Zm14 12.4v10.2h4.2c5.4 0 8.4-2.6 8.4-5.1 0-2.6-3-5.1-8.4-5.1H28Z"/>
+            <path id="p4" d="M11 8h20v22l22 20-22 20v18H11V8Zm20 28.5v15l8.5-7.5-8.5-7.5Z"/>
+            <path id="p5" d="M12 8h16v24c14 1.2 26 10.5 26 24.5 0 9.5-6 17-16 21.2L50 88H12V8Zm16 16v28.5c8.5-1 15.5-7.2 15.5-15.2S36.5 23.2 28 24Z"/>
+            <path id="p6" fill-rule="evenodd" d="M10 8h24c14 0 24 8 24 22.5S48 53 34 53H24v35H10V8Zm14 14v17h10c7 0 11-4 11-8.5S41 22 34 22H24Z"/>
+            <path id="p7" d="M8 8h20c15 0 25 8 25 22.8 0 15-10 24-25.4 24H22v25H8V8Zm14 13.5v20h6.5c8.2 0 12.8-4.4 12.8-10 0-5.6-4.5-10-12.6-10H22ZM8 80h36v8H8z"/>
+            <path id="p8" d="M18 8h14c11 0 18 7.4 18 20.6 0 13.4-7 21.2-18.4 21.2H30v38H18V8Zm12 13v16h4c5.6 0 8.6-3.6 8.6-8 0-4.4-3-8-8.6-8H30Z"/>
+            <path id="p9" d="M12 8h16v16h22v12H28v12h10c12 0 20 7 20 18.5 0 12-8.4 21.5-22 21.5H12V8Zm16 46v16h8.5c6.4 0 10.2-3.6 10.2-8.2 0-4.6-3.8-7.8-10.2-7.8H28Z"/>
+            <path id="p10" d="M12 8h16v14a22 22 0 1 1 0 44v22H12V8Zm16 20.5v21a10.6 10.6 0 1 0 0-21Z"/>
+        </defs>
+    </svg>
+
+    <header>
+        <h1>Local preview · #15 G locked · 10 P marks</h1>
+        <p>Same cathedral window and the same G you liked. Only the P changes. Rest of the name stays Josefin. Not on the live site.</p>
+    </header>
+
+    <div class="wrap">
+        <div class="grid">
+            <article class="card">
+                <p class="meta">P1 <b>Classic bowl</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#p1" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P2 <b>Textura diamond</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#p2" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P3 <b>High small bowl</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#p3" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P4 <b>Pointed gothic</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#p4" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P5 <b>Open bowl</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#p5" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P6 <b>Even-odd counter</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#p6" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P7 <b>Slab foot</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#p7" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P8 <b>Condensed pillar</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#p8" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P9 <b>Crossbar / banner</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#p9" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P10 <b>Round rotunda</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><svg viewBox="0 0 70 96"><use href="#p10" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+        </div>
+    </div>
+</body>
+</html>

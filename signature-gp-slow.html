@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!-- deployed: 2026-08-28 18:02:03 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Slow ember · Maguntia family | Gianni Perugini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Ewert&family=Fruktur&family=Grenze+Gotisch:wght@500&family=Josefin+Sans:wght@300;400&family=Kings&family=New+Rocker&family=Pirata+One&family=Texturina:opsz,wght@72,500&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #080808;
+            --card: #0c0c0c;
+            --line: #2a2a2a;
+            --crimson: #cc0000;
+            --white: #fff;
+            --muted: #9a9a9a;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: var(--bg);
+            color: var(--white);
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 300;
+        }
+        header, .wrap {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        header { padding: 2.25rem 1.5rem 1.1rem; }
+        h1 {
+            font-size: 0.78rem;
+            font-weight: 400;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--crimson);
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.95rem;
+            line-height: 1.55;
+            max-width: 46rem;
+            margin-top: 0.65rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            padding: 0.5rem 0 3rem;
+        }
+        @media (min-width: 900px) {
+            .grid { grid-template-columns: 1fr 1fr; }
+        }
+        .card {
+            border: 1px solid var(--line);
+            background: var(--card);
+            padding: 1.15rem 1.25rem 1.4rem;
+        }
+        .meta {
+            display: flex;
+            justify-content: space-between;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            font-size: 0.7rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--crimson);
+        }
+        .meta b { font-weight: 400; color: var(--muted); letter-spacing: 0.03em; text-transform: none; }
+        .mark-row {
+            display: flex;
+            align-items: flex-end;
+            gap: 0.7rem;
+            flex-wrap: wrap;
+        }
+        .word {
+            display: inline-flex;
+            align-items: flex-end;
+            gap: 0.18rem;
+        }
+        .rest {
+            font-size: 1.7rem;
+            letter-spacing: 0.08em;
+            line-height: 1;
+            padding-bottom: 0.28rem;
+        }
+        .window {
+            position: relative;
+            display: grid;
+            place-items: end center;
+            width: 3.15rem;
+            height: 4.15rem;
+            padding: 0.42rem 0.28rem 0.32rem;
+            overflow: visible;
+            background: #0c0c0c;
+            border: 1px solid #8a140c;
+            clip-path: polygon(50% 0, 100% 18%, 100% 100%, 0 100%, 0 18%);
+        }
+        .window-ember {
+            position: absolute;
+            inset: -18%;
+            border-radius: 0;
+            opacity: 0;
+            pointer-events: none;
+            mix-blend-mode: screen;
+            background: radial-gradient(
+                circle,
+                rgba(255, 220, 170, 0.42) 0 8%,
+                rgba(204, 40, 12, 0.28) 22%,
+                rgba(140, 16, 8, 0.1) 48%,
+                transparent 70%
+            );
+            filter: blur(0.4px);
+        }
+        .window svg,
+        .p-mark {
+            position: relative;
+            z-index: 1;
+            color: var(--white);
+        }
+        .window svg {
+            width: 1.85rem;
+            height: 2.35rem;
+            overflow: visible;
+        }
+        .p-mark {
+            display: block;
+            line-height: 0.85;
+            font-weight: 400;
+            padding-bottom: 0.05rem;
+        }
+        .p1 { font-family: UnifrakturMaguntia, serif; font-size: 2.15rem; }
+        .p2 { font-family: UnifrakturCook, serif; font-size: 2.2rem; }
+        .p3 { font-family: Fruktur, serif; font-size: 2.05rem; }
+        .p4 { font-family: "Pirata One", serif; font-size: 2.15rem; }
+        .p5 { font-family: Kings, serif; font-size: 2.2rem; }
+        .p6 { font-family: "Grenze Gotisch", serif; font-size: 2.25rem; }
+        .p7 { font-family: Texturina, serif; font-size: 2.05rem; }
+        .p8 { font-family: "New Rocker", serif; font-size: 1.95rem; }
+        .p9 { font-family: Ewert, serif; font-size: 1.85rem; }
+        .p10 { font-family: "Bigelow Rules", serif; font-size: 2.35rem; }
+        @media (prefers-reduced-motion: reduce) {
+            .window-ember { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <svg aria-hidden="true" width="0" height="0" style="position:absolute">
+        <defs>
+            <path id="letter-g" d="M59.2 20.2c-4.2-10.4-16-17.2-31.2-17.2C12.4 3 2.2 16.2 2.2 38.6c0 23.2 11.6 36.2 30.4 36.2 9.6 0 17.4-3.4 22.6-9.2v8.6h10.8V28.8H44.6v10.4h9.2c-1.2 10.4-8.2 16.8-18.8 16.8-12.6 0-19.4-9.8-19.4-25.8 0-12.4 6.2-21.2 17.4-21.2 6.4 0 11.4 2.4 14.2 7.4l11.8-6.2Z"/>
+        </defs>
+    </svg>
+
+    <header>
+        <h1>Local preview · P1 family · slow streetlight flicker</h1>
+        <p>P1 is Unifraktur Maguntia again, plus nine close blackletter cousins. The windows sit quiet, then stutter the same way the background lamps do — long dark, short irregular pulse. Not on the live site.</p>
+    </header>
+
+    <div class="wrap">
+        <div class="grid">
+            <article class="card">
+                <p class="meta">P1 <b>Unifraktur Maguntia</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><span class="window-ember"></span><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><span class="window-ember"></span><span class="p-mark p1">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P2 <b>Unifraktur Cook</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><span class="window-ember"></span><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><span class="window-ember"></span><span class="p-mark p2">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P3 <b>Fruktur</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><span class="window-ember"></span><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><span class="window-ember"></span><span class="p-mark p3">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P4 <b>Pirata One</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><span class="window-ember"></span><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><span class="window-ember"></span><span class="p-mark p4">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P5 <b>Kings</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><span class="window-ember"></span><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><span class="window-ember"></span><span class="p-mark p5">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P6 <b>Grenze Gotisch</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><span class="window-ember"></span><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><span class="window-ember"></span><span class="p-mark p6">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P7 <b>Texturina</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><span class="window-ember"></span><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><span class="window-ember"></span><span class="p-mark p7">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P8 <b>New Rocker</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><span class="window-ember"></span><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><span class="window-ember"></span><span class="p-mark p8">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P9 <b>Ewert</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><span class="window-ember"></span><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><span class="window-ember"></span><span class="p-mark p9">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P10 <b>Bigelow Rules</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window"><span class="window-ember"></span><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window"><span class="window-ember"></span><span class="p-mark p10">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+            if (reducedMotion.matches) return;
+
+            const randomBetween = (minimum, maximum) => minimum + Math.random() * (maximum - minimum);
+
+            function createNaturalFlickerFrames(intensity, minimumPulses, maximumPulses) {
+                const pulses = Math.floor(randomBetween(minimumPulses, maximumPulses + 1));
+                const timeline = [{ opacity: 0, time: 0 }];
+                let time = randomBetween(0.08, 0.2);
+
+                for (let pulse = 0; pulse < pulses; pulse += 1) {
+                    timeline.push({ opacity: randomBetween(intensity * 0.58, intensity), time });
+                    time += randomBetween(0.035, 0.11);
+                    timeline.push({ opacity: randomBetween(0, intensity * 0.1), time });
+                    time += randomBetween(0.025, pulse % 2 === 0 ? 0.09 : 0.17);
+                }
+
+                time += randomBetween(0.12, 0.3);
+                timeline.push({ opacity: 0, time });
+
+                return timeline.map((frame) => ({
+                    opacity: frame.opacity,
+                    offset: frame.time / time
+                }));
+            }
+
+            function scheduleNaturalFlicker(glow, delay) {
+                window.setTimeout(() => {
+                    if (reducedMotion.matches || typeof glow.animate !== 'function') return;
+
+                    const frames = createNaturalFlickerFrames(randomBetween(0.32, 0.58), 3, 6);
+                    const animation = glow.animate(frames, {
+                        duration: randomBetween(1200, 2300),
+                        easing: 'linear'
+                    });
+
+                    animation.finished
+                        .catch(() => {})
+                        .finally(() => scheduleNaturalFlicker(glow, randomBetween(4500, 14000)));
+                }, delay);
+            }
+
+            document.querySelectorAll('.window-ember').forEach((glow, index) => {
+                scheduleNaturalFlicker(glow, 1400 + index * 900 + randomBetween(0, 1300));
+            });
+        })();
+    </script>
+</body>
+</html>

@@ -133,7 +133,7 @@ function collectionPage(product) {
     <meta name="twitter:image" content="${socialImage}">
     <link rel="icon" href="../favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
-    <link rel="stylesheet" href="../styles.css?v=20260828-nav-shift">
+    <link rel="stylesheet" href="../styles.css?v=20260828-nav-white">
     <link rel="stylesheet" href="../collection.css?v=20260809-responsive-formats">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!-- deployed: 2026-08-28 18:02:03 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Gothic signature samples | Gianni Perugini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Imperial+Script&family=Josefin+Sans:wght@300;400&family=Kings&family=Mea+Culpa&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #080808;
+            --line: #2a2a2a;
+            --crimson: #cc0000;
+            --white: #ffffff;
+            --muted: #9a9a9a;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            min-height: 100vh;
+            background: var(--bg);
+            color: var(--white);
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 300;
+        }
+        header {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2.25rem 1.5rem 1.25rem;
+        }
+        h1 {
+            font-size: 0.78rem;
+            font-weight: 400;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--crimson);
+            margin-bottom: 0.65rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.95rem;
+            line-height: 1.55;
+            max-width: 44rem;
+        }
+        .stage {
+            position: relative;
+            min-height: 52vh;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            padding: 3rem 8% 2.5rem;
+            background:
+                linear-gradient(180deg, rgba(8, 8, 8, 0.15), rgba(8, 8, 8, 0.72)),
+                #0a0a0a;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+        }
+        .hero-copy {
+            text-align: right;
+            max-width: 48rem;
+        }
+        .sign-svg {
+            width: min(100%, 42rem);
+            height: auto;
+            overflow: visible;
+            display: block;
+            margin-left: auto;
+        }
+        .sign-text {
+            font-family: "Mea Culpa", cursive;
+            font-size: 92px;
+            fill: transparent;
+            stroke: #fff;
+            stroke-width: 0.55;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-dasharray: 1400;
+            stroke-dashoffset: 1400;
+        }
+        .stage.is-playing .sign-text {
+            animation: sign-draw 2.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+        @keyframes sign-draw {
+            0% { stroke-dashoffset: 1400; fill: transparent; stroke: #fff; }
+            72% { stroke-dashoffset: 0; fill: transparent; stroke: #fff; }
+            100% { stroke-dashoffset: 0; fill: #fff; stroke: transparent; }
+        }
+        .rule {
+            width: 100%;
+            height: 2px;
+            margin: 0.15rem 0 1rem;
+            background: var(--crimson);
+            opacity: 0.75;
+            transform-origin: right center;
+        }
+        .stage.is-playing .rule {
+            transform: scaleX(0);
+            animation: rule-in 0.7s ease 2.15s forwards;
+        }
+        @keyframes rule-in {
+            to { transform: scaleX(1); }
+        }
+        .subtitle {
+            font-size: 1.05rem;
+            letter-spacing: 0.04em;
+            color: #e8e8e8;
+        }
+        .replay {
+            margin-top: 1.35rem;
+            padding: 0.45rem 1rem;
+            border: 1px solid var(--crimson);
+            background: var(--crimson);
+            color: var(--white);
+            font: inherit;
+            font-size: 0.68rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        .grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3.5rem;
+            display: grid;
+            gap: 1rem;
+        }
+        .card {
+            border: 1px solid var(--line);
+            background: #0c0c0c;
+            padding: 1.15rem 1.35rem 1.35rem;
+        }
+        .card .meta {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            color: var(--crimson);
+            font-size: 0.72rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            margin-bottom: 0.85rem;
+        }
+        .card .meta span:last-child {
+            color: var(--muted);
+            letter-spacing: 0.04em;
+            text-transform: none;
+        }
+        .specimen {
+            color: var(--white);
+            line-height: 1;
+            white-space: nowrap;
+        }
+        .kings { font-family: Kings, serif; font-size: clamp(2.4rem, 5vw, 3.6rem); }
+        .fraktur { font-family: UnifrakturMaguntia, serif; font-size: clamp(2.2rem, 4.6vw, 3.3rem); }
+        .mea { font-family: "Mea Culpa", cursive; font-size: clamp(3rem, 6vw, 4.4rem); }
+        .imperial { font-family: "Imperial Script", cursive; font-size: clamp(2.8rem, 5.6vw, 4rem); }
+        .vibes { font-family: "Great Vibes", cursive; font-size: clamp(2.8rem, 5.6vw, 4rem); }
+        .now { font-family: "Josefin Sans", sans-serif; font-weight: 300; font-size: clamp(2.2rem, 4.8vw, 3.4rem); letter-spacing: 0.04em; }
+        .notes {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem 3.5rem;
+            color: var(--muted);
+            font-size: 0.92rem;
+            line-height: 1.65;
+        }
+        .notes strong { color: #ddd; font-weight: 400; }
+        @media (max-width: 720px) {
+            .specimen { white-space: normal; }
+            .stage { justify-content: center; padding: 2.5rem 1.25rem; }
+            .hero-copy { text-align: center; }
+            .sign-svg { margin: 0 auto; }
+            .rule { transform-origin: center; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Local preview · not on the live site</h1>
+        <p>Gothic and signature options for the hero name. The top sample is a vector “being signed” effect: the letter strokes draw on, then fill in. Replay it as many times as you want.</p>
+    </header>
+
+    <section class="stage" id="stage" aria-label="Signing animation sample">
+        <div class="hero-copy">
+            <svg class="sign-svg" viewBox="0 0 920 160" role="img" aria-label="Gianni Perugini signed in Mea Culpa">
+                <text class="sign-text" x="910" y="118" text-anchor="end">Gianni Perugini</text>
+            </svg>
+            <div class="rule" aria-hidden="true"></div>
+            <p class="subtitle">AI Creative Designer / Creative Technologist</p>
+            <button class="replay" type="button" id="replay">Replay signing</button>
+        </div>
+    </section>
+
+    <div class="grid">
+        <article class="card">
+            <p class="meta"><span>A · Current</span><span>Josefin Sans Light</span></p>
+            <p class="specimen now">Gianni Perugini</p>
+        </article>
+        <article class="card">
+            <p class="meta"><span>B · Gothic quill</span><span>Mea Culpa · used in the animation</span></p>
+            <p class="specimen mea">Gianni Perugini</p>
+        </article>
+        <article class="card">
+            <p class="meta"><span>C · Blackletter</span><span>Kings</span></p>
+            <p class="specimen kings">Gianni Perugini</p>
+        </article>
+        <article class="card">
+            <p class="meta"><span>D · Fraktur</span><span>Unifraktur Maguntia</span></p>
+            <p class="specimen fraktur">Gianni Perugini</p>
+        </article>
+        <article class="card">
+            <p class="meta"><span>E · Formal signature</span><span>Imperial Script</span></p>
+            <p class="specimen imperial">Gianni Perugini</p>
+        </article>
+        <article class="card">
+            <p class="meta"><span>F · Classic script</span><span>Great Vibes</span></p>
+            <p class="specimen vibes">Gianni Perugini</p>
+        </article>
+    </div>
+
+    <div class="notes">
+        <p><strong>What you are seeing.</strong> B–D are the gothic lane. E–F are handwritten signatures without the blackletter. The animation is a live web font stroked as vector outlines, then filled. It is a sample, not the live homepage.</p>
+    </div>
+
+    <script>
+        const stage = document.getElementById('stage');
+        const play = () => {
+            stage.classList.remove('is-playing');
+            void stage.offsetWidth;
+            stage.classList.add('is-playing');
+        };
+        document.getElementById('replay').addEventListener('click', play);
+        play();
+    </script>
+</body>
+</html>

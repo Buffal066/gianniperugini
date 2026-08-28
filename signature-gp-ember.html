@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!-- deployed: 2026-08-28 18:02:03 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Ember windows · gothic P | Gianni Perugini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Fruktur&family=Grenze+Gotisch:wght@500&family=Josefin+Sans:wght@300;400&family=Kings&family=MedievalSharp&family=Metamorphous&family=Pirata+One&family=Texturina:opsz,wght@72,500&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #080808;
+            --card: #0c0c0c;
+            --line: #2a2a2a;
+            --crimson: #cc0000;
+            --white: #fff;
+            --muted: #9a9a9a;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: var(--bg);
+            color: var(--white);
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 300;
+        }
+        header, .wrap {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        header { padding: 2.25rem 1.5rem 1.1rem; }
+        h1 {
+            font-size: 0.78rem;
+            font-weight: 400;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--crimson);
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.95rem;
+            line-height: 1.55;
+            max-width: 46rem;
+            margin-top: 0.65rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            padding: 0.5rem 0 3rem;
+        }
+        @media (min-width: 900px) {
+            .grid { grid-template-columns: 1fr 1fr; }
+        }
+        .card {
+            border: 1px solid var(--line);
+            background: var(--card);
+            padding: 1.15rem 1.25rem 1.4rem;
+        }
+        .meta {
+            display: flex;
+            justify-content: space-between;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            font-size: 0.7rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--crimson);
+        }
+        .meta b { font-weight: 400; color: var(--muted); letter-spacing: 0.03em; text-transform: none; }
+        .mark-row {
+            display: flex;
+            align-items: flex-end;
+            gap: 0.7rem;
+            flex-wrap: wrap;
+        }
+        .word {
+            display: inline-flex;
+            align-items: flex-end;
+            gap: 0.18rem;
+        }
+        .rest {
+            font-size: 1.7rem;
+            letter-spacing: 0.08em;
+            line-height: 1;
+            padding-bottom: 0.28rem;
+        }
+        .window {
+            position: relative;
+            display: grid;
+            place-items: end center;
+            width: 3.15rem;
+            height: 4.15rem;
+            padding: 0.42rem 0.28rem 0.32rem;
+            background: #0c0c0c;
+            border: 1px solid #9a1208;
+            clip-path: polygon(50% 0, 100% 18%, 100% 100%, 0 100%, 0 18%);
+            animation: ember-border 2.85s linear infinite;
+        }
+        .window::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background: radial-gradient(120% 80% at 50% 100%, rgba(180, 30, 8, 0.35), transparent 62%);
+            animation: ember-glow 1.72s linear infinite;
+        }
+        .window-p { animation-delay: -0.9s; }
+        .window-p::after { animation-delay: -0.4s; }
+        .card:nth-child(2) .window-g { animation-delay: -0.35s; }
+        .card:nth-child(2) .window-p { animation-delay: -1.2s; }
+        .card:nth-child(3) .window-g { animation-delay: -1.1s; }
+        .card:nth-child(3) .window-p { animation-delay: -0.2s; }
+        .card:nth-child(4) .window-g { animation-delay: -1.7s; }
+        .card:nth-child(4) .window-p { animation-delay: -0.55s; }
+        .window svg,
+        .p-mark {
+            position: relative;
+            z-index: 1;
+            color: var(--white);
+        }
+        .window svg {
+            width: 1.85rem;
+            height: 2.35rem;
+            overflow: visible;
+        }
+        .p-mark {
+            display: block;
+            line-height: 0.85;
+            font-size: 2.05rem;
+            font-weight: 400;
+            padding-bottom: 0.05rem;
+        }
+        .p-maguntia { font-family: UnifrakturMaguntia, serif; font-size: 2.15rem; }
+        .p-cook { font-family: UnifrakturCook, serif; font-size: 2.2rem; }
+        .p-kings { font-family: Kings, serif; font-size: 2.2rem; }
+        .p-grenze { font-family: "Grenze Gotisch", serif; font-size: 2.25rem; }
+        .p-texturina { font-family: Texturina, serif; font-size: 2.05rem; }
+        .p-pirata { font-family: "Pirata One", serif; font-size: 2.15rem; }
+        .p-fruktur { font-family: Fruktur, serif; font-size: 2.05rem; }
+        .p-medieval { font-family: MedievalSharp, serif; font-size: 2.05rem; }
+        .p-meta { font-family: Metamorphous, serif; font-size: 1.7rem; }
+        .p-almendra { font-family: "Almendra Display", serif; font-size: 2.2rem; }
+
+        /* Ember: stay in red-orange. Jitter brightness, not hue. No yellow bulbs. */
+        @keyframes ember-border {
+            0%   { border-color: #8f1008; filter: brightness(0.88); }
+            3%   { border-color: #c42812; filter: brightness(1.12); }
+            4%   { border-color: #6a0c08; filter: brightness(0.72); }
+            7%   { border-color: #d43414; filter: brightness(1.18); }
+            11%  { border-color: #a81810; filter: brightness(0.94); }
+            12%  { border-color: #e04018; filter: brightness(1.28); }
+            14%  { border-color: #b41c10; filter: brightness(0.9); }
+            21%  { border-color: #c83014; filter: brightness(1.06); }
+            28%  { border-color: #971408; filter: brightness(0.84); }
+            29%  { border-color: #6e0e08; filter: brightness(0.68); }
+            32%  { border-color: #dc3816; filter: brightness(1.22); }
+            39%  { border-color: #b01c10; filter: brightness(0.96); }
+            47%  { border-color: #c42412; filter: brightness(1.08); }
+            48%  { border-color: #7a1008; filter: brightness(0.76); }
+            52%  { border-color: #e0441c; filter: brightness(1.26); }
+            61%  { border-color: #a4140c; filter: brightness(0.9); }
+            70%  { border-color: #cc2c12; filter: brightness(1.1); }
+            78%  { border-color: #8c1208; filter: brightness(0.82); }
+            79%  { border-color: #d83614; filter: brightness(1.2); }
+            86%  { border-color: #b81810; filter: brightness(0.95); }
+            93%  { border-color: #c22c14; filter: brightness(1.05); }
+            100% { border-color: #8f1008; filter: brightness(0.88); }
+        }
+        @keyframes ember-glow {
+            0%   { opacity: 0.28; }
+            6%   { opacity: 0.55; }
+            7%   { opacity: 0.18; }
+            15%  { opacity: 0.48; }
+            22%  { opacity: 0.3; }
+            23%  { opacity: 0.62; }
+            31%  { opacity: 0.22; }
+            44%  { opacity: 0.4; }
+            53%  { opacity: 0.16; }
+            54%  { opacity: 0.58; }
+            68%  { opacity: 0.34; }
+            77%  { opacity: 0.5; }
+            84%  { opacity: 0.2; }
+            92%  { opacity: 0.42; }
+            100% { opacity: 0.28; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .window,
+            .window::after { animation: none; }
+        }
+    </style>
+</head>
+<body>
+    <svg aria-hidden="true" width="0" height="0" style="position:absolute">
+        <defs>
+            <path id="letter-g" d="M59.2 20.2c-4.2-10.4-16-17.2-31.2-17.2C12.4 3 2.2 16.2 2.2 38.6c0 23.2 11.6 36.2 30.4 36.2 9.6 0 17.4-3.4 22.6-9.2v8.6h10.8V28.8H44.6v10.4h9.2c-1.2 10.4-8.2 16.8-18.8 16.8-12.6 0-19.4-9.8-19.4-25.8 0-12.4 6.2-21.2 17.4-21.2 6.4 0 11.4 2.4 14.2 7.4l11.8-6.2Z"/>
+        </defs>
+    </svg>
+
+    <header>
+        <h1>Local preview · ember flicker · blackletter P</h1>
+        <p>Same G. The P is now a real gothic letter, not a drawn shape. The windows stay in ember red and stutter in brightness — they should not cycle like Christmas lights. Not on the live site.</p>
+    </header>
+
+    <div class="wrap">
+        <div class="grid">
+            <article class="card">
+                <p class="meta">P1 <b>Unifraktur Maguntia</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><span class="p-mark p-maguntia">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P2 <b>Unifraktur Cook</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><span class="p-mark p-cook">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P3 <b>Kings</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><span class="p-mark p-kings">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P4 <b>Grenze Gotisch</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><span class="p-mark p-grenze">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P5 <b>Texturina</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><span class="p-mark p-texturina">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P6 <b>Pirata One</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><span class="p-mark p-pirata">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P7 <b>Fruktur</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><span class="p-mark p-fruktur">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P8 <b>MedievalSharp</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><span class="p-mark p-medieval">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P9 <b>Metamorphous</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><span class="p-mark p-meta">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">P10 <b>Almendra Display</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><span class="p-mark p-almendra">P</span></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+        </div>
+    </div>
+</body>
+</html>

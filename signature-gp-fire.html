@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!-- deployed: 2026-08-28 18:02:03 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Gothic P + fire windows | Gianni Perugini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #080808;
+            --card: #0c0c0c;
+            --line: #2a2a2a;
+            --crimson: #cc0000;
+            --white: #fff;
+            --muted: #9a9a9a;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: var(--bg);
+            color: var(--white);
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 300;
+        }
+        header, .wrap {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        header { padding: 2.25rem 1.5rem 1.1rem; }
+        h1 {
+            font-size: 0.78rem;
+            font-weight: 400;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--crimson);
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.95rem;
+            line-height: 1.55;
+            max-width: 46rem;
+            margin-top: 0.65rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            padding: 0.5rem 0 3rem;
+        }
+        @media (min-width: 900px) {
+            .grid { grid-template-columns: 1fr 1fr; }
+        }
+        .card {
+            border: 1px solid var(--line);
+            background: var(--card);
+            padding: 1.15rem 1.25rem 1.4rem;
+        }
+        .meta {
+            display: flex;
+            justify-content: space-between;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            font-size: 0.7rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--crimson);
+        }
+        .meta b { font-weight: 400; color: var(--muted); letter-spacing: 0.03em; text-transform: none; }
+        .mark-row {
+            display: flex;
+            align-items: flex-end;
+            gap: 0.7rem;
+            flex-wrap: wrap;
+        }
+        .word {
+            display: inline-flex;
+            align-items: flex-end;
+            gap: 0.18rem;
+        }
+        .rest {
+            font-size: 1.7rem;
+            letter-spacing: 0.08em;
+            line-height: 1;
+            padding-bottom: 0.28rem;
+        }
+        .window {
+            display: grid;
+            place-items: end center;
+            width: 3.15rem;
+            height: 4.15rem;
+            padding: 0.48rem 0.32rem 0.38rem;
+            background: #0c0c0c;
+            border: 1px solid #cc0000;
+            clip-path: polygon(50% 0, 100% 18%, 100% 100%, 0 100%, 0 18%);
+            animation: fire-flicker 1.35s ease-in-out infinite;
+        }
+        .window-p { animation-delay: 0.22s; }
+        .card:nth-child(odd) .window-g { animation-duration: 1.15s; }
+        .card:nth-child(even) .window-p { animation-duration: 1.55s; }
+        .window svg {
+            width: 1.85rem;
+            height: 2.35rem;
+            color: var(--white);
+            overflow: visible;
+        }
+        @keyframes fire-flicker {
+            0%, 100% {
+                border-color: #cc0000;
+                filter: drop-shadow(0 0 3px #cc0000);
+            }
+            14% {
+                border-color: #e07820;
+                filter: drop-shadow(0 0 6px #e07820);
+            }
+            22% {
+                border-color: #cc0000;
+                filter: drop-shadow(0 0 2px #cc0000);
+            }
+            41% {
+                border-color: #f0c84a;
+                filter: drop-shadow(0 0 8px #f0c84a);
+            }
+            58% {
+                border-color: #e07820;
+                filter: drop-shadow(0 0 5px #e07820);
+            }
+            73% {
+                border-color: #f5d76a;
+                filter: drop-shadow(0 0 7px #e8b83a);
+            }
+            86% {
+                border-color: #e07820;
+                filter: drop-shadow(0 0 4px #cc0000);
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .window { animation: none; border-color: #cc0000; }
+        }
+    </style>
+</head>
+<body>
+    <svg aria-hidden="true" width="0" height="0" style="position:absolute">
+        <defs>
+            <!-- Same G, heavier top arc only. Bottom bowl unchanged. -->
+            <path id="letter-g" d="M59.2 20.2c-4.2-10.4-16-17.2-31.2-17.2C12.4 3 2.2 16.2 2.2 38.6c0 23.2 11.6 36.2 30.4 36.2 9.6 0 17.4-3.4 22.6-9.2v8.6h10.8V28.8H44.6v10.4h9.2c-1.2 10.4-8.2 16.8-18.8 16.8-12.6 0-19.4-9.8-19.4-25.8 0-12.4 6.2-21.2 17.4-21.2 6.4 0 11.4 2.4 14.2 7.4l11.8-6.2Z"/>
+
+            <path id="gp1" fill-rule="evenodd" d="M10 7h22v18h10L64 46 42 67H32v22H10V7Zm22 26 10 13-10 13-10-13 10-13Z"/>
+            <path id="gp2" fill-rule="evenodd" d="M9 6h18l8 10h8l20 22-20 22H35l-8 10v20H9V6Zm18 24 8 12-8 12H21l-8-12 8-12h6Z"/>
+            <path id="gp3" d="M11 7h20v20h12l18 19v6L43 71H31v18H11V7Zm20 26v22h6l10-11v-1L37 33h-6Z"/>
+            <path id="gp4" fill-rule="evenodd" d="M10 8h20v16l28 24-28 24v16H10V8Zm20 24 12 16-12 16V32Z"/>
+            <path id="gp5" fill-rule="evenodd" d="M8 8h10l8-6h10v14h8l18 22-18 22h-8v34H8V8Zm20 22 8 14-8 14-8-14 8-14Z"/>
+            <path id="gp6" fill-rule="evenodd" d="M12 6h18v20h14L66 48 44 70H30v10l-8 10H12V6Zm18 26 9 16-9 16V32Z"/>
+            <path id="gp7" fill-rule="evenodd" d="M10 8h22v16h12l18 22-18 22H32v20H10V8Zm14 12v16h8l12 14-12 14h-8v16h8V70h8l14-18-14-18h-8V20h-8Zm8 16 7 12-7 12V36Z"/>
+            <path id="gp8" d="M11 7h18v14h24v12H29v10h14c14 0 24 8 24 22 0 15-10 24-26 24H11V7Zm18 42v22h14c8 0 13-5 13-11s-5-11-13-11H29Z"/>
+            <path id="gp9" fill-rule="evenodd" d="M16 7h16v18h8l22 23-22 23h-8v17H16V7Zm16 26 9 15-9 15V33Z"/>
+            <path id="gp10" fill-rule="evenodd" d="M8 8h20l6-6h6v16h10l18 20v8L50 68H40l-6 6v14H8V8Zm20 22 10 14-10 14H22l-10-14 10-14h8Z"/>
+        </defs>
+    </svg>
+
+    <header>
+        <h1>Local preview · thicker G top · gothic P · fire windows</h1>
+        <p>G is the same mark with a heavier top. Ten new blackletter P marks. The cathedral frames flicker red, orange, and yellow. Not on the live site.</p>
+    </header>
+
+    <div class="wrap">
+        <div class="grid">
+            <article class="card">
+                <p class="meta">GP1 <b>Diamond textura</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><svg viewBox="0 0 70 96"><use href="#gp1" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">GP2 <b>Beaked fraktur</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><svg viewBox="0 0 70 96"><use href="#gp2" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">GP3 <b>Broken bowl</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><svg viewBox="0 0 70 96"><use href="#gp3" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">GP4 <b>Ogive cut</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><svg viewBox="0 0 70 96"><use href="#gp4" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">GP5 <b>Forked crown</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><svg viewBox="0 0 70 96"><use href="#gp5" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">GP6 <b>Pointed foot</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><svg viewBox="0 0 70 96"><use href="#gp6" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">GP7 <b>Double-cut</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><svg viewBox="0 0 70 96"><use href="#gp7" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">GP8 <b>Gothic banner</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><svg viewBox="0 0 70 96"><use href="#gp8" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">GP9 <b>Narrow tower</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><svg viewBox="0 0 70 96"><use href="#gp9" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <p class="meta">GP10 <b>Horned rotunda</b></p>
+                <div class="mark-row">
+                    <span class="word"><span class="window window-g"><svg viewBox="0 0 70 96"><use href="#letter-g" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">ianni</span></span>
+                    <span class="word"><span class="window window-p"><svg viewBox="0 0 70 96"><use href="#gp10" fill-rule="evenodd" fill="currentColor"/></svg></span><span class="rest">erugini</span></span>
+                </div>
+            </article>
+        </div>
+    </div>
+</body>
+</html>

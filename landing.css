@@ -301,6 +301,42 @@
     display: inline;
 }
 
+.landing-hero .hero-title .hero-name-mark {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: baseline;
+    gap: 0.4em;
+}
+
+.hero-name-word {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.02em;
+}
+
+.hero-name-rest {
+    letter-spacing: 0.04em;
+    line-height: 1;
+}
+
+.hero-init-g {
+    width: 0.78em;
+    height: 1em;
+    display: block;
+    overflow: visible;
+    color: inherit;
+    transform: translateY(0.26em);
+}
+
+.home-page .landing-hero .hero-init-p {
+    font-family: UnifrakturMaguntia, serif !important;
+    font-weight: 400 !important;
+    font-size: 1.12em;
+    line-height: 1;
+    letter-spacing: 0 !important;
+}
+
 .landing-hero .hero-title .full-name {
     color: var(--text-primary);
     position: relative;
@@ -370,9 +406,9 @@
 }
 
 .home-page .landing-hero .btn {
-    text-transform: none;
+    text-transform: uppercase;
     font-size: 0.66rem;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.08em;
 }
 
 .home-page .logo-text {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Macondo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Macondo+Swash+Caps&family=UnifrakturMaguntia&display=swap');
 
 /* Reset and Base Styles */
 * {
@@ -157,7 +157,7 @@ a.logo::before {
 }
 
 .nav-link {
-    color: var(--text-secondary);
+    color: var(--text-primary);
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
@@ -165,7 +165,7 @@ a.logo::before {
     font-variant: normal;
     font-variant-caps: normal;
     letter-spacing: 0.04em;
-    font-size: 1rem;
+    font-size: 1.12rem;
     transition: color 0.3s ease;
     position: relative;
 }
@@ -226,7 +226,7 @@ a.logo::before {
     margin-right: -0.15rem;
     color: var(--border-color);
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-variant: normal;
     font-variant-caps: normal;
     text-transform: none;
@@ -237,7 +237,7 @@ a.logo::before {
     padding: 0.25rem 0.15rem;
     border: 0;
     background: transparent;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     font: inherit;
     font-weight: 400;
     letter-spacing: 0.08em;
