@@ -133,7 +133,7 @@ function collectionPage(product) {
     <meta name="twitter:image" content="${socialImage}">
     <link rel="icon" href="../favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
-    <link rel="stylesheet" href="../styles.css?v=20260801-seo">
+    <link rel="stylesheet" href="../styles.css?v=20260828-nav-store">
     <link rel="stylesheet" href="../collection.css?v=20260809-responsive-formats">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -147,10 +147,11 @@ function collectionPage(product) {
             <ul class="nav-menu" id="primary-navigation">
                 <li><a href="../index.html" class="nav-link">Home</a></li>
                 <li><a href="../projects.html" class="nav-link">Portfolio</a></li>
-                <li><a href="../archive.html" class="nav-link is-current" aria-current="page">Digital Art Store</a></li>
                 <li><a href="../archive.html#photography" class="nav-link">Photography</a></li>
                 <li><a href="../about.html" class="nav-link">About</a></li>
                 <li><a href="../contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-store-divider" aria-hidden="true"><span></span></li>
+                <li><a href="../archive.html#composites" class="nav-link nav-link-store is-current" aria-current="page">Store</a></li>
             </ul>
             <button type="button" class="hamburger" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
         </div>
