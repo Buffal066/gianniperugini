@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Macondo+Swash+Caps&display=swap');
 
 /* Reset and Base Styles */
 * {
@@ -14,6 +14,7 @@
     --text-primary: #ffffff;
     --text-secondary: #b8b8b8;
     --accent-gold: #cc0000;
+    --accent-orange: #e07820;
     --accent-red: #8b0000;
     --accent-purple: #4a148c;
     --border-color: #2a2a2a;
@@ -32,7 +33,6 @@ html {
 .hero-title,
 .page-hero-title,
 .section-title,
-.logo-text,
 .service-card h3,
 .why-item h3,
 .portfolio-overlay h4,
@@ -97,7 +97,7 @@ body {
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 1320px;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
@@ -106,21 +106,40 @@ body {
 }
 
 .logo {
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.95rem;
+    line-height: 1;
     font-family: 'Cinzel', serif;
 }
 
 .logo-link {
     text-decoration: none;
     color: inherit;
+    margin-left: -0.35rem;
+}
+
+.logo-link::before,
+a.logo::before {
+    content: '';
+    width: 1.85rem;
+    height: 1.85rem;
+    background: url('assets/images/gp-seal.png') center / contain no-repeat;
+    flex-shrink: 0;
+    transform: translateY(-0.28em);
 }
 
 .logo-text {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.38rem;
+    font-weight: 300;
+    line-height: 1;
     color: var(--text-primary);
-    letter-spacing: 2px;
+    letter-spacing: 0.32em;
+    font-variant: normal;
+    font-variant-caps: normal;
+    text-transform: none;
 }
 
 .logo-subtitle {
@@ -140,10 +159,13 @@ body {
 .nav-link {
     color: var(--text-secondary);
     text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.76rem;
+    text-transform: none;
+    font-variant: normal;
+    font-variant-caps: normal;
+    letter-spacing: 0.04em;
+    font-size: 1rem;
     transition: color 0.3s ease;
     position: relative;
 }
@@ -185,18 +207,30 @@ body {
     background: var(--accent-gold);
 }
 
-.nav-link-store {
-    color: var(--accent-gold);
+.nav-link-store,
+.nav-menu .nav-link-store,
+.nav-menu .nav-link-store.is-current,
+.nav-menu .nav-link-store[aria-current="page"] {
+    color: var(--accent-orange);
+}
+
+.nav-link-store::after {
+    background: var(--accent-orange);
 }
 
 .archive-language-switch {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    margin-left: 2.75rem;
+    margin-left: 3.75rem;
+    margin-right: -0.15rem;
     color: var(--border-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 0.7rem;
+    font-variant: normal;
+    font-variant-caps: normal;
+    text-transform: none;
+    letter-spacing: 0.08em;
 }
 
 .archive-language-button {
@@ -885,6 +919,16 @@ section {
 
     .archive-language-switch {
         margin-left: auto;
+    }
+
+    .logo-text {
+        font-size: 1.05rem;
+    }
+
+    .logo-link::before,
+    a.logo::before {
+        width: 1.4rem;
+        height: 1.4rem;
     }
 
     .nav-menu.active {
