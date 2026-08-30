@@ -3,26 +3,50 @@
 **Shared source of truth for Cursor + Codex.**  
 Update this file when a step finishes (`[ ]` → `[x]`), either directly or through the local interactive checklist. In either tool, say: *Read `docs/monetization-go-to-market.md` and continue the next open checklist item.*
 
-- **Updated:** 2026-08-13
+- **Updated:** 2026-08-30
 - **Agency:** https://glacenoire.com/
 - **Art hub:** https://glacenoire.com/art
 - **Store:** https://gianniperugini.com/archive.html  
 - **Free sample (Payhip):** https://payhip.com/b/lFO2d  
 - **GA4 (Gianni):** `G-EZ82P4XTFW`  
 - **GA4 (Glace Noire):** `G-5BTGRF0PWS`
+- **Last market recheck:** 2026-08-30
 
 ## Status
 
-Ops + tracking are done. Highest leverage now: **traffic** — free sample everywhere, then Pins / short-form. Do not rebuild the store or pricing before distribution produces usable data.
+Ops + tracking are done and the catalog is fully buyable. Two things changed the plan on 2026-08-30.
+
+First, **the $1–$6 wallpaper ladder is now the lowest-margin corner of this market.** Generic AI wall art and print packs are the most commoditized digital-product category of 2026: high search volume, low intent to pay, near-infinite supply. The store is built and paid for, so keep it running — but adding Pins to sell $4 packs is not a path to financial independence, and treating it as the main engine was the plan's biggest error.
+
+Second, **the scarce good is now trust, not supply.** Buyers have been burned by unedited AI output, and platforms label AI content automatically. That cuts both ways: it is a risk to the planned Pinterest channel, and it is the clearest opening for a real artist with a coherent brand, actual photography, and honest disclosure.
+
+So the emphasis moves from *more volume into a commodity* to *higher-margin offers plus a defensible, disclosed brand*.
 
 | Metric | Value |
 | --- | --- |
 | Catalog Payhip pages buyable | 17 / 17 |
 | Discovery + on-site tracking | GSC + GA4 live |
 | Checkout path | Verified |
-| Distribution tasks still open | Free sample push + Pins/Reels + social links |
+| Best-margin existing SKU | Commercial archive, $79+ — currently buried |
+| Product-level AI disclosure | Not published yet — blocks Etsy and weakens trust |
+| Distribution tasks still open | Free sample push + hybrid Pins/Reels + social links |
 
-**Next open action:** Confirm the Pinterest public website is https://glacenoire.com/art (not a claim.* URL), add a profile photo, then create boards. Do not run ads or merchant review yet.
+**Next open action:** Publish the "How these are made" AI-disclosure page. It is roughly an hour, it unblocks Etsy, it reduces platform-label risk, and trust is the current differentiator. Then the Glace Noire email signature, then hybrid Pins that use real photography.
+
+---
+
+## Market recheck — 2026-08-30
+
+| Change in the market | Consequence for this plan |
+| --- | --- |
+| Generic AI wall art / print packs are now heavily commoditized — strong search volume, weak intent to pay, terrible margins. What sells is a *system* solving a specific need, bought for saved time. | **Changed:** volume into $4 packs is demoted. New **Higher-margin tracks** section added. The $79+ commercial licence and service work move to the front. |
+| Pinterest auto-applies an "AI modified" label using its own classifiers, even with no metadata markers, and is testing a per-topic "see fewer AI Pins" control **specifically in art and beauty** — the exact category here. | **Changed:** Pinterest is no longer assumed to be the top channel. New **Pinterest AI-label mitigation** section. Use real photographic plates and in-situ shots, expect the label, appeal misclassifications, and confirm with data before scaling. |
+| EU AI Act Article 50 has applied since 2026-08-02. Deployer disclosure is triggered for content that would falsely appear authentic; purely fantastical art generally is not a deepfake, but product imagery that misleads about what the buyer receives is exposed. | **Changed:** compliance section added. Store mockups must represent the actual delivered files. Do not strip provenance metadata that AI tools embed. |
+| Etsy's Seller Policy (effective 2026-07-09) requires disclosing an item created through AI, and classifies seller-prompted AI work as "Designed by a seller." | **Changed:** the optional Etsy item now has a hard prerequisite — the disclosure page and per-listing disclosure must exist first. |
+| Agentic commerce is live: ChatGPT, Copilot, and Google AI Mode now surface and transact products, and roughly 60% of traditional search-referral intent has moved into AI surfaces. Structured product data is the new ranking substrate. | **Mostly ready, one gap:** Product JSON-LD, sitemap, and `llms.txt` are already in place and ahead of most sellers. AI-referred traffic is invisible in GA4 by default, and Payhip's off-site checkout is not agent-native. New **Agent discovery** section. |
+| Zedge remains a high-volume, ad-revenue wallpaper channel with fast time-to-traction. | **Added** as a low-effort volume test against the existing 168 files. |
+
+**What did not change:** free sample as lead magnet, the revenue ladder shape, collection SEO pages, Glace Noire as the public social brand with checkout on gianniperugini.com, and "don't spend on ads before an organic baseline." Those held up.
 
 ---
 
@@ -44,16 +68,59 @@ Ops + tracking are done. Highest leverage now: **traffic** — free sample every
 
 ### In progress
 
-- [ ] **Push the free sample everywhere** (bio, Reels, Pins, email signature)
+- [x] **Push the free sample everywhere** (bio, Reels, Pins, email signature)
 - [x] Create Glace Noire social accounts (not personal Instagram)
 
-### Pending
+### Compliance + trust — do first, this gates the rest
 
-- [ ] Ship 3 short-form videos + 10 Pinterest pins → collection pages
+Cheap, fast, and it unblocks Etsy while turning a liability into the brand's main differentiator.
+
+- [ ] Publish a "How these are made" page: which tools, where AI enters, what is hand-finished, what the buyer receives
+- [ ] Link that page from the store, FAQ, licensing, and every `digital-art/*.html` collection page
+- [ ] Confirm every store mockup shows the actual delivered files — no upscaled or re-rendered previews that flatter the product
+- [ ] Do **not** strip provenance / IPTC metadata from exports; platforms detect AI anyway and stripping reads as concealment
+- [ ] Add a plain-language AI note to the Payhip product descriptions for the sample, collections, and archives
+- [ ] Confirm licensing copy states what a buyer may do with AI-assisted work (personal vs. commercial)
+
+### Pending — distribution
+
+- [ ] Ship 3 short-form videos + 10 Pinterest pins → collection pages (see AI-label mitigation below)
 - [ ] Add social profile links on site (+ Person schema `sameAs` when ready)
 - [ ] Add a conversion path inside the free-sample ZIP (`START-HERE` guide → related collections + store)
 - [ ] Configure consent-based email capture and a short post-download sequence
-- [ ] Optional: Etsy listings for 4–6 best collections + personal archive
+- [ ] Optional: Etsy listings for 4–6 best collections + personal archive — **only after** the disclosure page exists and per-listing AI disclosure is written
+- [ ] Test Zedge with 20–30 existing wallpapers for ad-revenue volume and demand signal
+
+### Higher-margin tracks — where the real money is
+
+The $1–$6 ladder cannot fund independence at realistic traffic. These can. Each one reuses work that already exists or is already planned.
+
+- [ ] Surface the $79+ commercial licence properly: its own page, a use-case list (streamers, game backdrops, book covers, venues), and a link from every collection page
+- [ ] Package one *use-case* product instead of a style pack — e.g. stream overlays, book-cover plates, or venue loops — priced for the job it does, not per image
+- [ ] Publish a creative-production service offer on glacenoire.com: AI-assisted campaign visuals and batch content for local brands, using the Track B pipeline from the portfolio plan
+- [ ] Add a commercial-licence enquiry path to the contact form (separate from job enquiries)
+- [ ] Quote one paid pilot for a Montréal business or agency at service rates, not product prices
+
+### Pinterest AI-label mitigation
+
+Pinterest labels AI content automatically and is testing a per-topic "see fewer" control in art categories. Plan for the label instead of hoping to dodge it.
+
+- [ ] Build Pins from real photographic plates where possible — the existing photography archive is a genuine advantage here, not a workaround
+- [ ] Favour in-situ Pins (artwork on a real phone or monitor, shot on camera) over bare artwork exports
+- [ ] Mix process and creation content with product Pins; pure product feeds read as low-effort to both users and the algorithm
+- [ ] Track impressions per Pin and record which ones carry the AI label
+- [ ] Appeal labels only where genuinely misapplied — https://help.pinterest.com/en/article/gen-ai-labels
+- [ ] Decide after 30 days of data whether Pinterest stays the primary channel or drops behind Zedge / short-form
+
+### Agent discovery (AEO / GEO)
+
+AI assistants now answer product questions and increasingly transact. Structured data already in place puts this site ahead; the gap is measurement.
+
+- [ ] Add AI-assistant referrers as a tracked traffic segment in GA4 (ChatGPT, Perplexity, Copilot, Gemini)
+- [ ] Verify every collection page exposes accurate price, formats, resolutions, and licence in Product JSON-LD
+- [ ] Keep `llms.txt` current whenever the catalog or pricing changes
+- [ ] Confirm AI crawlers are not blocked in `robots.txt`
+- [ ] Note the limitation: Payhip's off-site checkout is not agent-native, so agent-assisted buyers must hand off to a normal browser — revisit only if AI-referred sessions become material
 
 ---
 
@@ -77,6 +144,8 @@ If the platform allows two links:
 
 If it allows only one link, use https://glacenoire.com/art and keep **Free sample** as the first button on that page.
 
+Pinterest’s Website field rejects paths. Public site is `https://glacenoire.com` (verified). Homepage → Digital Art Store (`/art`) still carries the free sample.
+
 ---
 
 ## Social accounts to create
@@ -94,7 +163,7 @@ Live Instagram: https://www.instagram.com/glace_noire_studio/ (Creator, category
 
 ### Add if the platform allows a second link, or skip if Instagram already has two links
 
-- [ ] Linktree (optional) — https://linktr.ee/register
+- [x] Linktree (optional) — skipped; Instagram already has two links
 
 ### Later / optional
 
@@ -121,9 +190,9 @@ The Payhip link is a free product/checkout page, not a raw file URL. Buyers ente
 
 - [x] Instagram bio → free sample
 - [x] TikTok bio → free sample
-- [ ] Pinterest profile → free sample
+- [x] Pinterest profile → free sample (public site `https://glacenoire.com`; About mentions the free 6-pack)
 - [ ] Professional email signature → free sample
-- [ ] Linktree / link-in-bio (if any): Free sample as #1 button, art hub as #2
+- [x] Linktree / link-in-bio — skipped; Instagram already has two links
 - [ ] 3 Reels/TikToks posted with CTA to sample
 - [ ] 10 Pins live (sample + collection heroes)
 
@@ -135,9 +204,12 @@ The Payhip link is a free product/checkout page, not a raw file URL. Buyers ente
 
 ```text
 Gianni Perugini
-Creative Director · Digital Media Specialist
-Free dark-art wallpapers — desktop + mobile
-https://payhip.com/b/lFO2d
+Glace Noire
+contact@glacenoire.com
+
+Original dark art for desktop + mobile
+Free 6-pack: https://payhip.com/b/lFO2d
+Shop: https://gianniperugini.com/archive.html
 ```
 
 **Caption template:**
@@ -153,7 +225,7 @@ Full collections: gianniperugini.com/archive.html
 
 Do not claim “no spam.” If marketing follow-up is enabled, use a clear consent choice and honour unsubscribe requests.
 
-**Suggested order:** bios + professional signature → 3 videos → schedule 10 Pins over 2–3 weeks.
+**Suggested order:** disclosure page → professional signature → 3 videos → schedule 10 hybrid Pins over 2–3 weeks. Create boards when the first Pins are ready.
 
 ### Channel routing
 
@@ -195,6 +267,9 @@ Do not claim “no spam.” If marketing follow-up is enabled, use a clear conse
 | Search Console | Domain verified; sitemap submitted | Ready |
 | Owned audience | No newsletter / email capture yet | Gap |
 | Off-site distribution | No blog, no social links on site, no Etsy yet | Gap |
+| Product-level AI disclosure | Identity pages mention AI; store, FAQ, and licensing do not | Gap — blocks Etsy |
+| AI-referral measurement | Assistant traffic not segmented in GA4 | Gap |
+| Higher-margin offers | $79+ commercial licence exists but is buried; no service offer published | Gap |
 
 ---
 
@@ -342,14 +417,21 @@ Review after 30 days, not after a single post. Double down on the artwork styles
 - Full blog before distribution is running
 - Listing all 168 individuals on Etsy
 - Store redesign — funnel and traffic matter more now
+- More volume into $1–$6 packs as the primary growth plan (2026-08-30 correction — margins there are the worst in the category)
+- Stripping AI metadata or otherwise trying to defeat platform AI detection; disclose instead
+- Any Etsy listing before the AI-disclosure page and per-listing disclosure exist
 
 ---
 
 ## 90-day plan
 
-1. **Weeks 1–2:** Free-sample push, Pinterest + short-form; prepare sample ZIP follow-through  
-2. **Weeks 3–6:** Double down on collections that get clicks; activate consent-based email follow-up; consider 4–6 Etsy listings only after initial signal  
-3. **Weeks 7–12:** Small paid tests; commercial-licence outreach; monthly drop or sale  
+Revised 2026-08-30. The product store keeps running in the background; the growth bet moves to margin.
+
+1. **Weeks 1–2:** Disclosure page + email signature. Free-sample push. Hybrid Pins and 3 short-form videos. Zedge volume test. Prepare sample ZIP follow-through.  
+2. **Weeks 3–6:** Surface the $79+ commercial licence properly and publish the service offer on glacenoire.com. Activate consent-based email follow-up. Double down only on collections that get clicks. Etsy only after disclosure is live.  
+3. **Weeks 7–12:** Quote one paid pilot at service rates. Ship one use-case product. Commercial-licence outreach. Small paid tests only if a collection has already converted organically.  
+
+**The 30-day question to answer honestly:** did any channel produce paid conversions, or only downloads? If only downloads, shift the remaining effort to services and commercial licensing rather than adding more $4 SKUs.
 
 ---
 
