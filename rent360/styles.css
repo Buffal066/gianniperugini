@@ -938,7 +938,7 @@ body {
     color: var(--text-secondary);
     margin-bottom: 12px;
 }
-.mock-browser-bar span {
+.mock-browser-bar span:not(.sample-chip) {
     width: 8px; height: 8px;
     border-radius: 50%;
     background: #2e2e2e;
@@ -1129,6 +1129,12 @@ body {
     z-index: 3;
     padding: 0 24px;
     margin-bottom: 1rem;
+}
+.gallery-note {
+    margin-top: 0.85rem;
+    font-size: 0.78rem;
+    font-weight: 300;
+    color: var(--text-tertiary);
 }
 .helix {
     position: relative;
@@ -1443,4 +1449,89 @@ body {
     .hero-title { font-size: clamp(2rem, 12vw, 3rem); overflow-wrap: anywhere; }
     .orbit-stage { width: min(520px, calc(100vw - 24px)); height: min(520px, calc(100vw - 24px)); }
     .footer-nav { justify-content: center; flex-wrap: wrap; }
+}
+
+/* ── Prototype-data labelling ─────────────────────────────────────────────
+   Rent360 is an unofficial concept. Every mock in the page carries a visible
+   marker so no invented metric can be mistaken for a real one. */
+
+.concept-banner {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    max-width: 640px;
+    margin: 0 auto 1.75rem;
+    padding: 14px 18px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-left: 2px solid var(--accent-orange);
+    border-radius: var(--radius-md);
+}
+.concept-banner-tag {
+    flex-shrink: 0;
+    font-size: 0.62rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--accent-orange);
+    padding: 4px 9px;
+    background: rgba(255, 122, 26, 0.1);
+    border: 1px solid rgba(255, 122, 26, 0.25);
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+    margin-top: 1px;
+}
+.concept-banner p {
+    font-size: 0.82rem;
+    font-weight: 300;
+    line-height: 1.65;
+    color: var(--text-secondary);
+}
+.concept-banner a { color: var(--text-primary); text-decoration: underline; text-underline-offset: 2px; }
+.concept-banner a:hover { color: var(--accent-orange); }
+
+.badge-flag {
+    font-size: 0.62rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-tertiary);
+    padding-left: 10px;
+    margin-left: 2px;
+    border-left: 1px solid var(--border-color);
+}
+
+.sample-chip {
+    display: inline-block;
+    flex-shrink: 0;
+    font-family: var(--ff);
+    font-size: 0.58rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-tertiary);
+    padding: 3px 8px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.screen-header .sample-chip { margin-left: auto; }
+.mock-header { display: flex; align-items: center; gap: 8px; }
+.mock-header .sample-chip,
+.mock-browser-bar .sample-chip { margin-left: auto; }
+.testimonial footer .sample-chip { margin-left: 6px; }
+.testimonial footer small {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 0.76rem;
+    font-weight: 300;
+    color: var(--text-tertiary);
+}
+
+@media (max-width: 620px) {
+    .concept-banner { flex-direction: column; gap: 10px; }
+    .badge-flag { display: none; }
 }
