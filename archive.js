@@ -22,6 +22,11 @@
 
     if (!sectionsRoot || !empty) return;
 
+    if ((window.location.hash || '').toLowerCase() === '#photography') {
+        window.location.replace('photography.html');
+        return;
+    }
+
     const VIEWS = {
         composites: {
             hash: 'composites',
@@ -436,7 +441,7 @@
             const isArchiveCategory = href === '#composites'
                 || href === '#photography'
                 || href.endsWith('archive.html#composites')
-                || href.endsWith('archive.html#photography');
+                || href.endsWith('photography.html');
 
             if (!isArchiveCategory) {
                 link.removeAttribute('aria-current');
@@ -530,7 +535,11 @@
 
     function handleHashChange() {
         const hash = window.location.hash.toLowerCase();
-        if (hash === '#composites' || hash === '#photography') applyView();
+        if (hash === '#photography') {
+            window.location.replace('photography.html');
+            return;
+        }
+        if (hash === '#composites') applyView();
     }
 
     mobileStoreQuery.addEventListener?.('change', () => {
