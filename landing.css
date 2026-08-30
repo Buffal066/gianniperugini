@@ -637,6 +637,37 @@
     background: #050505;
 }
 
+.ember-card-image {
+    background-color: #050505;
+    background-image:
+        linear-gradient(180deg, rgba(5, 5, 5, 0.35) 0%, rgba(5, 5, 5, 0.85) 100%),
+        url('assets/images/case-studies/ember-cathedral/portfolio-command.png');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ember-card-image::after {
+    content: "Ember Cathedral";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #f5f5f5;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.85);
+    pointer-events: none;
+}
+
+.project-image:has(.ember-card-image) {
+    height: 240px;
+    background: #050505;
+}
+
 /* Contact page — Glace-style full section */
 .contact-page {
     background:

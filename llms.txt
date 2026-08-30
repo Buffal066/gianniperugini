@@ -6,8 +6,9 @@
 
 - [Home](https://gianniperugini.com/): One-screen cinematic entrance to Gianni Perugini's work.
 - [Digital Art Store](https://gianniperugini.com/archive.html): Watermarked previews, current USD pricing, personal-use collections, complete archives, and Payhip purchase links.
-- [Portfolio](https://gianniperugini.com/projects.html): IceDraft Pool, Glace Noire Media, and Rent360 Landing Concept.
+- [Portfolio](https://gianniperugini.com/projects.html): IceDraft Pool, Ember Cathedral, Glace Noire Media, and Rent360 Landing Concept.
 - [IceDraft case study](https://gianniperugini.com/icedraft.html): Problem, role, process, UI system, stack, screenshots, then the live app.
+- [Ember Cathedral case study](https://gianniperugini.com/ember-cathedral-case-study.html): Private business command center — fail-closed metrics, Markdown as source of truth, read-only OAuth integrations. Runs locally by design; no public app URL.
 - [Photography](https://gianniperugini.com/photography.html): Selected field and studio photographs. Portfolio gallery only — not the Digital Art Store.
 - [About](https://gianniperugini.com/about.html): Professional biography, LinkedIn, and résumé PDF.
 - [Contact](https://gianniperugini.com/contact.html): Direct email, inquiry form, LinkedIn, and résumé PDF.
