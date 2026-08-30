@@ -256,6 +256,12 @@ function getSiteStrings() {
                 document.title = strings[key];
             }
         });
+        document.querySelectorAll('[data-i18n-href]').forEach((element) => {
+            const key = element.getAttribute('data-i18n-href');
+            if (key && Object.prototype.hasOwnProperty.call(strings, key)) {
+                element.setAttribute('href', strings[key]);
+            }
+        });
         const hamburgerBtn = document.querySelector('.hamburger');
         const menuOpen = document.querySelector('.nav-menu')?.classList.contains('active');
         if (hamburgerBtn) {

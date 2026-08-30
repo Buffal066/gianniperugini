@@ -7,8 +7,10 @@
 - [Home](https://gianniperugini.com/): One-screen cinematic entrance to Gianni Perugini's work.
 - [Digital Art Store](https://gianniperugini.com/archive.html): Watermarked previews, current USD pricing, personal-use collections, complete archives, and Payhip purchase links.
 - [Portfolio](https://gianniperugini.com/projects.html): IceDraft Pool, Glace Noire Media, and Rent360 Landing Concept.
-- [About](https://gianniperugini.com/about.html): Professional biography and creative practice.
-- [Contact](https://gianniperugini.com/contact.html): Direct email and project inquiry form.
+- [IceDraft case study](https://gianniperugini.com/icedraft.html): Problem, role, process, UI system, stack, screenshots, then the live app.
+- [Photography](https://gianniperugini.com/photography.html): Selected field and studio photographs. Portfolio gallery only — not the Digital Art Store.
+- [About](https://gianniperugini.com/about.html): Professional biography, LinkedIn, and résumé PDF.
+- [Contact](https://gianniperugini.com/contact.html): Direct email, inquiry form, LinkedIn, and résumé PDF.
 - [Standard Commercial Licence](https://gianniperugini.com/commercial-licence.html): Authoritative commercial licence permissions and restrictions.
 
 ## Digital art products
