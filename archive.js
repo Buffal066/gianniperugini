@@ -441,7 +441,7 @@
             const isArchiveCategory = href === '#composites'
                 || href === '#photography'
                 || href.endsWith('archive.html#composites')
-                || href.endsWith('photography.html');
+                || href.endsWith('archive.html#photography');
 
             if (!isArchiveCategory) {
                 link.removeAttribute('aria-current');
