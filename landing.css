@@ -668,6 +668,37 @@
     background: #050505;
 }
 
+.howai-card-image {
+    background-color: #050505;
+    background-image:
+        radial-gradient(ellipse 80% 50% at 50% 45%, rgba(204, 0, 0, 0.22), transparent 68%),
+        linear-gradient(165deg, #0a0a0a 0%, #141414 50%, #050505 100%);
+    position: relative;
+}
+
+.howai-card-image::after {
+    content: "How I work with AI";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+    font-size: 1.35rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #f5f5f5;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.85);
+    pointer-events: none;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.project-image:has(.howai-card-image) {
+    height: 240px;
+    background: #050505;
+}
+
 /* Contact page — Glace-style full section */
 .contact-page {
     background:
@@ -844,6 +875,73 @@
     font-size: 0.82rem !important;
     letter-spacing: 0.04em;
     color: var(--text-primary) !important;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.case-log-wrap {
+    overflow-x: auto;
+    margin-top: 1.25rem;
+}
+
+.case-log {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+}
+
+.case-log caption {
+    caption-side: bottom;
+    text-align: left;
+    margin-top: 0.65rem;
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    line-height: 1.45;
+}
+
+.case-log th,
+.case-log td {
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.7rem 0.75rem 0.7rem 0;
+    text-align: left;
+    vertical-align: top;
+    color: var(--text-secondary);
+    font-weight: 400;
+    line-height: 1.55;
+}
+
+.case-log thead th {
+    color: var(--text-primary);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.case-log tbody th {
+    color: var(--text-primary);
+    font-weight: 500;
+    white-space: nowrap;
+    padding-right: 1.25rem;
+}
+
+.case-block a {
+    color: var(--accent-gold);
+    text-decoration: none;
+}
+
+.case-block a:hover,
+.case-block a:focus-visible {
+    text-decoration: underline;
 }
 
 .case-live .btn {

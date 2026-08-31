@@ -6,7 +6,8 @@
 
 - [Home](https://gianniperugini.com/): One-screen cinematic entrance to Gianni Perugini's work.
 - [Digital Art Store](https://gianniperugini.com/archive.html): Watermarked previews, current USD pricing, personal-use collections, complete archives, and Payhip purchase links.
-- [Portfolio](https://gianniperugini.com/projects.html): IceDraft Pool, Ember Cathedral, Glace Noire Media, and Rent360 Landing Concept.
+- [Portfolio](https://gianniperugini.com/projects.html): How I work with AI, IceDraft Pool, Ember Cathedral, Glace Noire Media, and Rent360 Landing Concept.
+- [How I work with AI](https://gianniperugini.com/how-i-work-with-ai.html): Models in use, where AI enters, what stays hand-finished, and the generation-log format kept for reproducibility.
 - [IceDraft case study](https://gianniperugini.com/icedraft.html): Problem, role, process, UI system, stack, screenshots, then the live app.
 - [Ember Cathedral case study](https://gianniperugini.com/ember-cathedral-case-study.html): Private business command center — fail-closed metrics, Markdown as source of truth, read-only OAuth integrations. Runs locally by design; no public app URL.
 - [Rent360 case study](https://gianniperugini.com/rent360-case-study.html): Unofficial SaaS landing-page concept — objection-led conversion flow, product mocks built as live HTML components, and a disclosure system that labels every invented figure.
