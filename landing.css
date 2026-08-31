@@ -977,3 +977,149 @@
     }
 }
 
+/* Wet Neon Noir — scoped to the portfolio card and motion-cut page only */
+.project-image:has(.wet-neon-card-image) {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background: #050505;
+}
+
+.wet-neon-card-image {
+    background-color: #050505;
+    background-image: url('assets/images/projects/wet-neon-noir-v1-poster.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.wet-neon-card-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.45s ease;
+}
+
+.project-card--wet-neon.is-previewing .wet-neon-card-video {
+    opacity: 1;
+}
+
+.wet-neon-card-image::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 64px;
+    height: 64px;
+    margin: -32px 0 0 -32px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background:
+        linear-gradient(135deg, rgba(5, 5, 5, 0.35), rgba(5, 5, 5, 0.72)),
+        radial-gradient(circle at 50% 50%, rgba(204, 0, 0, 0.28), transparent 70%);
+    box-shadow: 0 0 28px rgba(204, 0, 0, 0.35);
+    pointer-events: none;
+    z-index: 1;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.wet-neon-card-image::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin: -8px 0 0 -5px;
+    border-style: solid;
+    border-width: 10px 0 10px 16px;
+    border-color: transparent transparent transparent #f5f5f5;
+    filter: drop-shadow(0 0 10px rgba(204, 0, 0, 0.65));
+    pointer-events: none;
+    z-index: 2;
+    transition: opacity 0.35s ease;
+}
+
+.project-card--wet-neon.is-previewing .wet-neon-card-image::before,
+.project-card--wet-neon.is-previewing .wet-neon-card-image::after {
+    opacity: 0;
+}
+
+.project-card:hover .wet-neon-card-image {
+    transform: none;
+}
+
+.project-card--wet-neon .project-info h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.45rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.case-study-wrap--wnn {
+    max-width: 1100px;
+}
+
+.wnn-player {
+    margin: 0 0 2.5rem;
+    background: #050505;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(204, 0, 0, 0.12);
+}
+
+.wnn-player video {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #050505 url('assets/images/projects/wet-neon-noir-v1-poster.jpg') center / cover no-repeat;
+}
+
+.wnn-facts {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+.wnn-facts li {
+    border: 1px solid var(--border-color);
+    padding: 0.7rem 0.85rem;
+    font-size: 0.88rem !important;
+    letter-spacing: 0.04em;
+    color: var(--text-primary) !important;
+    line-height: 1.45 !important;
+}
+
+.wnn-sequence {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-primary) !important;
+    font-size: 1.05rem !important;
+}
+
+@media (max-width: 768px) {
+    .wnn-facts {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    .wnn-facts {
+        grid-template-columns: 1fr;
+    }
+
+    .wet-neon-card-image::after {
+        width: 52px;
+        height: 52px;
+        margin: -26px 0 0 -26px;
+    }
+}
+
