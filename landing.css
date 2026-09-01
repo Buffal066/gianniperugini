@@ -137,8 +137,45 @@
     text-decoration: none;
     color: inherit;
     transition: all 0.4s ease;
-    display: block;
+    display: flex;
+    flex-direction: column;
     scroll-margin-top: 100px;
+}
+
+a.project-card {
+    display: flex;
+}
+
+.project-card-hit {
+    display: block;
+    flex: 0 0 auto;
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-card:has(.project-actions) .project-info {
+    padding-bottom: 1rem;
+}
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1.5rem;
+    padding: 0 2rem 2rem;
+}
+
+.project-info .project-actions {
+    padding: 0;
+}
+
+.project-actions .project-link {
+    text-decoration: none;
+}
+
+.project-actions .project-link:hover,
+.project-actions .project-link:focus-visible {
+    color: var(--text-primary);
 }
 
 .project-card:hover {
