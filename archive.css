@@ -9,15 +9,14 @@
     padding: 7rem 20px 2.75rem;
     text-align: center;
     background:
-        linear-gradient(90deg, rgba(3, 3, 3, 0.62), rgba(3, 3, 3, 0.42) 50%, rgba(3, 8, 18, 0.58)),
-        url('assets/images/heroes/glace-noire-halloween-hero.png') center 46% / cover no-repeat;
+        linear-gradient(90deg, rgba(3, 3, 3, 0.9), rgba(3, 3, 3, 0.76) 50%, rgba(3, 3, 3, 0.9)),
+        url('assets/images/watermarked/archive/digital-art-burned-canvas-ash-weave-watermarked.jpg') center 52% / cover no-repeat;
     border-bottom: 1px solid var(--border-color);
 }
 
 .archive-hero-content {
     max-width: 720px;
     margin: 0 auto;
-    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.65);
 }
 
 .archive-eyebrow {
@@ -1593,8 +1592,8 @@
     .archive-hero {
         padding: 7rem 20px 2rem;
         background:
-            linear-gradient(180deg, rgba(3, 3, 3, 0.58), rgba(3, 3, 3, 0.7)),
-            url('assets/images/heroes/glace-noire-halloween-hero.png') center 44% / cover no-repeat;
+            linear-gradient(180deg, rgba(3, 3, 3, 0.84), rgba(3, 3, 3, 0.9)),
+            url('assets/images/watermarked/mobile/digital-art-burned-canvas-ash-weave-mobile-watermarked.jpg') center 44% / cover no-repeat;
     }
 
     .archive-grid {

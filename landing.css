@@ -201,10 +201,10 @@
 .landing-hero-bg-dim {
     z-index: 0;
     background:
-        linear-gradient(135deg, rgba(10, 10, 10, 0.28) 0%, rgba(10, 10, 10, 0.18) 50%, rgba(8, 12, 22, 0.32) 100%),
-        url('assets/images/heroes/glace-noire-halloween-hero.png') center 46% / cover no-repeat;
+        linear-gradient(135deg, rgba(10, 10, 10, 0.4) 0%, rgba(10, 10, 10, 0.3) 50%, rgba(26, 26, 26, 0.4) 100%),
+        url('assets/images/archive/digital-art-urban-noir-rain-reflections.jpg') center / cover no-repeat;
     background-blend-mode: overlay, normal;
-    filter: brightness(0.72) contrast(1.04) saturate(1.02);
+    filter: brightness(0.58) contrast(1.02) saturate(0.92);
 }
 
 .landing-hero-bg-lit {
@@ -214,8 +214,8 @@
     --spot-size: 155px;
     --beam-strength: 0;
     background:
-        url('assets/images/heroes/glace-noire-halloween-hero.png') center 46% / cover no-repeat;
-    filter: brightness(1.12) contrast(1.05) saturate(1.06);
+        url('assets/images/archive/digital-art-urban-noir-rain-reflections.jpg') center / cover no-repeat;
+    filter: brightness(1.1) contrast(1.04) saturate(1.04);
     opacity: var(--beam-strength);
     -webkit-mask-image: radial-gradient(
         circle var(--spot-size) at var(--spot-x) var(--spot-y),
@@ -240,8 +240,6 @@
 .landing-hero-flickers {
     z-index: 3;
     overflow: hidden;
-    /* Lamp positions were calibrated to the previous urban-noir still. */
-    display: none;
 }
 
 .landing-hero-flicker-light {
@@ -324,7 +322,6 @@
     font-weight: 400;
     letter-spacing: 4px;
     font-size: clamp(2.2rem, 4.8vw, 3.7rem);
-    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.72);
 }
 
 .landing-hero .hero-title .title-line {
@@ -335,16 +332,14 @@
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-items: flex-end;
-    gap: 0.35em;
-    overflow: visible;
+    align-items: baseline;
+    gap: 0.4em;
 }
 
 .hero-name-word {
     display: inline-flex;
-    align-items: flex-end;
-    gap: 0;
-    overflow: visible;
+    align-items: baseline;
+    gap: 0.02em;
 }
 
 .hero-name-rest {
@@ -356,10 +351,9 @@
     width: 0.78em;
     height: 1em;
     display: block;
-    flex-shrink: 0;
     overflow: visible;
     color: inherit;
-    transform: none;
+    transform: translateY(0.26em);
 }
 
 .home-page .landing-hero .hero-init-p {
@@ -368,7 +362,6 @@
     font-size: 1.12em;
     line-height: 1;
     letter-spacing: 0 !important;
-    margin-right: -0.04em;
 }
 
 .landing-hero .hero-title .full-name {
@@ -393,7 +386,6 @@
     letter-spacing: 1.5px;
     margin-bottom: 1rem;
     font-size: clamp(0.96rem, 1.75vw, 1.36rem);
-    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.7);
 }
 
 .landing-hero .hero-lede {
@@ -404,7 +396,6 @@
     font-weight: 300;
     line-height: 1.55;
     letter-spacing: 0.04em;
-    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.7);
 }
 
 .landing-hero .hero-buttons {
@@ -413,35 +404,12 @@
     left: auto;
     bottom: auto;
     justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.75rem 1rem;
     margin: 0;
     pointer-events: auto;
 }
 
 .landing-hero .hero-buttons a {
     pointer-events: auto;
-}
-
-.landing-hero .hero-work-link {
-    color: var(--text-secondary);
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 0.68rem;
-    font-weight: 400;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 0.35rem 0.15rem;
-    border: 0;
-    background: none;
-}
-
-.landing-hero .hero-work-link:hover,
-.landing-hero .hero-work-link:focus-visible {
-    color: var(--text-primary);
-    text-decoration: underline;
-    text-underline-offset: 0.28em;
 }
 
 .home-page,
@@ -634,19 +602,6 @@
         bottom: max(1.25rem, env(safe-area-inset-bottom, 0px) + 1rem);
         margin: 0;
         padding: 0;
-    }
-
-    .landing-hero .hero-buttons {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 0.6rem 0.75rem;
-    }
-
-    .landing-hero .hero-buttons .btn {
-        width: auto;
-        max-width: none;
     }
 }
 
