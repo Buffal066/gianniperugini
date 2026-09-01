@@ -609,27 +609,22 @@
 .icedraft-card-image {
     background-color: #050505;
     background-image:
-        radial-gradient(ellipse 70% 55% at 50% 40%, rgba(204, 0, 0, 0.35), transparent 70%),
-        linear-gradient(160deg, #0a0a0a 0%, #1a1a1a 55%, #050505 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        linear-gradient(180deg, rgba(5, 5, 5, 0.08) 0%, rgba(5, 5, 5, 0.32) 100%),
+        url('assets/images/icedraft-arena-card.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
 }
 
 .icedraft-card-image::after {
-    content: "IceDraft Pool";
+    content: "";
     position: absolute;
     inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Cinzel", serif;
-    font-size: 1.6rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-shadow: 0 0 24px rgba(204, 0, 0, 0.45);
+    pointer-events: none;
+    box-shadow:
+        inset 0 0 34px rgba(0, 0, 0, 0.32),
+        inset 0 -34px 44px rgba(0, 0, 0, 0.24);
 }
 
 .project-image:has(.icedraft-card-image) {
