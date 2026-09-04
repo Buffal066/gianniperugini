@@ -3,14 +3,14 @@
 **Shared source of truth for Cursor + Codex.**  
 Update this file when a step finishes (`[ ]` → `[x]`), either directly or through the local interactive checklist. In either tool, say: *Read `docs/monetization-go-to-market.md` and continue the next open checklist item.*
 
-- **Updated:** 2026-08-30
+- **Updated:** 2026-09-01
 - **Agency:** https://glacenoire.com/
 - **Art hub:** https://glacenoire.com/art
 - **Store:** https://gianniperugini.com/archive.html  
 - **Free sample (Payhip):** https://payhip.com/b/lFO2d  
 - **GA4 (Gianni):** `G-EZ82P4XTFW`  
 - **GA4 (Glace Noire):** `G-5BTGRF0PWS`
-- **Last market recheck:** 2026-08-30
+- **Last market recheck:** 2026-09-01
 
 ## Status
 
@@ -29,9 +29,10 @@ So the emphasis moves from *more volume into a commodity* to *higher-margin offe
 | Checkout path | Verified |
 | Best-margin existing SKU | Commercial archive, $79+ — currently buried |
 | Product-level AI disclosure | Not published yet — blocks Etsy and weakens trust |
-| Distribution tasks still open | Free sample push + hybrid Pins/Reels + social links |
+| Distribution tasks still open | Email signature + first short video + hybrid Pins + social links |
+| Current job-search constraint | Employment is urgent. Cap store work at roughly 20% of the week until applications and interviews are moving. |
 
-**Next open action:** Publish the "How these are made" AI-disclosure page. It is roughly an hour, it unblocks Etsy, it reduces platform-label risk, and trust is the current differentiator. Then the Glace Noire email signature, then hybrid Pins that use real photography.
+**Next open action:** In one bounded 90-minute block, publish the "How these are made" AI-disclosure page and add the professional email signature. Then return to the job sprint. Reuse the first 6–10s portfolio motion proof as the first Glace Noire Reel/TikTok; do not create three separate videos before applying for jobs.
 
 ---
 
@@ -47,6 +48,16 @@ So the emphasis moves from *more volume into a commodity* to *higher-margin offe
 | Zedge remains a high-volume, ad-revenue wallpaper channel with fast time-to-traction. | **Added** as a low-effort volume test against the existing 168 files. |
 
 **What did not change:** free sample as lead magnet, the revenue ladder shape, collection SEO pages, Glace Noire as the public social brand with checkout on gianniperugini.com, and "don't spend on ads before an organic baseline." Those held up.
+
+### Market recheck — 2026-09-01
+
+| What changed or was reconfirmed | What was fixed |
+| --- | --- |
+| The user confirmed that no short-form videos have been created. The previous top-level “push everywhere” item was checked even though the email signature and three videos were still open. | Corrected the top-level item to incomplete. One shared 6–10s motion proof now serves the portfolio and the first Glace Noire post; three separate videos no longer block the job search. |
+| Etsy’s current Seller Policy still requires an accurate description and disclosure when an item is created with AI. | Kept the disclosure page as the one short compliance block worth doing now; Etsy expansion stays optional and later. |
+| Pinterest still uses metadata plus classifiers to label AI-modified Pins, and people can tune down GenAI interests. | Kept Pinterest as an experiment, not the primary revenue engine. No metadata-stripping or label-evasion work is allowed. |
+| The earlier monetization review still supports the existing $0 / $1 / $4 / $6 / $19–$29 / $79+ ladder, while the 2026-08-30 correction puts growth on services and commercial licensing. | Preserved pricing. Moved the $79+ commercial licence and a concrete creative-production service offer into the first monetization sprint; no new low-price wallpaper SKU work. |
+| Job applications are now the highest-urgency outcome. | Added an 80/20 operating rule: employment work first; monetization gets one bounded block and must reuse portfolio assets. |
 
 ---
 
@@ -68,8 +79,17 @@ So the emphasis moves from *more volume into a commodity* to *higher-margin offe
 
 ### In progress
 
-- [x] **Push the free sample everywhere** (bio, Reels, Pins, email signature)
+- [ ] **Finish pushing the free sample everywhere** — social bios are live; email signature, first Reel/TikTok and Pins remain open
 - [x] Create Glace Noire social accounts (not personal Instagram)
+
+### Fast monetization sprint — maximum one workday, then back to applications
+
+- [ ] **90 minutes:** publish the "How these are made" page and link it from the store / FAQ / licensing entry points
+- [ ] **30 minutes:** add the Glace Noire professional email signature with the free-sample link
+- [ ] **2 hours:** publish a clear $79+ commercial-licence page with named use cases and an enquiry CTA
+- [ ] **2 hours:** publish one creative-production service offer for local brands: campaign stills, short motion, and batch content systems
+- [ ] **Reuse, do not duplicate:** post the portfolio’s first 6–10s Glace Noire motion proof as Reel/TikTok #1 with a sample CTA
+- [ ] Stop after this sprint and return to applications; Pins 2–10, Etsy, Zedge and extra SKUs wait until interviews/applications are moving
 
 ### Compliance + trust — do first, this gates the rest
 
@@ -84,7 +104,7 @@ Cheap, fast, and it unblocks Etsy while turning a liability into the brand's mai
 
 ### Pending — distribution
 
-- [ ] Ship 3 short-form videos + 10 Pinterest pins → collection pages (see AI-label mitigation below)
+- [ ] Ship the first shared 6–10s motion proof as Reel/TikTok #1; videos 2–3 and 10 Pinterest Pins follow only after the job sprint
 - [ ] Add social profile links on site (+ Person schema `sameAs` when ready)
 - [ ] Add a conversion path inside the free-sample ZIP (`START-HERE` guide → related collections + store)
 - [ ] Configure consent-based email capture and a short post-download sequence
@@ -427,8 +447,8 @@ Review after 30 days, not after a single post. Double down on the artwork styles
 
 Revised 2026-08-30. The product store keeps running in the background; the growth bet moves to margin.
 
-1. **Weeks 1–2:** Disclosure page + email signature. Free-sample push. Hybrid Pins and 3 short-form videos. Zedge volume test. Prepare sample ZIP follow-through.  
-2. **Weeks 3–6:** Surface the $79+ commercial licence properly and publish the service offer on glacenoire.com. Activate consent-based email follow-up. Double down only on collections that get clicks. Etsy only after disclosure is live.  
+1. **Week 1 (bounded around the job sprint):** Disclosure page + email signature. Publish the $79+ commercial-licence page and service offer. Reuse the portfolio micro-clip as Reel/TikTok #1. Do not build three separate videos before applications.
+2. **Weeks 2–6:** Finish the remaining two short videos and hybrid Pins only if the first post produces useful clicks. Activate consent-based email follow-up. Etsy only after disclosure is live; Zedge remains a low-priority test.
 3. **Weeks 7–12:** Quote one paid pilot at service rates. Ship one use-case product. Commercial-licence outreach. Small paid tests only if a collection has already converted organically.  
 
 **The 30-day question to answer honestly:** did any channel produce paid conversions, or only downloads? If only downloads, shift the remaining effort to services and commercial licensing rather than adding more $4 SKUs.

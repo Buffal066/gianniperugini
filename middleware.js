@@ -6,7 +6,7 @@ function unauthorized() {
   return new Response("Private page", {
     status: 401,
     headers: {
-      "WWW-Authenticate": 'Basic realm="Ember Cathedral"',
+      "WWW-Authenticate": 'Basic realm="Ground Control Dashboard"',
       "Cache-Control": "no-store",
       "X-Robots-Tag": "noindex, nofollow",
     },
