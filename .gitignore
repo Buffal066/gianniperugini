@@ -1,1 +1,8 @@
 .vercel
+.audit/
+_fix_watermarks/
+/gianniperugini/
+design-qa.md
+scripts/apply-payhip-individual-results.py
+scripts/payhip-batch-browser.js
+scripts/payhip-result-bridge.py
