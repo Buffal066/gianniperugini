@@ -684,6 +684,32 @@ a.project-card {
     background: #050505;
 }
 
+.nhl-lottery-card-image {
+    background-color: #050505;
+    background-image:
+        linear-gradient(180deg, rgba(5, 5, 5, 0.04) 0%, rgba(5, 5, 5, 0.42) 100%),
+        url('assets/images/case-studies/nhl-draft-lottery/setup.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.nhl-lottery-card-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    box-shadow:
+        inset 0 0 34px rgba(0, 0, 0, 0.28),
+        inset 0 -34px 44px rgba(0, 0, 0, 0.32);
+}
+
+.project-image:has(.nhl-lottery-card-image) {
+    height: 240px;
+    background: #050505;
+}
+
 .ember-card-image {
     background-color: #050505;
     background-image:
