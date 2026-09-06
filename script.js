@@ -283,6 +283,7 @@ function getSiteStrings() {
             button.setAttribute('aria-pressed', String(active));
         });
         applyTranslations(next);
+        updateLandingHeroSoundLabel();
     };
 
     let initial = 'en';
@@ -297,6 +298,8 @@ function getSiteStrings() {
     languageButtons.forEach((button) => {
         button.addEventListener('click', () => setLanguage(button.dataset.language));
     });
+
+    updateLandingHeroSoundLabel();
 })();
 
 // Mobile Navigation Toggle
@@ -574,5 +577,34 @@ function typeWriter(element, text, speed = 50) {
         ? 'mobile'
         : (window.location.hash === '#desktop-gallery' ? 'desktop' : null);
     setFormat(requestedFormat || (mobileQuery.matches ? 'mobile' : 'desktop'));
+})();
+
+function updateLandingHeroSoundLabel() {
+    const button = document.querySelector('.landing-hero-sound');
+    const video = document.getElementById('landing-hero-video');
+    if (!button || !video) return;
+
+    const strings = getSiteStrings() || window.siteI18n?.en;
+    if (!strings) return;
+
+    button.setAttribute('aria-label', video.muted ? strings.unmuteMotion : strings.muteMotion);
+    button.setAttribute('aria-pressed', String(!video.muted));
+    button.classList.toggle('is-unmuted', !video.muted);
+}
+
+(function initLandingHeroSound() {
+    const button = document.querySelector('.landing-hero-sound');
+    const video = document.getElementById('landing-hero-video');
+    if (!button || !video) return;
+
+    button.addEventListener('click', () => {
+        video.muted = !video.muted;
+        if (!video.muted) {
+            video.play().catch(() => {});
+        }
+        updateLandingHeroSoundLabel();
+    });
+
+    updateLandingHeroSoundLabel();
 })();
 
