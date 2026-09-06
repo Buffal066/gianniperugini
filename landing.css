@@ -1171,7 +1171,7 @@ a.project-card {
     display: block;
     width: 100%;
     height: auto;
-    background: #050505 url('assets/images/projects/wet-neon-noir-v1-poster.jpg') center / cover no-repeat;
+    background: #050505;
 }
 
 .wnn-facts {
