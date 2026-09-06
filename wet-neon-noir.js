@@ -1,8 +1,8 @@
 (function initWetNeonNoir() {
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    document.querySelectorAll('.project-card--wet-neon').forEach((card) => {
-        const video = card.querySelector('.wet-neon-card-video');
+    document.querySelectorAll('.project-card--wet-neon, .project-card--motion').forEach((card) => {
+        const video = card.querySelector('video');
         if (!video) return;
 
         const stopPreview = () => {
