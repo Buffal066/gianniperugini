@@ -27,18 +27,28 @@
         return `assets/images/watermarked/archive/${filename.replace(/(\.[^.]+)$/, '-watermarked$1')}`;
     }
 
+    function thumbnailPreview(path = '', width = 800) {
+        return watermarkedPreview(path)
+            .replace('assets/images/watermarked/', 'assets/images/thumbnails/')
+            .replace(/\.[^.]+$/, `-${width}.webp`);
+    }
+
     function createCard(product) {
         const link = document.createElement('a');
         link.className = 'mobile-category-card';
         link.href = `digital-art/${product.id}.html`;
         link.setAttribute('aria-label', `${t('mobileOpenCollection')}: ${localizedName(product)}`);
         const image = document.createElement('img');
-        image.src = watermarkedPreview(product.preview);
+        image.src = thumbnailPreview(product.preview, 800);
+        image.srcset = [480, 800]
+            .map((width) => `${thumbnailPreview(product.preview, width)} ${width}w`)
+            .join(', ');
+        image.sizes = '(max-width: 640px) 92vw, 360px';
         image.alt = '';
         image.loading = 'lazy';
         image.decoding = 'async';
-        image.width = 3840;
-        image.height = 2160;
+        image.width = 800;
+        image.height = 450;
         const content = document.createElement('span');
         content.className = 'mobile-category-card-content';
         const name = document.createElement('strong');

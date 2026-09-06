@@ -72,6 +72,30 @@
         return `${directory}${watermarkedFile}`;
     }
 
+    function thumbnailPreviewPath(path, format = 'desktop', width = 800) {
+        return watermarkedPreviewPath(path, format)
+            .replace('assets/images/watermarked/', 'assets/images/thumbnails/')
+            .replace(/\.[^.]+$/, `-${width}.webp`);
+    }
+
+    function applyResponsivePreview(image, path, format = 'desktop') {
+        image.src = thumbnailPreviewPath(path, format, 800);
+        image.srcset = [480, 800]
+            .map((width) => `${thumbnailPreviewPath(path, format, width)} ${width}w`)
+            .join(', ');
+        image.sizes = '(max-width: 640px) 92vw, (max-width: 1100px) 46vw, 360px';
+        image.width = 800;
+        image.height = format === 'mobile' ? 1422 : 450;
+    }
+
+    function addCommerceData(link, product) {
+        link.dataset.productId = product.id || '';
+        link.dataset.productName = product.name || product.optionName || '';
+        link.dataset.productType = product.type || '';
+        link.dataset.productPrice = String(product.price || 0);
+        link.dataset.productCurrency = product.currency || catalog?.currency || 'USD';
+    }
+
     function wrapPriceFigures(text) {
         return String(text)
             .replace(/\$(\d+)/g, '$<span class="price-figure">$1</span>')
@@ -178,6 +202,7 @@
             link.target = '_blank';
             link.rel = 'noopener noreferrer';
             link.textContent = callToAction(product);
+            addCommerceData(link, product);
             return link;
         }
 
@@ -199,12 +224,10 @@
         imageWrap.className = 'store-product-image';
 
         const image = document.createElement('img');
-        image.src = watermarkedPreviewPath(sourceProduct.preview);
+        applyResponsivePreview(image, sourceProduct.preview);
         image.alt = product.name;
         image.loading = 'lazy';
         image.decoding = 'async';
-        image.width = 3840;
-        image.height = 2160;
         imageWrap.appendChild(image);
 
         if (product.badge) {
@@ -353,12 +376,10 @@
             button.setAttribute('aria-label', `${t('viewImage')}: ${title} — ${format}`);
 
             const image = document.createElement('img');
-            image.src = watermarkedPreviewPath(`assets/images/archive/${artwork.file}`, artwork.format);
+            applyResponsivePreview(image, `assets/images/archive/${artwork.file}`, artwork.format);
             image.alt = title;
             image.loading = 'lazy';
             image.decoding = 'async';
-            image.width = artwork.format === 'mobile' ? 1440 : 3840;
-            image.height = artwork.format === 'mobile' ? 2560 : 2160;
 
             const label = document.createElement('span');
             label.textContent = `${title} · ${format}`;
@@ -435,6 +456,7 @@
             link.target = '_blank';
             link.rel = 'noopener noreferrer';
             link.textContent = sourceProduct.cta || callToAction(sourceProduct);
+            addCommerceData(link, sourceProduct);
             return link;
         }
 

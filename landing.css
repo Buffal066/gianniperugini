@@ -1,7 +1,7 @@
 /* Landing Page - Projects Section */
 .home-page {
-    height: 100dvh;
-    overflow: hidden;
+    min-height: 100dvh;
+    overflow-x: hidden;
 }
 
 .home-page .landing-hero {
@@ -456,6 +456,12 @@ a.project-card {
 
 .landing-hero .hero-buttons a {
     pointer-events: auto;
+}
+
+.home-page .footer {
+    position: relative;
+    z-index: 5;
+    background: #050505;
 }
 
 .home-page,
@@ -1217,4 +1223,3 @@ a.project-card {
         margin: -26px 0 0 -26px;
     }
 }
-

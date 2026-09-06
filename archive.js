@@ -183,6 +183,23 @@
         return `assets/images/watermarked/${directory}/${encodeURIComponent(watermarkedFile)}`;
     }
 
+    function thumbnailPath(file, format = 'desktop', width = 800) {
+        const fullPath = imagePath(file, format);
+        return fullPath
+            .replace('assets/images/watermarked/', 'assets/images/thumbnails/')
+            .replace(/\.[^.]+$/, `-${width}.webp`);
+    }
+
+    function applyResponsivePreview(image, file, format = 'desktop') {
+        image.src = thumbnailPath(file, format, 800);
+        image.srcset = [480, 800]
+            .map((width) => `${thumbnailPath(file, format, width)} ${width}w`)
+            .join(', ');
+        image.sizes = '(max-width: 520px) 92vw, (max-width: 900px) 46vw, (max-width: 1280px) 31vw, 380px';
+        image.width = 800;
+        image.height = format === 'mobile' ? 1422 : 450;
+    }
+
     function syncFormatButtons(buttons, format) {
         buttons.forEach((button) => {
             const active = button.dataset.format === format;
@@ -241,13 +258,11 @@
         item.setAttribute('aria-label', `${t('viewImage')}: ${localizedFullTitle(work)}`);
 
         const img = document.createElement('img');
-        img.src = imagePath(work.file, previewFormat);
+        applyResponsivePreview(img, work.file, previewFormat);
         img.dataset.file = work.file;
         img.alt = localizedFullTitle(work);
         img.loading = 'lazy';
         img.decoding = 'async';
-        img.width = previewFormat === 'mobile' ? 1440 : 3840;
-        img.height = previewFormat === 'mobile' ? 2560 : 2160;
         if (extraClass.includes('digital-art-item')) img.draggable = false;
 
         item.appendChild(img);
@@ -337,9 +352,7 @@
         group.querySelectorAll('.archive-item.digital-art-item').forEach((item) => {
             const image = item.querySelector('img[data-file]');
             if (image) {
-                image.src = imagePath(image.dataset.file, format);
-                image.width = format === 'mobile' ? 1440 : 3840;
-                image.height = format === 'mobile' ? 2560 : 2160;
+                applyResponsivePreview(image, image.dataset.file, format);
             }
             item.dataset.previewFormat = format;
             item.classList.toggle('is-mobile', format === 'mobile');

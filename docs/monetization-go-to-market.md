@@ -3,7 +3,7 @@
 **Shared source of truth for Cursor + Codex.**  
 Update this file when a step finishes (`[ ]` → `[x]`), either directly or through the local interactive checklist. In either tool, say: *Read `docs/monetization-go-to-market.md` and continue the next open checklist item.*
 
-- **Updated:** 2026-09-01
+- **Updated:** 2026-09-06
 - **Agency:** https://glacenoire.com/
 - **Art hub:** https://glacenoire.com/art
 - **Store:** https://gianniperugini.com/archive.html  
@@ -25,14 +25,14 @@ So the emphasis moves from *more volume into a commodity* to *higher-margin offe
 | Metric | Value |
 | --- | --- |
 | Catalog Payhip pages buyable | 17 / 17 |
-| Discovery + on-site tracking | GSC + GA4 live |
+| Discovery + on-site tracking | GA4 live. GSC property exists. **www → apex is a clean 301** (fixed 2026-09-06). `site:` is still empty until Search Console inspects URLs. |
 | Checkout path | Verified |
 | Best-margin existing SKU | Commercial archive, $79+ — currently buried |
 | Product-level AI disclosure | Not published yet — blocks Etsy and weakens trust |
 | Distribution tasks still open | Email signature + first short video + hybrid Pins + social links |
 | Current job-search constraint | Employment is urgent. Cap store work at roughly 20% of the week until applications and interviews are moving. |
 
-**Next open action:** In one bounded 90-minute block, publish the "How these are made" AI-disclosure page and add the professional email signature. Then return to the job sprint. Reuse the first 6–10s portfolio motion proof as the first Glace Noire Reel/TikTok; do not create three separate videos before applying for jobs.
+**Next open action:** Findability leftovers are done (www, GSC, `/art/`, IceDraft www/noindex, Glace Noire schema, IceDraft privacy/terms). Employment still comes first.
 
 ---
 
@@ -65,7 +65,9 @@ So the emphasis moves from *more volume into a commodity* to *higher-margin offe
 
 ### Completed
 
-- [x] Add GA4 + CSP allowlist; track Payhip outbound clicks
+- [x] Add GA4 + CSP allowlist; track product-level Payhip clicks and checkout starts
+- [x] Replace full-size store-card images with responsive 480/800px WebP previews; preserve full-size lightbox previews
+- [x] Add a homepage Store CTA plus footer links to Store, FAQ, licensing, and contact
 - [x] Fix Measurement ID and confirm Realtime
 - [x] Install Glace Noire GA4 (`G-5BTGRF0PWS`) + CSP allowlist
 - [x] Update `llms.txt` — individuals are live
@@ -77,9 +79,21 @@ So the emphasis moves from *more volume into a commodity* to *higher-margin offe
 - [x] Add glacenoire.com/art landing → Gianni store + free sample
 - [x] Add a shared interactive checklist backed directly by this Markdown file
 
+### Findability — do this first, it blocks indexing
+
+Fixed 2026-09-06: added `www.gianniperugini.com` on **gianniperugini-site** as a domain redirect (301 → `gianniperugini.com`). Preview SSO stays on. Confirmed live: www homepage and store paths 301 to apex with no `sso-api`. The older “submit sitemap in GSC” item stays checked (the property exists) but it is **not** the same as being indexed.
+
+- [x] Add `www.gianniperugini.com` to gianniperugini-site and 301 www → `https://gianniperugini.com/` (preview SSO left on)
+- [x] Search Console: requested `/` and `/archive.html` on gianniperugini.com; added/verified glacenoire.com; requested `/` and `/art`; submitted `https://glacenoire.com/sitemap.xml`. `store.html` is a 404.
+- [x] 301 `www.glacenoire.com` → `https://glacenoire.com/` (domain redirect on glace-noire-media; homepage was the leftover 200)
+- [x] 301 `https://glacenoire.com/art/` → `https://glacenoire.com/art` (Vercel 308; live)
+- [x] IceDraft: 301 `www.icedraft.gianniperugini.com` → apex (valid cert) and noindex login/signup
+
+Leftovers after GSC inspect are done: Glace Noire Organization schema is live; IceDraft `/privacy` and `/terms` are 200. Homepage already has a secondary Store CTA; do not replace the hiring “View work” button just to satisfy a shop-first note.
+
 ### In progress
 
-- [ ] **Finish pushing the free sample everywhere** — social bios are live; email signature, first Reel/TikTok and Pins remain open
+- [ ] **Finish pushing the free sample everywhere** — social bios are live; email signature, first Reel/TikTok and Pins remain open. **Not the next action** until Search Console inspect is done.
 - [x] Create Glace Noire social accounts (not personal Instagram)
 
 ### Fast monetization sprint — maximum one workday, then back to applications
@@ -280,7 +294,8 @@ Do not claim “no spam.” If marketing follow-up is enabled, use a clear conse
 | Payhip checkout links | 17 catalog URLs buyable | Ready |
 | Individual SKUs | 168 enabled with Payhip URLs | Ready |
 | FAQ + licensing | Live | Ready |
-| Analytics | GA4 + `payhip_click` events | Ready |
+| Analytics | GA4 + product-level `payhip_click`, `begin_checkout`, and homepage CTA events | Ready |
+| Store performance | Responsive WebP cards; full-size files load only in the lightbox | Ready |
 | Glace Noire analytics | GA4 on glacenoire.com | Ready |
 | Contact → iCloud | FormSubmit + contact@ | Ready |
 | Mobile store UX | Featured/Other + preview defaults | Ready |
