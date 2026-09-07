@@ -37,7 +37,7 @@ So the emphasis moves from *more volume into a commodity* to *higher-margin offe
 | Current job-search constraint    | Employment is urgent. Cap store work at roughly 20% of the week until applications and interviews are moving.                               |
 
 
-**Next open action:** set up **Stripe invoicing** — nothing here can earn until a service payment can be accepted. Then publish the CAD $495 pilot page. Fastest free traffic meanwhile is Reddit. Employment still comes first.
+**Next open action:** confirm **GST/QST** registration status, then make one 20–30s proof reel. Offer the CAD $495 pilot in DMs after that — do not publish it on empty socials. Fastest free traffic is Reddit. Employment still comes first.
 
 **Fastest traffic available right now:** free wallpaper posts on Reddit — see the Traffic channels table. It costs nothing, needs no audience, and starts working the same week.
 
@@ -133,7 +133,7 @@ I sketched a cover concept in your style. Want to see it?
 
 #### Days 1–2 — make the offer sellable
 
-- [ ] **Set up Stripe invoicing and confirm a test invoice sends** — blocks every other item; there is currently no way to accept a service payment
+- [x] **Set up Stripe invoicing and confirm a test invoice sends** — live CA$1 test invoice #0KZSIYDT-0001 sent to contact@glacenoire.com and paid 2026-09-07. Public support email is now contact@glacenoire.com. Deposit/balance catalog products exist; do not send them as a test.
 - [ ] **Confirm GST/QST registration status** before publishing any price; if not registered, publish a flat $495 with no tax line
 - [ ] **Publish the bilingual EN/FR Glace Noire Visual Launch Pilot page** with the CAD $495 price, exact deliverables (18 files), exclusions, 50/50 payment terms, turnaround, proof, and one enquiry CTA
 - [ ] Create one 20–30 second proof reel from existing work using screen/process footage and Gianni's voice or commentary; do not use a silent mass-produced AI slideshow
