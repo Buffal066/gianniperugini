@@ -3,7 +3,7 @@
 **Shared source of truth for Cursor + Codex.**  
 Update this file when a step finishes (`[ ]` → `[x]`), either directly or through the local interactive checklist. In either tool, say: *Read* `docs/monetization-go-to-market.md` *and continue the next open checklist item.*
 
-- **Updated:** 2026-09-06 — review pass: payment terms, second prospect track, Reddit, corrected timeline
+- **Updated:** 2026-09-07 — YouTube, Reddit, and Facebook live on Ground Control; leftover dark-art surfaces parked on the checklist
 - **Agency:** [https://glacenoire.com/](https://glacenoire.com/)
 - **Art hub:** [https://glacenoire.com/art](https://glacenoire.com/art)
 - **Store:** [https://gianniperugini.com/archive.html](https://gianniperugini.com/archive.html)  
@@ -139,7 +139,7 @@ I sketched a cover concept in your style. Want to see it?
 - [ ] Create one 20–30 second proof reel from existing work using screen/process footage and Gianni's voice or commentary; do not use a silent mass-produced AI slideshow
 - [ ] Connect or expose the Glace Noire GA4 property in Ground Control and confirm the service-page view and enquiry events are measurable
 - [ ] Add unique UTM links for Instagram, TikTok, YouTube, Pinterest, and direct outreach; document their names here
-- [ ] Create the Glace Noire YouTube channel, complete its branding, and make the first profile link the intended Glace Noire service/art destination
+- [x] Create the Glace Noire YouTube channel, complete its branding, and make the first profile link the intended Glace Noire service/art destination — live [youtube.com/@glace_noire_studio](https://www.youtube.com/@glace_noire_studio), first link Art store → `https://glacenoire.com/art`. Do not upload a video until the proof reel exists.
 
 
 
@@ -147,7 +147,7 @@ I sketched a cover concept in your style. Want to see it?
 
 - [ ] Build a first list of 25 tightly matched prospects **across both tracks**; record business, niche, visible marketing gap, decision-maker, contact source, consent basis, tailored hook, and status
 - [ ] Contact 5 qualified prospects per weekday. **Instagram DM is the primary channel for tattoo studios and bands**; use published business contacts, warm introductions, and CASL-conscious email only where DMs are not appropriate
-- [ ] **Start Reddit posting: 2–3 free wallpapers per week** in r/AmoledBackgrounds, r/wallpapers, r/iphonewallpapers, r/ImaginaryHorror, r/darkart. Post the image directly with no link and no pitch; the store link lives in the Reddit profile only. Link-dropping gets accounts banned; free art gets upvoted
+- [ ] **Start Reddit posting: 2–3 free wallpapers per week** in r/AmoledBackgrounds, r/wallpapers, r/iphonewallpapers, r/ImaginaryHorrors, r/darkart. Account `u/glace_noire_studio` exists and has joined those rooms. Post the image directly with no link and no pitch; the store link lives in the Reddit profile only. Link-dropping gets accounts banned; free art gets upvoted
 - [ ] Create no more than 2 private, watermarked 8–15 second speculative concepts for the two strongest prospects; do not publish them or provide editable/source files
 - [ ] Ask each interested prospect for one 15-minute fit call tied to a specific promotional outcome
 
@@ -382,7 +382,14 @@ Pinterest’s Website field rejects paths. Public site is `https://glacenoire.co
 
 Create these as **Glace Noire** business/creator accounts. Click the URL, sign up, then come back and check the box only after the live profile exists.
 
-Live Instagram: [https://www.instagram.com/glace_noire_studio/](https://www.instagram.com/glace_noire_studio/) (Creator, category Art, display name Glace Noire)
+Live profiles:
+
+- Instagram: [https://www.instagram.com/glace_noire_studio/](https://www.instagram.com/glace_noire_studio/) (Creator, category Art, display name Glace Noire)
+- TikTok: [https://www.tiktok.com/@glace_noire_studio](https://www.tiktok.com/@glace_noire_studio)
+- Pinterest: [https://www.pinterest.com/glace_noire_studio/](https://www.pinterest.com/glace_noire_studio/)
+- YouTube: [https://www.youtube.com/@glace_noire_studio](https://www.youtube.com/@glace_noire_studio)
+- Reddit: [https://www.reddit.com/user/glace_noire_studio/](https://www.reddit.com/user/glace_noire_studio/)
+- Facebook: [https://www.facebook.com/glacenoirestudio](https://www.facebook.com/glacenoirestudio)
 
 ### Required now
 
@@ -390,7 +397,9 @@ Live Instagram: [https://www.instagram.com/glace_noire_studio/](https://www.inst
 - [x] Switch that Instagram to Creator or Business (Settings → Account type and tools)
 - [x] TikTok — [https://www.tiktok.com/signup](https://www.tiktok.com/signup)
 - [x] Pinterest Business — [https://www.pinterest.com/business/create/](https://www.pinterest.com/business/create/)
-- [x] YouTube channel — [https://www.youtube.com/create_channel](https://www.youtube.com/create_channel) — create now for cross-posted Shorts and proof; do not treat ad revenue as the 30-day objective
+- [x] YouTube channel — [https://www.youtube.com/@glace_noire_studio](https://www.youtube.com/@glace_noire_studio) — branding and first link (`https://glacenoire.com/art`) are live; do not treat ad revenue as the 30-day objective
+- [x] Reddit account — [https://www.reddit.com/user/glace_noire_studio/](https://www.reddit.com/user/glace_noire_studio/) — About and Art store link live; joined r/AmoledBackgrounds, r/wallpapers, r/iphonewallpapers, r/ImaginaryHorrors, r/darkart. Do not post until the new account is allowed
+- [x] Facebook Page — [https://www.facebook.com/glacenoirestudio](https://www.facebook.com/glacenoirestudio)
 
 
 
@@ -403,8 +412,18 @@ Live Instagram: [https://www.instagram.com/glace_noire_studio/](https://www.inst
 ### Later / optional
 
 - [ ] Threads (uses the Instagram account) — [https://www.threads.com/login](https://www.threads.com/login)
-- [ ] Facebook Page — [https://www.facebook.com/pages/creation/?ref_type=launch_point](https://www.facebook.com/pages/creation/?ref_type=launch_point)
 - [ ] X / Twitter — [https://x.com/i/flow/signup](https://x.com/i/flow/signup)
+
+### Later dark-art surfaces
+
+Do not create these the same week as YouTube and Reddit. Empty accounts do not make traffic. After Reddit is posting and the proof reel exists:
+
+- [ ] Tumblr — goth/dark-art reblogs; same images as Reddit — [https://www.tumblr.com/register](https://www.tumblr.com/register)
+- [ ] DeviantArt — searchable archive; portfolio + wallpapers, not a daily channel — [https://www.deviantart.com/join](https://www.deviantart.com/join)
+- [ ] Zedge — one upload batch of existing wallpapers — [https://www.zedge.net/](https://www.zedge.net/)
+- [ ] Discord (goth / wallpaper servers) — only if invited; never blast
+- [ ] Extra Reddit rooms after the first five behave: [r/CreepyArt](https://www.reddit.com/r/CreepyArt), [r/ImaginaryMonsters](https://www.reddit.com/r/ImaginaryMonsters), [r/goth](https://www.reddit.com/r/goth), [r/DarkArtwork](https://www.reddit.com/r/DarkArtwork), [r/phonewallpapers](https://www.reddit.com/r/phonewallpapers). Join only. No store links in posts
+- [ ] Facebook Groups for Track 2 outreach (self-pub authors, haunted houses, goth events) — not wallpaper dumps
 
 After each required account exists, set the bio and links before marking the matching “bio → free sample” item below.
 
@@ -427,6 +446,8 @@ The Payhip link is a free product/checkout page, not a raw file URL. Buyers ente
 - [x] Instagram bio → free sample
 - [x] TikTok bio → free sample
 - [x] Pinterest profile → free sample (public site `https://glacenoire.com`; About mentions the free 6-pack)
+- [x] YouTube first link → [https://glacenoire.com/art](https://glacenoire.com/art)
+- [x] Reddit profile website → [https://glacenoire.com/art](https://glacenoire.com/art)
 - [ ] Professional email signature → free sample
 - [x] Linktree / link-in-bio — skipped; Instagram already has two links
 - [ ] 3 Reels/TikToks posted with CTA to sample
@@ -566,7 +587,7 @@ Push: **free → featured collections → archive.** Don’t rebuild pricing bef
 | Free sample push                    | Supporting lead magnet                   | Every profile; use it to build trust and consent-based follow-up                                    |
 | Pinterest                           | Low-effort discovery test                | Two repurposed Pins weekly; confirm with analytics before increasing effort                         |
 | Etsy (4–6 listings)                 | Frozen during 30-day sprint              | Reconsider only after disclosure and the service sprint review                                      |
-| **Reddit** | **Fastest free traffic available; the channel earlier plans missed** | 2–3 free wallpapers weekly in r/AmoledBackgrounds, r/wallpapers, r/iphonewallpapers, r/ImaginaryHorror, r/darkart. Post the image directly — no link, no pitch; store link in the Reddit profile only. Link-dropping gets accounts banned; free art gets upvoted. One good post can exceed a month of current site traffic |
+| **Reddit** | **Fastest free traffic available; the channel earlier plans missed** | 2–3 free wallpapers weekly in r/AmoledBackgrounds, r/wallpapers, r/iphonewallpapers, r/ImaginaryHorrors, r/darkart. Post the image directly — no link, no pitch; store link in the Reddit profile only. Link-dropping gets accounts banned; free art gets upvoted. One good post can exceed a month of current site traffic |
 | Zedge | Volume test — unfrozen 2026-09-06 | Upload 20–30 existing wallpapers; roughly two hours against files already owned |
 | Google organic                      | Compounding                              | Collection pages already structured                                                                 |
 | Email list                          | Owned traffic                            | After sample / purchase                                                                             |
