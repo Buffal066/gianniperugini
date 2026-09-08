@@ -3,7 +3,7 @@
 **Shared source of truth for Cursor + Codex.**  
 Update this file when a step finishes (`[ ]` → `[x]`), either directly or through the local interactive checklist. In either tool, say: *Read* `docs/monetization-go-to-market.md` *and continue the next open checklist item.*
 
-- **Updated:** 2026-09-07 — YouTube, Reddit, and Facebook live on Ground Control; leftover dark-art surfaces parked on the checklist
+- **Updated:** 2026-09-07 — GST/QST confirmed (registered corporation); next public step is the existing silent video, not the pilot page or a voiceover reel
 - **Agency:** [https://glacenoire.com/](https://glacenoire.com/)
 - **Art hub:** [https://glacenoire.com/art](https://glacenoire.com/art)
 - **Store:** [https://gianniperugini.com/archive.html](https://gianniperugini.com/archive.html)  
@@ -33,11 +33,11 @@ So the emphasis moves from *more volume into a commodity* to *higher-margin offe
 | Best-margin existing SKU         | Commercial archive, $79+ — currently buried                                                                                                 |
 | Qualified store traffic observed | Only 4 users triggered `payhip_click` in the August 10–September 6 GA4 window — too little evidence to judge pricing or demand              |
 | Product-level AI disclosure      | Not published yet — blocks Etsy and weakens trust                                                                                           |
-| Distribution tasks still open    | Email signature + first short video + hybrid Pins + social links                                                                            |
+| Distribution tasks still open    | First silent video + Reddit wallpaper + Halloween promo + email signature + hybrid Pins                                                      |
 | Current job-search constraint    | Employment is urgent. Cap store work at roughly 20% of the week until applications and interviews are moving.                               |
 
 
-**Next open action:** confirm **GST/QST** registration status, then make one 20–30s proof reel. Offer the CAD $495 pilot in DMs after that — do not publish it on empty socials. Fastest free traffic is Reddit. Employment still comes first.
+**Next open action:** post the existing silent Glace Noire video on Instagram / TikTok (YouTube Shorts is fine). No $495 in the caption. Then one Reddit wallpaper if the new account can post, then a Halloween promo of existing stills. Hold the bilingual pilot page and the voiceover reel until those public posts exist. Employment still comes first.
 
 **Fastest traffic available right now:** free wallpaper posts on Reddit — see the Traffic channels table. It costs nothing, needs no audience, and starts working the same week.
 
@@ -79,7 +79,7 @@ This is a highest-probability experiment, not a guarantee. Artistic quality alon
 
 **Glace Noire Visual Launch Pilot — CAD $495**
 
-Do not publish a tax line until registration status is confirmed. Below roughly $30,000 in annual revenue you are a small supplier in Quebec and likely should not register for GST/QST yet, because registering means collecting and remitting from the first dollar. If you never registered a business number with Revenu Québec or the CRA, price the page as a flat $495.
+GST/QST is confirmed: Glace Noire is a registered corporation and Payhip already collects tax. Any published pilot price is **CAD $495 + GST/QST**, not a flat $495.
 
 Included:
 
@@ -134,12 +134,13 @@ I sketched a cover concept in your style. Want to see it?
 #### Days 1–2 — make the offer sellable
 
 - [x] **Set up Stripe invoicing and confirm a test invoice sends** — live CA$1 test invoice #0KZSIYDT-0001 sent to contact@glacenoire.com and paid 2026-09-07. Public support email is now contact@glacenoire.com. Deposit/balance catalog products exist; do not send them as a test.
-- [ ] **Confirm GST/QST registration status** before publishing any price; if not registered, publish a flat $495 with no tax line
-- [ ] **Publish the bilingual EN/FR Glace Noire Visual Launch Pilot page** with the CAD $495 price, exact deliverables (18 files), exclusions, 50/50 payment terms, turnaround, proof, and one enquiry CTA
-- [ ] Create one 20–30 second proof reel from existing work using screen/process footage and Gianni's voice or commentary; do not use a silent mass-produced AI slideshow
+- [x] **Confirm GST/QST registration status** — registered corporation; Payhip already collects tax. Published pilot price is CAD $495 + GST/QST, not a flat $495
+- [ ] **Post the existing silent Glace Noire video now** on Instagram / TikTok (YouTube Shorts is fine). Use finished work already made — not a generic AI slideshow. No $495 in the caption
 - [ ] Connect or expose the Glace Noire GA4 property in Ground Control and confirm the service-page view and enquiry events are measurable
 - [ ] Add unique UTM links for Instagram, TikTok, YouTube, Pinterest, and direct outreach; document their names here
-- [x] Create the Glace Noire YouTube channel, complete its branding, and make the first profile link the intended Glace Noire service/art destination — live [youtube.com/@glace_noire_studio](https://www.youtube.com/@glace_noire_studio), first link Art store → `https://glacenoire.com/art`. Do not upload a video until the proof reel exists.
+- [x] Create the Glace Noire YouTube channel, complete its branding, and make the first profile link the intended Glace Noire service/art destination — live [youtube.com/@glace_noire_studio](https://www.youtube.com/@glace_noire_studio), first link Art store → `https://glacenoire.com/art`. The first upload can be the silent video
+- [ ] Create one 20–30 second voiceover proof reel from existing work using screen/process footage and Gianni's voice or commentary — **after** the silent video, free art, and Halloween promo are public; attach this reel when DM outreach for the CAD $495 pilot starts
+- [ ] **Publish the bilingual EN/FR Glace Noire Visual Launch Pilot page** — deferred until the first public posts exist. Include CAD $495 + GST/QST, exact deliverables (18 files), exclusions, 50/50 payment terms, turnaround, proof, and one enquiry CTA. Do not add a new $19 Halloween printable SKU this sprint
 
 
 
