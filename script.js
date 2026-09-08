@@ -427,7 +427,7 @@ if (contactForm) {
         }
 
         try {
-            const response = await fetch('https://formsubmit.co/ajax/gianniperugini@icloud.com', {
+            const response = await fetch('https://formsubmit.co/ajax/contact@gianniperugini.com', {
                 method: 'POST',
                 headers: { Accept: 'application/json' },
                 body: formData
