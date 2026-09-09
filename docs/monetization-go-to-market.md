@@ -135,7 +135,7 @@ I sketched a cover concept in your style. Want to see it?
 
 - [x] **Set up Stripe invoicing and confirm a test invoice sends** — live CA$1 test invoice #0KZSIYDT-0001 sent to contact@glacenoire.com and paid 2026-09-07. Public support email is now contact@glacenoire.com. Deposit/balance catalog products exist; do not send them as a test.
 - [x] **Confirm GST/QST registration status** — registered corporation; Payhip already collects tax. Published pilot price is CAD $495 + GST/QST, not a flat $495
-- [ ] **Post the existing silent Glace Noire video now** on Instagram / TikTok. YouTube Short is live: [Urban Noir — Day to Night](https://youtu.be/3n3PpIfEcxA) (published 2026-09-08, Private first then Public). Instagram Reel is drafted, not Shared. TikTok not started. No $495 in the caption.
+- [ ] **Post the existing silent Glace Noire video now** on Instagram / TikTok. YouTube Short is live: [Urban Noir — Day to Night](https://youtu.be/3n3PpIfEcxA). Instagram Reel is public. TikTok draft is saved, not posted. Caption must include `https://glacenoire.com/art`. No $495 in the caption.
 - [ ] Connect or expose the Glace Noire GA4 property in Ground Control and confirm the service-page view and enquiry events are measurable
 - [ ] Add unique UTM links for Instagram, TikTok, YouTube, Pinterest, and direct outreach; document their names here
 - [x] Create the Glace Noire YouTube channel, complete its branding, and make the first profile link the intended Glace Noire service/art destination — live [youtube.com/@glace_noire_studio](https://www.youtube.com/@glace_noire_studio), first link Art store → `https://glacenoire.com/art`. First public Short: [Urban Noir — Day to Night](https://youtu.be/3n3PpIfEcxA)
@@ -185,7 +185,7 @@ I sketched a cover concept in your style. Want to see it?
 
 ### YouTube role
 
-Create YouTube now, but treat it as a discovery and proof channel — not a near-term advertising paycheck. Cross-post the same source material used for Instagram and TikTok. Because URLs in Shorts descriptions and comments are not clickable, direct viewers to the first channel-profile link.
+Create YouTube now, but treat it as a discovery and proof channel — not a near-term advertising paycheck. Cross-post the same source material used for Instagram and TikTok. **Every public caption must include `https://glacenoire.com/art`**, even when the URL is not clickable — viewers who want the site should see it without opening the bio. Keep the first channel-profile link on that same URL as the clickable backup. No $495 in captions.
 
 **Long-form is gated on the first paying client, not on a Shorts count.** Eight Shorts is an activity milestone, not evidence that anything is working, and long-form is a real production commitment that would quietly consume prospecting time. Once a client has paid, test one buyer-relevant long-form video every two weeks: a before/after brand transformation, a process breakdown, or a practical dark-visual tutorial.
 
