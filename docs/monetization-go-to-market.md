@@ -33,11 +33,11 @@ So the emphasis moves from *more volume into a commodity* to *higher-margin offe
 | Best-margin existing SKU         | Commercial archive, $79+ — currently buried                                                                                                 |
 | Qualified store traffic observed | Only 4 users triggered `payhip_click` in the August 10–September 6 GA4 window — too little evidence to judge pricing or demand              |
 | Product-level AI disclosure      | Not published yet — blocks Etsy and weakens trust                                                                                           |
-| Distribution tasks still open    | First silent video + Reddit wallpaper + Halloween promo + email signature + hybrid Pins                                                      |
+| Distribution tasks still open    | Instagram + TikTok of the plaza clip + Reddit wallpaper + Halloween promo + email signature + hybrid Pins                                      |
 | Current job-search constraint    | Employment is urgent. Cap store work at roughly 20% of the week until applications and interviews are moving.                               |
 
 
-**Next open action:** post the existing silent Glace Noire video on Instagram / TikTok (YouTube Shorts is fine). No $495 in the caption. Then one Reddit wallpaper if the new account can post, then a Halloween promo of existing stills. Hold the bilingual pilot page and the voiceover reel until those public posts exist. Employment still comes first.
+**Next open action:** post the same plaza clip on Instagram and TikTok. YouTube Short is already live: [Urban Noir — Day to Night](https://youtu.be/3n3PpIfEcxA). No $495 in the caption. Then one Reddit wallpaper if the new account can post, then a Halloween promo of existing stills. Hold the bilingual pilot page and the voiceover reel until those public posts exist. Employment still comes first.
 
 **Fastest traffic available right now:** free wallpaper posts on Reddit — see the Traffic channels table. It costs nothing, needs no audience, and starts working the same week.
 
@@ -135,10 +135,10 @@ I sketched a cover concept in your style. Want to see it?
 
 - [x] **Set up Stripe invoicing and confirm a test invoice sends** — live CA$1 test invoice #0KZSIYDT-0001 sent to contact@glacenoire.com and paid 2026-09-07. Public support email is now contact@glacenoire.com. Deposit/balance catalog products exist; do not send them as a test.
 - [x] **Confirm GST/QST registration status** — registered corporation; Payhip already collects tax. Published pilot price is CAD $495 + GST/QST, not a flat $495
-- [ ] **Post the existing silent Glace Noire video now** on Instagram / TikTok (YouTube Shorts is fine). Use finished work already made — not a generic AI slideshow. No $495 in the caption
+- [ ] **Post the existing silent Glace Noire video now** on Instagram / TikTok. YouTube Short is live: [Urban Noir — Day to Night](https://youtu.be/3n3PpIfEcxA) (published 2026-09-08, Private first then Public). Instagram Reel is drafted, not Shared. TikTok not started. No $495 in the caption.
 - [ ] Connect or expose the Glace Noire GA4 property in Ground Control and confirm the service-page view and enquiry events are measurable
 - [ ] Add unique UTM links for Instagram, TikTok, YouTube, Pinterest, and direct outreach; document their names here
-- [x] Create the Glace Noire YouTube channel, complete its branding, and make the first profile link the intended Glace Noire service/art destination — live [youtube.com/@glace_noire_studio](https://www.youtube.com/@glace_noire_studio), first link Art store → `https://glacenoire.com/art`. The first upload can be the silent video
+- [x] Create the Glace Noire YouTube channel, complete its branding, and make the first profile link the intended Glace Noire service/art destination — live [youtube.com/@glace_noire_studio](https://www.youtube.com/@glace_noire_studio), first link Art store → `https://glacenoire.com/art`. First public Short: [Urban Noir — Day to Night](https://youtu.be/3n3PpIfEcxA)
 - [ ] Create one 20–30 second voiceover proof reel from existing work using screen/process footage and Gianni's voice or commentary — **after** the silent video, free art, and Halloween promo are public; attach this reel when DM outreach for the CAD $495 pilot starts
 - [ ] **Publish the bilingual EN/FR Glace Noire Visual Launch Pilot page** — deferred until the first public posts exist. Include CAD $495 + GST/QST, exact deliverables (18 files), exclusions, 50/50 payment terms, turnaround, proof, and one enquiry CTA. Do not add a new $19 Halloween printable SKU this sprint
 
