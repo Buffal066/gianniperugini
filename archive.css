@@ -6,15 +6,122 @@
 }
 
 .archive-hero {
-    padding: 7rem 20px 2.75rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: min(68vh, 38rem);
+    padding: 7.5rem 20px 3.75rem;
     text-align: center;
-    background:
-        linear-gradient(90deg, rgba(3, 3, 3, 0.9), rgba(3, 3, 3, 0.76) 50%, rgba(3, 3, 3, 0.9)),
-        url('assets/images/watermarked/archive/digital-art-burned-canvas-ash-weave-watermarked.jpg') center 52% / cover no-repeat;
+    background: #050505;
     border-bottom: 1px solid var(--border-color);
 }
 
+.archive-hero-media {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+    background: #050505;
+}
+
+.archive-hero-video,
+.archive-hero-still {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 42%;
+}
+
+.archive-hero-video {
+    display: block;
+    background: #050505;
+}
+
+.archive-hero-still {
+    display: none;
+}
+
+.archive-hero-veil {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(5, 5, 5, 0.42) 0%, rgba(5, 5, 5, 0.18) 32%, rgba(5, 5, 5, 0.28) 62%, rgba(5, 5, 5, 0.7) 100%),
+        linear-gradient(90deg, rgba(5, 5, 5, 0.4) 0%, transparent 24%, transparent 76%, rgba(5, 5, 5, 0.4) 100%);
+    pointer-events: none;
+}
+
+.archive-hero-sound {
+    position: absolute;
+    right: clamp(1rem, 3vw, 2rem);
+    bottom: clamp(1rem, 2.5vh, 1.75rem);
+    z-index: 3;
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 50%;
+    background: rgba(5, 5, 5, 0.62);
+    color: var(--text-primary);
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.archive-hero-sound:hover,
+.archive-hero-sound:focus-visible {
+    border-color: var(--accent-gold);
+    color: #fff;
+}
+
+.archive-hero-sound:focus-visible {
+    outline: 1px solid var(--accent-gold);
+    outline-offset: 3px;
+}
+
+.archive-hero-sound-icon {
+    display: none;
+    width: 20px;
+    height: 20px;
+}
+
+.archive-hero-sound-icon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.archive-hero-sound-icon--off {
+    display: block;
+}
+
+.archive-hero-sound.is-unmuted .archive-hero-sound-icon--off {
+    display: none;
+}
+
+.archive-hero-sound.is-unmuted .archive-hero-sound-icon--on {
+    display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .archive-hero-video,
+    .archive-hero-sound {
+        display: none;
+    }
+
+    .archive-hero-still {
+        display: block;
+    }
+}
+
 .archive-hero-content {
+    position: relative;
+    z-index: 2;
     max-width: 720px;
     margin: 0 auto;
 }
@@ -33,6 +140,7 @@
     font-weight: 600;
     letter-spacing: 3px;
     margin-bottom: 0.75rem;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.55);
 }
 
 .archive-subtitle {
@@ -40,6 +148,7 @@
     font-size: 1rem;
     line-height: 1.6;
     font-weight: 300;
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.45);
 }
 
 .archive-hero-actions {
@@ -1590,10 +1699,13 @@
         flex: 1;
     }
     .archive-hero {
-        padding: 7rem 20px 2rem;
-        background:
-            linear-gradient(180deg, rgba(3, 3, 3, 0.84), rgba(3, 3, 3, 0.9)),
-            url('assets/images/watermarked/mobile/digital-art-burned-canvas-ash-weave-mobile-watermarked.jpg') center 44% / cover no-repeat;
+        min-height: min(62vh, 32rem);
+        padding: 7rem 20px 4.25rem;
+    }
+
+    .archive-hero-video,
+    .archive-hero-still {
+        object-position: center 38%;
     }
 
     .archive-grid {

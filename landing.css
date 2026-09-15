@@ -547,6 +547,25 @@ a.project-card {
     pointer-events: auto;
 }
 
+.landing-hero .hero-motion-link {
+    margin: 0.9rem 0 0;
+    text-align: right;
+}
+
+.landing-hero .hero-motion-link a {
+    color: inherit;
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-decoration: underline;
+    text-underline-offset: 0.22em;
+    text-transform: uppercase;
+}
+
+.landing-hero .hero-motion-link a:hover,
+.landing-hero .hero-motion-link a:focus-visible {
+    color: #f3eee5;
+}
+
 .home-page .footer {
     position: relative;
     z-index: 5;
@@ -750,6 +769,10 @@ a.project-card {
         margin: 0;
         padding: 0;
     }
+
+    .landing-hero .hero-motion-link {
+        text-align: right;
+    }
 }
 
 
@@ -895,28 +918,20 @@ a.project-card {
         url('assets/images/landing-bg.png') center / cover fixed;
 }
 
-.contact-page .content-page-main {
-    min-height: calc(100dvh - 72px);
+.contact-page .content-page-main--with-hero {
+    min-height: 0;
 }
 
 .contact-page .contact--page {
-    min-height: calc(100dvh - 72px);
-    padding: clamp(6.5rem, 12vh, 8rem) 0 5rem;
+    min-height: 0;
+    padding: 3.5rem 0 5rem;
     background: rgba(3, 8, 12, 0.42);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
 }
 
-.contact-page .contact--page .section-title {
-    margin-bottom: 1rem;
-}
-
-.contact-page .contact--page .section-subtitle {
-    margin-bottom: 0;
-}
-
 .contact-page .contact-content {
-    margin-top: 3.5rem;
+    margin-top: 0;
 }
 
 .contact-page .contact-info h2 {

@@ -8,6 +8,8 @@
     const heroEyebrow = document.querySelector('.archive-eyebrow');
     const heroTitle = document.querySelector('.archive-title');
     const heroActions = document.querySelector('.archive-hero-actions');
+    const heroVideo = document.getElementById('archive-hero-video');
+    const heroSound = document.querySelector('.archive-hero-sound');
     const storefront = document.getElementById('store-products');
     const browseHeading = document.querySelector('.archive-gallery-heading h2');
     const browseIntro = document.querySelector('.archive-gallery-heading > [data-i18n="browseIntro"]');
@@ -146,9 +148,40 @@
             button.setAttribute('aria-pressed', String(active));
         });
 
+        updateHeroSoundLabel();
+
         window.dispatchEvent(new CustomEvent('archive:languagechange', {
             detail: { language: currentLanguage },
         }));
+    }
+
+    function updateHeroSoundLabel() {
+        if (!heroSound || !heroVideo) return;
+        heroSound.setAttribute('aria-label', heroVideo.muted ? t('unmuteMotion') : t('muteMotion'));
+        heroSound.setAttribute('aria-pressed', String(!heroVideo.muted));
+        heroSound.classList.toggle('is-unmuted', !heroVideo.muted);
+    }
+
+    function initHeroSound() {
+        if (!heroSound || !heroVideo) return;
+
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        if (reducedMotion.matches) {
+            heroVideo.pause();
+            heroVideo.removeAttribute('autoplay');
+            return;
+        }
+
+        heroSound.addEventListener('click', () => {
+            heroVideo.muted = !heroVideo.muted;
+            if (!heroVideo.muted) {
+                heroVideo.play().catch(() => {});
+            }
+            updateHeroSoundLabel();
+        });
+
+        heroVideo.play().catch(() => {});
+        updateHeroSoundLabel();
     }
 
     function setLanguage(language) {
@@ -388,7 +421,6 @@
 
         const section = document.createElement('section');
         section.className = 'archive-section';
-        section.id = 'composites';
 
         const groups = new Map();
         works.forEach((work) => {
@@ -647,6 +679,7 @@
     window.addEventListener('archive:openwork', (event) => {
         if (event.detail?.work) openLightbox(event.detail.work, event.detail.trigger);
     });
+    initHeroSound();
     languageButtons.forEach((button) => {
         button.addEventListener('click', () => setLanguage(button.dataset.language));
     });

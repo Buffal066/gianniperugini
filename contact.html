@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- deployed: 2026-09-10 16:57:13 -->
+<!-- deployed: 2026-09-15 00:31:25 -->
 <html lang="en-CA">
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link rel="stylesheet" href="styles.css?v=20260828-nav-white">
-    <link rel="stylesheet" href="landing.css?v=20260811-contact">
+    <link rel="stylesheet" href="landing.css?v=20260915-contact-hero">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -64,15 +64,20 @@
         </div>
     </nav>
 
-    <main class="content-page-main">
-        <section class="contact contact--page" aria-labelledby="contact-title">
-            <div class="container">
-                <h1 id="contact-title" class="section-title" data-i18n="contactTitle">Contact Us</h1>
-                <p class="section-subtitle" data-i18n="contactSubtitle">Ready to start a project? Let’s create something extraordinary together.</p>
+    <section class="page-hero" aria-labelledby="contact-hero-title">
+        <div class="page-hero-content">
+            <p class="page-hero-eyebrow" data-i18n="contactEyebrow">Inquiries</p>
+            <h1 id="contact-hero-title" class="page-hero-title" data-i18n="contactTitle">Contact Us</h1>
+            <p class="page-hero-subtitle" data-i18n="contactSubtitle">Ready to start a project? Let’s create something extraordinary together.</p>
+        </div>
+    </section>
 
+    <main class="content-page-main content-page-main--with-hero">
+        <section class="contact contact--page" aria-labelledby="contact-get-in-touch">
+            <div class="container">
                 <div class="contact-content">
                     <div class="contact-info">
-                        <h2 data-i18n="getInTouch">Get in Touch</h2>
+                        <h2 id="contact-get-in-touch" data-i18n="getInTouch">Get in Touch</h2>
                         <p data-i18n="contactIntro">Tell me what you want: a custom digital project, custom video generation, custom images, a tailored website, framed prints, or wallpapers. Anything else you need, we’ll figure it out.</p>
                         <div class="contact-details">
                             <div class="contact-item">

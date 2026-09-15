@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- deployed: 2026-09-10 16:57:13 -->
+<!-- deployed: 2026-09-15 00:31:25 -->
 <html lang="en-CA">
 <head>
     <meta charset="UTF-8">
@@ -27,7 +27,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
     <link rel="stylesheet" href="styles.css?v=20260828-nav-white">
-    <link rel="stylesheet" href="archive.css?v=20260810-lightbox-scroll">
+    <link rel="stylesheet" href="archive.css?v=20260914-ice-hero">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -99,7 +99,51 @@
         </div>
     </nav>
 
-    <section class="archive-hero">
+    <section id="composites" class="archive-hero">
+        <div class="archive-hero-media" aria-hidden="true">
+            <video
+                id="archive-hero-video"
+                class="archive-hero-video"
+                poster="assets/images/projects/glace-noire-ice-reveal-poster.jpg"
+                autoplay
+                muted
+                loop
+                playsinline
+                width="1280"
+                height="720"
+            >
+                <source src="assets/video/glace-noire-ice-reveal.mp4" type="video/mp4">
+            </video>
+            <img
+                class="archive-hero-still"
+                src="assets/images/projects/glace-noire-ice-reveal-poster.jpg"
+                alt=""
+                width="1280"
+                height="720"
+            >
+            <div class="archive-hero-veil"></div>
+        </div>
+        <button
+            type="button"
+            class="archive-hero-sound"
+            aria-pressed="false"
+            aria-controls="archive-hero-video"
+            aria-label="Unmute motion"
+        >
+            <span class="archive-hero-sound-icon archive-hero-sound-icon--off" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 10.5v3h3.2L12 18V6L7.2 10.5H4z"></path>
+                    <path d="M16.2 9.2 20 13m0-3.8-3.8 3.8"></path>
+                </svg>
+            </span>
+            <span class="archive-hero-sound-icon archive-hero-sound-icon--on" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 10.5v3h3.2L12 18V6L7.2 10.5H4z"></path>
+                    <path d="M15.4 9.2a4.2 4.2 0 0 1 0 5.6"></path>
+                    <path d="M17.7 7a7.2 7.2 0 0 1 0 10"></path>
+                </svg>
+            </span>
+        </button>
         <div class="archive-hero-content">
             <p class="archive-eyebrow" data-i18n="eyebrow">Digital downloads</p>
             <h1 class="archive-title" data-i18n="archiveTitle">Digital Art Store</h1>
@@ -244,9 +288,9 @@
     <p id="preview-protection-notice" class="preview-protection-notice" role="status" aria-live="polite" hidden></p>
 
     <script src="script.js?v=20260808-rounded-buttons"></script>
-    <script src="archive-i18n.js?v=20260829-empty-copy"></script>
+    <script src="archive-i18n.js?v=20260914-ice-hero"></script>
     <script src="archive-store.js?v=20260905-responsive-thumbs"></script>
     <script src="archive-mobile.js?v=20260905-responsive-thumbs"></script>
-    <script src="archive.js?v=20260905-responsive-thumbs"></script>
+    <script src="archive.js?v=20260914-ice-hero"></script>
 </body>
 </html>
