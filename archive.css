@@ -130,26 +130,30 @@
 }
 
 .archive-eyebrow {
-    font-size: 0.8rem;
+    font-family: 'Cinzel', serif;
+    font-size: 0.78rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 0.22em;
     color: var(--accent-gold);
     margin-bottom: 0.55rem;
 }
 
-.archive-title {
-    font-family: 'Cinzel', serif;
-    font-size: clamp(2rem, 4vw, 3.1rem);
-    font-weight: 600;
-    letter-spacing: 3px;
+.archive-hero .archive-title {
+    font-family: 'Cinzel', serif !important;
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    font-weight: 700 !important;
+    letter-spacing: 0.04em;
+    line-height: 1.05;
     margin-bottom: 0.75rem;
+    color: var(--text-primary);
     text-shadow: 0 2px 18px rgba(0, 0, 0, 0.55);
 }
 
 .archive-subtitle {
+    max-width: 28rem;
     color: var(--text-secondary);
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+    line-height: 1.65;
     font-weight: 300;
     text-shadow: 0 1px 12px rgba(0, 0, 0, 0.45);
 }
