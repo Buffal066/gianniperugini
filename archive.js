@@ -162,14 +162,20 @@
         heroSound.classList.toggle('is-unmuted', !heroVideo.muted);
     }
 
+    function landingPastHero() {
+        const hash = (window.location.hash || '').replace(/^#/, '').toLowerCase();
+        return Boolean(hash) && hash !== 'composites' && hash !== 'photography';
+    }
+
     function initHeroSound() {
         if (!heroSound || !heroVideo) return;
 
         const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-        if (reducedMotion.matches) {
+        const skipAutoplay = reducedMotion.matches || landingPastHero();
+
+        if (skipAutoplay) {
             heroVideo.pause();
             heroVideo.removeAttribute('autoplay');
-            return;
         }
 
         heroSound.addEventListener('click', () => {
@@ -180,7 +186,9 @@
             updateHeroSoundLabel();
         });
 
-        heroVideo.play().catch(() => {});
+        if (!skipAutoplay) {
+            heroVideo.play().catch(() => {});
+        }
         updateHeroSoundLabel();
     }
 
