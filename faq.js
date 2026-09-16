@@ -17,8 +17,11 @@
         const isFrench = language === 'fr';
         document.documentElement.lang = isFrench ? 'fr-CA' : 'en-CA';
         document.title = isFrench
-            ? 'FAQ de la boutique d’art numérique - Gianni Perugini'
-            : 'Digital Art Store FAQ - Gianni Perugini';
+            ? 'FAQ Glace Noire Store - Gianni Perugini'
+            : 'Glace Noire Store FAQ - Gianni Perugini';
+        document.querySelectorAll('meta[property="og:title"], meta[name="twitter:title"]').forEach((meta) => {
+            meta.setAttribute('content', document.title);
+        });
         sections.forEach((section) => {
             section.hidden = section.dataset.languageContent !== language;
         });

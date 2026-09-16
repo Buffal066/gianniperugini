@@ -1,7 +1,7 @@
 window.archiveI18n = {
     ui: {
         en: {
-            documentTitle: 'Digital Art Store - Gianni Perugini',
+            documentTitle: 'Glace Noire Store - Gianni Perugini',
             languageLabel: 'Choose language',
             home: 'Home',
             digitalArt: 'Digital Art',
@@ -105,7 +105,7 @@ window.archiveI18n = {
             viewImage: 'View image',
             archiveWork: 'Archive work',
             faqKicker: 'Buying guide',
-            faqHeading: 'Digital art store questions',
+            faqHeading: 'Glace Noire Store questions',
             faqIntro: 'Clear answers about formats, pricing, delivery, and licensing.',
             faqFormatsQuestion: 'What formats are included in a collection?',
             faqFormatsAnswer: 'Choose 12 mobile JPG wallpapers, 12 4K desktop JPG wallpapers, or all 24 files. Mobile compositions are shown separately because some differ from the desktop versions.',
@@ -144,7 +144,7 @@ window.archiveI18n = {
             compareLicences: 'Compare licences',
         },
         fr: {
-            documentTitle: 'Boutique d’art numérique - Gianni Perugini',
+            documentTitle: 'Glace Noire Store - Gianni Perugini',
             languageLabel: 'Choisir la langue',
             home: 'Accueil',
             digitalArt: 'Art numérique',
@@ -248,7 +248,7 @@ window.archiveI18n = {
             viewImage: 'Voir l’image',
             archiveWork: 'Œuvre des archives',
             faqKicker: 'Guide d’achat',
-            faqHeading: 'Questions sur la boutique d’art numérique',
+            faqHeading: 'Questions sur Glace Noire Store',
             faqIntro: 'Des réponses claires sur les formats, les prix, la livraison et les licences.',
             faqFormatsQuestion: 'Quels formats sont inclus dans une collection?',
             faqFormatsAnswer: 'Choisissez 12 fonds d’écran mobiles en JPG, 12 fonds d’écran 4K pour ordinateur en JPG ou les 24 fichiers. Les compositions mobiles sont présentées séparément, car certaines diffèrent des versions pour ordinateur.',

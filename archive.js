@@ -122,6 +122,9 @@
     function applyStaticTranslations() {
         document.documentElement.lang = currentLanguage;
         document.title = t('documentTitle');
+        document.querySelectorAll('meta[property="og:title"], meta[name="twitter:title"]').forEach((meta) => {
+            meta.setAttribute('content', t('documentTitle'));
+        });
 
         document.querySelectorAll('[data-i18n]').forEach((element) => {
             const key = element.dataset.i18n;
