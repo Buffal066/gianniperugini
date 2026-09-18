@@ -3,7 +3,7 @@
 **Shared source of truth for Cursor + Codex.**  
 Update this file when a step finishes (`[ ]` → `[x]`), either directly or through the local interactive checklist. In either tool, say: *Read* `docs/monetization-go-to-market.md` *and continue the next open checklist item.*
 
-- **Updated:** 2026-09-07 — GST/QST confirmed (registered corporation); next public step is the existing silent video, not the pilot page or a voiceover reel
+- **Updated:** 2026-09-16 — plaza clip is live on YouTube, Instagram, TikTok, and Facebook; next public step is one Reddit wallpaper, then a Halloween promo of existing stills
 - **Agency:** [https://glacenoire.com/](https://glacenoire.com/)
 - **Art hub:** [https://glacenoire.com/art](https://glacenoire.com/art)
 - **Store:** [https://gianniperugini.com/archive.html](https://gianniperugini.com/archive.html)  
@@ -33,11 +33,11 @@ So the emphasis moves from *more volume into a commodity* to *higher-margin offe
 | Best-margin existing SKU         | Commercial archive, $79+ — currently buried                                                                                                 |
 | Qualified store traffic observed | Only 4 users triggered `payhip_click` in the August 10–September 6 GA4 window — too little evidence to judge pricing or demand              |
 | Product-level AI disclosure      | Not published yet — blocks Etsy and weakens trust                                                                                           |
-| Distribution tasks still open    | Instagram + TikTok of the plaza clip + Reddit wallpaper + Halloween promo + email signature + hybrid Pins                                      |
+| Distribution tasks still open    | Reddit wallpaper + Halloween promo + email signature + hybrid Pins                                                                              |
 | Current job-search constraint    | Employment is urgent. Cap store work at roughly 20% of the week until applications and interviews are moving.                               |
 
 
-**Next open action:** post the same plaza clip on Instagram and TikTok. YouTube Short is already live: [Urban Noir — Day to Night](https://youtu.be/3n3PpIfEcxA). No $495 in the caption. Then one Reddit wallpaper if the new account can post, then a Halloween promo of existing stills. Hold the bilingual pilot page and the voiceover reel until those public posts exist. Employment still comes first.
+**Next open action:** Post one Reddit wallpaper (image only, no store link in the post) from u/glace_noire_studio if the account can post. Then a Halloween promo of existing stills. Hold the bilingual pilot page and the voiceover reel until that public art exists. Employment still comes first.
 
 **Fastest traffic available right now:** free wallpaper posts on Reddit — see the Traffic channels table. It costs nothing, needs no audience, and starts working the same week.
 
@@ -135,9 +135,9 @@ I sketched a cover concept in your style. Want to see it?
 
 - [x] **Set up Stripe invoicing and confirm a test invoice sends** — live CA$1 test invoice #0KZSIYDT-0001 sent to contact@glacenoire.com and paid 2026-09-07. Public support email is now contact@glacenoire.com. Deposit/balance catalog products exist; do not send them as a test.
 - [x] **Confirm GST/QST registration status** — registered corporation; Payhip already collects tax. Published pilot price is CAD $495 + GST/QST, not a flat $495
-- [ ] **Post the existing silent Glace Noire video now** on Instagram / TikTok. YouTube Short is live: [Urban Noir — Day to Night](https://youtu.be/3n3PpIfEcxA). Instagram Reel is public. TikTok draft is saved, not posted. Caption must include `https://glacenoire.com/art`. No $495 in the caption.
+- [x] **Post the existing silent Glace Noire video now** on Instagram / TikTok / Facebook. YouTube Short: [Urban Noir — Day to Night](https://youtu.be/3n3PpIfEcxA). Instagram Reel: [instagram.com/p/DdC3TW5hSr6](https://www.instagram.com/p/DdC3TW5hSr6/). TikTok: [tiktok.com/@glace_noire_studio/video/7683390188885904661](https://www.tiktok.com/@glace_noire_studio/video/7683390188885904661). Facebook Reel: [facebook.com/reel/1402332975325474](https://www.facebook.com/reel/1402332975325474). Caption includes `https://glacenoire.com/art` where the platform kept it. No $495 in the caption.
 - [ ] Connect or expose the Glace Noire GA4 property in Ground Control and confirm the service-page view and enquiry events are measurable
-- [ ] Add unique UTM links for Instagram, TikTok, YouTube, Pinterest, and direct outreach; document their names here
+- [ ] Add unique UTM links for Instagram, TikTok, YouTube, Facebook, Pinterest, and direct outreach; document their names here
 - [x] Create the Glace Noire YouTube channel, complete its branding, and make the first profile link the intended Glace Noire service/art destination — live [youtube.com/@glace_noire_studio](https://www.youtube.com/@glace_noire_studio), first link Art store → `https://glacenoire.com/art`. First public Short: [Urban Noir — Day to Night](https://youtu.be/3n3PpIfEcxA)
 - [ ] Create one 20–30 second voiceover proof reel from existing work using screen/process footage and Gianni's voice or commentary — **after** the silent video, free art, and Halloween promo are public; attach this reel when DM outreach for the CAD $495 pilot starts
 - [ ] **Publish the bilingual EN/FR Glace Noire Visual Launch Pilot page** — deferred until the first public posts exist. Include CAD $495 + GST/QST, exact deliverables (18 files), exclusions, 50/50 payment terms, turnaround, proof, and one enquiry CTA. Do not add a new $19 Halloween printable SKU this sprint
@@ -279,7 +279,7 @@ Leftovers after GSC inspect are done: Glace Noire Organization schema is live; I
 
 ### In progress
 
-- [x] **Maintain the free-sample distribution track** — social bios are live; email signature, first shared short video, Pins, and consent-based follow-up remain open. This supports the service sprint but does not replace direct prospecting.
+- [x] **Maintain the free-sample distribution track** — social bios are live and the plaza clip is public on YouTube, Instagram, TikTok, and Facebook; email signature, Pins, and consent-based follow-up remain open. This supports the service sprint but does not replace direct prospecting.
 - [x] Create Glace Noire social accounts (not personal Instagram)
 
 
@@ -303,7 +303,7 @@ Cheap, fast, and it unblocks Etsy while turning a liability into the brand's mai
 
 ### Pending — distribution
 
-- [ ] Ship the first shared 6–10s motion proof as Reel/TikTok #1; videos 2–3 and 10 Pinterest Pins follow only after the job sprint
+- [x] Ship the first shared 6–10s motion proof as Reel/TikTok #1 (plaza clip live on YouTube, Instagram, TikTok, and Facebook); videos 2–3 and 10 Pinterest Pins follow only after the job sprint
 - [ ] Add social profile links on site (+ Person schema `sameAs` when ready)
 - [ ] Add a conversion path inside the free-sample ZIP (`START-HERE` guide → related collections + store)
 - [ ] Configure consent-based email capture and a short post-download sequence
