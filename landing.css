@@ -814,11 +814,9 @@ a.project-card {
 
 .wake-the-night-card-image {
     background-color: #050505;
-    background-image:
-        linear-gradient(180deg, rgba(5, 5, 5, 0.05) 0%, rgba(5, 5, 5, 0.38) 100%),
-        url('assets/images/projects/wake-the-night-poster.jpg');
-    background-position: center 42%;
-    background-size: cover;
+    background-image: url('assets/images/projects/wake-the-night-can.jpg?v=20261001-can');
+    background-position: center center;
+    background-size: contain;
     background-repeat: no-repeat;
     position: relative;
 }
