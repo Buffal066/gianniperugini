@@ -817,6 +817,66 @@ article.project-card--still:hover .project-image-inner {
     background: #050505;
 }
 
+.gym-card-image {
+    background-color: #d7dde2;
+    background-image: url('assets/images/projects/gym-card.jpg?v=20261006-gym');
+    background-position: center 28%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.project-image:has(.gym-card-image) {
+    height: 240px;
+    background: #d7dde2;
+}
+
+.gym-films,
+.gym-stills {
+    display: grid;
+    gap: 1rem;
+    margin: 0 0 2.5rem;
+}
+
+.gym-films {
+    grid-template-columns: 1fr 1fr;
+}
+
+.gym-stills {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gym-films figure,
+.gym-stills figure {
+    margin: 0;
+}
+
+.gym-films video,
+.gym-stills img {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #050505;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.gym-films figcaption,
+.gym-stills figcaption {
+    margin-top: 0.55rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 800px) {
+    .gym-films,
+    .gym-stills {
+        grid-template-columns: 1fr;
+    }
+}
+
 .wnn-player--portrait {
     max-width: 420px;
     margin-left: auto;

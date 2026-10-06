@@ -6,8 +6,9 @@
 
 - [Home](https://gianniperugini.com/): One-screen cinematic entrance to Gianni Perugini's work.
 - [Glace Noire Store](https://gianniperugini.com/archive.html): Watermarked previews, current USD pricing, personal-use collections, complete archives, and Payhip purchase links.
-- [Portfolio](https://gianniperugini.com/projects.html): Wake the Night, Wet Neon Noir, Urban Noir, Ice Reveal, IceDraft Pool, Draft lottery, Ground Control Dashboard, Glace Noire, Rent360, and the Digital Art Store.
+- [Portfolio](https://gianniperugini.com/projects.html): Wake the Night, Built in the Cold, Wet Neon Noir, Urban Noir, Ice Reveal, IceDraft Pool, Draft lottery, Ground Control Dashboard, Glace Noire, Rent360, and the Digital Art Store.
 - [Wake the Night](https://gianniperugini.com/wake-the-night.html): Eight-second GLACE NOIRE film. A pale hand presses the raven, and cold smoke is released.
+- [Built in the Cold](https://gianniperugini.com/gym.html): Glace Noire gym theme. Two 8-second films and three stills.
 - [Wet Neon Noir](https://gianniperugini.com/wet-neon-noir.html): Still-to-motion cut from the Wet Neon Noir series. Sequence Alley Pulse → Alley Car → Glass Rain. 12.75s, 1920×1080, 24fps.
 - [Urban Noir](https://gianniperugini.com/urban-noir.html): Still-to-motion cut from the Urban Noir series.
 - [Ice Reveal](https://gianniperugini.com/ice-reveal.html): Still-to-motion cut from the Glace Noire /art hero.
