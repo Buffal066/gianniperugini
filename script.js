@@ -587,9 +587,12 @@ function updateLandingHeroSoundLabel() {
     const strings = getSiteStrings() || window.siteI18n?.en;
     if (!strings) return;
 
-    button.setAttribute('aria-label', video.muted ? strings.unmuteMotion : strings.muteMotion);
-    button.setAttribute('aria-pressed', String(!video.muted));
-    button.classList.toggle('is-unmuted', !video.muted);
+    const soundOn = button.dataset.sound
+        ? button.dataset.sound === 'on'
+        : !video.muted && video.volume > 0;
+    button.setAttribute('aria-label', soundOn ? strings.muteMotion : strings.unmuteMotion);
+    button.setAttribute('aria-pressed', String(soundOn));
+    button.classList.toggle('is-unmuted', soundOn);
 }
 
 (function initLandingHeroSound() {
@@ -597,14 +600,91 @@ function updateLandingHeroSoundLabel() {
     const video = document.getElementById('landing-hero-video');
     if (!button || !video) return;
 
-    button.addEventListener('click', () => {
-        video.muted = !video.muted;
-        if (!video.muted) {
-            video.play().catch(() => {});
+    let requestId = 0;
+    let audioCtx = null;
+    let gain = null;
+
+    function routeThroughGain() {
+        if (gain) return true;
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContext) return false;
+        try {
+            audioCtx = new AudioContext();
+            const source = audioCtx.createMediaElementSource(video);
+            gain = audioCtx.createGain();
+            source.connect(gain);
+            gain.connect(audioCtx.destination);
+            return true;
+        } catch (error) {
+            audioCtx = null;
+            gain = null;
+            return false;
+        }
+    }
+
+    function applyLandingHeroSound(on) {
+        const request = ++requestId;
+        button.dataset.sound = on ? 'on' : 'off';
+
+        if (on) {
+            video.volume = 1;
+            video.muted = false;
+            video.removeAttribute('muted');
+            if (gain) {
+                gain.gain.setValueAtTime(1, audioCtx.currentTime);
+                audioCtx.resume().catch(() => {});
+            }
+        } else if (routeThroughGain()) {
+            video.volume = 1;
+            video.muted = false;
+            video.removeAttribute('muted');
+            gain.gain.setValueAtTime(0, audioCtx.currentTime);
+            audioCtx.resume().catch(() => {});
+        } else {
+            video.muted = true;
+            video.volume = 0;
+            video.setAttribute('muted', '');
+        }
+
+        const started = video.play();
+        if (started && typeof started.catch === 'function') {
+            started.catch(() => {
+                if (request !== requestId || !on) return;
+                button.dataset.sound = 'off';
+                video.muted = true;
+                video.volume = 0;
+                video.setAttribute('muted', '');
+                video.play().catch(() => {});
+                updateLandingHeroSoundLabel();
+            });
         }
         updateLandingHeroSoundLabel();
+    }
+
+    button.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        applyLandingHeroSound(button.dataset.sound !== 'on');
     });
 
-    updateLandingHeroSoundLabel();
+    function silenceLandingHero() {
+        video.pause();
+        video.volume = 0;
+        if (gain && audioCtx) {
+            gain.gain.setValueAtTime(0, audioCtx.currentTime);
+            if (audioCtx.state === 'running') audioCtx.suspend().catch(() => {});
+        }
+    }
+
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            silenceLandingHero();
+            return;
+        }
+        applyLandingHeroSound(button.dataset.sound !== 'off');
+    });
+    window.addEventListener('pagehide', silenceLandingHero);
+
+    applyLandingHeroSound(true);
 })();
 

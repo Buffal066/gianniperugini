@@ -562,25 +562,6 @@ article.project-card--still:hover .project-image-inner {
     pointer-events: auto;
 }
 
-.landing-hero .hero-motion-link {
-    margin: 0.9rem 0 0;
-    text-align: right;
-}
-
-.landing-hero .hero-motion-link a {
-    color: inherit;
-    font-size: 0.78rem;
-    letter-spacing: 0.14em;
-    text-decoration: underline;
-    text-underline-offset: 0.22em;
-    text-transform: uppercase;
-}
-
-.landing-hero .hero-motion-link a:hover,
-.landing-hero .hero-motion-link a:focus-visible {
-    color: #f3eee5;
-}
-
 .home-page .footer {
     position: relative;
     z-index: 5;
@@ -818,10 +799,6 @@ article.project-card--still:hover .project-image-inner {
         bottom: max(1.25rem, env(safe-area-inset-bottom, 0px) + 1rem);
         margin: 0;
         padding: 0;
-    }
-
-    .landing-hero .hero-motion-link {
-        text-align: right;
     }
 }
 
