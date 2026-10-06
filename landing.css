@@ -155,6 +155,20 @@ a.project-card {
     display: flex;
 }
 
+article.project-card--still {
+    cursor: default;
+}
+
+article.project-card--still:hover {
+    transform: none;
+    border-color: var(--border-color);
+    box-shadow: none;
+}
+
+article.project-card--still:hover .project-image-inner {
+    transform: none;
+}
+
 .project-card-hit {
     display: block;
     flex: 0 0 auto;
@@ -886,10 +900,8 @@ a.project-card {
 
 .ember-card-image {
     background-color: #050505;
-    background-image:
-        linear-gradient(180deg, rgba(5, 5, 5, 0.35) 0%, rgba(5, 5, 5, 0.85) 100%),
-        url('assets/images/case-studies/ember-cathedral/portfolio-command.png');
-    background-position: center top;
+    background-image: url('assets/images/projects/ground-control-card.jpg?v=20261006-overview');
+    background-position: left top;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -1051,8 +1063,26 @@ a.project-card {
     padding: 0;
 }
 
-.case-steps li {
-    padding-left: 0;
+.notes-list a {
+    display: block;
+    padding: 1.15rem 0;
+    border-bottom: 1px solid var(--border-color);
+    color: inherit;
+    text-decoration: none;
+}
+
+.notes-list li:first-child a {
+    border-top: 1px solid var(--border-color);
+}
+
+.notes-list a span {
+    display: block;
+    color: var(--text-secondary, rgba(243, 240, 232, 0.72));
+}
+
+.notes-list a:hover strong,
+.notes-list a:focus-visible strong {
+    color: var(--accent-gold, #c45c26);
 }
 
 .case-steps strong {
@@ -1428,8 +1458,60 @@ a.project-card {
     transform: none;
 }
 
+.gc-screens {
+    display: flex;
+    flex-direction: column;
+    gap: 2.75rem;
+}
+
+.gc-screens h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.35rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0 0 1rem;
+}
+
+.gc-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.gc-pair figure {
+    margin: 0;
+}
+
+.gc-pair img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: #050505;
+}
+
+.gc-pair figcaption {
+    margin-top: 0.55rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 800px) {
+    .gc-pair {
+        grid-template-columns: 1fr;
+    }
+}
+
 .case-study-wrap--wnn {
     max-width: 1100px;
+}
+
+.case-study-wrap--wide {
+    max-width: 1200px;
 }
 
 .wnn-player {

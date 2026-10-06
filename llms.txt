@@ -6,16 +6,17 @@
 
 - [Home](https://gianniperugini.com/): One-screen cinematic entrance to Gianni Perugini's work.
 - [Glace Noire Store](https://gianniperugini.com/archive.html): Watermarked previews, current USD pricing, personal-use collections, complete archives, and Payhip purchase links.
-- [Portfolio](https://gianniperugini.com/projects.html): Wake the Night, Wet Neon Noir, How I work with AI, IceDraft Pool, Draft lottery, Ground Control Dashboard, Glace Noire Media, and Rent360 Landing Concept.
-- [Wake the Night case study](https://gianniperugini.com/wake-the-night-case-study.html): Fictional 8-second GLACE NOIRE spec. The film plays on [Wake the Night](https://gianniperugini.com/wake-the-night.html).
+- [Portfolio](https://gianniperugini.com/projects.html): Wake the Night, Wet Neon Noir, Urban Noir, Ice Reveal, IceDraft Pool, Draft lottery, Ground Control Dashboard, Glace Noire, Rent360, and the Digital Art Store.
+- [Wake the Night](https://gianniperugini.com/wake-the-night.html): Eight-second GLACE NOIRE film. A pale hand presses the raven, and cold smoke is released.
 - [Wet Neon Noir](https://gianniperugini.com/wet-neon-noir.html): Still-to-motion cut from the Wet Neon Noir series. Sequence Alley Pulse → Alley Car → Glass Rain. 12.75s, 1920×1080, 24fps.
-- [How I work with AI](https://gianniperugini.com/how-i-work-with-ai.html): Models in use, where AI enters, what stays hand-finished, and the generation-log format kept for reproducibility.
-- [IceDraft case study](https://gianniperugini.com/icedraft.html): Problem, role, process, UI system, stack, screenshots, then the live app.
-- [Draft lottery case study](https://gianniperugini.com/nhl-draft-lottery-case-study.html): Weighted single-winner draw with cryptographic randomness and a cinematic bowling-hall reveal.
+- [Urban Noir](https://gianniperugini.com/urban-noir.html): Still-to-motion cut from the Urban Noir series.
+- [Ice Reveal](https://gianniperugini.com/ice-reveal.html): Still-to-motion cut from the Glace Noire /art hero.
+- [How I work with AI](https://gianniperugini.com/how-i-work-with-ai.html): Models in use, where AI enters, what stays hand-finished, and the generation-log format kept for reproducibility. Linked from About, not from the project grid.
+- [IceDraft Pool](https://icedraft.gianniperugini.com): Private hockey fantasy leagues with live snake drafts, invite codes, and automatic standings.
 - [Draft lottery](https://gianniperugini.com/lottery/): The live draw. Not part of IceDraft; it lives on gianniperugini.com/lottery/.
-- [Ground Control Dashboard case study](https://gianniperugini.com/ember-cathedral-case-study.html): Private business command center — fail-closed metrics, Markdown as source of truth, read-only OAuth integrations. Runs locally by design; no public app URL.
-- [Rent360 case study](https://gianniperugini.com/rent360-case-study.html): Unofficial SaaS landing-page concept — objection-led conversion flow, product mocks built as live HTML components, and a disclosure system that labels every invented figure.
-- [Rent360 live concept](https://gianniperugini.com/rent360/): The concept page itself. Rent360 is not a real company; all metrics, listings, guests and reviews are invented sample data, and the gallery photography is public domain (CC0).
+- [Ground Control Dashboard](https://gianniperugini.com/projects.html): Private studio command center shown as a still on the portfolio. It runs locally by design and has no public app URL.
+- [Rent360 live concept](https://gianniperugini.com/rent360/): A SaaS landing-page concept. Rent360 is not a real company; all metrics, listings, guests and reviews are invented sample data, and the gallery photography is public domain (CC0).
+- [Glace Noire art](https://glacenoire.com/art): Art hub for the Glace Noire brand.
 - [Photography](https://gianniperugini.com/photography.html): Selected field and studio photographs. Portfolio gallery only — not Glace Noire Store.
 - [About](https://gianniperugini.com/about.html): Professional biography, LinkedIn, and résumé PDF.
 - [Contact](https://gianniperugini.com/contact.html): Direct email, inquiry form, LinkedIn, and résumé PDF.
