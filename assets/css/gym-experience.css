@@ -16,9 +16,9 @@ html.gym-page-root{scroll-behavior:smooth;scroll-padding-top:90px}
 .gym-experience .header-cta{font-size:12px;font-weight:700;border-bottom:1px solid;padding:12px 0}
 .gym-experience .header-cta span{margin-left:25px}
 .gym-experience .menu{display:none}
-.gym-experience .hero{min-height:740px;height:calc(100svh - 100px);max-height:1050px;position:relative;overflow:hidden;background:#e9eef1}
+.gym-experience .gym-hero{min-height:740px;height:calc(100svh - 100px);max-height:1050px;position:relative;overflow:hidden;background:#e9eef1}
 .gym-experience .hero-athlete{position:absolute;right:0;top:0;width:61%;height:100%;object-position:50% 47%}
-.gym-experience .hero:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#e9eef1 0%,#e9eef1 25%,#e9eef1b0 40%,transparent 63%);pointer-events:none}
+.gym-experience .gym-hero:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#e9eef1 0%,#e9eef1 25%,#e9eef1b0 40%,transparent 63%);pointer-events:none}
 .gym-experience .hero-content{position:relative;z-index:1;padding:65px 5% 100px;max-width:1000px}
 .gym-experience .eyebrow{font-size:10px;font-weight:700;letter-spacing:1.7px;display:flex;align-items:center;gap:10px}
 .gym-experience .red-dot{width:6px;height:6px;display:inline-block;border-radius:50%;background:var(--red)}
@@ -97,7 +97,7 @@ body.gym-page.modal-open{overflow:hidden}
 .gym-experience .hero-copy{font-size:19px}
 .gym-experience .hero-actions{margin-top:40px}
 }@media(max-width:1000px){.gym-experience nav{gap:20px}
-.gym-experience .hero{min-height:680px;height:80svh}
+.gym-experience .gym-hero{min-height:680px;height:80svh}
 .gym-experience .hero-content{padding-top:70px}
 .gym-experience h1{font-size:130px}
 .gym-experience .hero-athlete{width:68%;object-position:60%}
@@ -115,13 +115,13 @@ body.gym-page.modal-open{overflow:hidden}
 .gym-experience .menu{display:flex;gap:18px;border:0;background:none;padding:15px 0;font-size:11px;font-weight:700}
 .gym-experience nav{display:none;position:absolute;top:78px;left:0;right:0;background:var(--ice);padding:30px 6%;border-bottom:1px solid var(--line);gap:25px}
 .gym-experience nav.open{display:flex;flex-direction:column}
-.gym-experience .hero{height:850px;min-height:0;max-height:none}
+.gym-experience .gym-hero{height:850px;min-height:0;max-height:none}
 .gym-experience .hero-content{padding:38px 6% 0}
-.gym-experience .hero .eyebrow{font-size:8px;letter-spacing:1px}
+.gym-experience .gym-hero .eyebrow{font-size:8px;letter-spacing:1px}
 .gym-experience h1{font-size:clamp(90px,24vw,155px);margin:30px 0 20px}
 .gym-experience .hero-copy{font-size:13px;line-height:1.7}
 .gym-experience .hero-athlete{top:320px;width:100%;height:530px;object-position:50% 40%}
-.gym-experience .hero:after{background:linear-gradient(180deg,#e9eef1 0%,#e9eef1 30%,#e9eef1a0 42%,transparent 60%)}
+.gym-experience .gym-hero:after{background:linear-gradient(180deg,#e9eef1 0%,#e9eef1 30%,#e9eef1a0 42%,transparent 60%)}
 .gym-experience .hero-actions{flex-wrap:wrap;gap:15px}
 .gym-experience .button{font-size:10px;padding:17px 18px;gap:25px}
 .gym-experience .film-link{font-size:10px}
@@ -171,9 +171,9 @@ body.gym-page.modal-open{overflow:hidden}
 .gym-experience nav a{ padding:15px 0; }
 .gym-experience .header-cta{ font-size:14px; }
 .gym-experience .mobile-contact{ display:none; }
-.gym-experience .hero{ min-height:730px; height:calc(100svh - 88px); }
+.gym-experience .gym-hero{ min-height:730px; height:calc(100svh - 88px); }
 .gym-experience .hero-content{ max-width:none; }
-.gym-experience .hero .eyebrow{ font-size:11px; letter-spacing:1.6px; }
+.gym-experience .gym-hero .eyebrow{ font-size:11px; letter-spacing:1.6px; }
 .gym-experience .hero-copy{ font-size:17px; max-width:460px; line-height:1.7; }
 .gym-experience .button{ border:0; font-size:14px; min-height:54px; }
 .gym-experience .film-link{ font-size:14px; min-height:48px; border-bottom:1px solid #929da4; }
@@ -256,16 +256,16 @@ body.gym-page.modal-open{overflow:hidden}
 .gym-experience nav{ top:76px; padding:15px 6% 25px; gap:5px; font-size:17px; }
 .gym-experience nav a{ padding:15px 0; }
 .gym-experience .mobile-contact{ display:block; color:var(--red); border-top:1px solid var(--line); margin-top:8px; }
-.gym-experience .hero{ height:940px; min-height:0; }
+.gym-experience .gym-hero{ height:940px; min-height:0; }
 .gym-experience .hero-content{ padding-top:35px; }
-.gym-experience .hero .eyebrow{ font-size:9px; letter-spacing:1px; }
-.gym-experience .hero h1{ font-size:clamp(86px,23vw,140px); margin-top:26px; }
+.gym-experience .gym-hero .eyebrow{ font-size:9px; letter-spacing:1px; }
+.gym-experience .gym-hero h1{ font-size:clamp(86px,23vw,140px); margin-top:26px; }
 .gym-experience .hero-copy{ font-size:14px; max-width:340px; }
 .gym-experience .hero-actions{ display:flex; flex-direction:column; align-items:flex-start; gap:7px; }
-.gym-experience .hero .button{ padding:17px 20px; font-size:13px; }
-.gym-experience .hero .film-link{ font-size:13px; border:0; gap:20px; }
+.gym-experience .gym-hero .button{ padding:17px 20px; font-size:13px; }
+.gym-experience .gym-hero .film-link{ font-size:13px; border:0; gap:20px; }
 .gym-experience .hero-athlete{ top:410px; height:530px; }
-.gym-experience .hero:after{ background:linear-gradient(180deg,#e9eef1 0%,#e9eef1 40%,#e9eef199 49%,transparent 64%); }
+.gym-experience .gym-hero:after{ background:linear-gradient(180deg,#e9eef1 0%,#e9eef1 40%,#e9eef199 49%,transparent 64%); }
 .gym-experience .hero-bottom{ font-size:9px; }
 .gym-experience .eyebrow{ font-size:10px; }
 .gym-experience .philosophy-body{ grid-template-columns:1fr; }
@@ -305,12 +305,12 @@ body.gym-page { background:#e8ecee; }
 .gym-experience { padding-top:var(--portfolio-nav-height,68px); line-height:1.5; }
 .gym-experience header { top:var(--portfolio-nav-height,68px); z-index:50; }
 .gym-experience .hero-content { margin:0; width:auto; height:auto; text-align:left; display:block; max-width:none; }
-.gym-experience .hero { display:block; background-blend-mode:normal; }
-.gym-experience .hero::before { content:none; animation:none; }
+.gym-experience .gym-hero { display:block; background-blend-mode:normal; }
+.gym-experience .gym-hero::before { content:none; animation:none; }
 .gym-experience .contact { background:var(--ice); }
 .gym-experience h1,.gym-experience h2,.gym-experience h3 { font-family:'Barlow Condensed','Arial Narrow',Impact,sans-serif!important; text-transform:none; }
 .gym-experience .direction-notes h3 { font-family:Manrope,Arial,sans-serif!important; }
-.gym-experience .hero { height:calc(100svh - var(--portfolio-nav-height,68px) - 88px); }
+.gym-experience .gym-hero { height:calc(100svh - var(--portfolio-nav-height,68px) - 88px); }
 html.gym-page-root { scroll-padding-top:calc(var(--portfolio-nav-height,68px) + 100px); }
 .gym-experience .project-return { display:flex; align-items:center; justify-content:space-between; gap:25px; border-top:1px solid #c7cdd0; padding:35px 5%; font-size:13px; }
 .gym-experience .project-return a { min-height:44px; display:inline-flex; align-items:center; gap:8px; }
@@ -321,9 +321,12 @@ html[lang^=fr] .gym-experience h1 { font-size:clamp(96px,9vw,165px); }
 .gym-experience button { font-family:Manrope,Arial,sans-serif; }
 .gym-experience dialog { z-index:2000; }
 @media(max-width:700px) {
- .gym-experience .hero { height:940px; }
+ .gym-experience .gym-hero { height:940px; }
  .gym-experience .project-return { flex-wrap:wrap; }
  .gym-experience .project-return>span { order:3; width:100%; }
  html[lang^=fr] .gym-experience h1 { font-size:clamp(66px,19vw,116px); }
  html[lang^=fr] .gym-experience .card-overlay h3 { font-size:38px; }
 }
+
+/* Keep this hero independent of the portfolio's shared hero styles and parallax. */
+.gym-experience .gym-hero { padding:0; }
