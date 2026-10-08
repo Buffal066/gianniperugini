@@ -1643,3 +1643,13 @@ article.project-card--still:hover .project-image-inner {
         margin: -26px 0 0 -26px;
     }
 }
+
+/* Advance notice for standalone project websites. */
+.project-tab-note {
+    display: block;
+    margin-top: 0.45rem;
+    font-size: 0.78rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
