@@ -831,8 +831,24 @@ article.project-card--still:hover .project-image-inner {
     background: #d7dde2;
 }
 
+.beauty-card-image {
+    background-color: #111111;
+    background-image: url('assets/images/projects/beauty-edge-card.jpg?v=20261008-beauty');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.project-image:has(.beauty-card-image) {
+    height: 240px;
+    background: #111111;
+}
+
 .gym-films,
-.gym-stills {
+.gym-stills,
+.beauty-films,
+.beauty-stills {
     display: grid;
     gap: 1rem;
     margin: 0 0 2.5rem;
@@ -846,13 +862,25 @@ article.project-card--still:hover .project-image-inner {
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.beauty-films {
+    grid-template-columns: 1fr 1fr;
+}
+
+.beauty-stills {
+    grid-template-columns: 1fr;
+}
+
 .gym-films figure,
-.gym-stills figure {
+.gym-stills figure,
+.beauty-films figure,
+.beauty-stills figure {
     margin: 0;
 }
 
 .gym-films video,
-.gym-stills img {
+.gym-stills img,
+.beauty-films video,
+.beauty-stills img {
     display: block;
     width: 100%;
     height: auto;
@@ -862,7 +890,9 @@ article.project-card--still:hover .project-image-inner {
 }
 
 .gym-films figcaption,
-.gym-stills figcaption {
+.gym-stills figcaption,
+.beauty-films figcaption,
+.beauty-stills figcaption {
     margin-top: 0.55rem;
     font-size: 0.75rem;
     letter-spacing: 0.14em;
@@ -872,7 +902,9 @@ article.project-card--still:hover .project-image-inner {
 
 @media (max-width: 800px) {
     .gym-films,
-    .gym-stills {
+    .gym-stills,
+    .beauty-films,
+    .beauty-stills {
         grid-template-columns: 1fr;
     }
 }
