@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- deployed: 2026-10-08 08:39:33 -->
-<html lang="en-CA">
+<!-- deployed: 2026-10-08 08:50:43 -->
+<html lang="en-CA" class="gym-page-root">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,9 +26,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="analytics.js?v=20260905-checkout-events"></script>
+<link rel="stylesheet" href="assets/css/gym-experience.css?v=20261008">
 </head>
-<body>
-    <nav class="navbar" aria-label="Primary navigation" data-i18n-aria-label="primaryNav">
+<body class="gym-page">
+<nav class="navbar" aria-label="Primary navigation" data-i18n-aria-label="primaryNav">
         <div class="nav-container">
             <a href="index.html" class="logo logo-link">
                 <span class="logo-text">Gianni Perugini</span>
@@ -54,86 +55,51 @@
             </button>
         </div>
     </nav>
-
-    <section class="page-hero" aria-labelledby="gym-title">
-        <div class="page-hero-content">
-            <p class="page-hero-eyebrow" data-i18n="gymEyebrow">Theme</p>
-            <h1 id="gym-title" class="page-hero-title" data-i18n="gymTitle">Built in the Cold</h1>
-            <p class="page-hero-subtitle" data-i18n="gymSubtitle">Stills and motion for a Glace Noire gym.</p>
-        </div>
+<a class="gym-skip" href="#main" data-gym-en="Skip to content" data-gym-fr="Aller au contenu">Skip to content</a>
+<main class="gym-experience" id="main"><header>
+    <a class="brand" href="#" aria-label="Glace Noire home" data-gym-aria-en="Glace Noire home" data-gym-aria-fr="Accueil Glace Noire">GLACE NOIRE<span><span data-gym-en="TRAINING CULTURE" data-gym-fr="CULTURE DE L’ENTRAÎNEMENT">TRAINING CULTURE</span></span></a>
+    <nav id="navigation" aria-label="Main navigation" data-gym-aria-en="Main navigation" data-gym-aria-fr="Navigation du projet"><a href="#philosophy"><span data-gym-en="The concept" data-gym-fr="Le concept">The concept</span></a><a href="#training"><span data-gym-en="Image studies" data-gym-fr="Études visuelles">Image studies</span></a><a href="#films"><span data-gym-en="Motion" data-gym-fr="Mouvement">Motion</span></a><a class="mobile-contact" href="#contact"><span data-gym-en="Work with Gianni ↗" data-gym-fr="Travailler avec Gianni ↗">Work with Gianni ↗</span></a></nav>
+    <a class="header-cta" href="#contact"><span data-gym-en="Work with Gianni" data-gym-fr="Travailler avec Gianni">Work with Gianni</span> <span aria-hidden="true">↗</span></a>
+    <button class="menu" aria-expanded="false" aria-controls="navigation"><span data-gym-en="Menu" data-gym-fr="Menu">Menu</span> <span>＋</span></button>
+  </header>
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-athlete" src="assets/images/projects/gym-athlete-white.webp" alt="Athlete poised to start, surrounded by a burst of icy water" fetchpriority="high" data-gym-alt-en="Athlete poised to start, surrounded by a burst of icy water" data-gym-alt-fr="Athlète prête à partir, entourée d’une gerbe d’eau glacée">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="red-dot"></span> <span data-gym-en="AN INDEPENDENT GYM BRAND CONCEPT" data-gym-fr="UN CONCEPT INDÉPENDANT DE MARQUE DE GYM">AN INDEPENDENT GYM BRAND CONCEPT</span></p>
+        <h1 id="hero-title"><span data-gym-en="BUILT IN" data-gym-fr="FORGÉ DANS">BUILT IN</span><br><span data-gym-en="THE" data-gym-fr="LE">THE</span> <em><span data-gym-en="COLD." data-gym-fr="FROID.">COLD.</span></em></h1>
+        <p class="hero-copy"><span data-gym-en="A study in strength, stillness, and atmosphere." data-gym-fr="Une étude de force, de calme et d’atmosphère.">A study in strength, stillness, and atmosphere.</span><br><span data-gym-en="Art direction" data-gym-fr="Direction artistique">Art direction</span> &amp; <span data-gym-en="motion by Gianni Perugini." data-gym-fr="mouvement par Gianni Perugini.">motion by Gianni Perugini.</span></p>
+        <div class="hero-actions"><button class="button dark" data-film="gym-fitness-commercial.mp4" data-title="The Glace Noire film"><span data-gym-en="Watch the brand film" data-gym-fr="Voir le film de marque">Watch the brand film</span> <span aria-hidden="true">▶</span></button><a class="film-link" href="#philosophy"><span data-gym-en="Explore the concept" data-gym-fr="Explorer le concept">Explore the concept</span> <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <div class="hero-bottom"><span><span data-gym-en="INDEPENDENT PROJECT / 2026" data-gym-fr="PROJET INDÉPENDANT / 2026">INDEPENDENT PROJECT / 2026</span></span><a href="#philosophy"><span data-gym-en="DISCOVER THE PROJECT" data-gym-fr="DÉCOUVRIR LE PROJET">DISCOVER THE PROJECT</span> <span aria-hidden="true">↓</span></a><span><span data-gym-en="STILLS + MOTION" data-gym-fr="IMAGES + MOUVEMENT">STILLS + MOTION</span></span></div>
     </section>
-
-    <main class="content-page-main content-page-main--with-hero">
-        <article class="case-study">
-            <div class="case-study-wrap case-study-wrap--wide">
-                <p class="case-meta" data-i18n="gymMeta">2026 · Motion · 8s · 1080×1920 · 24fps</p>
-                <div class="gym-films">
-                    <figure>
-                        <video
-                            controls
-                            playsinline
-                            preload="metadata"
-                            poster="assets/images/projects/gym-deadlift-poster.jpg"
-                            width="1080"
-                            height="1920"
-                            data-i18n-aria-label="gymVideoDeadlift"
-                            aria-label="Gym deadlift, an 8-second Glace Noire theme">
-                            <source src="assets/video/gym-deadlift.mp4" type="video/mp4">
-                        </video>
-                        <figcaption data-i18n="gymDeadlift">Deadlift</figcaption>
-                    </figure>
-                    <figure>
-                        <video
-                            controls
-                            playsinline
-                            preload="metadata"
-                            poster="assets/images/projects/gym-breathing-poster.jpg"
-                            width="1080"
-                            height="1920"
-                            data-i18n-aria-label="gymVideoBreathing"
-                            aria-label="Gym breathing, an 8-second Glace Noire theme">
-                            <source src="assets/video/gym-athlete-breathing.mp4" type="video/mp4">
-                        </video>
-                        <figcaption data-i18n="gymBreathing">Breathing</figcaption>
-                    </figure>
-                    <figure>
-                        <video
-                            controls
-                            playsinline
-                            preload="metadata"
-                            poster="assets/images/projects/gym-fitness-poster.jpg"
-                            width="1080"
-                            height="1920"
-                            data-i18n-aria-label="gymVideoCommercial"
-                            aria-label="Gym commercial, an 8-second Glace Noire theme">
-                            <source src="assets/video/gym-fitness-commercial.mp4" type="video/mp4">
-                        </video>
-                        <figcaption data-i18n="gymCommercial">Commercial</figcaption>
-                    </figure>
-                </div>
-                <div class="gym-stills">
-                    <figure>
-                        <img src="assets/images/projects/gym-athlete-white.png" alt="Female athlete in a low start, water bursting off the floor" width="1122" height="1402">
-                        <figcaption data-i18n="gymStillStart">Start</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="assets/images/projects/gym-deadlift.png" alt="A man sets up for a deadlift under a Glace Noire seal" width="1122" height="1402">
-                        <figcaption data-i18n="gymDeadlift">Deadlift</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="assets/images/projects/gym-pullup.png" alt="A woman holds the top of a pull-up in front of a Glace Noire seal" width="941" height="1672">
-                        <figcaption data-i18n="gymStillPullup">Pull-up</figcaption>
-                    </figure>
-                </div>
-                <p class="case-back"><a href="projects.html" data-i18n="wtnPlayerBack">← Back to Projects</a></p>
-            </div>
-        </article>
-    </main>
-
-    <footer class="footer">
+    <div class="ticker" aria-hidden="true"><span><span data-gym-en="STRENGTH IN STILLNESS" data-gym-fr="LA FORCE DANS LE CALME">STRENGTH IN STILLNESS</span></span><b>✳</b><span><span data-gym-en="POWER IN MOTION" data-gym-fr="LA PUISSANCE EN MOUVEMENT">POWER IN MOTION</span></span><b>✳</b><span><span data-gym-en="BUILT IN THE COLD" data-gym-fr="FORGÉ DANS LE FROID">BUILT IN THE COLD</span></span><b>✳</b></div>
+    <section class="philosophy section" id="philosophy">
+      <p class="eyebrow"><span data-gym-en="01 / THE CONCEPT" data-gym-fr="01 / LE CONCEPT">01 / THE CONCEPT</span></p>
+      <div class="philosophy-body"><h2><span data-gym-en="A COLDER WORLD." data-gym-fr="UN MONDE PLUS FROID.">A COLDER WORLD.</span><br><span data-gym-en="A CLEARER" data-gym-fr="UN ESPRIT">A CLEARER</span><br><em><span data-gym-en="STATE OF MIND." data-gym-fr="PLUS CLAIR.">STATE OF MIND.</span></em></h2><div><p class="lead"><span data-gym-en="What if a gym brand could feel like the moment just before a lift?" data-gym-fr="Et si une marque de gym évoquait l’instant juste avant de soulever une charge?">What if a gym brand could feel like the moment just before a lift?</span></p><p><span data-gym-en="Glace Noire explores that tension. Cold surfaces, suspended water, and deliberate movement create a world where focus takes centre stage." data-gym-fr="Glace Noire explore cette tension. Surfaces froides, eau suspendue et gestes maîtrisés composent un monde où la concentration occupe toute la place.">Glace Noire explores that tension. Cold surfaces, suspended water, and deliberate movement create a world where focus takes centre stage.</span></p><p><span data-gym-en="This independent concept brings together three image studies and three short films. A visual identity explored through atmosphere, rather than a real-world gym or membership offer." data-gym-fr="Ce concept indépendant réunit trois études visuelles et trois courts films. Une identité explorée par l’atmosphère; il ne s’agit pas d’un gym en activité ni d’une offre d’abonnement.">This independent concept brings together three image studies and three short films. A visual identity explored through atmosphere, rather than a real-world gym or membership offer.</span></p><a class="text-link" href="#training"><span data-gym-en="Explore the image studies" data-gym-fr="Explorer les études visuelles">Explore the image studies</span> <span aria-hidden="true">↗</span></a></div></div>
+      <div class="project-details"><div><span><span data-gym-en="CREATIVE DIRECTION" data-gym-fr="DIRECTION ARTISTIQUE">CREATIVE DIRECTION</span></span><p>Gianni Perugini</p></div><div><span><span data-gym-en="EXPLORATION" data-gym-fr="EXPLORATION">EXPLORATION</span></span><p><span data-gym-en="Brand atmosphere" data-gym-fr="Univers de marque">Brand atmosphere</span><br><span data-gym-en="Image-making" data-gym-fr="Création d’images">Image-making</span> &amp; <span data-gym-en="motion" data-gym-fr="mouvement">motion</span></p></div><div><span><span data-gym-en="FORMAT" data-gym-fr="FORMAT">FORMAT</span></span><p><span data-gym-en="3 image studies" data-gym-fr="3 études visuelles">3 image studies</span><br><span data-gym-en="3 films · 8 seconds each" data-gym-fr="3 films · 8 secondes chacun">3 films · 8 seconds each</span></p></div><div><span><span data-gym-en="YEAR" data-gym-fr="ANNÉE">YEAR</span></span><p>2026</p></div></div>
+    </section>
+    <section class="training section" id="training">
+      <div class="section-heading"><div><p class="eyebrow"><span data-gym-en="02 / IMAGE STUDIES" data-gym-fr="02 / ÉTUDES VISUELLES">02 / IMAGE STUDIES</span></p><h2><span data-gym-en="STRENGTH." data-gym-fr="LA FORCE.">STRENGTH.</span><br><span data-gym-en="IN THREE ACTS." data-gym-fr="EN TROIS ACTES.">IN THREE ACTS.</span></h2></div><p><span data-gym-en="Weight. Control. Momentum." data-gym-fr="Poids. Maîtrise. Élan.">Weight. Control. Momentum.</span><br><span data-gym-en="Three expressions of the same world." data-gym-fr="Trois expressions d’un même univers.">Three expressions of the same world.</span></p></div>
+      <div class="training-grid">
+        <article class="training-card"><img src="assets/images/projects/gym-deadlift.webp" alt="Athlete preparing a deadlift beneath the Glace Noire seal" loading="lazy" data-gym-alt-en="Athlete preparing a deadlift beneath the Glace Noire seal" data-gym-alt-fr="Athlète préparant un soulevé de terre sous le sceau Glace Noire"><div class="card-overlay"><span><span data-gym-en="STUDY 01" data-gym-fr="ÉTUDE 01">STUDY 01</span></span><h3><span data-gym-en="THE WEIGHT." data-gym-fr="LE POIDS.">THE WEIGHT.</span></h3><p><span data-gym-en="Strength, held in anticipation." data-gym-fr="La force, suspendue dans l’attente.">Strength, held in anticipation.</span></p><button class="view-still" data-image="gym-deadlift.png" data-title="The weight — Image study 01"><span data-gym-en="View image" data-gym-fr="Voir l’image">View image</span> <span aria-hidden="true">↗</span></button></div></article>
+        <article class="training-card"><img src="assets/images/projects/gym-pullup.webp" alt="Athlete at the top of a pull-up in a dramatic industrial gym" loading="lazy" data-gym-alt-en="Athlete at the top of a pull-up in a dramatic industrial gym" data-gym-alt-fr="Athlète en haut d’une traction dans un gym industriel"><div class="card-overlay"><span><span data-gym-en="STUDY 02" data-gym-fr="ÉTUDE 02">STUDY 02</span></span><h3><span data-gym-en="THE CONTROL." data-gym-fr="LA MAÎTRISE.">THE CONTROL.</span></h3><p><span data-gym-en="A moment of complete composure." data-gym-fr="Un instant de maîtrise absolue.">A moment of complete composure.</span></p><button class="view-still" data-image="gym-pullup.png" data-title="The control — Image study 02"><span data-gym-en="View image" data-gym-fr="Voir l’image">View image</span> <span aria-hidden="true">↗</span></button></div></article>
+        <article class="training-card"><img src="assets/images/projects/gym-athlete-white.webp" alt="Athlete ready to accelerate from a low start" loading="lazy" data-gym-alt-en="Athlete ready to accelerate from a low start" data-gym-alt-fr="Athlète prête à accélérer depuis une position de départ basse"><div class="card-overlay"><span><span data-gym-en="STUDY 03" data-gym-fr="ÉTUDE 03">STUDY 03</span></span><h3><span data-gym-en="THE RELEASE." data-gym-fr="L’ÉLAN.">THE RELEASE.</span></h3><p><span data-gym-en="Stillness becomes momentum." data-gym-fr="Le calme devient élan.">Stillness becomes momentum.</span></p><button class="view-still" data-image="gym-athlete-white.png" data-title="The release — Image study 03"><span data-gym-en="View image" data-gym-fr="Voir l’image">View image</span> <span aria-hidden="true">↗</span></button></div></article>
+      </div>
+    </section>
+    <section class="films" id="films">
+      <div class="film-visual"><img id="film-poster" src="assets/images/projects/gym-fitness-poster.jpg" alt="Glace Noire brand film preview" loading="lazy" data-gym-alt-en="Glace Noire brand film preview" data-gym-alt-fr="Aperçu du film de marque Glace Noire"><button id="selected-film" class="large-play" data-film="gym-fitness-commercial.mp4" data-title="The Glace Noire film" aria-label="Watch the brand film" data-gym-aria-en="Watch the brand film" data-gym-aria-fr="Voir le film de marque">▶</button><div class="film-caption"><span id="selected-caption"><span data-gym-en="01 / THE BRAND FILM" data-gym-fr="01 / LE FILM DE MARQUE">01 / THE BRAND FILM</span></span><span><span data-gym-en="08 SECONDS · 24 FPS" data-gym-fr="08 SECONDES · 24 IM/S">08 SECONDS · 24 FPS</span></span></div></div>
+      <div class="film-copy"><p class="eyebrow"><span data-gym-en="03 / MOTION STUDIES" data-gym-fr="03 / ÉTUDES EN MOUVEMENT">03 / MOTION STUDIES</span></p><h2><span data-gym-en="THE WORLD." data-gym-fr="L’UNIVERS.">THE WORLD.</span><br><em><span data-gym-en="IN MOTION." data-gym-fr="EN MOUVEMENT.">IN MOTION.</span></em></h2><p><span data-gym-en="Eight seconds to set the atmosphere." data-gym-fr="Huit secondes pour installer l’atmosphère.">Eight seconds to set the atmosphere.</span><br><span data-gym-en="Select a film, then press play." data-gym-fr="Choisissez un film, puis lancez la lecture.">Select a film, then press play.</span></p><div class="film-list" aria-label="Select a film" data-gym-aria-en="Select a film" data-gym-aria-fr="Choisir un film"><button class="film-choice" aria-pressed="true" data-source="gym-fitness-commercial.mp4" data-poster="gym-fitness-poster.jpg" data-title="The Glace Noire film" data-label="01 / THE BRAND FILM"><span class="film-number">01</span><span><strong><span data-gym-en="The brand film" data-gym-fr="Le film de marque">The brand film</span></strong><small><span data-gym-en="A first look inside the world." data-gym-fr="Un premier regard sur cet univers.">A first look inside the world.</span></small></span><span class="film-duration">00:08</span></button><button class="film-choice" aria-pressed="false" data-source="gym-deadlift.mp4" data-poster="gym-deadlift-poster.jpg" data-title="Deadlift — Strength" data-label="02 / DEADLIFT"><span class="film-number">02</span><span><strong><span data-gym-en="Deadlift" data-gym-fr="Soulevé de terre">Deadlift</span></strong><small><span data-gym-en="The tension before the lift." data-gym-fr="La tension avant le mouvement.">The tension before the lift.</span></small></span><span class="film-duration">00:08</span></button><button class="film-choice" aria-pressed="false" data-source="gym-athlete-breathing.mp4" data-poster="gym-breathing-poster.jpg" data-title="Breathing — Focus" data-label="03 / BREATHING"><span class="film-number">03</span><span><strong><span data-gym-en="Breathing" data-gym-fr="Respiration">Breathing</span></strong><small><span data-gym-en="The pause between efforts." data-gym-fr="La pause entre les efforts.">The pause between efforts.</span></small></span><span class="film-duration">00:08</span></button></div><p class="film-note"><span data-gym-en="Portrait films · Sound on for the full experience" data-gym-fr="Films verticaux · Activez le son pour l’expérience complète">Portrait films · Sound on for the full experience</span></p></div>
+    </section>
+    <section class="direction section" aria-labelledby="direction-title"><p class="eyebrow"><span data-gym-en="04 / THE VISUAL LANGUAGE" data-gym-fr="04 / LE LANGAGE VISUEL">04 / THE VISUAL LANGUAGE</span></p><div class="direction-layout"><h2 id="direction-title"><span data-gym-en="EVERY DETAIL." data-gym-fr="CHAQUE DÉTAIL.">EVERY DETAIL.</span><br><em><span data-gym-en="ONE ATMOSPHERE." data-gym-fr="UNE ATMOSPHÈRE.">ONE ATMOSPHERE.</span></em></h2><div class="direction-notes"><article><span><span data-gym-en="01 / PALETTE" data-gym-fr="01 / PALETTE">01 / PALETTE</span></span><h3><span data-gym-en="Ice, charcoal, a flash of red." data-gym-fr="Glace, charbon, un éclat de rouge.">Ice, charcoal, a flash of red.</span></h3><p><span data-gym-en="Open white space meets dark industrial surfaces. Red anchors the brand and gives the cold world a pulse." data-gym-fr="Les espaces blancs ouverts rencontrent les surfaces industrielles sombres. Le rouge ancre la marque et donne une pulsation à cet univers froid.">Open white space meets dark industrial surfaces. Red anchors the brand and gives the cold world a pulse.</span></p><div class="swatches" aria-label="Colour palette" data-gym-aria-en="Colour palette" data-gym-aria-fr="Palette de couleurs"><span style="--swatch:#e8ecee"><span data-gym-en="Ice" data-gym-fr="Glace">Ice</span></span><span style="--swatch:#151719"><span data-gym-en="Charcoal" data-gym-fr="Charbon">Charcoal</span></span><span style="--swatch:#a31e27"><span data-gym-en="Red" data-gym-fr="Rouge">Red</span></span></div></article><article><span><span data-gym-en="02 / IMAGE" data-gym-fr="02 / IMAGE">02 / IMAGE</span></span><h3><span data-gym-en="Tension you can see." data-gym-fr="Une tension visible.">Tension you can see.</span></h3><p><span data-gym-en="Water, hard light, and suspended movement make physical effort the centre of the story." data-gym-fr="L’eau, la lumière dure et le mouvement suspendu placent l’effort physique au cœur du récit.">Water, hard light, and suspended movement make physical effort the centre of the story.</span></p></article><article><span><span data-gym-en="03 / MOTION" data-gym-fr="03 / MOUVEMENT">03 / MOTION</span></span><h3><span data-gym-en="A world in a short frame." data-gym-fr="Un univers en quelques secondes.">A world in a short frame.</span></h3><p><span data-gym-en="The three eight-second films extend the still images into a sequence of strength, breath, and focus." data-gym-fr="Les trois films de huit secondes prolongent les images en une séquence de force, de souffle et de concentration.">The three eight-second films extend the still images into a sequence of strength, breath, and focus.</span></p></article></div></div></section>
+    <section class="contact section" id="contact"><p class="eyebrow"><span class="red-dot"></span> <span data-gym-en="YOUR BRAND. ITS OWN WORLD." data-gym-fr="VOTRE MARQUE. SON PROPRE UNIVERS.">YOUR BRAND. ITS OWN WORLD.</span></p><h2><span data-gym-en="LET’S MAKE" data-gym-fr="CRÉONS">LET’S MAKE</span><br><em><span data-gym-en="SOMETHING FELT." data-gym-fr="UNE ÉMOTION.">SOMETHING FELT.</span></em></h2><div class="contact-row"><p><span data-gym-en="Have a brand, campaign, or idea in mind?" data-gym-fr="Une marque, une campagne ou une idée en tête?">Have a brand, campaign, or idea in mind?</span><br><span data-gym-en="Start a conversation with Gianni about creative direction," data-gym-fr="Parlez avec Gianni de direction artistique,">Start a conversation with Gianni about creative direction,</span><br class="desktop-break"> <span data-gym-en="imagery, and motion." data-gym-fr="d’images et de mouvement.">imagery, and motion.</span></p><a class="button dark" href="contact.html"><span data-gym-en="Discuss a project" data-gym-fr="Discuter d’un projet">Discuss a project</span> <span aria-hidden="true">↗</span></a></div></section>
+  <div class="project-return"><a href="projects.html">← <span><span data-gym-en="Back to Projects" data-gym-fr="Retour aux projets">Back to Projects</span></span></a><span><span data-gym-en="A concept by Gianni Perugini" data-gym-fr="Un concept de Gianni Perugini">A concept by Gianni Perugini</span></span><a href="#main"><span><span data-gym-en="Back to top" data-gym-fr="Retour en haut">Back to top</span></span> ↑</a></div><dialog id="film-dialog" aria-labelledby="film-title"><div class="dialog-header"><h2 id="film-title"><span data-gym-en="The Glace Noire film" data-gym-fr="Le film Glace Noire">The Glace Noire film</span></h2><button class="close" aria-label="Close film" data-gym-aria-en="Close film" data-gym-aria-fr="Fermer le film"><span data-gym-en="Close ×" data-gym-fr="Fermer ×">Close ×</span></button></div><video controls playsinline preload="none"></video><p class="media-error" role="status" hidden><span data-gym-en="The film could not load. Please close it and try again." data-gym-fr="Le film n’a pas pu être chargé. Fermez-le et réessayez.">The film could not load. Please close it and try again.</span></p><p><span data-gym-en="GLACE NOIRE / BUILT IN THE COLD" data-gym-fr="GLACE NOIRE / FORGÉ DANS LE FROID">GLACE NOIRE / BUILT IN THE COLD</span></p></dialog>
+  <dialog id="image-dialog" aria-labelledby="image-title"><div class="dialog-header"><h2 id="image-title"><span data-gym-en="Image study" data-gym-fr="Étude visuelle">Image study</span></h2><button class="close" aria-label="Close image" data-gym-aria-en="Close image" data-gym-aria-fr="Fermer l’image"><span data-gym-en="Close ×" data-gym-fr="Fermer ×">Close ×</span></button></div><img alt=""><p><span data-gym-en="GLACE NOIRE / IMAGE STUDIES" data-gym-fr="GLACE NOIRE / ÉTUDES VISUELLES">GLACE NOIRE / IMAGE STUDIES</span></p></dialog>
+</main>
+<footer class="footer">
         <div class="container"><div class="footer-bottom"><p data-i18n="rights">&copy; 2026 Gianni Perugini. All rights reserved.</p><nav class="footer-links" aria-label="Help and policies" data-i18n-aria-label="footerHelp"><a href="faq.html" data-i18n="faq">FAQ</a><a href="licensing.html" data-i18n="licensing">Licensing</a></nav></div></div>
     </footer>
-    <script src="site-i18n.js?v=20261007-commercial"></script>
-    <script src="script.js?v=20260829-resume-href"></script>
+<script src="site-i18n.js?v=20261007-commercial"></script>
+<script src="script.js?v=20260829-resume-href"></script>
+<script src="assets/js/gym-experience.js?v=20261008"></script>
 </body>
 </html>

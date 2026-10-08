@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');.gym-experience{--ice:#e8ecee;--ink:#151719;--red:#a31e27;--muted:#5b6267;--line:#c7cdd0}
+.gym-experience *{box-sizing:border-box}
+html.gym-page-root{scroll-behavior:smooth;scroll-padding-top:90px}
+.gym-experience{margin:0;background:var(--ice);color:var(--ink);font-family:Manrope,Arial,sans-serif}
+.gym-experience a{color:inherit;text-decoration:none}
+.gym-experience button{font:inherit;cursor:pointer}
+.gym-experience button,.gym-experience a{-webkit-tap-highlight-color:transparent}
+.gym-experience button:focus-visible,.gym-experience a:focus-visible{outline:3px solid var(--red);outline-offset:6px}
+.gym-experience button{color:inherit}
+.gym-experience img{display:block;width:100%;object-fit:cover}
+.gym-experience header{height:100px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;border-bottom:1px solid var(--line);position:relative;z-index:5}
+.gym-experience .brand{font-size:24px;font-weight:800;letter-spacing:-1px;line-height:1}
+.gym-experience .brand span{display:block;font-size:8px;font-weight:600;letter-spacing:3.6px;margin-top:9px}
+.gym-experience nav{display:flex;gap:38px;font-size:12px;font-weight:600}
+.gym-experience nav a:hover{color:var(--red)}
+.gym-experience .header-cta{font-size:12px;font-weight:700;border-bottom:1px solid;padding:12px 0}
+.gym-experience .header-cta span{margin-left:25px}
+.gym-experience .menu{display:none}
+.gym-experience .hero{min-height:740px;height:calc(100svh - 100px);max-height:1050px;position:relative;overflow:hidden;background:#e9eef1}
+.gym-experience .hero-athlete{position:absolute;right:0;top:0;width:61%;height:100%;object-position:50% 47%}
+.gym-experience .hero:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#e9eef1 0%,#e9eef1 25%,#e9eef1b0 40%,transparent 63%);pointer-events:none}
+.gym-experience .hero-content{position:relative;z-index:1;padding:65px 5% 100px;max-width:1000px}
+.gym-experience .eyebrow{font-size:10px;font-weight:700;letter-spacing:1.7px;display:flex;align-items:center;gap:10px}
+.gym-experience .red-dot{width:6px;height:6px;display:inline-block;border-radius:50%;background:var(--red)}
+.gym-experience h1,.gym-experience h2,.gym-experience h3{font-family:'Barlow Condensed','Arial Narrow',Impact,sans-serif;font-weight:700;margin:0;line-height:.9;letter-spacing:-.02em}
+.gym-experience h1{font-size:clamp(105px,10.8vw,190px);margin:36px 0 25px}
+.gym-experience em{font-style:normal;color:var(--red)}
+.gym-experience .hero-copy{font-size:16px;line-height:1.8;margin:0 0 26px;color:#444b50}
+.gym-experience .hero-actions{display:flex;gap:28px;align-items:center}
+.gym-experience .button{display:inline-flex;align-items:center;justify-content:space-between;gap:40px;padding:20px 24px;font-size:11px;font-weight:700;transition:background .2s,transform .2s}
+.gym-experience .dark{background:var(--ink);color:white}
+.gym-experience .button:hover{background:var(--red);transform:translateY(-2px)}
+.gym-experience .film-link{border:0;background:none;padding:10px 0;font-size:11px;display:flex;align-items:center;gap:10px;font-weight:700}
+.gym-experience .play{border:1px solid #838b90;border-radius:50%;width:34px;height:34px;display:grid;place-items:center;font-size:9px}
+.gym-experience .film-link small{color:var(--muted);font-size:9px;margin-left:4px}
+.gym-experience .hero-bottom{position:absolute;z-index:2;bottom:0;left:5%;right:5%;height:65px;border-top:1px solid #88939970;display:flex;align-items:center;justify-content:space-between;font-size:8px;letter-spacing:1.5px;font-weight:700}
+.gym-experience .hero-bottom a span{margin-left:12px}
+.gym-experience .ticker{background:var(--ink);color:#dae0e3;display:flex;justify-content:space-around;align-items:center;padding:22px 3%;gap:15px;font-size:12px;font-weight:700;letter-spacing:3px}
+.gym-experience .ticker b{color:#bd3038;font-size:24px}
+.gym-experience .section{padding:110px 7%}
+.gym-experience .philosophy-body{display:grid;grid-template-columns:1.2fr 1fr;gap:10%;margin:38px 0 70px}
+.gym-experience h2{font-size:clamp(55px,5.5vw,90px)}
+.gym-experience .philosophy-body>div{max-width:430px}
+.gym-experience .philosophy p:not(.eyebrow){font-size:13px;line-height:1.9;color:var(--muted)}
+.gym-experience .philosophy .lead{font-size:20px!important;color:var(--ink)!important;line-height:1.6!important;margin:0 0 20px}
+.gym-experience .text-link{display:flex;justify-content:space-between;border-bottom:1px solid var(--ink);padding:20px 0 12px;font-size:11px;font-weight:700;max-width:210px}
+.gym-experience .principles{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);padding-top:30px;gap:45px}
+.gym-experience .principles>div{position:relative}
+.gym-experience .principles span{color:var(--red);font-size:10px;display:block;margin-bottom:20px}
+.gym-experience .principles h3{font-size:35px}
+.gym-experience .training{background:#151719;color:var(--ice)}
+.gym-experience .section-heading{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:45px}
+.gym-experience .section-heading h2{margin-top:35px}
+.gym-experience .section-heading>p{font-size:12px;line-height:1.8;color:#a6afb5}
+.gym-experience .training-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gym-experience .training-card{position:relative;overflow:hidden;aspect-ratio:3/4.6}
+.gym-experience .training-card>img{height:100%;transition:transform .6s}
+.gym-experience .training-card:hover>img{transform:scale(1.035)}
+.gym-experience .card-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:28px;background:linear-gradient(transparent 30%,#050608d9 100%)}
+.gym-experience .card-overlay>span{font-size:9px;letter-spacing:1.7px;margin-bottom:17px}
+.gym-experience .card-overlay h3{font-size:clamp(35px,3.5vw,60px)}
+.gym-experience .card-overlay p{font-size:10px;color:#bfc7cc;max-width:80%;line-height:1.7}
+.gym-experience .card-overlay button{position:absolute;right:22px;bottom:30px;width:34px;height:34px;border:1px solid #d1d8dc77;background:transparent;color:white;border-radius:50%;font-size:20px}
+.gym-experience .card-overlay button:hover{background:var(--red)}
+.gym-experience .films{display:grid;grid-template-columns:1fr 1fr;background:#202427;color:var(--ice)}
+.gym-experience .film-visual{position:relative;min-height:660px}
+.gym-experience .film-visual img{height:100%;position:absolute;object-position:center 42%;filter:brightness(.8)}
+.gym-experience .large-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:90px;height:90px;border-radius:50%;border:1px solid #ffffffb0;color:white;background:#ffffff0a;backdrop-filter:blur(4px);font-size:20px}
+.gym-experience .large-play:hover{background:#a31e2790}
+.gym-experience .film-visual>span{position:absolute;bottom:30px;left:30px;font-size:9px;letter-spacing:2px}
+.gym-experience .film-copy{padding:80px 14%}
+.gym-experience .film-copy h2{margin:35px 0 25px;font-size:clamp(50px,5vw,80px)}
+.gym-experience .film-copy h2 em{color:#afb9c0}
+.gym-experience .film-copy>p:not(.eyebrow){font-size:12px;line-height:1.9;color:#aeb8bf}
+.gym-experience .film-list{margin-top:40px}
+.gym-experience .film-list button{width:100%;display:flex;justify-content:space-between;border:0;border-top:1px solid #51585e;padding:20px 0;background:transparent;color:#dce3e6;font-size:11px}
+.gym-experience .film-list button:hover{color:#fff;background:#ffffff08}
+.gym-experience .contact{padding-top:100px;padding-bottom:90px}
+.gym-experience .contact h2{font-size:clamp(65px,8vw,125px);margin:35px 0}
+.gym-experience .contact-row{display:flex;justify-content:space-between;align-items:center;gap:30px}
+.gym-experience .contact-row p{font-size:12px;line-height:1.9;color:var(--muted)}
+.gym-experience footer{padding:40px 5%;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr auto;align-items:center;gap:30px}
+.gym-experience footer p{font-size:10px;color:var(--muted)}
+.gym-experience footer>a:last-of-type{font-size:9px;letter-spacing:1px}
+.gym-experience footer small{grid-column:1/-1;font-size:9px;color:var(--muted);border-top:1px solid var(--line);padding-top:25px}
+.gym-experience dialog{padding:24px;background:#151719;color:#e8ecee;border:1px solid #50565a;max-width:min(620px,94vw);width:620px;max-height:94svh}
+.gym-experience dialog::backdrop{background:#060809db;backdrop-filter:blur(10px)}
+.gym-experience .dialog-header{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:20px}
+.gym-experience .dialog-header h2{font-family:Manrope,Arial,sans-serif;font-size:14px;line-height:1.5;letter-spacing:0}
+.gym-experience .close{border:1px solid #7c878d;background:transparent;padding:10px;color:white;font-size:11px}
+.gym-experience dialog video{display:block;max-height:73svh;width:100%;background:black}
+.gym-experience dialog>p{font-size:8px;letter-spacing:2px;margin:20px 0 0}
+.gym-experience .skip{position:fixed;top:-80px;left:10px;padding:15px;background:white;z-index:100}
+.gym-experience .skip:focus{top:10px}
+body.gym-page.modal-open{overflow:hidden}
+@media(min-width:1700px){.gym-experience .hero-content{padding-top:90px}
+.gym-experience .hero-copy{font-size:19px}
+.gym-experience .hero-actions{margin-top:40px}
+}@media(max-width:1000px){.gym-experience nav{gap:20px}
+.gym-experience .hero{min-height:680px;height:80svh}
+.gym-experience .hero-content{padding-top:70px}
+.gym-experience h1{font-size:130px}
+.gym-experience .hero-athlete{width:68%;object-position:60%}
+.gym-experience .hero-actions{gap:15px}
+.gym-experience .film-link small{display:none}
+.gym-experience .section{padding:80px 6%}
+.gym-experience .card-overlay{padding:20px}
+.gym-experience .card-overlay p{max-width:75%}
+.gym-experience .film-copy{padding:60px 10%}
+.gym-experience .film-visual{min-height:610px}
+}@media(max-width:700px){.gym-experience header{height:78px;padding:0 6%}
+.gym-experience .brand{font-size:20px}
+.gym-experience .brand span{font-size:7px;letter-spacing:2.6px}
+.gym-experience .header-cta{display:none}
+.gym-experience .menu{display:flex;gap:18px;border:0;background:none;padding:15px 0;font-size:11px;font-weight:700}
+.gym-experience nav{display:none;position:absolute;top:78px;left:0;right:0;background:var(--ice);padding:30px 6%;border-bottom:1px solid var(--line);gap:25px}
+.gym-experience nav.open{display:flex;flex-direction:column}
+.gym-experience .hero{height:850px;min-height:0;max-height:none}
+.gym-experience .hero-content{padding:38px 6% 0}
+.gym-experience .hero .eyebrow{font-size:8px;letter-spacing:1px}
+.gym-experience h1{font-size:clamp(90px,24vw,155px);margin:30px 0 20px}
+.gym-experience .hero-copy{font-size:13px;line-height:1.7}
+.gym-experience .hero-athlete{top:320px;width:100%;height:530px;object-position:50% 40%}
+.gym-experience .hero:after{background:linear-gradient(180deg,#e9eef1 0%,#e9eef1 30%,#e9eef1a0 42%,transparent 60%)}
+.gym-experience .hero-actions{flex-wrap:wrap;gap:15px}
+.gym-experience .button{font-size:10px;padding:17px 18px;gap:25px}
+.gym-experience .film-link{font-size:10px}
+.gym-experience .hero-bottom{height:48px;font-size:7px;left:6%;right:6%;background:#e8eceeb0}
+.gym-experience .hero-bottom>span{display:none}
+.gym-experience .hero-bottom a{margin:auto}
+.gym-experience .ticker{padding:18px 4%;font-size:8px;letter-spacing:1px}
+.gym-experience .ticker b{font-size:17px}
+.gym-experience .ticker span:last-of-type,.gym-experience .ticker b:last-child{display:none}
+.gym-experience .section{padding:60px 6%}
+.gym-experience .eyebrow{font-size:8px}
+.gym-experience .philosophy-body{grid-template-columns:1fr;gap:30px;margin:30px 0 40px}
+.gym-experience h2{font-size:60px}
+.gym-experience .philosophy .lead{font-size:18px!important}
+.gym-experience .principles{gap:15px}
+.gym-experience .principles h3{font-size:25px}
+.gym-experience .principles p{font-size:10px!important}
+.gym-experience .principles span{margin-bottom:15px}
+.gym-experience .section-heading{display:block;margin-bottom:30px}
+.gym-experience .section-heading h2{margin-top:25px}
+.gym-experience .section-heading>p{margin-top:24px}
+.gym-experience .training-grid{grid-template-columns:1fr;gap:22px}
+.gym-experience .training-card{aspect-ratio:3/4;max-height:580px}
+.gym-experience .card-overlay{padding:28px}
+.gym-experience .card-overlay h3{font-size:52px}
+.gym-experience .card-overlay p{font-size:12px}
+.gym-experience .card-overlay button{width:42px;height:42px}
+.gym-experience .films{grid-template-columns:1fr}
+.gym-experience .film-visual{min-height:510px}
+.gym-experience .film-copy{padding:55px 6%}
+.gym-experience .film-copy h2{font-size:66px}
+.gym-experience .contact h2{font-size:clamp(52px,14vw,85px)}
+.gym-experience .contact-row{display:block}
+.gym-experience .contact-row .button{margin-top:15px}
+.gym-experience footer{padding:35px 6%;grid-template-columns:1fr auto;gap:25px}
+.gym-experience footer p{grid-column:1/-1;grid-row:2}
+.gym-experience footer small{line-height:1.8}
+.gym-experience .dialog-header h2{font-size:11px}
+.gym-experience dialog{padding:16px}
+.gym-experience .close{white-space:nowrap}
+}@media(prefers-reduced-motion:reduce){html.gym-page-root{scroll-behavior:auto}
+.gym-experience *,.gym-experience *:before,.gym-experience *:after{transition:none!important;animation:none!important}
+}.gym-experience header{ position:sticky; top:0; background:#e8eceef2; backdrop-filter:blur(18px); height:88px; }
+.gym-experience .brand{ font-weight:800; letter-spacing:-1.3px; }
+.gym-experience .brand span{ font-size:9px; letter-spacing:3.2px; }
+.gym-experience nav{ font-size:14px; gap:30px; }
+.gym-experience nav a{ padding:15px 0; }
+.gym-experience .header-cta{ font-size:14px; }
+.gym-experience .mobile-contact{ display:none; }
+.gym-experience .hero{ min-height:730px; height:calc(100svh - 88px); }
+.gym-experience .hero-content{ max-width:none; }
+.gym-experience .hero .eyebrow{ font-size:11px; letter-spacing:1.6px; }
+.gym-experience .hero-copy{ font-size:17px; max-width:460px; line-height:1.7; }
+.gym-experience .button{ border:0; font-size:14px; min-height:54px; }
+.gym-experience .film-link{ font-size:14px; min-height:48px; border-bottom:1px solid #929da4; }
+.gym-experience .hero-bottom{ font-size:10px; letter-spacing:1px; }
+.gym-experience .eyebrow{ font-size:11px; }
+.gym-experience .philosophy-body{ grid-template-columns:1.1fr 1fr; gap:8%; }
+.gym-experience .philosophy-body>div{ max-width:510px; }
+.gym-experience .philosophy p:not(.eyebrow){ font-size:16px; line-height:1.85; }
+.gym-experience .philosophy .lead{ font-size:25px!important; line-height:1.45!important; }
+.gym-experience .philosophy h2{ font-size:clamp(55px,5vw,85px); }
+.gym-experience .text-link{ font-size:14px; max-width:270px; min-height:48px; }
+.gym-experience .project-details{ display:grid; grid-template-columns:repeat(4,1fr); gap:28px; border-top:1px solid var(--line); padding-top:30px; }
+.gym-experience .project-details>div>span{ font-size:10px; font-weight:700; letter-spacing:1.4px; color:var(--muted); }
+.gym-experience .project-details p{ color:var(--ink)!important; margin:14px 0 0; line-height:1.6!important; }
+.gym-experience .section-heading>p{ font-size:16px; color:#bdc6cc; line-height:1.7; max-width:340px; }
+.gym-experience .training-card{ aspect-ratio:3/4.4; }
+.gym-experience .card-overlay{ background:linear-gradient(transparent 35%,#050608ee 100%); padding:30px; }
+.gym-experience .card-overlay>span{ font-size:11px; }
+.gym-experience .card-overlay h3{ font-size:clamp(32px,3.3vw,60px); }
+.gym-experience .card-overlay p{ font-size:14px; max-width:100%; color:#d3dbe0; margin:14px 0 20px; }
+.gym-experience .card-overlay .view-still{ position:static; width:auto; height:auto; border:0; border-bottom:1px solid #99a4ac; border-radius:0; padding:10px 0; background:transparent; font-size:13px; display:flex; justify-content:space-between; align-items:center; min-height:44px; text-align:left; }
+.gym-experience .card-overlay .view-still:hover{ background:transparent; border-color:white; }
+.gym-experience .films{ grid-template-columns:1fr 1fr; }
+.gym-experience .film-visual{ min-height:760px; background:#121517; }
+.gym-experience .film-visual img{ object-fit:contain; filter:brightness(.75); }
+.gym-experience .film-copy{ padding:90px 12%; }
+.gym-experience .film-copy h2{ font-size:clamp(60px,5.7vw,96px); }
+.gym-experience .film-copy>p:not(.eyebrow){ font-size:16px; color:#c2cbd1; }
+.gym-experience .film-caption{ position:absolute; bottom:0; left:0; right:0; display:flex; justify-content:space-between; gap:20px; background:#111619ed; padding:26px 30px; font-size:10px; letter-spacing:1px; }
+.gym-experience .large-play{ width:100px; height:100px; background:#13171965; }
+.gym-experience .film-list{ margin-top:35px; }
+.gym-experience .film-list .film-choice{ display:grid; grid-template-columns:24px 1fr auto; gap:16px; align-items:center; text-align:left; font-size:15px; padding:24px 14px; border-top:1px solid #576068; border-left:2px solid transparent; }
+.gym-experience .film-choice[aria-pressed=true]{ background:#ffffff09; border-left-color:#db4551; }
+.gym-experience .film-number{ color:#b8c2c9; font-size:11px; }
+.gym-experience .film-choice strong{ display:block; font-weight:600; }
+.gym-experience .film-choice small{ display:block; color:#bdc7ce; font-size:12px; margin-top:7px; line-height:1.5; }
+.gym-experience .film-duration{ font-size:11px; color:#bdc7ce; }
+.gym-experience .film-copy .film-note{ font-size:11px!important; letter-spacing:.3px; margin-top:24px; }
+.gym-experience .direction{ background:#dce2e5; }
+.gym-experience .direction-layout{ display:grid; grid-template-columns:1.2fr 1fr; gap:8%; margin-top:35px; }
+.gym-experience .direction h2{ font-size:clamp(48px,4.5vw,80px); }
+.gym-experience .direction-notes article{ border-bottom:1px solid #b4bfc5; padding:0 0 25px; margin-bottom:28px; }
+.gym-experience .direction-notes article:last-child{ margin-bottom:0; }
+.gym-experience .direction-notes article>span{ font-size:10px; letter-spacing:1.5px; font-weight:700; color:#505b63; }
+.gym-experience .direction-notes h3{ font-family:Manrope,Arial,sans-serif; font-size:19px; line-height:1.5; letter-spacing:-.5px; margin:14px 0 10px; font-weight:600; }
+.gym-experience .direction-notes p{ font-size:15px; line-height:1.8; color:#505b63; margin:0; }
+.gym-experience .swatches{ display:flex; gap:22px; margin-top:22px; }
+.gym-experience .swatches>span{ font-size:10px; display:flex; align-items:center; gap:7px; color:#505b63; }
+.gym-experience .swatches>span:before{ content:''; width:22px; height:22px; border:1px solid #a0acb4; border-radius:50%; background:var(--swatch); }
+.gym-experience .contact h2{ font-size:clamp(60px,7.5vw,128px); }
+.gym-experience .contact-row p{ font-size:17px; line-height:1.8; }
+.gym-experience footer p{ font-size:13px; }
+.gym-experience footer small,.gym-experience footer>a:last-of-type{ font-size:11px; }
+.gym-experience dialog{ max-width:min(700px,94vw); width:700px; }
+.gym-experience .dialog-header h2{ font-size:15px; }
+.gym-experience .close{ min-height:44px; font-size:13px; padding:10px 15px; }
+.gym-experience dialog>p{ font-size:10px; }
+.gym-experience dialog .media-error{ font-size:14px; color:#fff; line-height:1.6; letter-spacing:0; }
+.gym-experience #image-dialog{ width:900px; max-width:min(900px,94vw); }
+.gym-experience #image-dialog img{ width:100%; height:75svh; object-fit:contain; }
+.gym-experience .large-play:focus-visible,.gym-experience .view-still:focus-visible,.gym-experience .film-choice:focus-visible,.gym-experience .close:focus-visible{ outline-color:#f0b6ba; }
+@media (max-width:1000px){.gym-experience header{ padding:0 5%; }
+.gym-experience nav{ gap:20px; font-size:13px; }
+.gym-experience .header-cta{ font-size:12px; }
+.gym-experience .header-cta span{ margin-left:10px; }
+.gym-experience .hero-copy{ max-width:400px; font-size:16px; }
+.gym-experience .film-copy{ padding:65px 8%; }
+.gym-experience .film-list .film-choice{ padding:20px 10px; gap:10px; }
+.gym-experience .film-caption{ padding:20px; flex-wrap:wrap; }
+.gym-experience .direction-layout{ grid-template-columns:1fr 1fr; gap:5%; }
+.gym-experience .direction h2{ font-size:53px; }
+.gym-experience .card-overlay{ padding:20px; }
+.gym-experience .card-overlay h3{ font-size:34px; }
+
+}@media (max-width:700px){html.gym-page-root{ scroll-padding-top:90px; }
+.gym-experience header{ height:76px; padding:0 6%; }
+.gym-experience .brand{ font-size:21px; }
+.gym-experience .brand span{ font-size:8px; letter-spacing:2.6px; }
+.gym-experience .menu{ font-size:14px; min-height:44px; }
+.gym-experience nav{ top:76px; padding:15px 6% 25px; gap:5px; font-size:17px; }
+.gym-experience nav a{ padding:15px 0; }
+.gym-experience .mobile-contact{ display:block; color:var(--red); border-top:1px solid var(--line); margin-top:8px; }
+.gym-experience .hero{ height:940px; min-height:0; }
+.gym-experience .hero-content{ padding-top:35px; }
+.gym-experience .hero .eyebrow{ font-size:9px; letter-spacing:1px; }
+.gym-experience .hero h1{ font-size:clamp(86px,23vw,140px); margin-top:26px; }
+.gym-experience .hero-copy{ font-size:14px; max-width:340px; }
+.gym-experience .hero-actions{ display:flex; flex-direction:column; align-items:flex-start; gap:7px; }
+.gym-experience .hero .button{ padding:17px 20px; font-size:13px; }
+.gym-experience .hero .film-link{ font-size:13px; border:0; gap:20px; }
+.gym-experience .hero-athlete{ top:410px; height:530px; }
+.gym-experience .hero:after{ background:linear-gradient(180deg,#e9eef1 0%,#e9eef1 40%,#e9eef199 49%,transparent 64%); }
+.gym-experience .hero-bottom{ font-size:9px; }
+.gym-experience .eyebrow{ font-size:10px; }
+.gym-experience .philosophy-body{ grid-template-columns:1fr; }
+.gym-experience .philosophy h2{ font-size:clamp(47px,12vw,70px); }
+.gym-experience .philosophy .lead{ font-size:23px!important; }
+.gym-experience .project-details{ grid-template-columns:1fr 1fr; gap:30px 20px; }
+.gym-experience .project-details>div>span{ font-size:9px; }
+.gym-experience .project-details p{ font-size:14px!important; }
+.gym-experience .section-heading h2{ font-size:60px; }
+.gym-experience .training-card{ aspect-ratio:3/4.5; max-height:none; }
+.gym-experience .card-overlay{ padding:25px; }
+.gym-experience .card-overlay h3{ font-size:42px; }
+.gym-experience .card-overlay p{ font-size:14px; }
+.gym-experience .films{ display:flex; flex-direction:column-reverse; }
+.gym-experience .film-copy{ padding:60px 6% 35px; }
+.gym-experience .film-copy h2{ font-size:67px; }
+.gym-experience .film-list .film-choice{ padding:20px 12px; font-size:16px; }
+.gym-experience .film-choice small{ font-size:13px; }
+.gym-experience .film-visual{ min-height:600px; }
+.gym-experience .film-visual img{ padding-bottom:62px; }
+.gym-experience .film-caption{ font-size:9px; }
+.gym-experience .direction-layout{ grid-template-columns:1fr; gap:38px; }
+.gym-experience .direction h2{ font-size:clamp(43px,11vw,70px); }
+.gym-experience .direction-notes h3{ font-size:19px; }
+.gym-experience .contact h2{ font-size:clamp(47px,12vw,85px); }
+.gym-experience .contact-row p{ font-size:16px; }
+.gym-experience .desktop-break{ display:none; }
+.gym-experience .button{ font-size:14px; }
+.gym-experience footer p{ font-size:12px; }
+.gym-experience footer small{ font-size:11px; }
+.gym-experience .dialog-header h2{ font-size:13px; }
+.gym-experience #image-dialog img{ height:70svh; }
+
+}
+
+body.gym-page { background:#e8ecee; }
+.gym-experience { padding-top:var(--portfolio-nav-height,68px); line-height:1.5; }
+.gym-experience header { top:var(--portfolio-nav-height,68px); z-index:50; }
+.gym-experience .hero-content { margin:0; width:auto; height:auto; text-align:left; display:block; max-width:none; }
+.gym-experience .hero { display:block; background-blend-mode:normal; }
+.gym-experience .hero::before { content:none; animation:none; }
+.gym-experience .contact { background:var(--ice); }
+.gym-experience h1,.gym-experience h2,.gym-experience h3 { font-family:'Barlow Condensed','Arial Narrow',Impact,sans-serif!important; text-transform:none; }
+.gym-experience .direction-notes h3 { font-family:Manrope,Arial,sans-serif!important; }
+.gym-experience .hero { height:calc(100svh - var(--portfolio-nav-height,68px) - 88px); }
+html.gym-page-root { scroll-padding-top:calc(var(--portfolio-nav-height,68px) + 100px); }
+.gym-experience .project-return { display:flex; align-items:center; justify-content:space-between; gap:25px; border-top:1px solid #c7cdd0; padding:35px 5%; font-size:13px; }
+.gym-experience .project-return a { min-height:44px; display:inline-flex; align-items:center; gap:8px; }
+.gym-experience .project-return>span { color:#5b6267; }
+.gym-skip { position:fixed; left:15px; top:-100px; background:white; color:#151719; padding:15px; z-index:2000; }
+.gym-skip:focus { top:15px; }
+html[lang^=fr] .gym-experience h1 { font-size:clamp(96px,9vw,165px); }
+.gym-experience button { font-family:Manrope,Arial,sans-serif; }
+.gym-experience dialog { z-index:2000; }
+@media(max-width:700px) {
+ .gym-experience .hero { height:940px; }
+ .gym-experience .project-return { flex-wrap:wrap; }
+ .gym-experience .project-return>span { order:3; width:100%; }
+ html[lang^=fr] .gym-experience h1 { font-size:clamp(66px,19vw,116px); }
+ html[lang^=fr] .gym-experience .card-overlay h3 { font-size:38px; }
+}
