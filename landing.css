@@ -21,6 +21,7 @@
 
 .content-page-main--with-hero > section {
     min-height: 0;
+    padding-top: 2.5rem;
 }
 
 .content-page-main > section {
@@ -38,7 +39,7 @@
 }
 
 .page-hero.page-hero--photo {
-    padding: 4rem 0 1.75rem;
+    padding: 4rem 0 0;
     background: #07090b;
     background-image: none;
 }
@@ -47,7 +48,7 @@
     display: block;
     width: 100%;
     height: auto;
-    margin: 0 0 1.35rem;
+    margin: 0;
 }
 
 .page-hero--photo .page-hero-content {
@@ -151,12 +152,26 @@
     margin-bottom: 2rem;
 }
 
+.content-page-heading {
+    max-width: 42rem;
+    margin: 0 0 2rem;
+}
+
+.content-page-heading h1,
+.photography-gallery-heading h1,
 .photography-gallery-heading h2 {
-    margin: 0 0 0.65rem;
-    font-family: 'Cinzel', serif;
-    font-weight: 400;
+    margin: 0;
+    font-family: 'Cinzel', serif !important;
+    font-weight: 400 !important;
+    font-size: 1.35rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+    color: var(--text-primary);
+}
+
+.content-page-heading + .about-content,
+.content-page-heading + .contact-content {
+    margin-top: 0;
 }
 
 .photography-gallery-heading p {
@@ -1092,7 +1107,7 @@ article.project-card--still:hover .project-image-inner {
 
 .contact-page .contact--page {
     min-height: 0;
-    padding: 3.5rem 0 5rem;
+    padding: 2.5rem 0 5rem;
     background: rgba(3, 8, 12, 0.42);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);

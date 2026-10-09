@@ -98,7 +98,7 @@ body {
 
 .nav-container {
     max-width: 1320px;
-    margin: 0 auto;
+    margin: 0;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
@@ -117,7 +117,7 @@ body {
 .logo-link {
     text-decoration: none;
     color: inherit;
-    margin-left: -0.35rem;
+    margin-left: 1.15rem;
 }
 
 .logo-link::before,
