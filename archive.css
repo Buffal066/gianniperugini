@@ -1163,6 +1163,24 @@
     transition: opacity 0.25s ease;
 }
 
+.photography-grid {
+    align-items: start;
+}
+
+.photography-grid + .photography-grid {
+    margin-top: 1.5rem;
+}
+
+.photography-grid .archive-item {
+    aspect-ratio: 3 / 2;
+    height: auto;
+}
+
+.photography-grid .archive-item img {
+    object-fit: cover;
+    object-position: center;
+}
+
 .store-terms-link {
     display: inline-flex;
     margin-top: 0.9rem;

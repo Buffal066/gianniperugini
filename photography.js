@@ -44,42 +44,71 @@
         if (trigger?.isConnected) trigger.focus();
     }
 
+    function createItem(work, index, size) {
+        const title = titleFromFile(work.file);
+        const item = document.createElement('button');
+        item.type = 'button';
+        item.className = 'archive-item';
+        item.style.transitionDelay = `${index * 0.04}s`;
+        item.style.aspectRatio = `${size.width} / ${size.height}`;
+        item.setAttribute('aria-label', `View photograph: ${title}`);
+
+        const img = document.createElement('img');
+        img.src = imagePath(work.file);
+        img.alt = title;
+        img.loading = 'lazy';
+        img.decoding = 'async';
+
+        item.appendChild(img);
+        item.addEventListener('click', () => openLightbox(work, item));
+        requestAnimationFrame(() => item.classList.add('is-visible'));
+        return item;
+    }
+
+    function appendGrid(entries) {
+        if (entries.length === 0) return;
+        const grid = document.createElement('div');
+        grid.className = 'archive-grid photography-grid';
+        grid.setAttribute('aria-live', 'polite');
+        entries.forEach((entry, index) => {
+            grid.appendChild(createItem(entry.work, index, entry));
+        });
+        sectionsRoot.appendChild(grid);
+    }
+
+    function measure(work) {
+        const img = new Image();
+        img.decoding = 'async';
+        img.src = imagePath(work.file);
+        return img.decode().then(() => ({
+            work,
+            width: img.naturalWidth || 3,
+            height: img.naturalHeight || 2
+        })).catch(() => ({
+            work,
+            width: 3,
+            height: 2
+        }));
+    }
+
     function render(works) {
         sectionsRoot.innerHTML = '';
-        if (!Array.isArray(works) || works.length === 0) {
+        const listed = (Array.isArray(works) ? works : []).filter((work) => work.file);
+        if (listed.length === 0) {
             empty.hidden = false;
             return;
         }
 
         empty.hidden = true;
-        const grid = document.createElement('div');
-        grid.className = 'archive-grid photography-grid';
-        grid.setAttribute('aria-live', 'polite');
-
-        works.forEach((work, index) => {
-            if (!work.file) return;
-            const title = titleFromFile(work.file);
-            const item = document.createElement('button');
-            item.type = 'button';
-            item.className = 'archive-item';
-            item.style.transitionDelay = `${index * 0.04}s`;
-            item.setAttribute('aria-label', `View photograph: ${title}`);
-
-            const img = document.createElement('img');
-            img.src = imagePath(work.file);
-            img.alt = title;
-            img.loading = 'lazy';
-            img.decoding = 'async';
-            img.width = 3840;
-            img.height = 2160;
-
-            item.appendChild(img);
-            item.addEventListener('click', () => openLightbox(work, item));
-            requestAnimationFrame(() => item.classList.add('is-visible'));
-            grid.appendChild(item);
+        Promise.all(listed.map(measure)).then((measured) => {
+            const horizontal = measured.filter((entry) => entry.width >= entry.height);
+            const vertical = measured.filter((entry) => entry.height > entry.width);
+            sectionsRoot.innerHTML = '';
+            appendGrid(horizontal);
+            appendGrid(vertical);
+        }).catch(() => {
+            empty.hidden = false;
         });
-
-        sectionsRoot.appendChild(grid);
     }
 
     lightboxClose?.addEventListener('click', closeLightbox);

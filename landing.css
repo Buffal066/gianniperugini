@@ -143,6 +143,10 @@
     margin-top: 0;
 }
 
+.content-page-main--with-hero .about .about-content {
+    margin-top: 4.5rem;
+}
+
 .photography-gallery {
     padding: 2.5rem 0 5rem;
 }
@@ -789,7 +793,7 @@ article.project-card--still:hover .project-image-inner {
 }
 
 .about-content {
-    max-width: 700px;
+    max-width: 58rem;
     margin: 3rem auto 0;
     text-align: center;
 }

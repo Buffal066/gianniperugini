@@ -1074,6 +1074,38 @@ section {
     color: #111111;
 }
 
+body.wall-page .page-hero.page-hero--photo {
+    position: relative;
+}
+
+body.wall-page .page-hero.page-hero--photo::before,
+body.wall-page .page-hero.page-hero--photo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 10px;
+    z-index: 2;
+    pointer-events: none;
+    background: linear-gradient(
+        to bottom,
+        #0e1012 0%,
+        #2a2e32 30%,
+        #4a5056 48%,
+        #24282c 72%,
+        #08090a 100%
+    );
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+}
+
+body.wall-page .page-hero.page-hero--photo::before {
+    top: 4.25rem;
+}
+
+body.wall-page .page-hero.page-hero--photo::after {
+    bottom: 0;
+}
+
 html .page-hero--photo .page-hero-photo--light {
     display: none;
 }
@@ -1092,7 +1124,9 @@ html[data-theme="light"] body {
 
 body.wall-page {
     background-color: #050505;
-    background-image: url('assets/images/projects/projects-bg-wall.jpg?v=20261009-wall');
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28)),
+        url('assets/images/projects/projects-bg-wall.jpg?v=20261009-wall');
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1116,6 +1150,49 @@ body.wall-page .projects::before {
     display: none;
 }
 
+body.wall-page .photography-gallery,
+body.wall-page .projects {
+    background: linear-gradient(
+        to bottom,
+        #07090b 0px,
+        rgba(7, 9, 11, 0.9) 1010px,
+        rgba(7, 9, 11, 0.55) 2020px,
+        rgba(7, 9, 11, 0) 2884px
+    );
+}
+
+html:not([data-theme="light"]) body.wall-page:has(.archive-hero) {
+    position: relative;
+}
+
+html:not([data-theme="light"]) body.wall-page:has(.archive-hero)::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    top: 100dvh;
+    bottom: 0;
+    pointer-events: none;
+    background: linear-gradient(
+        to bottom,
+        #07090b 0%,
+        rgba(7, 9, 11, 0.94) 20%,
+        rgba(7, 9, 11, 0.84) 48%,
+        rgba(7, 9, 11, 0.68) 76%,
+        rgba(7, 9, 11, 0.42) 100%
+    );
+}
+
+html:not([data-theme="light"]) body.wall-page .archive-hero,
+html:not([data-theme="light"]) body.wall-page .archive-storefront,
+html:not([data-theme="light"]) body.wall-page .archive-gallery,
+html:not([data-theme="light"]) body.wall-page:has(.archive-hero) .footer {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+}
+
 body.wall-page .footer {
     background: transparent;
 }
@@ -1137,7 +1214,9 @@ html[data-theme="light"] body.wall-page {
 html[data-theme="light"] body.wall-page .projects,
 html[data-theme="light"] body.wall-page .photography-gallery,
 html[data-theme="light"] body.wall-page .about,
-html[data-theme="light"] body.wall-page .contact {
+html[data-theme="light"] body.wall-page .contact,
+html[data-theme="light"] body.wall-page .archive-storefront,
+html[data-theme="light"] body.wall-page .archive-gallery {
     background: linear-gradient(
         to bottom,
         #ffffff 0px,
@@ -1148,6 +1227,30 @@ html[data-theme="light"] body.wall-page .contact {
 
 html[data-theme="light"] body.wall-page .footer {
     background: transparent;
+}
+
+html[data-theme="light"] body.wall-page .about-text {
+    position: relative;
+    z-index: 0;
+}
+
+html[data-theme="light"] body.wall-page .about-text::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -28%;
+    right: -28%;
+    top: -3rem;
+    bottom: -3.5rem;
+    pointer-events: none;
+    background: radial-gradient(
+        ellipse 50% 50% at 50% 44%,
+        rgba(255, 255, 255, 0.97) 0%,
+        rgba(255, 255, 255, 0.94) 58%,
+        rgba(255, 255, 255, 0.72) 74%,
+        rgba(255, 255, 255, 0.28) 88%,
+        rgba(255, 255, 255, 0) 100%
+    );
 }
 
 html[data-theme="light"] .navbar {
