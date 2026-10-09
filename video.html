@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- deployed: 2026-10-08 20:16:07 -->
+<!-- deployed: 2026-10-09 11:02:44 -->
 <html lang="en-CA">
 <head>
     <meta charset="UTF-8">
@@ -21,6 +21,7 @@
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link rel="stylesheet" href="styles.css?v=20260828-nav-white">
+    <link rel="stylesheet" href="video-gallery.css?v=20261009">
     <link rel="stylesheet" href="landing.css?v=20261008-website-labels">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +48,7 @@
                 <li><a href="projects.html" class="nav-link" data-i18n="projects">Projects</a></li>
                 <li><a href="video.html" class="nav-link is-current" aria-current="page" data-i18n="video">Video</a></li>
                 <li><a href="photography.html" class="nav-link" data-i18n="photography">Photography</a></li>
-                <li><a href="archive.html#composites" class="nav-link nav-link-digital" data-i18n="digitalArt">Digital Art</a></li>
+                <li><a href="archive.html#browse-art" class="nav-link nav-link-digital" data-i18n="digitalArt">Digital Art</a></li>
                 <li><a href="about.html" class="nav-link" data-i18n="about">About</a></li>
                 <li><a href="contact.html" class="nav-link" data-i18n="contact">Contact</a></li>
                 <li class="nav-store-divider" aria-hidden="true"><span></span></li>
@@ -78,73 +79,103 @@
         <section class="projects">
             <div class="container">
                 <div class="projects-grid">
-                    <a href="wake-the-night.html" class="project-card" target="_blank" rel="noopener noreferrer">
-                        <div class="project-image"><div class="project-image-inner wake-the-night-card-image"></div></div>
+                    <a href="assets/glace-noire-site/glace_noire_halloween.mp4" class="project-card project-card--motion video-film-card" data-film-card aria-haspopup="dialog">
+                        <div class="project-image"><div class="project-image-inner motion-card-image" style="background-image: url('assets/glace-noire-site/film-poster.jpg')">
+                            <video class="motion-card-video" poster="assets/glace-noire-site/film-poster.jpg" muted loop playsinline preload="none" aria-hidden="true"><source src="assets/glace-noire-site/glace_noire_halloween.mp4" type="video/mp4"></video>
+                            <span class="video-card-duration">00:08</span>
+                        </div></div>
                         <div class="project-info">
                             <h2 data-i18n="wtnTitle">Wake the Night</h2>
                             <p data-i18n="projectWtnDesc">A pale hand presses the raven, and cold smoke is released.</p>
-                            <span class="project-link" data-i18n="viewWebsite">View website</span>
-                            <span class="project-tab-note" data-i18n="opensNewTab">Opens in a new tab</span>
+                            <span class="project-link" data-i18n="videoWatch">Watch</span>
                         </div>
                     </a>
-                    <a href="gym.html" class="project-card" target="_blank" rel="noopener noreferrer">
-                        <div class="project-image"><div class="project-image-inner gym-card-image"></div></div>
+                    <a href="assets/video/gym-fitness-commercial.mp4" class="project-card project-card--motion video-film-card" data-film-card aria-haspopup="dialog">
+                        <div class="project-image"><div class="project-image-inner motion-card-image" style="background-image: url('assets/images/projects/gym-fitness-poster.jpg')">
+                            <video class="motion-card-video" poster="assets/images/projects/gym-fitness-poster.jpg" muted loop playsinline preload="none" aria-hidden="true"><source src="assets/video/gym-fitness-commercial.mp4" type="video/mp4"></video>
+                            <span class="video-card-duration">00:08</span>
+                        </div></div>
                         <div class="project-info">
                             <h2 data-i18n="gymTitle">Built in the Cold</h2>
-                            <p data-i18n="projectGymDesc">A Glace Noire gym theme.</p>
-                            <span class="project-link" data-i18n="viewWebsite">View website</span>
-                            <span class="project-tab-note" data-i18n="opensNewTab">Opens in a new tab</span>
+                            <p data-i18n="videoBrandFilm">The brand film</p>
+                            <span class="project-link" data-i18n="videoWatch">Watch</span>
                         </div>
                     </a>
-                    <a href="beauty-with-an-edge.html" class="project-card" target="_blank" rel="noopener noreferrer">
-                        <div class="project-image"><div class="project-image-inner beauty-card-image"></div></div>
+                    <a href="assets/video/gym-deadlift.mp4" class="project-card project-card--motion video-film-card" data-film-card aria-haspopup="dialog">
+                        <div class="project-image"><div class="project-image-inner motion-card-image" style="background-image: url('assets/images/projects/gym-deadlift-poster.jpg')">
+                            <video class="motion-card-video" poster="assets/images/projects/gym-deadlift-poster.jpg" muted loop playsinline preload="none" aria-hidden="true"><source src="assets/video/gym-deadlift.mp4" type="video/mp4"></video>
+                            <span class="video-card-duration">00:08</span>
+                        </div></div>
+                        <div class="project-info">
+                            <h2 data-i18n="gymTitle">Built in the Cold</h2>
+                            <p data-i18n="videoDeadlift">Deadlift</p>
+                            <span class="project-link" data-i18n="videoWatch">Watch</span>
+                        </div>
+                    </a>
+                    <a href="assets/video/gym-athlete-breathing.mp4" class="project-card project-card--motion video-film-card" data-film-card aria-haspopup="dialog">
+                        <div class="project-image"><div class="project-image-inner motion-card-image" style="background-image: url('assets/images/projects/gym-breathing-poster.jpg')">
+                            <video class="motion-card-video" poster="assets/images/projects/gym-breathing-poster.jpg" muted loop playsinline preload="none" aria-hidden="true"><source src="assets/video/gym-athlete-breathing.mp4" type="video/mp4"></video>
+                            <span class="video-card-duration">00:08</span>
+                        </div></div>
+                        <div class="project-info">
+                            <h2 data-i18n="gymTitle">Built in the Cold</h2>
+                            <p data-i18n="videoBreathing">Breathing</p>
+                            <span class="project-link" data-i18n="videoWatch">Watch</span>
+                        </div>
+                    </a>
+                    <a href="assets/glace-noire-salon/noir.mp4" class="project-card project-card--motion video-film-card" data-film-card aria-haspopup="dialog">
+                        <div class="project-image"><div class="project-image-inner motion-card-image" style="background-image: url('assets/glace-noire-salon/noir-poster.jpg')">
+                            <video class="motion-card-video" poster="assets/glace-noire-salon/noir-poster.jpg" muted loop playsinline preload="none" aria-hidden="true"><source src="assets/glace-noire-salon/noir.mp4" type="video/mp4"></video>
+                            <span class="video-card-duration">00:07</span>
+                        </div></div>
                         <div class="project-info">
                             <h2 data-i18n="beautyTitle">Beauty With an Edge</h2>
-                            <p data-i18n="projectBeautyDesc">A Glace Noire salon theme.</p>
-                            <span class="project-link" data-i18n="viewWebsite">View website</span>
-                            <span class="project-tab-note" data-i18n="opensNewTab">Opens in a new tab</span>
+                            <p data-i18n="videoNoirEdit">The Noir edit</p>
+                            <span class="project-link" data-i18n="videoWatch">Watch</span>
                         </div>
                     </a>
-                    <a href="wet-neon-noir.html" class="project-card project-card--wet-neon">
-                        <div class="project-image">
-                            <div class="project-image-inner wet-neon-card-image">
-                                <video class="wet-neon-card-video" poster="assets/images/projects/wet-neon-noir-alley-pulse-poster.jpg" muted loop playsinline preload="none" aria-hidden="true">
-                                    <source src="assets/video/wet-neon-noir-alley-pulse.mp4" type="video/mp4">
-                                </video>
-                            </div>
+                    <a href="assets/glace-noire-salon/lumiere.mp4" class="project-card project-card--motion video-film-card" data-film-card aria-haspopup="dialog">
+                        <div class="project-image"><div class="project-image-inner motion-card-image" style="background-image: url('assets/glace-noire-salon/lumiere-poster.jpg')">
+                            <video class="motion-card-video" poster="assets/glace-noire-salon/lumiere-poster.jpg" muted loop playsinline preload="none" aria-hidden="true"><source src="assets/glace-noire-salon/lumiere.mp4" type="video/mp4"></video>
+                            <span class="video-card-duration">00:06.5</span>
+                        </div></div>
+                        <div class="project-info">
+                            <h2 data-i18n="beautyTitle">Beauty With an Edge</h2>
+                            <p data-i18n="videoLumiereEdit">The Lumière edit</p>
+                            <span class="project-link" data-i18n="videoWatch">Watch</span>
                         </div>
+                    </a>
+                    <a href="assets/video/wet-neon-noir-alley-pulse.mp4" class="project-card project-card--motion video-film-card" data-film-card aria-haspopup="dialog">
+                        <div class="project-image"><div class="project-image-inner motion-card-image" style="background-image: url('assets/images/projects/wet-neon-noir-alley-pulse-poster.jpg')">
+                            <video class="motion-card-video" poster="assets/images/projects/wet-neon-noir-alley-pulse-poster.jpg" muted loop playsinline preload="none" aria-hidden="true"><source src="assets/video/wet-neon-noir-alley-pulse.mp4" type="video/mp4"></video>
+                            <span class="video-card-duration">00:16</span>
+                        </div></div>
                         <div class="project-info">
                             <h2 data-i18n="wnnTitle">Wet Neon Noir</h2>
                             <p data-i18n="projectWnnDesc">Still to motion from the Wet Neon Noir series.</p>
-                            <span class="project-link" data-i18n="wnnCta">Watch →</span>
+                            <span class="project-link" data-i18n="videoWatch">Watch</span>
                         </div>
                     </a>
-                    <a href="urban-noir.html" class="project-card project-card--motion">
-                        <div class="project-image">
-                            <div class="project-image-inner motion-card-image urban-noir-card-image">
-                                <video class="motion-card-video" poster="assets/images/projects/urban-noir-plaza-poster.jpg" muted loop playsinline preload="none" aria-hidden="true">
-                                    <source src="assets/video/urban-noir-plaza.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
+                    <a href="assets/video/urban-noir-plaza.mp4" class="project-card project-card--motion video-film-card" data-film-card aria-haspopup="dialog">
+                        <div class="project-image"><div class="project-image-inner motion-card-image" style="background-image: url('assets/images/projects/urban-noir-plaza-poster.jpg')">
+                            <video class="motion-card-video" poster="assets/images/projects/urban-noir-plaza-poster.jpg" muted loop playsinline preload="none" aria-hidden="true"><source src="assets/video/urban-noir-plaza.mp4" type="video/mp4"></video>
+                            <span class="video-card-duration">00:12</span>
+                        </div></div>
                         <div class="project-info">
                             <h2 data-i18n="unTitle">Urban Noir</h2>
                             <p data-i18n="projectUnDesc">Still to motion from the Urban Noir series.</p>
-                            <span class="project-link" data-i18n="unCta">Watch →</span>
+                            <span class="project-link" data-i18n="videoWatch">Watch</span>
                         </div>
                     </a>
-                    <a href="ice-reveal.html" class="project-card project-card--motion">
-                        <div class="project-image">
-                            <div class="project-image-inner motion-card-image ice-reveal-card-image">
-                                <video class="motion-card-video" poster="assets/images/projects/glace-noire-ice-reveal-poster.jpg" muted loop playsinline preload="none" aria-hidden="true">
-                                    <source src="assets/video/glace-noire-ice-reveal.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
+                    <a href="assets/video/glace-noire-ice-reveal.mp4" class="project-card project-card--motion video-film-card" data-film-card aria-haspopup="dialog">
+                        <div class="project-image"><div class="project-image-inner motion-card-image" style="background-image: url('assets/images/projects/glace-noire-ice-reveal-poster.jpg')">
+                            <video class="motion-card-video" poster="assets/images/projects/glace-noire-ice-reveal-poster.jpg" muted loop playsinline preload="none" aria-hidden="true"><source src="assets/video/glace-noire-ice-reveal.mp4" type="video/mp4"></video>
+                            <span class="video-card-duration">00:16</span>
+                        </div></div>
                         <div class="project-info">
                             <h2 data-i18n="irTitle">Ice Reveal</h2>
                             <p data-i18n="projectIrDesc">Still to motion from the Glace Noire /art hero.</p>
-                            <span class="project-link" data-i18n="irCta">Watch →</span>
+                            <span class="project-link" data-i18n="videoWatch">Watch</span>
                         </div>
                     </a>
                 </div>
@@ -152,11 +183,17 @@
         </section>
     </main>
 
+    <dialog class="video-gallery-player" id="video-gallery-player" aria-labelledby="video-player-title">
+        <div class="video-player-header"><h2 id="video-player-title"></h2><button type="button" data-close-film data-i18n="videoClose">Close</button></div>
+        <video controls playsinline preload="none"></video>
+        <p data-film-error role="status" hidden data-i18n="videoLoadError">The video could not load. Please try again.</p>
+    </dialog>
     <footer class="footer">
         <div class="container"><div class="footer-bottom"><p data-i18n="rights">&copy; 2026 Gianni Perugini. All rights reserved.</p><nav class="footer-links" aria-label="Help and policies" data-i18n-aria-label="footerHelp"><a href="faq.html" data-i18n="faq">FAQ</a><a href="licensing.html" data-i18n="licensing">Licensing</a></nav></div></div>
     </footer>
-    <script src="site-i18n.js?v=20261008-digital-art"></script>
+    <script src="site-i18n.js?v=20261009-video-gallery"></script>
     <script src="script.js?v=20260810-page-hero"></script>
+    <script src="video-gallery.js?v=20261009"></script>
     <script src="wet-neon-noir.js?v=20260906-motion-cards"></script>
 </body>
 </html>
