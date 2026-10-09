@@ -89,20 +89,26 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    display: flex;
+    align-items: center;
     background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 1rem 1.25rem 1rem 0;
 }
 
 .nav-container {
-    max-width: 1320px;
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: none;
+    width: auto;
     margin: 0;
-    padding: 0 20px;
+    padding: 0 0 0 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -218,12 +224,16 @@ a.logo::before {
     background: var(--accent-orange);
 }
 
+.nav-container .archive-language-switch {
+    margin-left: 2.5rem;
+    margin-right: auto;
+}
+
 .archive-language-switch {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    margin-left: 3.75rem;
-    margin-right: -0.15rem;
+    margin-left: 2.5rem;
     color: var(--border-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 0.8rem;
@@ -900,8 +910,25 @@ section {
     text-decoration-color: currentColor;
 }
 
+/* Keep the links from touching the name or the theme control on a laptop. */
+@media (max-width: 1360px) {
+    .nav-menu {
+        gap: 0.45rem;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+    .navbar {
+        display: block;
+        padding: 1rem 0;
+    }
+
+    .nav-container {
+        width: 100%;
+        padding-right: 20px;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -917,8 +944,10 @@ section {
         margin-left: 0;
     }
 
+    .nav-container .archive-language-switch,
     .archive-language-switch {
         margin-left: auto;
+        margin-right: 0.35rem;
     }
 
     .logo-text {
@@ -1005,10 +1034,8 @@ section {
 
 /* Dark / Light control. Dark is the default look of the site. */
 .theme-toggle {
-    position: absolute;
-    right: 1.25rem;
-    top: 50%;
-    transform: translateY(-50%);
+    position: static;
+    flex: 0 0 auto;
     z-index: 2;
     display: inline-flex;
     align-items: center;
@@ -1249,7 +1276,10 @@ html[data-theme="light"] .collection-secondary {
 
 @media (max-width: 768px) {
     .theme-toggle {
+        position: absolute;
         right: 3.6rem;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     html[data-theme="light"] .nav-menu {
