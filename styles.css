@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Macondo+Swash+Caps&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Macondo+Swash+Caps&family=UnifrakturMaguntia&display=swap');
 
 /* Reset and Base Styles */
 * {
@@ -1099,7 +1099,28 @@ body.wall-page .contact--page {
 }
 
 html[data-theme="light"] body.wall-page {
-    background: #ffffff;
+    background-color: #f3f5f7;
+    background-image: url('assets/images/projects/projects-bg-wall-light.jpg?v=20261009-light-wall');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+html[data-theme="light"] body.wall-page .projects,
+html[data-theme="light"] body.wall-page .photography-gallery,
+html[data-theme="light"] body.wall-page .about,
+html[data-theme="light"] body.wall-page .contact {
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0px,
+        rgba(255, 255, 255, 0.7) 90px,
+        rgba(255, 255, 255, 0) 260px
+    );
+}
+
+html[data-theme="light"] body.wall-page .footer {
+    background: transparent;
 }
 
 html[data-theme="light"] .navbar {
@@ -1115,6 +1136,11 @@ html[data-theme="light"] .archive-language-button:not(.is-active):hover {
     color: #161616;
 }
 
+html[data-theme="light"] .nav-menu .nav-link,
+html[data-theme="light"] .archive-language-button {
+    font-weight: 600;
+}
+
 html[data-theme="light"] .hamburger span {
     background: #161616;
 }
@@ -1124,9 +1150,6 @@ html[data-theme="light"] .about,
 html[data-theme="light"] .contact,
 html[data-theme="light"] .photography-gallery,
 html[data-theme="light"] .footer,
-html[data-theme="light"] .contact-page,
-html[data-theme="light"] .contact-page .contact--page,
-html[data-theme="light"] .contact-page .footer,
 html[data-theme="light"] .page-hero.page-hero--photo {
     background: #ffffff;
     background-image: none;
