@@ -1,3 +1,15 @@
+.video-film-card.project-card--motion .project-info h2 {
+    font-size: 0.95rem;
+    letter-spacing: 0.06em;
+    line-height: 1.25;
+    white-space: nowrap;
+}
+
+.video-film-card .project-info p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
 .video-film-card .motion-card-image { background-size: contain; }
 .video-film-card .motion-card-video { object-fit: contain; }
 .video-card-duration { position: absolute; right: 0.65rem; bottom: 0.65rem; padding: 0.2rem 0.4rem; border-radius: 3px; background: rgba(0,0,0,.8); color: #fff; font-size: .75rem; z-index: 3; }

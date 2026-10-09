@@ -37,6 +37,37 @@
     border-bottom: 1px solid var(--border-color);
 }
 
+.page-hero.page-hero--photo {
+    padding: 4rem 0 1.75rem;
+    background: #07090b;
+    background-image: none;
+}
+
+.page-hero--photo .page-hero-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 0 1.35rem;
+}
+
+.page-hero--photo .page-hero-content {
+    padding: 0 20px;
+}
+
+.page-hero--photo .page-hero-title {
+    font-family: 'Cinzel', serif !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.04em;
+    color: #f4f1ea;
+    text-shadow: none;
+    margin-bottom: 0;
+}
+
+.page-hero--photo .page-hero-subtitle {
+    color: #b8b8b8;
+    text-shadow: none;
+}
+
 .page-hero-content {
     max-width: 720px;
     margin: 0 auto;
