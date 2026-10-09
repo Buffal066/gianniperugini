@@ -1,4 +1,13 @@
 (function () {
+    try {
+        var theme = localStorage.getItem('gianniperugini-theme');
+        if (theme === 'light' || theme === 'dark') {
+            document.documentElement.setAttribute('data-theme', theme);
+        }
+    } catch (e) {}
+})();
+
+(function () {
     var MEASUREMENT_ID = 'G-EZ82P4XTFW';
 
     window.dataLayer = window.dataLayer || [];

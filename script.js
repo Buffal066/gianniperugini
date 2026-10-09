@@ -354,22 +354,74 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar background on scroll
+// Navbar background on scroll, plus the Dark / Light control
 const navbar = document.querySelector('.navbar');
-let lastScroll = 0;
+const THEME_KEY = 'gianniperugini-theme';
+
+function currentTheme() {
+    return document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+}
+
+function paintNavbar() {
+    if (!navbar) return;
+    const light = currentTheme() === 'light';
+    const scrolled = window.pageYOffset > 100;
+    if (light) {
+        navbar.style.background = scrolled ? 'rgba(255, 255, 255, 0.98)' : 'rgba(255, 255, 255, 0.96)';
+        navbar.style.boxShadow = scrolled ? '0 2px 16px rgba(0, 0, 0, 0.08)' : 'none';
+        navbar.style.borderBottomColor = '#e4e4e4';
+    } else {
+        navbar.style.background = scrolled ? 'rgba(10, 10, 10, 0.98)' : 'rgba(10, 10, 10, 0.95)';
+        navbar.style.boxShadow = scrolled ? '0 2px 20px rgba(0, 0, 0, 0.5)' : 'none';
+        navbar.style.borderBottomColor = '';
+    }
+}
+
+function syncThemeButtons() {
+    const theme = currentTheme();
+    document.querySelectorAll('[data-theme-choice]').forEach((button) => {
+        const on = button.getAttribute('data-theme-choice') === theme;
+        button.classList.toggle('is-active', on);
+        button.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+}
+
+function applyTheme(theme) {
+    const next = theme === 'light' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem(THEME_KEY, next); } catch (e) {}
+    syncThemeButtons();
+    paintNavbar();
+}
+
+function mountThemeToggle() {
+    if (!navbar || navbar.querySelector('.theme-toggle')) return;
+    const wrap = document.createElement('div');
+    wrap.className = 'theme-toggle';
+    wrap.setAttribute('role', 'group');
+    wrap.setAttribute('aria-label', 'Color mode');
+    wrap.innerHTML = [
+        '<button type="button" data-theme-choice="dark" aria-pressed="true">',
+        '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M8.4 1.3a5.7 5.7 0 1 0 6.3 7.6A4.7 4.7 0 0 1 8.4 1.3z"/></svg>',
+        'Dark</button>',
+        '<button type="button" data-theme-choice="light" aria-pressed="false">',
+        '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><circle cx="8" cy="8" r="2.3" fill="none" stroke="currentColor" stroke-width="1.3"/><g stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M8 1.4v1.7M8 12.9v1.7M1.4 8h1.7M12.9 8h1.7M3.3 3.3l1.2 1.2M11.5 11.5l1.2 1.2M12.7 3.3l-1.2 1.2M4.5 11.5l-1.2 1.2"/></g></svg>',
+        'Light</button>'
+    ].join('');
+    navbar.appendChild(wrap);
+    wrap.addEventListener('click', (event) => {
+        const button = event.target.closest('[data-theme-choice]');
+        if (!button) return;
+        applyTheme(button.getAttribute('data-theme-choice'));
+    });
+    syncThemeButtons();
+}
+
+mountThemeToggle();
+paintNavbar();
 
 window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll > 100) {
-        navbar.style.background = 'rgba(10, 10, 10, 0.98)';
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.5)';
-    } else {
-        navbar.style.background = 'rgba(10, 10, 10, 0.95)';
-        navbar.style.boxShadow = 'none';
-    }
-    
-    lastScroll = currentScroll;
+    paintNavbar();
 });
 
 // Intersection Observer for fade-in animations

@@ -1003,3 +1003,234 @@ section {
     }
 }
 
+/* Dark / Light control. Dark is the default look of the site. */
+.theme-toggle {
+    position: absolute;
+    right: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    padding: 3px;
+    border: 1px solid #3a3a3a;
+    border-radius: 999px;
+    background: #141414;
+}
+
+.theme-toggle button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-height: 28px;
+    padding: 0 0.8rem;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    color: #8d8d8d;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.theme-toggle button svg {
+    display: block;
+    flex-shrink: 0;
+}
+
+.theme-toggle button.is-active {
+    background: #f3f3f3;
+    color: #111111;
+}
+
+html .page-hero--photo .page-hero-photo--light {
+    display: none;
+}
+
+html[data-theme="light"] .page-hero--photo .page-hero-photo--dark {
+    display: none;
+}
+
+html[data-theme="light"] .page-hero--photo .page-hero-photo--light {
+    display: block;
+}
+
+html[data-theme="light"] body {
+    background-color: #ffffff;
+}
+
+body.wall-page {
+    background-color: #050505;
+    background-image: url('assets/images/projects/projects-bg-wall.jpg?v=20261009-wall');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.wall-page .projects,
+body.wall-page .photography-gallery,
+body.wall-page .about,
+body.wall-page .contact {
+    background: linear-gradient(
+        to bottom,
+        #07090b 0px,
+        rgba(7, 9, 11, 0.9) 240px,
+        rgba(7, 9, 11, 0.45) 520px,
+        rgba(7, 9, 11, 0) 720px
+    );
+}
+
+body.wall-page .projects::before {
+    display: none;
+}
+
+body.wall-page .footer {
+    background: transparent;
+}
+
+body.wall-page .contact--page {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+html[data-theme="light"] body.wall-page {
+    background: #ffffff;
+}
+
+html[data-theme="light"] .navbar {
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom-color: #e4e4e4;
+}
+
+html[data-theme="light"] .logo-text,
+html[data-theme="light"] .nav-menu .nav-link:not(.nav-link-store):not(.is-current):not([aria-current="page"]),
+html[data-theme="light"] .nav-menu .nav-link:not(.nav-link-store):not(.is-current):not([aria-current="page"]):hover,
+html[data-theme="light"] .archive-language-button:not(.is-active),
+html[data-theme="light"] .archive-language-button:not(.is-active):hover {
+    color: #161616;
+}
+
+html[data-theme="light"] .hamburger span {
+    background: #161616;
+}
+
+html[data-theme="light"] .projects,
+html[data-theme="light"] .about,
+html[data-theme="light"] .contact,
+html[data-theme="light"] .photography-gallery,
+html[data-theme="light"] .footer,
+html[data-theme="light"] .contact-page,
+html[data-theme="light"] .contact-page .contact--page,
+html[data-theme="light"] .contact-page .footer,
+html[data-theme="light"] .page-hero.page-hero--photo {
+    background: #ffffff;
+    background-image: none;
+}
+
+html[data-theme="light"] .about-text p,
+html[data-theme="light"] .profile-link,
+html[data-theme="light"] .contact-info p,
+html[data-theme="light"] .contact-value,
+html[data-theme="light"] .form-group label,
+html[data-theme="light"] .footer-bottom,
+html[data-theme="light"] .footer-links a {
+    color: #1a1a1a;
+}
+
+html[data-theme="light"] .profile-link:hover,
+html[data-theme="light"] .profile-link:focus-visible,
+html[data-theme="light"] .contact-value:hover,
+html[data-theme="light"] .contact-value:focus-visible,
+html[data-theme="light"] .footer-links a:hover,
+html[data-theme="light"] .footer-links a:focus-visible {
+    color: var(--accent-gold);
+}
+
+html[data-theme="light"] .footer,
+html[data-theme="light"] .footer-bottom,
+html[data-theme="light"] .profile-links,
+html[data-theme="light"] .contact-item {
+    border-color: #e4e4e4;
+}
+
+html[data-theme="light"] .archive-storefront,
+html[data-theme="light"] .archive-gallery,
+html[data-theme="light"] .collection-hero,
+html[data-theme="light"] .collection-gallery-section,
+html[data-theme="light"] .collection-gallery-mobile-section,
+html[data-theme="light"] .collection-faq,
+html[data-theme="light"] .collection-format-picker {
+    background: #ffffff;
+    background-image: none;
+    border-color: #e4e4e4;
+}
+
+html[data-theme="light"] .store-section-heading h2,
+html[data-theme="light"] .store-product-group-heading h2,
+html[data-theme="light"] .store-sample-preview-heading h2,
+html[data-theme="light"] .archive-gallery-heading h2,
+html[data-theme="light"] .archive-series-title,
+html[data-theme="light"] .store-help-link strong,
+html[data-theme="light"] .individual-wallpaper-callout h2,
+html[data-theme="light"] .individual-wallpaper-action strong,
+html[data-theme="light"] .collection-hero h1,
+html[data-theme="light"] .collection-gallery-section h2,
+html[data-theme="light"] .collection-faq h2,
+html[data-theme="light"] .collection-format-picker h2,
+html[data-theme="light"] .collection-final-cta h2,
+html[data-theme="light"] .collection-breadcrumb,
+html[data-theme="light"] .collection-breadcrumb a,
+html[data-theme="light"] .collection-lead,
+html[data-theme="light"] .collection-note,
+html[data-theme="light"] .collection-gallery-section > .collection-container > p:not(.collection-kicker) {
+    color: #1a1a1a;
+}
+
+html[data-theme="light"] .store-section-heading > p:last-child,
+html[data-theme="light"] .store-product-group-heading > p,
+html[data-theme="light"] .archive-gallery-heading > [data-i18n="browseIntro"],
+html[data-theme="light"] .archive-portfolio-heading > p:last-child,
+html[data-theme="light"] .store-sample-preview-heading > p:last-child,
+html[data-theme="light"] .store-help-link span,
+html[data-theme="light"] .store-tax-note,
+html[data-theme="light"] .individual-wallpaper-callout p,
+html[data-theme="light"] .store-other-collections-toggle,
+html[data-theme="light"] .collection-final-cta p {
+    color: #333333;
+}
+
+html[data-theme="light"] .store-other-collections-toggle:hover,
+html[data-theme="light"] .store-other-collections-toggle:focus-visible {
+    background: rgba(0, 0, 0, 0.04);
+    border-color: #cccccc;
+    color: #111111;
+}
+
+html[data-theme="light"] .archive-series-buy,
+html[data-theme="light"] .archive-series-buy:hover,
+html[data-theme="light"] .archive-series-buy:focus-visible {
+    color: #1a1a1a;
+    background: transparent;
+}
+
+html[data-theme="light"] .collection-secondary {
+    color: #1a1a1a;
+    border-color: #1a1a1a;
+    background: transparent;
+}
+
+@media (max-width: 768px) {
+    .theme-toggle {
+        right: 3.6rem;
+    }
+
+    html[data-theme="light"] .nav-menu {
+        background: #ffffff;
+    }
+}
+
