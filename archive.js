@@ -493,6 +493,11 @@
 
     function syncNav(viewKey) {
         document.querySelectorAll('.nav-menu .nav-link').forEach((link) => {
+            if (link.classList.contains('nav-link-digital')) {
+                link.removeAttribute('aria-current');
+                link.classList.remove('is-current');
+                return;
+            }
             const href = link.getAttribute('href') || '';
             const isArchiveCategory = href === '#composites'
                 || href === '#photography'
