@@ -335,11 +335,18 @@ function parkThemeToggle(collapsed) {
     const menu = document.querySelector('.nav-menu');
     const theme = document.querySelector('.theme-toggle');
     if (!bar || !menu || !theme) return;
-    const park = collapsed && window.innerWidth <= 480;
+    const park = collapsed && window.innerWidth <= 768;
     if (park) {
-        if (theme.parentElement !== menu) menu.appendChild(theme);
+        let item = menu.querySelector('.nav-theme-item');
+        if (!item) {
+            item = document.createElement('li');
+            item.className = 'nav-theme-item';
+            menu.prepend(item);
+        }
+        if (theme.parentElement !== item) item.appendChild(theme);
     } else if (theme.parentElement !== bar) {
         bar.appendChild(theme);
+        menu.querySelector('.nav-theme-item')?.remove();
     }
 }
 
@@ -370,7 +377,9 @@ function syncNavLayout(force) {
     const width = window.innerWidth;
     const collapsed = bar.classList.contains('is-collapsed');
 
-    if (!collapsed) {
+    if (width <= 768) {
+        bar.classList.add('is-collapsed');
+    } else if (!collapsed) {
         if (inlineNavOverflows()) {
             navCollapseWidth = width;
             bar.classList.add('is-collapsed');
@@ -490,6 +499,20 @@ function applyTheme(theme) {
     paintNavbar();
 }
 
+// Shared labels also cover the archive, which owns its language switching.
+function syncThemeLabels() {
+    const labels = {
+        en: { group: 'Color mode', dark: 'Dark', light: 'Light' },
+        fr: { group: 'Apparence', dark: 'Sombre', light: 'Clair' }
+    };
+    const language = document.documentElement.lang.startsWith('fr') ? 'fr' : 'en';
+    const strings = labels[language];
+    document.querySelector('.theme-toggle')?.setAttribute('aria-label', strings.group);
+    document.querySelectorAll('[data-theme-label]').forEach((label) => {
+        label.textContent = strings[label.dataset.themeLabel];
+    });
+}
+
 function mountThemeToggle() {
     if (!navbar || navbar.querySelector('.theme-toggle')) return;
     const wrap = document.createElement('div');
@@ -499,10 +522,10 @@ function mountThemeToggle() {
     wrap.innerHTML = [
         '<button type="button" data-theme-choice="dark" aria-pressed="true">',
         '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M8.4 1.3a5.7 5.7 0 1 0 6.3 7.6A4.7 4.7 0 0 1 8.4 1.3z"/></svg>',
-        'Dark</button>',
+        '<span data-theme-label="dark">Dark</span></button>',
         '<button type="button" data-theme-choice="light" aria-pressed="false">',
         '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><circle cx="8" cy="8" r="2.3" fill="none" stroke="currentColor" stroke-width="1.3"/><g stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M8 1.4v1.7M8 12.9v1.7M1.4 8h1.7M12.9 8h1.7M3.3 3.3l1.2 1.2M11.5 11.5l1.2 1.2M12.7 3.3l-1.2 1.2M4.5 11.5l-1.2 1.2"/></g></svg>',
-        'Light</button>'
+        '<span data-theme-label="light">Light</span></button>'
     ].join('');
     navbar.appendChild(wrap);
     wrap.addEventListener('click', (event) => {
@@ -514,6 +537,10 @@ function mountThemeToggle() {
 }
 
 mountThemeToggle();
+syncThemeLabels();
+new MutationObserver(syncThemeLabels).observe(document.documentElement, {
+    attributes: true, attributeFilter: ['lang']
+});
 paintNavbar();
 syncNavLayout(true);
 

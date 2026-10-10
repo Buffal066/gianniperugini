@@ -1656,3 +1656,51 @@ html[data-theme="light"] .collection-secondary {
     }
 }
 
+
+/* Mobile navigation: keep settings discoverable and touch areas generous. */
+@media (max-width: 768px) {
+    /* Hide immediately on load/close so menu text cannot fade over page content. */
+    .navbar .nav-menu:not(.active) { visibility: hidden; pointer-events: none; }
+    .navbar.is-collapsed .nav-menu { transition: none; }
+    .navbar.is-collapsed .nav-menu .theme-toggle {
+        margin: 0.65rem 1rem;
+        width: fit-content;
+        max-width: calc(100% - 2rem);
+    }
+    .navbar.is-collapsed .nav-menu .theme-toggle button {
+        min-width: 44px;
+        min-height: 44px;
+        color: #b8b8b8;
+    }
+    .navbar.is-collapsed .nav-menu .theme-toggle button.is-active { color: #111; }
+    .navbar.is-collapsed .archive-language-button {
+        min-width: 44px;
+        min-height: 44px;
+        padding: 0;
+    }
+    .navbar.is-collapsed .archive-language-switch {
+        gap: 0;
+        flex-shrink: 0;
+    }
+    .navbar.is-collapsed .hamburger {
+        width: 44px;
+        min-width: 44px;
+        height: 44px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .navbar.is-collapsed .logo-text { font-weight: 600; }
+    body.wall-page .page-hero.page-hero--photo { display: none; }
+    body.wall-page .content-page-main--with-hero { padding-top: 69px; }
+    html[data-theme="light"] body.wall-page .about,
+    html[data-theme="light"] body.wall-page .contact {
+        background: rgba(255, 255, 255, 0.96);
+        backdrop-filter: none;
+    }
+    .project-card .project-info h2,
+    .project-card .project-info h3,
+    .project-card .project-link { color: #ff7070; }
+    .theme-toggle button:focus-visible,
+    .archive-language-button:focus-visible,
+    .hamburger:focus-visible { outline: 2px solid #ff7070; outline-offset: 3px; }
+}
