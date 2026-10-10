@@ -343,6 +343,26 @@ function parkThemeToggle(collapsed) {
     }
 }
 
+function brandToHomeGap() {
+    const logo = document.querySelector('.logo-link');
+    const home = document.querySelector('.nav-menu .nav-link');
+    if (!logo || !home) return Infinity;
+    return home.getBoundingClientRect().left - logo.getBoundingClientRect().right;
+}
+
+function syncBrandDivider(bar) {
+    bar.classList.remove('is-tight');
+    if (bar.classList.contains('is-collapsed')) return;
+    if (brandToHomeGap() >= 120) return;
+    bar.classList.add('is-tight');
+    if (inlineNavOverflows()) {
+        bar.classList.remove('is-tight');
+        navCollapseWidth = window.innerWidth;
+        bar.classList.add('is-collapsed');
+        closeNavPanel();
+    }
+}
+
 function syncNavLayout(force) {
     const bar = document.querySelector('.navbar');
     if (!bar) return;
@@ -366,6 +386,7 @@ function syncNavLayout(force) {
         }
     }
 
+    syncBrandDivider(bar);
     parkThemeToggle(bar.classList.contains('is-collapsed'));
 }
 

@@ -144,7 +144,7 @@ a.logo::before {
     font-weight: 300;
     line-height: 1;
     color: var(--text-primary);
-    letter-spacing: 0.16em;
+    letter-spacing: 0.09em;
     font-variant: normal;
     font-variant-caps: normal;
     text-transform: none;
@@ -156,6 +156,27 @@ a.logo::before {
     color: var(--accent-gold);
     letter-spacing: 4px;
     margin-top: -5px;
+}
+
+.navbar.is-tight .logo-link::after {
+    content: "|";
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    color: rgba(255, 255, 255, 0.55);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 1;
+    transform: none;
+}
+
+html[data-theme="light"] .navbar.is-tight .logo-link::after {
+    color: rgba(22, 22, 22, 0.45);
+}
+
+.navbar.is-collapsed .logo-link::after {
+    content: none;
 }
 
 .nav-menu {
