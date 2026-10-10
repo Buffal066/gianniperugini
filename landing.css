@@ -132,6 +132,33 @@
     background: linear-gradient(to right, transparent, var(--border-color), transparent);
 }
 
+.projects-page-title,
+.page-section-title {
+    margin: 0 0 1.35rem;
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.5rem, 2.2vw, 2rem);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+    text-align: left;
+    color: #f4f1ea;
+}
+
+html[data-theme="light"] .projects-page-title,
+html[data-theme="light"] .page-section-title {
+    color: #161616;
+}
+
+.about .page-section-title {
+    text-align: center;
+}
+
+.content-page-main--with-hero > section.projects,
+.content-page-main--with-hero > section.photography-gallery,
+.contact-page .content-page-main--with-hero > section.contact {
+    padding-top: 1.75rem;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
