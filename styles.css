@@ -90,6 +90,7 @@ body {
     top: 0;
     width: 100%;
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(10px);
@@ -113,6 +114,7 @@ body {
 
 .logo {
     display: inline-flex;
+    flex: 0 0 auto;
     flex-direction: row;
     align-items: center;
     gap: 0.95rem;
@@ -146,6 +148,7 @@ a.logo::before {
     font-variant: normal;
     font-variant-caps: normal;
     text-transform: none;
+    white-space: nowrap;
 }
 
 .logo-subtitle {
@@ -157,6 +160,8 @@ a.logo::before {
 
 .nav-menu {
     display: flex;
+    flex: 0 0 auto;
+    flex-wrap: nowrap;
     list-style: none;
     gap: 1rem;
     margin-left: auto;
@@ -172,6 +177,7 @@ a.logo::before {
     font-variant-caps: normal;
     letter-spacing: 0.04em;
     font-size: 1.12rem;
+    white-space: nowrap;
     transition: color 0.3s ease;
     position: relative;
 }
@@ -231,9 +237,11 @@ a.logo::before {
 
 .archive-language-switch {
     display: inline-flex;
+    flex: 0 0 auto;
     align-items: center;
     gap: 0.35rem;
     margin-left: 2.5rem;
+    white-space: nowrap;
     color: var(--border-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 0.8rem;
@@ -1030,6 +1038,243 @@ section {
     .why-item {
         padding: 1.5rem;
     }
+}
+
+/* One-line bar. When the links no longer fit, they drop into a panel under the bar. */
+.navbar.is-collapsed {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 69px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar.is-collapsed .nav-container {
+    display: contents;
+}
+
+.navbar.is-collapsed .nav-menu {
+    position: fixed;
+    top: 69px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    margin: 0;
+    padding: 0.35rem 0 0.85rem;
+    background: #0a0a0a;
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    text-align: left;
+    max-height: calc(100dvh - 69px);
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-6px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+
+.navbar.is-collapsed .nav-menu.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: none;
+    min-height: calc(100dvh - 69px);
+}
+
+body.nav-open {
+    overflow: hidden;
+}
+
+.navbar.is-collapsed .nav-menu li {
+    width: 100%;
+}
+
+.navbar.is-collapsed .nav-link {
+    display: block;
+    padding: 0.8rem 1.75rem;
+    font-size: 1.45rem;
+}
+
+.navbar.is-collapsed .nav-link::after {
+    display: none;
+}
+
+.navbar.is-collapsed .nav-store-divider {
+    justify-content: flex-start;
+    padding: 0.35rem 1.75rem;
+}
+
+.navbar.is-collapsed .nav-store-divider span {
+    width: 2.5rem;
+    height: 1px;
+}
+
+.navbar.is-collapsed .archive-language-switch,
+.navbar.is-collapsed .nav-container .archive-language-switch {
+    margin-left: auto;
+    margin-right: 0.65rem;
+}
+
+.navbar.is-collapsed .theme-toggle {
+    position: static;
+    order: 1;
+    transform: none;
+    margin-right: 0.35rem;
+}
+
+.navbar.is-collapsed .hamburger {
+    display: flex;
+    order: 2;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin: 0 0.15rem 0 0.2rem;
+    flex-shrink: 0;
+}
+
+.navbar.is-collapsed .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar.is-collapsed .hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar.is-collapsed .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+body.nav-open::after {
+    content: "";
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 69px;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+html[data-theme="light"] .navbar.is-collapsed .nav-menu {
+    background: #ffffff;
+    border-bottom-color: #e4e4e4;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 720px) {
+    .navbar.is-collapsed .logo-text {
+        font-size: 0.95rem;
+        letter-spacing: 0.12em;
+    }
+
+    .navbar.is-collapsed .logo-link {
+        margin-left: 0.85rem;
+    }
+
+    .navbar.is-collapsed .logo-link::before,
+    .navbar.is-collapsed a.logo::before {
+        width: 1.35rem;
+        height: 1.35rem;
+    }
+
+    .navbar.is-collapsed .theme-toggle button {
+        font-size: 0;
+        gap: 0;
+        padding: 0 0.5rem;
+    }
+
+    .navbar.is-collapsed .archive-language-switch,
+    .navbar.is-collapsed .nav-container .archive-language-switch {
+        margin-right: 0.35rem;
+    }
+}
+
+.navbar.is-collapsed .nav-menu .theme-toggle {
+    position: static;
+    order: 0;
+    margin: 0.85rem 1.5rem 0.35rem;
+    transform: none;
+}
+
+.navbar.is-collapsed .nav-menu .theme-toggle button {
+    font-size: 0.72rem;
+    gap: 0.4rem;
+    padding: 0 0.8rem;
+}
+
+@media (max-width: 420px) {
+    .navbar.is-collapsed .logo-text {
+        font-size: 0.78rem;
+        letter-spacing: 0.04em;
+    }
+
+    .navbar.is-collapsed .logo-link {
+        margin-left: 0.55rem;
+    }
+
+    .navbar.is-collapsed .archive-language-button {
+        padding-left: 0.05rem;
+        padding-right: 0.05rem;
+        letter-spacing: 0.04em;
+    }
+
+    .navbar.is-collapsed .hamburger {
+        width: 2.25rem;
+        margin-right: 0.35rem;
+    }
+}
+
+/* Used only while measuring whether the links still fit on one line. */
+.navbar.is-measuring {
+    display: flex;
+    height: auto;
+}
+
+.navbar.is-measuring .nav-container {
+    display: flex;
+}
+
+.navbar.is-measuring .nav-menu {
+    position: static;
+    left: auto;
+    top: auto;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    margin-left: auto;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    border: 0;
+    max-height: none;
+    overflow: visible;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+}
+
+.navbar.is-measuring .nav-link {
+    display: inline;
+    padding: 0;
+    font-size: 1.12rem;
+}
+
+.navbar.is-measuring .hamburger {
+    display: none;
+}
+
+.navbar.is-measuring .theme-toggle {
+    position: static;
+    right: auto;
+    top: auto;
+    transform: none;
 }
 
 /* Dark / Light control. Dark is the default look of the site. */

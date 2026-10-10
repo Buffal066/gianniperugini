@@ -284,6 +284,7 @@ function getSiteStrings() {
         });
         applyTranslations(next);
         updateLandingHeroSoundLabel();
+        if (document.querySelector('.theme-toggle')) syncNavLayout(true);
     };
 
     let initial = 'en';
@@ -302,9 +303,71 @@ function getSiteStrings() {
     updateLandingHeroSoundLabel();
 })();
 
-// Mobile Navigation Toggle
+// The bar stays one line. When the links no longer fit, they collapse into the menu button.
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
+let navCollapseWidth = 0;
+
+function closeNavPanel() {
+    if (!hamburger || !navMenu || !navMenu.classList.contains('active')) return;
+    const strings = getSiteStrings();
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+    hamburger.setAttribute('aria-label', strings?.openNav || 'Open navigation');
+    document.body.classList.remove('nav-open');
+}
+
+function inlineNavOverflows() {
+    const bar = document.querySelector('.navbar');
+    if (!bar) return false;
+    bar.classList.add('is-measuring');
+    const container = bar.querySelector('.nav-container');
+    const theme = bar.querySelector('.theme-toggle');
+    const overflows = (container && container.scrollWidth > container.clientWidth + 1)
+        || (theme && theme.getBoundingClientRect().right > bar.getBoundingClientRect().right - 4);
+    bar.classList.remove('is-measuring');
+    return overflows;
+}
+
+function parkThemeToggle(collapsed) {
+    const bar = document.querySelector('.navbar');
+    const menu = document.querySelector('.nav-menu');
+    const theme = document.querySelector('.theme-toggle');
+    if (!bar || !menu || !theme) return;
+    const park = collapsed && window.innerWidth <= 480;
+    if (park) {
+        if (theme.parentElement !== menu) menu.appendChild(theme);
+    } else if (theme.parentElement !== bar) {
+        bar.appendChild(theme);
+    }
+}
+
+function syncNavLayout(force) {
+    const bar = document.querySelector('.navbar');
+    if (!bar) return;
+    parkThemeToggle(false);
+    const width = window.innerWidth;
+    const collapsed = bar.classList.contains('is-collapsed');
+
+    if (!collapsed) {
+        if (inlineNavOverflows()) {
+            navCollapseWidth = width;
+            bar.classList.add('is-collapsed');
+            closeNavPanel();
+        }
+    } else if (force || width > navCollapseWidth + 32) {
+        bar.classList.remove('is-collapsed');
+        if (inlineNavOverflows()) {
+            navCollapseWidth = width;
+            bar.classList.add('is-collapsed');
+        } else {
+            closeNavPanel();
+        }
+    }
+
+    parkThemeToggle(bar.classList.contains('is-collapsed'));
+}
 
 if (hamburger && navMenu) {
     const setMenuOpen = (open) => {
@@ -318,11 +381,11 @@ if (hamburger && navMenu) {
                 ? (strings?.closeNav || 'Close navigation')
                 : (strings?.openNav || 'Open navigation')
         );
+        document.body.classList.toggle('nav-open', open);
     };
 
     hamburger.addEventListener('click', () => setMenuOpen(!navMenu.classList.contains('active')));
 
-    // Close mobile menu when clicking on a link
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
             setMenuOpen(false);
@@ -335,6 +398,18 @@ if (hamburger && navMenu) {
             hamburger.focus();
         }
     });
+
+    document.addEventListener('click', (event) => {
+        if (!navMenu.classList.contains('active')) return;
+        const bar = document.querySelector('.navbar');
+        if (bar && bar.contains(event.target)) return;
+        setMenuOpen(false);
+    });
+}
+
+window.addEventListener('resize', () => syncNavLayout(false));
+if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => syncNavLayout(true));
 }
 
 // Smooth scroll for same-page navigation links
@@ -419,6 +494,7 @@ function mountThemeToggle() {
 
 mountThemeToggle();
 paintNavbar();
+syncNavLayout(true);
 
 window.addEventListener('scroll', () => {
     paintNavbar();
