@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Draft Lottery | Gianni Perugini</title>
+    <meta name="description" content="A Steel Lanes bowling-ball lottery for hockey pools. Weighted balls, one roll, one winner." />
+    <link rel="canonical" href="https://gianniperugini.com/lottery/" />
+    <meta property="og:title" content="Draft Lottery | Gianni Perugini">
+    <meta property="og:description" content="A Steel Lanes bowling-ball lottery for hockey pools. Weighted balls, one roll, one winner.">
+    <meta property="og:url" content="https://gianniperugini.com/lottery/">
+    <meta property="og:image" content="https://gianniperugini.com/assets/images/case-studies/nhl-draft-lottery/setup.png">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <script>
+      if (new URLSearchParams(location.search).has('desktop')) {
+        document.documentElement.classList.add('force-desktop');
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Macondo+Swash+Caps&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/lottery/assets/index-vEb6L8vF.js"></script>
+    <link rel="stylesheet" crossorigin href="/lottery/assets/index-BphEd9a8.css">
+  </head>
+  <body>
+    <div class="world">
+      <div class="hall-layer">
+        <img class="hall-art" src="./images/pin-crimson.jpg" alt="" />
+        <canvas id="hall" class="hall-art" aria-hidden="true"></canvas>
+      </div>
+      <div class="hall-shade" aria-hidden="true"></div>
+
+      <main class="stage">
+        <section class="console" aria-labelledby="setup-heading">
+          <div class="console-head">
+            <h2 id="setup-heading">Draft lottery</h2>
+            <button id="reset-names" class="reset-btn" type="button">Reset</button>
+          </div>
+          <form id="setup-form" novalidate>
+            <label class="total-field">
+              <span>Total balls</span>
+              <input id="total" name="total" type="number" inputmode="numeric" min="2" step="1" value="1000" required />
+            </label>
+
+            <ol class="players" id="player-list">
+              <li class="player" style="--seat-color: #1d7dff">
+                <span class="swatch" aria-hidden="true"></span>
+                <label>
+                  <span>Player 1</span>
+                  <input data-name type="text" maxlength="24" autocomplete="nickname" value="Player 1" required />
+                </label>
+                <label>
+                  <span>Balls</span>
+                  <input data-balls type="number" inputmode="numeric" min="1" step="1" value="500" required />
+                </label>
+                <label>
+                  <span>%</span>
+                  <input data-odds type="number" inputmode="decimal" min="0" step="any" value="50" />
+                </label>
+                <button class="remove-player" type="button" aria-label="Remove player" hidden>×</button>
+              </li>
+              <li class="player" style="--seat-color: #1db954">
+                <span class="swatch" aria-hidden="true"></span>
+                <label>
+                  <span>Player 2</span>
+                  <input data-name type="text" maxlength="24" autocomplete="nickname" value="Player 2" required />
+                </label>
+                <label>
+                  <span>Balls</span>
+                  <input data-balls type="number" inputmode="numeric" min="1" step="1" value="250" required />
+                </label>
+                <label>
+                  <span>%</span>
+                  <input data-odds type="number" inputmode="decimal" min="0" step="any" value="25" />
+                </label>
+                <button class="remove-player" type="button" aria-label="Remove player" hidden>×</button>
+              </li>
+              <li class="player" style="--seat-color: #f0c419">
+                <span class="swatch" aria-hidden="true"></span>
+                <label>
+                  <span>Player 3</span>
+                  <input data-name type="text" maxlength="24" autocomplete="nickname" value="Player 3" required />
+                </label>
+                <label>
+                  <span>Balls</span>
+                  <input data-balls type="number" inputmode="numeric" min="1" step="1" value="150" required />
+                </label>
+                <label>
+                  <span>%</span>
+                  <input data-odds type="number" inputmode="decimal" min="0" step="any" value="15" />
+                </label>
+                <button class="remove-player" type="button" aria-label="Remove player" hidden>×</button>
+              </li>
+              <li class="player" style="--seat-color: #ff4da6">
+                <span class="swatch" aria-hidden="true"></span>
+                <label>
+                  <span>Player 4</span>
+                  <input data-name type="text" maxlength="24" autocomplete="nickname" value="Player 4" required />
+                </label>
+                <label>
+                  <span>Balls</span>
+                  <input data-balls type="number" inputmode="numeric" min="1" step="1" value="100" required />
+                </label>
+                <label>
+                  <span>%</span>
+                  <input data-odds type="number" inputmode="decimal" min="0" step="any" value="10" />
+                </label>
+                <button class="remove-player" type="button" aria-label="Remove player" hidden>×</button>
+              </li>
+            </ol>
+
+            <div class="player-actions">
+              <button id="add-player" class="add-btn" type="button">Add player</button>
+              <button id="remove-last-player" class="remove-btn" type="button">Remove player</button>
+            </div>
+
+            <p id="status" class="status" data-state="ok">Locked and loaded. Roll when the room is ready.</p>
+            <button id="draw-btn" class="draw-btn" type="submit">Roll</button>
+            <button id="spin-again" class="again-btn" type="button" hidden>Roll again</button>
+          </form>
+        </section>
+
+        <section class="scene" aria-label="Lottery floor">
+          <button id="back-btn" class="back-btn" type="button" hidden>Back</button>
+          <div id="plaque" class="plaque">
+            <p class="plaque-kicker" hidden>Winner</p>
+            <h1 id="floor-title" class="plaque-name">Draft<br>Lottery</h1>
+          </div>
+          <button id="floor-again" class="again-btn floor-again" type="button" hidden>Roll again</button>
+        </section>
+      </main>
+    </div>
+
+  </body>
+</html>
