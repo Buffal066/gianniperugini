@@ -2,7 +2,9 @@
   "redirects": [
     { "source": "/shop", "destination": "/archive.html#composites", "permanent": true },
     { "source": "/wallpapers", "destination": "/archive.html#composites", "permanent": true },
-    { "source": "/lottery", "destination": "/lottery/", "permanent": false }
+    { "source": "/lottery", "destination": "/lottery/", "permanent": false },
+    { "source": "/draft-lottery", "destination": "/lottery/", "permanent": true },
+    { "source": "/draft-lottery/", "destination": "/lottery/", "permanent": true }
   ],
   "rewrites": [
     { "source": "/lottery/", "destination": "https://nhl-draft-lottery.vercel.app/lottery/" },
